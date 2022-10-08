@@ -1,0 +1,15 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"archetypes/content-block/content-block.5a535111.js","origPath":"/home/templates/archetypes/content-block/content-block.5a535111.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'archetypes/content-block/content-block.5a535111.js',
+  origPath: '/home/templates/archetypes/content-block/content-block.5a535111.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+[Static Analyzer] Unhandled: setTimeout in source code
+[rtiDebugInfo]0 42

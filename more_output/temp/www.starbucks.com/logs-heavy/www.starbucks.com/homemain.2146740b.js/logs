@@ -1,0 +1,27 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/home/main.2146740b.js","origPath":"/home/main.2146740b.js","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/home/main.2146740b.js',
+  origPath: '/home/main.2146740b.js',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: 
+   [ 'www.starbucks.com/-script-0-function-25-16658-25-16899',
+     'www.starbucks.com/-script-3-function-34-11-34-3115',
+     'www.starbucks.com/-script-4-function-34-3304-38-66',
+     'www.starbucks.com/-script-0-function-25-19247-25-19309',
+     'www.starbucks.com/-script-0-function-25-18853-25-19203',
+     'www.starbucks.com/-script-6-function-43-5-43-18788',
+     'www.starbucks.com/-script-0-function-25-7-26-137',
+     'www.starbucks.com/-script-2-function-33-11-33-356',
+     'www.starbucks.com/-script-1-function-28-9-31-15',
+     'www.starbucks.com/-script-5-function-42-28922-42-31889' ] }
+List of functions to be instrumented: 10
+Only instrumenting the following functions from the current script 
+[rtiDebugInfo]0 0

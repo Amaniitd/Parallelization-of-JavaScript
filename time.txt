@@ -1,0 +1,6 @@
+Site        orignal load time (sec)  new load time (sec)
+
+www.netflix.com    7.345                1.421
+www.yelp.com       2.214                1.608
+www.starbucks.com  1.200                0.966
+www.wayfair.com    2.223                1.313

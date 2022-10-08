@@ -1,0 +1,16 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"2828.1598468151&_r=1&gtm=2wg8c05NV7GK&z=1410109139","origPath":"/r/collect?v=1&_v=j83&a=1402568051&t=pageview&_s=1&dl=https%3A%2F%2Fwww.ny.gov%2F&ul=en-gb&de=UTF-8&dt=The%20Official%20Website%20of%20New%20York%20State&sd=24-bit&sr=411x731&vp=411x731&je=0&_u=YEBAAAAB~&jid=94319179&gjid=1943924299&cid=388844881.1598468151&tid=UA-1481478-55&_gid=2099852828.1598468151&_r=1&gtm=2wg8c05NV7GK&z=1410109139","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '2828.1598468151&_r=1&gtm=2wg8c05NV7GK&z=1410109139',
+  origPath: '/r/collect?v=1&_v=j83&a=1402568051&t=pageview&_s=1&dl=https%3A%2F%2Fwww.ny.gov%2F&ul=en-gb&de=UTF-8&dt=The%20Official%20Website%20of%20New%20York%20State&sd=24-bit&sr=411x731&vp=411x731&je=0&_u=YEBAAAAB~&jid=94319179&gjid=1943924299&cid=388844881.1598468151&tid=UA-1481478-55&_gid=2099852828.1598468151&_r=1&gtm=2wg8c05NV7GK&z=1410109139',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

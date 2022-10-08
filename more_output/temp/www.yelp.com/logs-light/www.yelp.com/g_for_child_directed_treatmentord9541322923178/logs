@@ -1,0 +1,16 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"g_for_child_directed_treatment=;ord=9541322923178?","origPath":"/activityi;src=6372968;type=invmedia;cat=qr3hlsqk;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=9541322923178?","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'g_for_child_directed_treatment=;ord=9541322923178?',
+  origPath: '/activityi;src=6372968;type=invmedia;cat=qr3hlsqk;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=9541322923178?',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

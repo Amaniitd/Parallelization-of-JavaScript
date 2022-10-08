@@ -1,0 +1,16 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"125&_r=1&cd15=%2F&cd18=false&cd28=none&z=328097771","origPath":"/r/collect?v=1&_v=j83&aip=1&a=1313354323&t=pageview&_s=1&dl=https%3A%2F%2Fm.yelp.com%2F&dp=%2Fhome%2F&ul=en-gb&de=UTF-8&dt=Restaurants%2C%20Dentists%2C%20Bars%2C%20Beauty%20Salons%2C%20Doctors%20-%20Yelp&sd=24-bit&sr=411x731&vp=411x731&je=0&_u=YIDAAAAB~&jid=1168609743&gjid=1221101843&cid=0E1F3EB18DBF32CB&tid=UA-30501-1&_gid=1443861443.1598471125&_r=1&cd15=%2F&cd18=false&cd28=none&z=328097771","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '125&_r=1&cd15=%2F&cd18=false&cd28=none&z=328097771',
+  origPath: '/r/collect?v=1&_v=j83&aip=1&a=1313354323&t=pageview&_s=1&dl=https%3A%2F%2Fm.yelp.com%2F&dp=%2Fhome%2F&ul=en-gb&de=UTF-8&dt=Restaurants%2C%20Dentists%2C%20Bars%2C%20Beauty%20Salons%2C%20Doctors%20-%20Yelp&sd=24-bit&sr=411x731&vp=411x731&je=0&_u=YIDAAAAB~&jid=1168609743&gjid=1221101843&cid=0E1F3EB18DBF32CB&tid=UA-30501-1&_gid=1443861443.1598471125&_r=1&cd15=%2F&cd18=false&cd28=none&z=328097771',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

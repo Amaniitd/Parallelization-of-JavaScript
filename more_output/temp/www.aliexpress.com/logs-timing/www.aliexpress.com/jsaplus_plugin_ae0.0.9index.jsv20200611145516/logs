@@ -1,0 +1,24 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"js,aplus_plugin_ae/0.0.9/index.js?v=20200611145516","origPath":"/g/alilog/??s/8.14.1/plugin/aplus_client.js,aplus_cplugin/0.7.11/toolkit.js,aplus_cplugin/0.7.11/monitor.js,s/8.14.1/plugin/aplus_ae.js,s/8.14.1/plugin/aplus_ac.js,s/8.14.1/aplus_int.js,s/8.14.1/plugin/aplus_spmact.js,aplus_plugin_ae/0.0.9/index.js?v=20200611145516","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'js,aplus_plugin_ae/0.0.9/index.js?v=20200611145516',
+  origPath: '/g/alilog/??s/8.14.1/plugin/aplus_client.js,aplus_cplugin/0.7.11/toolkit.js,aplus_cplugin/0.7.11/monitor.js,s/8.14.1/plugin/aplus_ae.js,s/8.14.1/plugin/aplus_ac.js,s/8.14.1/aplus_int.js,s/8.14.1/plugin/aplus_spmact.js,aplus_plugin_ae/0.0.9/index.js?v=20200611145516',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: 
+   [ '/?tracelog=wwwhome2mobilesitehome-script-6-function-196-5-209-15',
+     '/?tracelog=wwwhome2mobilesitehome-script-2-function-102-9-102-3521',
+     '/?tracelog=wwwhome2mobilesitehome-script-1-function-99-216-99-266',
+     '/?tracelog=wwwhome2mobilesitehome-script-2-function-102-2849-102-3372',
+     '/?tracelog=wwwhome2mobilesitehome-script-1-function-98-9-99-427',
+     '/?tracelog=wwwhome2mobilesitehome-script-0-function-96-13-96-82',
+     '/?tracelog=wwwhome2mobilesitehome-script-3-function-110-37-110-934' ] }
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 0
+[rtiDebugInfo]0 0

@@ -1,0 +1,32 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/pagead/conversion.js","origPath":"/pagead/conversion.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/pagead/conversion.js',
+  origPath: '/pagead/conversion.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: 
+   [ 'www.yelp.com/-script-12-function-138-234-138-1290',
+     'www.yelp.com/-script-2-function-32-13-41-19',
+     'www.yelp.com/-script-10-function-122-29-129-11',
+     'www.yelp.com/-script-3-function-45-17-45-780',
+     'www.yelp.com/-script-18-function-142-29-149-11',
+     'www.yelp.com/-script-5-function-62-9-64-53',
+     'www.yelp.com/-script-9-function-102-13-111-19',
+     'www.yelp.com/-script-4-function-57-9-59-48',
+     'www.yelp.com/-script-0-function-4-29-11-11',
+     'www.yelp.com/-script-1-function-26-33-26-375',
+     'www.yelp.com/-script-8-function-97-33-97-218',
+     'www.yelp.com/-script-17-function-140-728-140-798',
+     'www.yelp.com/-script-6-function-65-96-65-251',
+     '/analytics.js-function-1-1-85-409',
+     'www.yelp.com/-script-6-function-65-22-65-259' ] }
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 0
+[rtiDebugInfo]0 0

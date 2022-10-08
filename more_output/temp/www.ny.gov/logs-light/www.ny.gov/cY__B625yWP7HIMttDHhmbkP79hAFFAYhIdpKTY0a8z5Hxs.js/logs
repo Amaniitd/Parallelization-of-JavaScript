@@ -1,0 +1,17 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"cY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js","origPath":"/sites/ny.gov/files/advagg_js/js__NJFudKMG1NrB6M6bn3tvDT2ooWpN205holFEYaxYA28__KPtLhEmnilnCu64H9hTaWgycZ0Q85UtxLODdv2LX1cY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'cY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js',
+  origPath: '/sites/ny.gov/files/advagg_js/js__NJFudKMG1NrB6M6bn3tvDT2ooWpN205holFEYaxYA28__KPtLhEmnilnCu64H9hTaWgycZ0Q85UtxLODdv2LX1cY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[rtiDebugInfo]0 198

@@ -1,0 +1,21 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"BY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js","origPath":"/sites/ny.gov/files/advagg_js/js__SlxZR0T0y0knhPGspoKKlEQqbk_RdNNsHwLrlCQRTSo__QI67zyfK9zzODzT-oYGZm-2b_Ea7gZx7XN-ZAvlRlBY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'BY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js',
+  origPath: '/sites/ny.gov/files/advagg_js/js__SlxZR0T0y0knhPGspoKKlEQqbk_RdNNsHwLrlCQRTSo__QI67zyfK9zzODzT-oYGZm-2b_Ea7gZx7XN-ZAvlRlBY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+function source is  function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.type='text/javascript';j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';j.async=true;f.parentNode.insertBefore(j,f);}
+function source is  function __HORCRUX__(){ (function(w,d,s,l,i){ 
+ try {__tracer.cacheInit("BY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-1-26-1-344",false);
+w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.type='text/javascript';j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';j.async=true;f.parentNode.insertBefore(j,f);
+ 
+ } finally {__tracer.exitFunction("BY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-1-26-1-344",true);
+ }})(window,window.document,'script','dataLayer','GTM-5NV7GK');; }
+[rtiDebugInfo]0 2

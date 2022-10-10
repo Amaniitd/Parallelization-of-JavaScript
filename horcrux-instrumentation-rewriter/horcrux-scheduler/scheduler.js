@@ -97,6 +97,7 @@ function __defineScheduler__() {
      * executing the previous function.
      */
     function executeNextFunction() {
+        console.log("length of queue: " + horcruxQueue.length);
         if (horcruxQueue.length == 0) {
             return;
         }

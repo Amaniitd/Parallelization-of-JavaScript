@@ -1,7 +1,7 @@
 
 
 var falafel = require('falafel');
-console.log(require.resolve('falafel'));
+// console.log(require.resolve('falafel'));
 // var falafelMap = require('falafel-map');
 var fs = require('fs');
 var basename = require('path').basename;

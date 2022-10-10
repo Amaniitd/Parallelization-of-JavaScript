@@ -1,0 +1,45 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"r%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D","origPath":"/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'r%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D',
+  origPath: '/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: 
+   [ '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-154472-8-154685',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-5-198911-5-198994',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-187376-1-187485',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-566949-8-566989',
+     'www.netflix.com/-script-1-function-1-3406-1-3667',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-5-199439-5-199646',
+     'www.netflix.com/-script-4-function-1-4401-1-7317',
+     'www.netflix.com/-script-3-function-1-3972-1-4379',
+     'www.netflix.com/-script-7-function-1-7964-1-8230',
+     'www.netflix.com/-script-10-function-3-21952-3-311544',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-387488-8-387752',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-1-8-611976',
+     'www.netflix.com/-script-0-function-1-1277-1-1870',
+     'www.netflix.com/-script-13-function-4-1-12-3',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-3-26627-3-26976',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-5-80407-5-80497',
+     'www.netflix.com/-script-5-function-1-7339-1-7490',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-103302-1-103324',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-160292-8-160425',
+     'www.netflix.com/-script-8-function-1-8252-1-8428',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-169879-8-170026',
+     '4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none-function-1-1-1-9370',
+     'www.netflix.com/-script-6-function-1-7512-1-7942',
+     '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-5633-1-5705',
+     'www.netflix.com/-script-2-function-1-3689-1-3950',
+     'www.netflix.com/-script-13-function-5-59-11-5' ] }
+Pattern for current instrumentation: record
+Instrumenting a html file
+List of functions to be instrumented: 26
+Only instrumenting the following functions from the current script 
+[rtiDebugInfo]0 0

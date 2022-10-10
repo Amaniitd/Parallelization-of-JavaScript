@@ -1,0 +1,15 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none","origPath":"/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/bootstrap.js,common%7Cbootstrap.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none',
+  origPath: '/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/bootstrap.js,common%7Cbootstrap.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+[Static Analyzer] Unhandled: setTimeout in source code
+[rtiDebugInfo]0 44

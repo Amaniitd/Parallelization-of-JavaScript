@@ -1,0 +1,16 @@
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+/home/eone/Downloads/horcrux-osdi21/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"52C%2522referrer%2522%253A%2522nmLanding%2522%257D","origPath":"/ddm/fls/i/src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766;~oref=https://ae.nflximg.net/monet/scripts/netflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{ useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '52C%2522referrer%2522%253A%2522nmLanding%2522%257D',
+  origPath: '/ddm/fls/i/src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766;~oref=https://ae.nflximg.net/monet/scripts/netflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window' }
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

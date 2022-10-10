@@ -419,6 +419,7 @@ function instrumentJavaScript(src, fondueOptions, jsInHTML) {
         dumpStaticInformation_uncacheable(fondueOptions);
         computeRTITimeMatched();
     }
+    src = removeUseStrict(src);
     return src;
 }
 

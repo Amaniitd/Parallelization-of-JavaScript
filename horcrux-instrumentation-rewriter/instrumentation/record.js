@@ -78,7 +78,7 @@ let fala = function () {
     };
 };
 function removeUseStrict(code) {
-    return code.replace(/"use strict";/, '');
+    return code.replace(/"use strict";/, '').replace(/'use strict';/, '');
 }
 
 function instrumentHTML(src, fondueOptions) {

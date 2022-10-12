@@ -208,7 +208,10 @@ def instrument(root, fileType, output_directory, args, file):
     valid_file_name = get_valid_filename(filename)
     _log_path = os.path.join(args.logDir, output_directory, valid_file_name)
     if (not os.path.exists(_log_path)):
-        os.makedirs(_log_path)
+        try:
+            os.makedirs(_log_path)
+        except:
+            pass
 
     # /***** HORCRUX *****/
     if (args.instOutput == "rewrite"):
@@ -324,11 +327,8 @@ def main(args):
         args.input += '/'
     output_directory = args.input.split('/')[-2]
     print output_directory
-
     subprocess.Popen("mkdir -p {}".format(args.output), shell=True)
     subprocess.Popen("mkdir -p {}".format(os.path.join(args.output, output_directory)), shell=True)
-
-
     http_response = http_record_pb2.RequestResponse()
 
     for root, folder, files in os.walk(args.input):

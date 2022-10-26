@@ -331,8 +331,10 @@ var traceFilter = function (content, options) {
                                 JSON.stringify(fnDefs) + ';\n' +
                                 '\tconst signature = ' +
                                 JSON.stringify(dependencies) + ';\n' +
+                                '\tconst NoOfEdges = ' +
+                                JSON.stringify(rootSignature['dependencies']) + ';\n' +
                                 `\t__callScheduler__("${index}", ` +
-                                `body, signature, touchDOM = ${touchDOM});\n` +
+                                `body, signature, NoOfEdges, touchDOM = ${touchDOM});\n` +
                                 '}';
                 // console.log(newBody);
                 update(node.body, newBody);

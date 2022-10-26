@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>No internet connection</title>
+    <meta name="theme-color" content="#F2F2F2">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+      @font-face {
+        font-family:"Proxima Nova";
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        src: local("ProximaNova-Regular"), url("https://cbsnews4.cbsistatic.com/fly/bundles/cbsnewscontent/fonts/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"),url("https://cbsnews4.cbsistatic.com/fly/bundles/cbsnewscontent/fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff")}
+
+
+      html,body {
+        margin:0;
+        padding:0
+      }
+
+      html {
+        background: #F2F2F2;
+        color: #101010;
+        font-size: 16px;
+
+        /**
+         * iOS specific styles to enable dynamic font size,
+         * based on OS-level font size, adjustable by user
+         *
+           * font-family: UICTFontTextStyleBody;
+           * font-size: 17px;
+           * font-style: normal;
+           * font-variant-caps: normal;
+           * font-weight: normal;
+           */
+        font: -apple-system-body;
+        -webkit-font-smoothing: antialiased;
+      }
+
+
+      body {
+        font-size: 1.19rem;
+        line-height: 1.45;
+        font-weight: 400;
+      }
+
+      #offline {
+        font-family: "Proxima Nova",Roboto,Helvetica,sans-serif;
+        font-size: 1rem;
+        line-height: 1.25;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        width: 250px;
+        height: 250px;
+
+        text-align: center;
+      }
+
+      svg {
+        display: block;
+        width: 100px;
+        height: 66px;
+        fill: #7F7F7F;
+        margin: 20px auto;
+      }
+
+      strong {
+        display: block;
+        margin: 20px 0 10px 0;
+      }
+
+      a {
+        border: 1px solid #7F7F7F;
+        color: #7F7F7F;
+
+        display: inline-block;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 2px 10px;
+        border-radius: 3px;
+        margin: 15px auto 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+
+      a:hover {
+        border: 1px solid #101010;
+        color: #101010;
+
+        box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="offline">
+      <svg viewBox="0 0 100 66" class="site-logo__icon site-logo__icon--desktop" aria-hidden="true">
+        <use xlink:href="#logo-cbs-news-vertical"></use>
+      </svg>
+      <strong>No internet connection</strong>
+      Please check your connection and try again.<br>
+      <a href="javascript:reload();">Refresh</a>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
+      <defs>
+        <path id="logo-part-eye-cbs" d="M14.87.543c8.213 0 14.87 6.654 14.87 14.863 0 8.208-6.657 14.863-14.87 14.863-8.212 0-14.869-6.655-14.869-14.863C.001 7.197 6.658.543 14.871.543zm-.005 23.608c6.21.027 11.094-4.033 13.695-8.837-2.601-4.804-7.538-8.652-13.695-8.652-6.051 0-11.04 3.874-13.695 8.652 2.628 4.804 7.591 8.811 13.695 8.837zm.003-1.402a7.342 7.342 0 0 1-7.343-7.34 7.342 7.342 0 0 1 7.343-7.34 7.342 7.342 0 0 1 7.343 7.34 7.342 7.342 0 0 1-7.343 7.34zm23.015-7.23c0 5.328.438 8.887 1.17 11.051.22.65.452 1.13.69 1.48.087.126.17.228.253.318.045.048.157.158.163.165.835.886 2.697 1.595 4.186 1.632h.153c4.017.008 6.727-4.27 8.895-10.801l.358-1.078v12.557l-.343-.599c-.69-1.205-1.06-1.531-1.858-1.531-.403 0-.957.165-1.675.477-.202.088-.415.186-.657.303-.141.067-.912.447-1.1.535-.94.44-2.21.773-3.389.8l-.058.002h-.032l-.065.001c-6.859 0-12.753-5.9-12.753-15.312 0-8 7.054-15.312 12.753-15.312 1.228 0 2.567.339 3.55.799.188.088.958.467 1.1.536.242.116.455.214.657.302.718.312 1.272.478 1.675.478.812 0 1.198-.363 1.699-1.514L53.607 0v12.937l-.36-1.274C51.546 5.65 48.55.859 44.503.859c-4.075 0-6.621 4.807-6.621 14.66zm41.379 6.34c0 5.038-5.37 8.528-10.88 8.528H55.155l-.183-.183v-.289l.183-.183h3.28V1.399h-3.28l-.183-.183V.927l.183-.183H67.72c5.639 0 10.066 3.347 10.066 7.233 0 3.21-1.599 5.233-6.018 6.368 4.119.79 7.495 3.225 7.495 7.515zm-11.077 7.873v.183-.183c3.782 0 5.364-1.854 5.364-7.46 0-5.48-1.7-7.52-5.141-7.605h-3.836v15.065h3.613zm.459-15.72c2.688 0 3.75-1.177 3.75-6.127h.184-.184c0-5.05-1.458-6.486-4.817-6.486h-3.005v12.613h4.072zM97.366.744l.184.183.002 12.105-.362-1.393a36.32 36.32 0 0 0-.467-1.57 34.06 34.06 0 0 0-1.313-3.456c-.946-2.11-1.974-3.666-3.05-4.431-3.402-2.417-7.722-.651-7.72 4.349.002 2.338 1.6 3.967 4.398 5.15.728.307 1.483.564 2.388.829a73.57 73.57 0 0 1 1.713.5c.18.064 1.097.34 1.344.42.655.214 1.216.44 1.755.726 2.388 1.264 3.762 3.42 3.762 6.947 0 5.644-4.859 9.742-9.089 9.742-.634 0-1.328-.088-2.091-.253-.76-.165-1.547-.396-2.496-.717-.335-.114-1.62-.566-1.904-.66-.595-.198-.967-.291-1.188-.291-.427 0-.835.177-1.21.475a2.705 2.705 0 0 0-.48.48l-.148.076h-.33l-.183-.184V18.666l.183-.183h.361l.184.179c.005.217.067.672.237 1.374.286 1.178.784 2.617 1.545 4.324 1.592 3.571 4.555 5.707 7.353 5.707 3.146 0 5.493-1.978 5.493-5.68 0-2.151-1.612-3.699-4.509-4.95-1.012-.436-3.868-1.403-3.986-1.452-.14-.057-.983-.382-1.25-.492a12.166 12.166 0 0 1-1.479-.713c-2.474-1.426-3.866-3.721-3.866-7.522 0-5.487 4.36-9.073 8.083-9.073.455 0 .941.072 1.47.208.574.148 1.144.353 1.939.68 1.967.805 2.09.85 2.573.859.772.014 1.234-.186 1.472-.517a.834.834 0 0 0 .167-.482l.184-.19h.331z" />
+
+        <path id="logo-part-news" d="M76.618 1.402l-.185-.186v-.29l.185-.186h6.848l.185.186-.001.291-.186.185h-3.13L71.12 31.409l-.177.131h-.602l-.177-.132L64.26 11.65 58.2 31.41l-.177.13h-.643l-.177-.132-9.006-30.006H46.07v6.512l-.185.185h-.652l-.183-.153a8.196 8.196 0 0 0-.271-1.023 10.36 10.36 0 0 0-1.04-2.266 8.365 8.365 0 0 0-.607-.856c-.818-1.01-2.48-1.996-3.851-2.4h-6.174v12.65a87.94 87.94 0 0 1 1.396 0l.658.001c1.374 0 3.378-1.19 3.879-2.688a67.141 67.141 0 0 0 1.06-3.498l.178-.137h.654l.186.185v12.812l-.186.186h-.757l-.18-.144c-.036-.15-.102-.415-.196-.757a23.605 23.605 0 0 0-.52-1.667c-.364-1.017-.736-1.767-1.089-2.12-.97-.969-1.97-1.428-3.093-1.428h-1.99V29.72l6.783.003c1.392-.428 2.672-1.212 4.11-2.854.531-.606 1.003-1.395 1.417-2.323.36-.81.658-1.68.894-2.55.142-.522.231-.927.274-1.157l.182-.151h.574l.186.185v9.318l-.186.185H24.327l-.185-.185v-.289l.185-.185 3.165-.002V1.402h-5.747V30.19l-.185.185h-1.092l-.16-.09L4.416 3.703l-.003 26.01h3.165l.185.186v.291l-.185.185H.585L.4 30.19v-.291l.185-.185h3.168L3.75 1.402H.585L.4 1.216v-.29L.585.74h8.836l.158.09L21.08 19.783l.003-18.382H17.92l-.186-.186v-.29L17.92.74h39.327l.185.185v.295l-.185.185-2.926-.003 6.03 20.693 3.566-11.499-2.834-9.194H58.12l-.185-.186v-.29L58.12.74h12.09l.185.185v.291l-.186.186h-3.072l6.123 20.716 6.348-20.714-2.99-.002zm8.063 5.04c0 2.343 1.594 3.976 4.385 5.16.726.309 1.479.566 2.382.832-.088-.026 1.45.411 1.708.502.18.063 1.093.338 1.34.42.653.214 1.213.441 1.75.727 2.382 1.267 3.752 3.429 3.752 6.962 0 5.656-4.845 9.763-9.064 9.763-.632 0-1.325-.088-2.086-.254-.757-.165-1.542-.397-2.49-.719-.333-.114-1.614-.567-1.897-.661-.594-.198-.965-.292-1.185-.292-.425 0-.833.178-1.207.477a2.703 2.703 0 0 0-.477.48l-.149.076h-.329l-.183-.183V18.627l.183-.184h.423l.184.179c.005.217.067.672.236 1.372.284 1.176.778 2.613 1.534 4.316 1.582 3.564 4.524 5.695 7.302 5.695 3.124 0 5.455-1.973 5.455-5.667 0-2.149-1.601-3.693-4.478-4.941-1.006-.436-3.843-1.402-3.96-1.45-.139-.057-.976-.381-1.241-.491a12.06 12.06 0 0 1-1.47-.712c-2.457-1.423-3.84-3.714-3.84-7.509C81.26 3.76 85.59.18 89.29.18c.944 0 1.813.202 3.125.647 1.711.58 1.873.628 2.372.628.536 0 1.05-.183 1.521-.49.285-.185.491-.37.599-.489l.136-.06h.329l.183.183.048 10.96-.184.184h-.376l-.183-.172c-.164-2.763-2.132-7.811-4.481-9.488-3.124-2.23-7.697-.036-7.697 4.358z" />
+
+        <g id="logo-cbs-news-vertical" fill-rule="evenodd">
+            <use xlink:href="#logo-part-eye-cbs" />
+            <use xlink:href="#logo-part-news" transform="translate(0, 34)" />
+        </g>
+      </defs>
+    </svg>
+    <script>
+      function UUIDv4 () {
+        let uuid = '';
+        for (let i = 0; i < 32; i++) {
+          let random = Math.random() * 16 | 0
+
+          if (i == 8 || i == 12 || i == 16 || i == 20) {
+            uuid += '-'
+          }
+          uuid += (i == 12 ? 4 : i == 16 ? random & 3 | 8 : random).toString(16)
+        }
+
+        return uuid;
+      }
+
+      function reload () {
+          const now = new Date;
+
+          const deviceCookie = window.document.cookie.match(/fly_device=([a-z0-9-]+)/);
+          const device = deviceCookie && deviceCookie[1];
+          // let brandPlatformId = 'cbsnews_site_' + ({'desktop': 'desktop', 'mobile': 'mweb'})[device];
+
+          let visitorId = window.UUIDv4();
+          const vidCookie = window.document.cookie.match(/fly_vid=([a-z0-9-]+)/);
+          if (vidCookie && vidCookie[1]) {
+              visitorId = vidCookie[1];
+          }
+
+          window.document.cookie = "fly_vid=" + visitorId + ';domain=.' + window.document.domain + ';path=/;max-age=31536000';
+
+          var rPlaceholder = /__([a-z0-9]+)__/gi;
+          var pixel = 'https://saa.cbsi.com/b/ss/cbsicbsnewssite/1/s?AQB=1&g=__pageUrl__&gn=__pageName__&c=24&ce=UTF-8&ch=offline&ndh=0&server=www.cbsnews.com&vid=__visitorId__&c.=&brandPlatformId=__brandPlatformId__&.c=&c3=D%3Dv3&c5=D%3Dv5&c6=D%3Dv6&c7=D%3Dv7&c9=D%3DUser-Agent&c10=D%3Dv10&c11=D%3Dv11&c24=D%3Dv24&c30=D%3Dv30&v1=__brandPlatformId__&v3=responsive+web%7C%7C%7C__device__&v5=cbsicbsnewssite&v6=D%3Dh1&v7=D%3Dg&v9=D%3DUser-Agent&v10=__pageType__&v11=D%3Dch%2B%22%3A%22%2Bv10&v24=__pageViewGuid__&r=__referrer__&AQE=1'.replace(rPlaceholder, function (match) {
+              return ({
+                  // __brandPlatformId__:  brandPlatformId,
+                  __device__:           device,
+                  __pageName__:         'cbsnews:' + window.location.pathname,
+                  __pageType__:         'offline_page',
+                  __pageUrl__:          window.location.href,
+                  __pageViewGuid__:     window.UUIDv4(),
+                  __referrer__:         window.encodeURIComponent(window.document.referrer),
+                  __userAgent__:        window.encodeURIComponent(window.navigator.userAgent),
+                  __visitorId__:        visitorId,
+              })[match];
+          });
+
+          window.navigator.sendBeacon(pixel);
+
+          window.location.reload();
+      }
+    </script>
+  </body>
+</html>

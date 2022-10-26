@@ -1,0 +1,249 @@
+{
+  "type": "object",
+  "value": {
+    "/metrics/target/scripts/1.0/at.js-function-7-1-16-107_count0": [
+      98.5,
+      119.09999999962747
+    ],
+    "www.apple.com/-script-1-function-56-4-57-37_count0": [
+      125.40000000037253,
+      126.19999999925494
+    ],
+    "/v/home/l/built/scripts/head.built.js-function-1-1-1-49391_count0": [
+      148.80000000074506,
+      157.59999999962747
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-1-5-10096_count0": [
+      227.5,
+      250.30000000074506
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-14113-4-14179_count0": [
+      250.69999999925494,
+      252.40000000037253
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3081-1-3578_count0": [
+      252.59999999962747,
+      257
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-2227-1-2370_count0": [
+      256.09999999962747,
+      256.09999999962747
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-1-1-270427_count0": [
+      258.30000000074506,
+      266.40000000037253
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-2227-1-2370_count1": [
+      345.90000000037253,
+      345.90000000037253
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-2227-1-2370_count2": [
+      345.90000000037253,
+      345.90000000037253
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-2227-1-2370_count3": [
+      346.90000000037253,
+      346.90000000037253
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3372-1-3576_count0": [
+      347.80000000074506,
+      348.30000000074506
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3585-1-3597_count0": [
+      348.59999999962747,
+      348.59999999962747
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3617-1-3774_count0": [
+      348.59999999962747,
+      348.59999999962747
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-4835-1-4866_count0": [
+      348.69999999925494,
+      348.69999999925494
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-8482-4-10242_count0": [
+      348.69999999925494,
+      350.59999999962747
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3081-1-3578_count1": [
+      350.59999999962747,
+      352.30000000074506
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3585-1-3597_count1": [
+      352.40000000037253,
+      352.40000000037253
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3617-1-3774_count1": [
+      352.40000000037253,
+      352.5
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-4914-1-4944_count0": [
+      352.80000000074506,
+      352.80000000074506
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-13632-4-13831_count0": [
+      352.80000000074506,
+      352.90000000037253
+    ],
+    "balfooter/6/en_US/scripts/ac-globalfooter.built.js-function-1-1-1-9109_count0": [
+      377.5,
+      380.09999999962747
+    ],
+    "leswitcher/3/en_US/scripts/localeswitcher.built.js-function-1-1-7-7013_count0": [
+      383.30000000074506,
+      399.80000000074506
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-1-1-179913_count0": [
+      403.09999999962747,
+      510.80000000074506
+    ],
+    "/ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-1-1-383618_count0": [
+      518.6999999992549,
+      527.6999999992549
+    ],
+    "/metrics/data-relay/1.1.4/scripts/data-relay.js-function-1-1-1-40_count0": [
+      530.0999999996275,
+      530.0999999996275
+    ],
+    "/metrics/data-relay/1.1.4/scripts/data-relay.js-function-1-1374-1-15997_count0": [
+      530.0999999996275,
+      530.1999999992549
+    ],
+    "/metrics/data-relay/1.1.4/scripts/auto-relay.js-function-1-1-1-238_count0": [
+      532.0999999996275,
+      534
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-74856-1-75830_count0": [
+      534.1999999992549,
+      534.5999999996275
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-84212-1-86952_count0": [
+      534.9000000003725,
+      541.0999999996275
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-40326-1-40627_count0": [
+      541.4000000003725,
+      542
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-171381-1-171400_count0": [
+      575.8000000007451,
+      598.8000000007451
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-170602-1-170661_count0": [
+      599.4000000003725,
+      599.4000000003725
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-213283-1-213637_count0": [
+      599.9000000003725,
+      600.1999999992549
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-184047-1-184165_count0": [
+      600.4000000003725,
+      600.4000000003725
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-77515-1-77581_count0": [
+      600.4000000003725,
+      605.6999999992549
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-184047-1-184165_count1": [
+      605.6999999992549,
+      605.6999999992549
+    ],
+    "/v/home/l/built/scripts/head.built.js-function-1-6167-1-6184_count0": [
+      605.6999999992549,
+      605.9000000003725
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-130825-1-131058_count0": [
+      606.3000000007451,
+      610.8000000007451
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-17210-4-17255_count0": [
+      611,
+      612.3000000007451
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-74856-1-75830_count1": [
+      612.8000000007451,
+      612.8000000007451
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-84212-1-86952_count1": [
+      612.8000000007451,
+      618
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-23404-1-23645_count0": [
+      625.0999999996275,
+      625.1999999992549
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-23404-1-23645_count1": [
+      625.5,
+      625.5
+    ],
+    "ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-23404-1-23645_count2": [
+      626.3000000007451,
+      631
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-74856-1-75830_count2": [
+      634,
+      634.0999999996275
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-84212-1-86952_count2": [
+      634.0999999996275,
+      634.5999999996275
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-74856-1-75830_count3": [
+      635.6999999992549,
+      635.6999999992549
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-74856-1-75830_count4": [
+      647.5999999996275,
+      647.6999999992549
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-44690-1-44738_count0": [
+      1042.4000000003725,
+      1042.4000000003725
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-44690-1-44738_count1": [
+      1042.5,
+      1042.5
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-44690-1-44738_count2": [
+      1042.5,
+      1042.5
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-44690-1-44738_count3": [
+      1042.5,
+      1042.5
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-97447-1-97526_count0": [
+      5600.5999999996275,
+      5600.800000000745
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-96908-1-97016_count0": [
+      5600.5999999996275,
+      5600.800000000745
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-96908-1-97016_count1": [
+      5611,
+      5611
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-184047-1-184165_count2": [
+      5611.0999999996275,
+      5615.699999999255
+    ],
+    "/v/home/l/built/scripts/main.built.js-function-1-77515-1-77581_count1": [
+      5615.699999999255,
+      5615.699999999255
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-184047-1-184165_count3": [
+      5615.699999999255,
+      5616.0999999996275
+    ],
+    "/ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-383519-1-383535_count0": [
+      5618.699999999255,
+      5618.699999999255
+    ],
+    "etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-137289-1-137884_count0": [
+      5618.699999999255,
+      5619.199999999255
+    ]
+  }
+}

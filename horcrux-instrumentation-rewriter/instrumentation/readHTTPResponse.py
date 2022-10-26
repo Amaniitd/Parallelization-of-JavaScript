@@ -240,7 +240,7 @@ def instrument(root, fileType, output_directory, args, file):
     log_file = open(os.path.join(_log_path, "logs"), "w")
     error_file = open(os.path.join(_log_path, "errors"), "w")
     # if (args.instOutput != "ND" or fileType == "html"):
-    # print "Executing ", command
+    print "Executing ", command
     cmd = subprocess.call(command, stdout=log_file, stderr=error_file, shell=True)
 
     try:
@@ -312,7 +312,10 @@ def instrument(root, fileType, output_directory, args, file):
 
     outputFile.close()
     tmpFile.close()
-
+    # move temp file to output directory
+    # temp_folder = os.path.join(args.output, "temp")
+    # if (os.path.exists(temp_folder)):
+        
     subprocess.call("rm {} {} {}".format(TEMP_FILE, TEMP_FILE_zip, TEMP_FILE +".info"),stderr=open("/dev/null","r"), shell=True)
     # os._exit(0)
 

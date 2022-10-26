@@ -1,0 +1,15 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"api/search/bar/recommend?callback=__zoro_request_1","origPath":"/api/search/bar/recommend?callback=__zoro_request_1","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'api/search/bar/recommend?callback=__zoro_request_1',
+  origPath: '/api/search/bar/recommend?callback=__zoro_request_1',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+[rtiDebugInfo]0 1

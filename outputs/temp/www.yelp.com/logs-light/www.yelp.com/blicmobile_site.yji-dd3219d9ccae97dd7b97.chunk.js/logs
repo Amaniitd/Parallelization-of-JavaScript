@@ -1,0 +1,15 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"blic/mobile_site.yji-dd3219d9ccae97dd7b97.chunk.js","origPath":"/assets/public/mobile_site.yji-dd3219d9ccae97dd7b97.chunk.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'blic/mobile_site.yji-dd3219d9ccae97dd7b97.chunk.js',
+  origPath: '/assets/public/mobile_site.yji-dd3219d9ccae97dd7b97.chunk.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+[rtiDebugInfo]0 26

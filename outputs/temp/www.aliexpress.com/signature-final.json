@@ -1,0 +1,137 @@
+{
+  "/?tracelog=wwwhome2mobilesitehome-script-1-function-99-216-99-266": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;_blReport"
+      ],
+      [
+        "global_reads",
+        ";;;;__bl"
+      ],
+      [
+        "global_reads",
+        ";;;;__bl;;;;api"
+      ],
+      [
+        "global_reads",
+        ";;;;__bl;;;;pipe"
+      ],
+      [
+        "global_writes",
+        ";;;;__bl;;;;pipe"
+      ],
+      [
+        "global_writes",
+        ";;;;__bl;;;;pipe;;;;0"
+      ],
+      [
+        "global_writes",
+        ";;;;__bl;;;;pipe;;;;length"
+      ]
+    ],
+    "time": 0
+  },
+  "/?tracelog=wwwhome2mobilesitehome-script-1-function-98-9-99-427": {
+    "sig": [
+      [
+        "global_writes",
+        ";;;;__bl"
+      ],
+      [
+        "global_writes",
+        ";;;;_blReport"
+      ],
+      [
+        "global_reads",
+        ";;;;addEventListener"
+      ]
+    ],
+    "time": 0
+  },
+  "/?tracelog=wwwhome2mobilesitehome-script-3-function-110-37-110-934": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;dmtrack_pageid"
+      ],
+      [
+        "global_reads",
+        ";;;;document"
+      ],
+      [
+        "global_reads",
+        ";;;;parseInt"
+      ],
+      [
+        "global_writes",
+        ";;;;dmtrack_pageid"
+      ],
+      [
+        "global_reads",
+        ";;;;insertBefore"
+      ],
+      [
+        "global_reads",
+        ";;;;createElement"
+      ]
+    ],
+    "time": 1.300000000745058
+  },
+  "/?tracelog=wwwhome2mobilesitehome-script-2-function-102-2849-102-3372": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;clearTimeout"
+      ],
+      [
+        "closure_/?tracelog=wwwhome2mobilesitehome-script-2-function-102-2388-102-3513_reads",
+        ";;;;p",
+        "{\"xpath\":null}"
+      ],
+      [
+        "closure_/?tracelog=wwwhome2mobilesitehome-script-2-function-102-2388-102-3513_reads",
+        ";;;;p;;;;getResponseHeader",
+        "__func__source"
+      ],
+      [
+        "closure_/?tracelog=wwwhome2mobilesitehome-script-2-function-102-1031-102-3516_reads",
+        ";;;;i",
+        "__func__source"
+      ],
+      [
+        "global_reads",
+        ";;;;performance"
+      ],
+      [
+        "global_reads",
+        ";;;;performance;;;;now"
+      ],
+      [
+        "closure_/?tracelog=wwwhome2mobilesitehome-script-2-function-102-2388-102-3513_reads",
+        ";;;;l",
+        "91.20000000111759;;&;;number"
+      ],
+      [
+        "closure_/?tracelog=wwwhome2mobilesitehome-script-2-function-102-1031-102-3516_writes",
+        ";;;;a",
+        null
+      ],
+      [
+        "closure_/?tracelog=wwwhome2mobilesitehome-script-2-function-102-1031-102-3516_reads",
+        ";;;;c",
+        "null;;&;;object"
+      ]
+    ],
+    "time": 0.6000000014901161
+  },
+  "/?tracelog=wwwhome2mobilesitehome-script-0-function-96-13-96-82": {
+    "sig": [
+      [
+        "global_writes",
+        ";;;;__TIMING__"
+      ]
+    ],
+    "time": 0.2999999988824129
+  }
+}

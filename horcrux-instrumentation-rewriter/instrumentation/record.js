@@ -14,18 +14,14 @@ const PATH_TO_PROPERTIES = "../JSAnalyzer/" + "/tracer.ini";
 properties.parse(PATH_TO_PROPERTIES, {path: true, sections: true}, function(err, obj){ config = obj ;})
 // var fondue = require("fondue");
 var fs =require("fs")
-var path = require("path")
 var program = require('commander');
 var vm = require('vm');
 var deterministic = require('deterministic');
-var UglifyJS = require('uglify-es')
-var jsBeauty = require('js-beautify');
 
 spawnSync("ls ../JSAnalyzer",{shell:true});
 var OMNISTRINGIFYPATH = "../JSAnalyzer/omni.min.js";
 var omniStringify = fs.readFileSync(OMNISTRINGIFYPATH, "utf-8");
-var domJson = fs.readFileSync("../JSAnalyzer/domJson.js","utf-8");
-var worker = fs.readFileSync("../JSAnalyzer/worker.js","utf-8");
+
 const horcrux_scheduler = fs.readFileSync("../horcrux-scheduler/scheduler.js", "utf-8");
 const horcrux_web_worker = fs.readFileSync("../horcrux-scheduler/worker.js", "utf-8");
 

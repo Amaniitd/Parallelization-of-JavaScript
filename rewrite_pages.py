@@ -12,6 +12,7 @@ ITERATION_MAX: int = 1
 def run_command(command: str) -> str:
     # print(f"Running command: {command}")
     completed = subprocess.run(command, shell=True, capture_output=True)
+    print(completed.stdout.decode('utf-8'))
     if completed.returncode != 0:
         raise RuntimeError(f"Failed to run {command}" \
                            f"-> {completed.stderr.decode('utf-8')}")
@@ -326,6 +327,14 @@ def process_final_signatures(output_dir: str):
     print(f">>> [{page_name}] generated signature-final!")
 
 
+def rewrite_new_signature(output_dir):
+
+    # run tmp.js to get the new signature
+
+    command = "node tmp.js " + join(output_dir, 'signature-final.json')
+    run_command(command)
+
+
 def rewrite_page(input_dir: str, inter_dir: str, rewrite_dir: str):
     try:
         print(page_name)
@@ -333,6 +342,7 @@ def rewrite_page(input_dir: str, inter_dir: str, rewrite_dir: str):
         generate_timings(inter_dir)
         generate_signatures(inter_dir)
         process_final_signatures(inter_dir)
+        rewrite_new_signature(inter_dir)
         rewrite_instrument(input_dir, inter_dir)
         copytree(join(inter_dir, 'rewrite'), rewrite_dir)
     except RuntimeError as e:

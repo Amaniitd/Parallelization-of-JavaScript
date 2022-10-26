@@ -1,0 +1,26 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"api/search/bar/recommend?callback=__zoro_request_1","origPath":"/api/search/bar/recommend?callback=__zoro_request_1","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'api/search/bar/recommend?callback=__zoro_request_1',
+  origPath: '/api/search/bar/recommend?callback=__zoro_request_1',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: [
+    '/?tracelog=wwwhome2mobilesitehome-script-1-function-99-216-99-266',
+    '/?tracelog=wwwhome2mobilesitehome-script-1-function-98-9-99-427',
+    '/?tracelog=wwwhome2mobilesitehome-script-6-function-196-5-209-15',
+    '/?tracelog=wwwhome2mobilesitehome-script-3-function-110-37-110-934',
+    '/?tracelog=wwwhome2mobilesitehome-script-2-function-102-9-102-3521',
+    '/?tracelog=wwwhome2mobilesitehome-script-2-function-102-2849-102-3372',
+    '/?tracelog=wwwhome2mobilesitehome-script-0-function-96-13-96-82'
+  ]
+}
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+[rtiDebugInfo]0 0

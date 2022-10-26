@@ -1,0 +1,852 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/js/BrightcoveExperiences.js","origPath":"/js/BrightcoveExperiences.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/js/BrightcoveExperiences.js',
+  origPath: '/js/BrightcoveExperiences.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+function source is  function(experience){if(!experience.params)experience.params={};if(!experience.flashParams)experience.flashParams={};for(var i in window.brightcove.defaultParam){experience.params[i]=window.brightcove.defaultParam[i];}
+for(var j in window.brightcove.defaultFlashParam){experience.flashParams[j]=window.brightcove.defaultFlashParam[j];}
+if(experience.id.length>0){experience.params.flashID=experience.id;}else{experience.id=experience.params.flashID='bcExperienceObj'+(window.brightcove.experienceNum++);}
+experience.params.identifierClassName='BrightcoveExperienceID_'+Math.floor(Math.random()*10000);return experience;}
+function source is  function(experience,file,playerType,secureConnections){var experienceElement;var experienceID=experience.id;var isPubIdInBlacklist=false;var publisherID;var dummyElement;if(window.brightcove.renderExperienceInProcess){function wrapRenderExperience(experience,file,playerType,secureConnections){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-44-741-44-918",false);
+return function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-44-824-44-917",false);
+window.brightcove.renderExperience(experience,file,playerType,secureConnections);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-44-824-44-917",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-44-741-44-918",true);
+ }}
+window.brightcove.renderExperienceQueue.push(wrapRenderExperience(experience,file,playerType,secureConnections));return;}
+window.brightcove.renderExperienceInProcess=true;if(!(experience.params.playerKey||experience.params.playerID||experience.params.playerId||experience.params.playerid)){if(window.console){console.log("No playerID or playerKey was found for the Brightcove player, so it can not be rendered.");}
+return;}
+window.brightcove.experienceObjects[experienceID]=experience;var unminified=(window.brightcove.getParameter("unminified")=="true")||(experience.params.unminified==="true");if(experience.params.includeAPI==="true"&&!(window.brightcove._apiRequested||window.brightcove.api)){var source="/js/api/";if(unminified){source+="unminified/";}
+source+="SmartPlayerAPI.js";var apiInclude=window.brightcove.createElement('script');apiInclude.type="text/javascript";var cdnURL=secureConnections?window.brightcove.secureCDNURL:window.brightcove.cdnURL;apiInclude.src=cdnURL+source;experience.parentNode.appendChild(apiInclude);window.brightcove._apiRequested=true;}
+file+="&startTime="+new Date().getTime();if(experience.params.playerKey){publisherID=window.brightcove.decodePublisherID(experience.params.playerKey);}else{publisherID=experience.params.publisherID;}
+dummyElement=window.brightcove.createDummyElement(playerType,experience,secureConnections);if(experience.params.enableMapping===true||(experience.params.enableMapping!==false&&!isPubIdInBlacklist)){window.brightcove.makeMappingFileRequest(publisherID,function(err,data){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-51-251-52-145",false);
+if(err){if(window.console){console.log(err);}}
+window.brightcove.generateExperienceElement(experience,publisherID,dummyElement,unminified,file,playerType,experienceID,secureConnections,data);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-51-251-52-145",true);
+ }});}else{window.brightcove.generateExperienceElement(experience,publisherID,dummyElement,unminified,file,playerType,experienceID,secureConnections,null);}}
+function source is  function __HORCRUX__(){ if(window.brightcove==window.undefined){ window.brightcove={};window.brightcove.getExperience=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-2-119-2-204",false);
+window.alert("Please import APIModules_all.js in order to use the API.");
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-2-119-2-204",true);
+ }};}
+if(window.brightcove.experiences==window.undefined){window.brightcove.servicesURL='http://c.brightcove.com/services';window.brightcove.cdnURL='http://admin.brightcove.com';window.brightcove.secureCDNURL='https://sadmin.brightcove.com';window.brightcove.secureServicesURL='https://secure.brightcove.com/services';window.brightcove.USservicesURL='http://c.brightcove.com/services';window.brightcove.UScdnURL='http://admin.brightcove.com';window.brightcove.USsecureCDNURL='https://sadmin.brightcove.com';window.brightcove.USsecureServicesURL='https://secure.brightcove.com/services';window.brightcove.pubHost='c.$pubcode$.$zoneprefix$$zone$';window.brightcove.pubSecureHost='secure.$pubcode$.$zoneprefix$$zone$';window.brightcove.pubSubdomain='ariessaucetown.local';window.brightcove.experiences={};window.brightcove.experienceObjects={};window.brightcove.renderExperienceInProcess=false;window.brightcove.createExperiencesQueue=[];window.brightcove.renderExperienceQueue=[];window.brightcove.timeouts={};window.brightcove.flashTimeoutInterval=10000;window.brightcove.htmlTimeoutInterval=10000;window.brightcove.experienceNum=0;window.brightcove.majorVersion=9;window.brightcove.majorRevision=0;window.brightcove.minorRevision=28;window.brightcove.performCdnUrl={'development':'//players.brightcove.net/','qa':'//players.qa.brightcove.net/','staging':'//players.staging.brightcove.net/','production':'//players.brightcove.net/'};window.brightcove.metricsBaseUrl={'development':'//data.aws-qa.rnatest.brightcove.com','qa':'//data.aws-qa.rnatest.brightcove.com','staging':'//data.aws-qa.rnatest.brightcove.com','production':'//metrics.brightcove.com/tracker'};window.brightcove.analyticsErrors={'BAD_PUBLISHER_ID':-100,'UNEXPECTED_MAPPING_RESPONSE':-101,'MAPPINGS_CALL_FAILURE':-102};window.brightcove.servlet={AS3:"federated_f9",HTML:"htmlFederated"};window.brightcove.mappingFileData={};window.brightcove.isLinkDotBrightcoveURL=window.location.hostname.indexOf('link.brightcove.co')>=0;window.brightcove.playerType={FLASH:"flash",HTML:"html",FLASH_IFRAME:"flashIFrame",INSTALLER:"installer",NO_SUPPORT:"nosupport"};window.brightcove.errorCodes={UNKNOWN:0,DOMAIN_RESTRICTED:1,GEO_RESTRICTED:2,INVALID_ID:3,NO_CONTENT:4,UNAVAILABLE_CONTENT:5,UPGRADE_REQUIRED_FOR_VIDEO:6,UPGRADE_REQUIRED_FOR_PLAYER:7,SERVICE_UNAVAILABLE:8};window.brightcove.defaultParam={};window.brightcove.defaultParam.width='100%';window.brightcove.defaultParam.height='100%';window.brightcove.defaultFlashParam={};window.brightcove.defaultFlashParam.allowScriptAccess='always';window.brightcove.defaultFlashParam.allowFullScreen='true';window.brightcove.defaultFlashParam.seamlessTabbing=false;window.brightcove.defaultFlashParam.swliveconnect=true;window.brightcove.defaultFlashParam.wmode='window';window.brightcove.defaultFlashParam.quality='high';window.brightcove.defaultFlashParam.bgcolor='#999999';window.brightcove.hasActiveX=window.brightcove.isIE=(window.ActiveXObject!=window.undefined);window.brightcove.userAgent=window.navigator.userAgent;window.brightcove._queuedAPICalls=[]; window.brightcoveJS=window.brightcove;window.brightcove.createExperiences=function(pEvent,pElementID){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-3-3132-12-83",false);
+var experiences=[];var params;var experience;var flashSupport=window.brightcove.checkFlashSupport();var htmlSupport=window.brightcove.checkHtmlSupport();if(window.brightcove.renderExperienceInProcess){function createExperiencesWrapper(pEvent,pElementID){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-3-3361-3-3489",false);
+return function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-3-3421-3-3488",false);
+window.brightcove.createExperiences(pEvent,pElementID);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-3-3421-3-3488",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-3-3361-3-3489",true);
+ }}
+window.brightcove.createExperiencesQueue.push(createExperiencesWrapper(pEvent,pElementID));return;}
+if(pElementID!=null){experiences.push(window.document.getElementById(pElementID));}else{experiences=window.brightcove.collectExperiences();}
+if(window.brightcove.hasActiveX){params=window.document.getElementsByTagName('param');}
+var urlParams=window.brightcove.cacheUrlParams();var numExperiences=experiences.length;for(var i=0;i<numExperiences;i++){experience=experiences[i];experience=window.brightcove.copyDefaultParams(experience);experience=window.brightcove.copySnippetParams(experience,params);experience=window.brightcove.copyUrlParams(experience,urlParams,numExperiences);var playerType=window.brightcove.determinePlayerType(experience,flashSupport,htmlSupport);var secureConnections=false;if(playerType==window.brightcove.playerType.HTML){secureConnections=experience.params.secureHTMLConnections=="true";}else{secureConnections=experience.params.secureConnections=="true";}
+if(playerType==window.brightcove.playerType.HTML){delete experience.params.linkBaseURL;}else{if(experience.params.includeAPI&&experience.params.templateReadyHandler!=null){experience.params.originalTemplateReadyHandler=experience.params.templateReadyHandler;var handlerName="templateReadyHandler"+experience.id;window.brightcove[handlerName]=(function(id){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-8-343-9-138",false);
+return function(event){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-8-363-9-136",false);
+if(window.brightcove.internal!=null&&window.brightcove.internal._instances[id]!=null){window.brightcove._addModuleToEvent(id,event);}
+var player=window.brightcove.experienceObjects[id];window.brightcove.callHandlerForPlayer(player,"originalTemplateReadyHandler",event);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-8-363-9-136",true);
+ }};
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-8-343-9-138",true);
+ }})(experience.id);experience.params.templateReadyHandler='brightcove["'+handlerName+'"]';}}
+var file=window.brightcove.generateRequestUrl(experience,playerType,secureConnections);if(window.document.location.protocol=="http:"){var event='http://goku.brightcove.com/1pix.gif?';var gokuParams=["dcsuri=/viewer/player_load_req","playerType="+playerType,"playerURL="+window.encodeURIComponent(window.document.location||"")];var image=window.brightcove.createElement('image');for(var j in experience.params){gokuParams.push([window.encodeURIComponent(j)+"="+window.encodeURIComponent(experience.params[j])]);}
+event+=gokuParams.join('&');image.src=event;}
+window.brightcove.renderExperience(experience,file,playerType,secureConnections);}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-3-3132-12-83",true);
+ }};window.brightcove.collectExperiences=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-12-121-13-20",false);
+var experiences=[];var allObjects=window.document.getElementsByTagName('object');var numObjects=allObjects.length;for(var i=0;i<numObjects;i++){if(/\bBrightcoveExperience\b/.test(allObjects[i].className)){if(allObjects[i].type!='application/x-shockwave-flash'){experiences.push(allObjects[i]);}}}
+return experiences;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-12-121-13-20",true);
+ }};window.brightcove.cacheUrlParams=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-13-54-14-18",false);
+var urlParams={};urlParams.playerKey=window.decodeURIComponent(window.brightcove.getParameter("bckey"));urlParams.playerID=window.brightcove.getParameter("bcpid");urlParams.titleID=window.brightcove.getParameter("bctid");urlParams.lineupID=window.brightcove.getParameter("bclid");urlParams.autoStart=window.brightcove.getParameter("autoStart");urlParams.debuggerID=window.brightcove.getParameter("debuggerID");urlParams.forceHTML=window.brightcove.getParameter("forceHTML");urlParams.forceFlashIFrame=window.brightcove.getParameter("forceFlashIFrame");urlParams.debug=window.brightcove.getParameter("debug");urlParams.showNoContentMessage=window.brightcove.getParameter("showNoContentMessage");urlParams.htmlDefaultBitrate=window.brightcove.getParameter("htmlDefaultBitrate");urlParams.linkSrc=window.brightcove.getParameter("linkSrc");urlParams.enableMapping=window.brightcove.getParameter("enableMapping");if(window.brightcove.isLinkDotBrightcoveURL){urlParams.height=window.brightcove.getParameter("height");urlParams.width=window.brightcove.getParameter("width");}
+return urlParams;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-13-54-14-18",true);
+ }};window.brightcove.copyDefaultParams=function(experience){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-14-55-17-115",false);
+if(!experience.params)experience.params={};if(!experience.flashParams)experience.flashParams={};for(var i in window.brightcove.defaultParam){experience.params[i]=window.brightcove.defaultParam[i];}
+for(var j in window.brightcove.defaultFlashParam){experience.flashParams[j]=window.brightcove.defaultFlashParam[j];}
+if(experience.id.length>0){experience.params.flashID=experience.id;}else{experience.id=experience.params.flashID='bcExperienceObj'+(window.brightcove.experienceNum++);}
+experience.params.identifierClassName='BrightcoveExperienceID_'+Math.floor(Math.random()*10000);return experience;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-14-55-17-115",true);
+ }};window.brightcove.copySnippetParams=function(experience,params){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-17-152-20-349",false);
+if(!window.brightcove.hasActiveX){params=experience.getElementsByTagName('param');}
+var numParams=params.length;var param;for(var j=0;j<numParams;j++){param=params[j];if(window.brightcove.hasActiveX&&param.parentNode.id!=experience.id){continue;}
+experience.params[param.name]=param.value;}
+if(experience.params.bgcolor!=window.undefined)experience.flashParams.bgcolor=experience.params.bgcolor;if(experience.params.wmode!=window.undefined)experience.flashParams.wmode=experience.params.wmode;if(experience.params.seamlessTabbing!=window.undefined)experience.flashParams.seamlessTabbing=experience.params.seamlessTabbing;return experience;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-17-152-20-349",true);
+ }};window.brightcove.copyUrlParams=function(experience,urlParams){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-20-382-33-19",false);
+if(experience.params.autoStart==window.undefined&&urlParams.autoStart!=window.undefined){experience.params.autoStart=urlParams.autoStart;}
+if(urlParams.debuggerID!=window.undefined){experience.params.debuggerID=urlParams.debuggerID;}
+if(urlParams.forceHTML!=window.undefined&&urlParams.forceHTML!==''){experience.params.forceHTML=urlParams.forceHTML;}
+if(urlParams.forceFlashIFrame!=window.undefined&&urlParams.forceFlashIFrame!==''){experience.params.forceFlashIFrame=urlParams.forceFlashIFrame;}
+if(urlParams.enableMapping!=window.undefined&&urlParams.enableMapping!==''){experience.params.enableMapping=urlParams.enableMapping.toLowerCase()==='true';}
+if(urlParams.debug!=window.undefined&&urlParams.debug!==''){experience.params.debug=urlParams.debug;}
+if(urlParams.showNoContentMessage!=window.undefined&&urlParams.showNoContentMessage!=''){experience.params.showNoContentMessage=urlParams.showNoContentMessage;}
+if(urlParams.htmlDefaultBitrate!=window.undefined&&urlParams.htmlDefaultBitrate!==''){experience.params.htmlDefaultBitrate=urlParams.htmlDefaultBitrate;}
+if(urlParams.linkSrc!=window.undefined&&urlParams.linkSrc!=''){experience.params.linkSrc=urlParams.linkSrc;}
+if(urlParams.height!=window.undefined&&urlParams.height!=''){experience.params.height=urlParams.height;}
+if(urlParams.width!=window.undefined&&urlParams.width!=''){experience.params.width=urlParams.width;}
+var overrideContent=(urlParams.playerID.length<1&&urlParams.playerKey.length<1)||(urlParams.playerID==experience.params.playerID)||(urlParams.playerKey==experience.params.playerKey);if(overrideContent){if(urlParams.titleID.length>0){experience.params.videoID=urlParams.titleID;experience.params["@videoPlayer"]=urlParams.titleID;experience.params.autoStart=(experience.params.autoStart!="false"&&urlParams.autoStart!="false");}
+if(urlParams.lineupID.length>0){experience.params.lineupID=urlParams.lineupID;}}
+return experience;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-20-382-33-19",true);
+ }};window.brightcove.determinePlayerType=function(experience,flashSupport,htmlSupport){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-33-58-39-48",false);
+if(flashSupport==null&&htmlSupport==false){return window.brightcove.playerType.NO_SUPPORT;}
+if(experience.params.forceHTML){if(window.console){var message="The forceHTML parameter was used for the Brightcove player. This value should ONLY be used for";message+=" development and testing purposes and is not supported in production environments.";console.log(message);}
+return window.brightcove.playerType.HTML;}
+if(experience.params.forceFlashIFrame||(window.brightcove.isMetroIE()&&flashSupport==null)){return window.brightcove.playerType.FLASH_IFRAME;}
+if(flashSupport!=null){if(window.brightcove.isFlashVersionSufficient(experience,flashSupport)){return window.brightcove.playerType.FLASH;}else{return window.brightcove.playerType.INSTALLER;}}
+if(htmlSupport){if(window.brightcove.isSupportedHTMLDevice()||experience.params.htmlFallback){return window.brightcove.playerType.HTML;}}
+return window.brightcove.playerType.NO_SUPPORT;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-33-58-39-48",true);
+ }};window.brightcove.isFlashVersionSufficient=function(experience,flashSupport){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-39-92-42-316",false);
+if(flashSupport==null)return false;var setMajorVersion=false;var requestedMajorVersion;var requestedMajorRevision;var requestedMinorRevision;if(experience.params.majorVersion!=window.undefined){requestedMajorVersion=window.parseInt(experience.params.majorVersion,10);setMajorVersion=true;}else{requestedMajorVersion=window.brightcove.majorVersion;}
+if(experience.params.majorRevision!=window.undefined){requestedMajorRevision=window.parseInt(experience.params.majorRevision,10);}else{if(setMajorVersion){requestedMajorRevision=0;}else{requestedMajorRevision=window.brightcove.majorRevision;}}
+if(experience.params.minorRevision!=window.undefined){requestedMinorRevision=window.parseInt(experience.params.minorRevision,10);}else{if(setMajorVersion){requestedMinorRevision=0;}else{requestedMinorRevision=window.brightcove.minorRevision;}}
+return(flashSupport.majorVersion>requestedMajorVersion||(flashSupport.majorVersion==requestedMajorVersion&&flashSupport.majorRevision>requestedMajorRevision)||(flashSupport.majorVersion==requestedMajorVersion&&flashSupport.majorRevision==requestedMajorRevision&&flashSupport.minorRevision>=requestedMinorRevision));
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-39-92-42-316",true);
+ }};window.brightcove.generateRequestUrl=function(experience,playerType,secureConnections){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-42-354-44-13",false);
+var file;if(playerType==window.brightcove.playerType.INSTALLER){file=window.brightcove.cdnURL+"/viewer/playerProductInstall.swf";var MMPlayerType=window.brightcove.hasActiveX?"ActiveX":"PlugIn";window.document.title=window.document.title.slice(0,47)+" - Flash Player Installation";var MMdoctitle=window.document.title;file+="?&MMredirectURL="+window.location+'&MMplayerType='+MMPlayerType+'&MMdoctitle='+MMdoctitle;window.brightcove.reportUpgradeRequired(experience);}else{if(secureConnections){file=window.brightcove.getPubURL(window.brightcove.secureServicesURL,window.brightcove.pubSecureHost,experience.params.pubCode);}else{file=window.brightcove.getPubURL(window.brightcove.servicesURL,window.brightcove.pubHost,experience.params.pubCode);}
+var servlet=(playerType==window.brightcove.playerType.HTML)?window.brightcove.servlet.HTML:window.brightcove.servlet.AS3;file+='/viewer/'+servlet+'?'+window.brightcove.getOverrides();for(var config in experience.params){file+='&'+window.encodeURIComponent(config)+'='+window.encodeURIComponent(experience.params[config]);}}
+return file;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-42-354-44-13",true);
+ }};window.brightcove.renderInstallGif=function(experience,secureConnections){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-44-49-44-487",false);
+var cdnURL=secureConnections?window.brightcove.secureCDNURL:window.brightcove.cdnURL;var upgradeFlashImage=cdnURL.indexOf('.co.jp')>0?"upgrade_flash_player_kk.gif":"upgrade_flash_player2.gif";var linkHTML="<a href='http://www.adobe.com/go/getflash/' target='_blank'><img src='"+cdnURL+"/viewer/"+upgradeFlashImage+"' alt='Get Flash Player' width='314' height='200' border='0'></a>";return linkHTML;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-44-49-44-487",true);
+ }};window.brightcove.renderExperience=function(experience,file,playerType,secureConnections){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-44-523-52-299",false);
+var experienceElement;var experienceID=experience.id;var isPubIdInBlacklist=false;var publisherID;var dummyElement;if(window.brightcove.renderExperienceInProcess){function wrapRenderExperience(experience,file,playerType,secureConnections){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-44-741-44-918",false);
+return function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-44-824-44-917",false);
+window.brightcove.renderExperience(experience,file,playerType,secureConnections);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-44-824-44-917",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-44-741-44-918",true);
+ }}
+window.brightcove.renderExperienceQueue.push(wrapRenderExperience(experience,file,playerType,secureConnections));return;}
+window.brightcove.renderExperienceInProcess=true;if(!(experience.params.playerKey||experience.params.playerID||experience.params.playerId||experience.params.playerid)){if(window.console){console.log("No playerID or playerKey was found for the Brightcove player, so it can not be rendered.");}
+return;}
+window.brightcove.experienceObjects[experienceID]=experience;var unminified=(window.brightcove.getParameter("unminified")=="true")||(experience.params.unminified==="true");if(experience.params.includeAPI==="true"&&!(window.brightcove._apiRequested||window.brightcove.api)){var source="/js/api/";if(unminified){source+="unminified/";}
+source+="SmartPlayerAPI.js";var apiInclude=window.brightcove.createElement('script');apiInclude.type="text/javascript";var cdnURL=secureConnections?window.brightcove.secureCDNURL:window.brightcove.cdnURL;apiInclude.src=cdnURL+source;experience.parentNode.appendChild(apiInclude);window.brightcove._apiRequested=true;}
+file+="&startTime="+new Date().getTime();if(experience.params.playerKey){publisherID=window.brightcove.decodePublisherID(experience.params.playerKey);}else{publisherID=experience.params.publisherID;}
+dummyElement=window.brightcove.createDummyElement(playerType,experience,secureConnections);if(experience.params.enableMapping===true||(experience.params.enableMapping!==false&&!isPubIdInBlacklist)){window.brightcove.makeMappingFileRequest(publisherID,function(err,data){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-51-251-52-145",false);
+if(err){if(window.console){console.log(err);}}
+window.brightcove.generateExperienceElement(experience,publisherID,dummyElement,unminified,file,playerType,experienceID,secureConnections,data);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-51-251-52-145",true);
+ }});}else{window.brightcove.generateExperienceElement(experience,publisherID,dummyElement,unminified,file,playerType,experienceID,secureConnections,null);}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-44-523-52-299",true);
+ }};window.brightcove.generateExperienceElement=function(experience,publisherID,dummyElement,unminified,file,playerType,experienceID,secureConnections,data){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-52-344-64-139",false);
+var playerID;var bcPublisherID;var bcPlayerID;var bcEmbedID;var bcNewSmartPlayerID;var bcForceRefID;var parsedDataObject={};var bcIframe;var replaceElement;var container;var timeout=window.brightcove.flashTimeoutInterval;var cdnURL=secureConnections?window.brightcove.secureCDNURL:window.brightcove.cdnURL;var isKKPod=cdnURL.indexOf('.co.jp')>0;var eolExtensionList=[];if(experience.params.enableMapping!==false&&data&&data.statusCode===200&&data.response&&data.response!==""){try{if(experience.params.playerKey){if(window.JSON){parsedDataObject=JSON.parse(data.response)[experience.params.playerKey];}else{parsedDataObject=window.brightcove.json_parse(data.response)[experience.params.playerKey];}}else{playerID=experience.params.playerId||experience.params.playerID||experience.params.playerid;if(window.JSON){parsedDataObject=JSON.parse(data.response);}else{parsedDataObject=window.brightcove.json_parse(data.response);}}}catch(ex){if(window.console){console.log('Error: Unable to parse mapping file: '+ex.message);}}
+if(!experience.params.playerKey){for(var mappedPlayerKey in parsedDataObject){var playerMapItem;if(parsedDataObject.hasOwnProperty(mappedPlayerKey)){playerMapItem=parsedDataObject[mappedPlayerKey];if(playerMapItem.smart_player_id&&playerMapItem.smart_player_id===playerID){parsedDataObject=playerMapItem;break;}}}}
+if(parsedDataObject&&(((!parsedDataObject.hasOwnProperty('enable_mapping')||parsedDataObject.enable_mapping)&&experience.params.enableMapping!==false)||((parsedDataObject.hasOwnProperty('enable_mapping')&&parsedDataObject.enable_mapping===false)&&experience.params.enableMapping===true))){bcPublisherID=parsedDataObject.account_id?parsedDataObject.account_id:publisherID;bcPlayerID=parsedDataObject.player_id;bcEmbedID=parsedDataObject.embed_id||'default';bcNewSmartPlayerID=parsedDataObject.new_smart_player_id;bcForceRefID=parsedDataObject.force_ref_id||false;}
+var isInExtensionList=true;if(Array.prototype.indexOf){isInExtensionList=eolExtensionList.indexOf(String(publisherID))!==-1;}else{for(var i=0;i<eolExtensionList.length;i++){if(eolExtensionList[i]===String(publisherID)){isInExtensionList=true;break;}}}
+if(!bcPlayerID&&(!isInExtensionList||experience.params.enableMapping===true)){bcPlayerID='default';bcEmbedID=bcEmbedID||'default';}}
+if(bcForceRefID){experience=window.brightcove.forceRefID(experience);file=window.brightcove.generateRequestUrl(experience,playerType,secureConnections);}
+if(bcNewSmartPlayerID){delete experience.params.playerKey;delete experience.params.playerId;delete experience.params.playerid;experience.params.playerID=bcNewSmartPlayerID;window.brightcove.servicesURL=window.brightcove.USservicesURL;window.brightcove.cdnURL=window.brightcove.UScdnURL;window.brightcove.secureCDNURL=window.brightcove.USsecureCDNURL;window.brightcove.secureServicesURL=window.brightcove.USsecureServicesURL;file=window.brightcove.generateRequestUrl(experience,playerType,secureConnections);}else if(bcPlayerID&&!bcPublisherID){bcPublisherID=publisherID;}
+if(isKKPod&&(!parsedDataObject||!parsedDataObject.player_id)){var iframeDoc;window.experienceElement=window.brightcove.createIFrame(experience);window.brightcove.copyNodeProperties(dummyElement,window.experienceElement);replaceElement=window.brightcove.getElementByClassNameCrossBrowser(experience.params.identifierClassName);if(replaceElement&&replaceElement.parentNode){replaceElement.parentNode.replaceChild(window.experienceElement,replaceElement);}
+window.brightcove.experiences[experienceID]=window.experienceElement;iframeDoc=window.experienceElement.contentDocument||window.experienceElement.contentWindow.document;iframeDoc.write('<img height="100%" width="100%" src="//players.brightcove.net/kk404.png"/>');}else if(bcPublisherID&&bcPlayerID){bcIframe=window.brightcove.getBCPlayerIframe(experience,bcPublisherID,bcPlayerID,bcEmbedID);window.experienceElement=window.brightcove.createIFrame(experience);window.brightcove.copyNodeProperties(dummyElement,window.experienceElement);replaceElement=window.brightcove.getElementByClassNameCrossBrowser(experience.params.identifierClassName);window.experienceElement.setAttribute('allowFullScreen','');window.experienceElement.setAttribute('webkitAllowFullScreen','');window.experienceElement.setAttribute('mozillaAllowFullScreen','');if(replaceElement&&replaceElement.parentNode){replaceElement.parentNode.replaceChild(window.experienceElement,replaceElement);}
+window.brightcove.experiences[experienceID]=window.experienceElement;window.experienceElement.src=bcIframe;}else{var iframeDoc;window.experienceElement=window.brightcove.createIFrame(experience);window.brightcove.copyNodeProperties(dummyElement,window.experienceElement);replaceElement=window.brightcove.getElementByClassNameCrossBrowser(experience.params.identifierClassName);if(replaceElement&&replaceElement.parentNode){replaceElement.parentNode.replaceChild(window.experienceElement,replaceElement);}
+window.brightcove.experiences[experienceID]=window.experienceElement;iframeDoc=window.experienceElement.contentDocument||window.experienceElement.contentWindow.document;iframeDoc.write('<img height="100%" width="100%" src="//players.brightcove.net/smart-player-unavailable.png"/>');}
+window.brightcove.renderExperienceInProcess=false;if(window.brightcove.renderExperienceQueue.length>0){window.brightcove.renderExperienceQueue.shift()();}else if(window.brightcove.createExperiencesQueue.length>0){window.brightcove.createExperiencesQueue.shift()();}
+window.brightcove.timeouts[experience.id]=window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-64-60-64-128",false);
+window.brightcove.handleExperienceTimeout(experienceID);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-64-60-64-128",true);
+ }},timeout);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-52-344-64-139",true);
+ }};window.brightcove.copyNode=function(elementFrom){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-64-167-64-333",false);
+var experienceElement=elementFrom.cloneNode(true);window.brightcove.copyNodeProperties(elementFrom,experienceElement);return experienceElement;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-64-167-64-333",true);
+ }};window.brightcove.copyNodeProperties=function(elementFrom,elementTo){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-64-371-65-97",false);
+var propertyItem;var propertyList=['name','title','height','width','border','onclick','ondblclick','ondrag','ondragend','ondragenter','ondragleave','ondragover','ondragstart','ondrop','onmousedown','onmousemove','onmouseout','onmouseover','onmouseup','onmousewheel','onscroll','onwheel'];for(propertyItem in propertyList){if(elementFrom[propertyList[propertyItem]]){elementTo[propertyList[propertyItem]]=elementFrom[propertyList[propertyItem]];}}
+if(elementTo.className!==elementFrom.className){elementTo.className+=' '+elementFrom.className;}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-64-371-65-97",true);
+ }};window.brightcove.getElementsByClassName=function(selector){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-65-139-66-16",false);
+var retnode=[];var elem=window.document.getElementsByTagName('*');for(var i=0;i<elem.length;i++){if((' '+elem[i].className+' ').indexOf(' '+selector+' ')>-1)retnode.push(elem[i]);}
+return retnode;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-65-139-66-16",true);
+ }};window.brightcove.getElementByClassNameCrossBrowser=function(selector){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-66-69-67-22",false);
+var searchElement;if(window.document.querySelectorAll){searchElement=window.document.querySelectorAll('.'+selector)[0];}else{searchElement=window.brightcove.getElementsByClassName(selector)[0];}
+return searchElement;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-66-69-67-22",true);
+ }};window.brightcove.createDummyElement=function(playerType,experience,secureConnections){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-67-60-69-21",false);
+var dummyElement;var containerID;var flashObjectParams;var flashEmbedStr;experience.className+=' '+experience.params.identifierClassName;if(playerType===window.brightcove.playerType.NO_SUPPORT){containerID='_container'+experience.id;dummyElement=window.brightcove.createElement('span');if(experience.params.height.charAt(experience.params.height.length-1)=="%"){dummyElement.style.display='block';}else{dummyElement.style.display='inline-block';}
+dummyElement.className=experience.className;dummyElement.id=containerID;}else if(playerType===window.brightcove.playerType.HTML||playerType===window.brightcove.playerType.FLASH_IFRAME){dummyElement=window.brightcove.createIFrame(experience);if(experience&&experience.parentNode){experience.parentNode.replaceChild(dummyElement,experience);}}else{if(window.brightcove.hasActiveX){flashEmbedStr=window.brightcove.getDummyFlashEmbedString(experience);containerID='_container'+experience.id;dummyElement=window.brightcove.createFlashEmbed(containerID,experience.params.height);if(experience&&experience.parentNode){experience.parentNode.replaceChild(dummyElement,experience);dummyElement.innerHTML=flashEmbedStr;}}else{flashObjectParams=window.brightcove.getFlashObjectParams(experience);dummyElement=window.brightcove.createFlashObject(flashObjectParams);if(experience&&experience.parentNode){experience.parentNode.replaceChild(dummyElement,experience);}}}
+return dummyElement;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-67-60-69-21",true);
+ }};window.brightcove.getDummyFlashEmbedString=function(experience){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-69-65-74-14",false);
+return'<object'
++' id="'+experience.id+'"'
++' width="'+experience.params.width+'"'
++' height="'+experience.params.height+'"'
++' class="BrightcoveExperience '+experience.params.identifierClassName+'" >'
++'</object>';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-69-65-74-14",true);
+ }};window.brightcove.makeMetricsErrorCall=function(publisherID,errorType){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-74-54-74-317",false);
+var img=window.document.createElement('img');var metricsUrl=window.brightcove.metricsBaseUrl['production'];img.src=metricsUrl+'?'+'account='+publisherID+'&domain=videocloud'+'&platform=as3'+'&event=error'+'&error_code='+errorType;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-74-54-74-317",true);
+ }};window.brightcove.createIFrame=function(experience){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-74-349-74-714",false);
+var iframeElement=window.brightcove.createElement('iframe');iframeElement.id=experience.id;iframeElement.width=experience.params.width;iframeElement.height=experience.params.height;iframeElement.className=experience.className;iframeElement.frameborder=0;iframeElement.scrolling="no";iframeElement.style.borderStyle="none";return iframeElement;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-74-349-74-714",true);
+ }};window.brightcove.getFlashEmbedString=function(experience,secureConnections){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-74-753-83-14",false);
+var options='';var flashParams=experience.flashParams;for(var pOption in flashParams){options+='<param name="'+pOption+'" value="'+experience.flashParams[pOption]+'" />';}
+var protocol=secureConnections?"https":"http";return'<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'
++' codebase="'+protocol+'://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version='+window.brightcove.majorVersion+','+window.brightcove.majorRevision+','+window.brightcove.minorRevision+',0"'
++' id="'+experience.id+'"'
++' width="'+experience.params.width+'"'
++' height="'+experience.params.height+'"'
++' type="application/x-shockwave-flash"'
++' class="BrightcoveExperience '+experience.params.identifierClassName+'">'
++options
++'</object>';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-74-753-83-14",true);
+ }};window.brightcove.getFlashObjectParams=function(experience,file){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-83-54-84-25",false);
+var experienceObject={};experienceObject.type='application/x-shockwave-flash';experienceObject.data=file;experienceObject.id=experience.params.flashID;experienceObject.width=experience.params.width;experienceObject.height=experience.params.height;experienceObject.className=experience.className;experienceObject.seamlesstabbing=experience.flashParams.seamlessTabbing;for(var config in experience.flashParams){experienceObject["flashParam_"+config]=experience.flashParams[config];}
+return experienceObject;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-83-54-84-25",true);
+ }};window.brightcove.createFlashEmbed=function(experienceId,height){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-84-61-85-44",false);
+var container=window.brightcove.createElement('span');if(height.charAt(height.length-1)=="%"){container.style.display='block';}else{container.style.display='inline-block';}
+container.id=experienceId;return container;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-84-61-85-44",true);
+ }};window.brightcove.createFlashObject=function(playerConfig){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-85-81-87-26",false);
+var experienceElement=window.brightcove.createElement('object');experienceElement.type=playerConfig.type;if(playerConfig.data){experienceElement.data=playerConfig.data;}
+experienceElement.id=playerConfig.id;experienceElement.width=playerConfig.width;experienceElement.height=playerConfig.height;experienceElement.className=playerConfig.className;experienceElement.setAttribute("seamlesstabbing",playerConfig.seamlessTabbing);var tempParam;var flashParamPrefix="flashParam_";for(var config in playerConfig){var flashParamInd=config.indexOf(flashParamPrefix);if(flashParamInd==0){tempParam=window.brightcove.createElement('param');tempParam.name=config.substring(flashParamPrefix.length);tempParam.value=playerConfig[config];experienceElement.appendChild(tempParam);}}
+return experienceElement;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-85-81-87-26",true);
+ }};window.brightcove.handleExperienceTimeout=function(pID){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-87-69-87-294",false);
+window.brightcove.executeErrorHandlerForExperience(window.brightcove.experienceObjects[pID],{type:"templateError",errorType:"serviceUnavailable",code:window.brightcove.errorCodes.SERVICE_UNAVAILABLE,info:pID});
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-87-69-87-294",true);
+ }};window.brightcove.reportPlayerLoad=function(pID){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-87-330-87-431",false);
+var timeout=window.brightcove.timeouts[pID];if(timeout){window.clearTimeout(timeout);}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-87-330-87-431",true);
+ }};window.brightcove.reportUpgradeRequired=function(pExperience){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-87-472-87-701",false);
+window.brightcove.executeErrorHandlerForExperience(pExperience,{type:"templateError",errorType:"upgradeRequiredForPlayer",code:window.brightcove.errorCodes.UPGRADE_REQUIRED_FOR_PLAYER,info:pExperience.id});
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-87-472-87-701",true);
+ }};window.brightcove.checkFlashSupport=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-87-738-87-911",false);
+var hasActiveX=(window.ActiveXObject!=window.undefined);return(hasActiveX)?window.brightcove.checkFlashSupportIE():window.brightcove.checkFlashSupportStandard();
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-87-738-87-911",true);
+ }};window.brightcove.checkFlashSupportIE=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-87-950-88-86",false);
+var versions;try{var flash=new window.ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");var version=flash.GetVariable('$version');versions=/ ([0-9]+),([0-9]+),([0-9]+),/.exec(version);}catch(exception){return null;}
+return{majorVersion:versions[1],majorRevision:versions[2],minorRevision:versions[3]};
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-87-950-88-86",true);
+ }};window.brightcove.isMetroIE=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-88-115-91-23",false);
+var version=0;if(window.navigator.appVersion.indexOf("MSIE")!=-1){var appSplit=window.navigator.appVersion.split("MSIE");if(appSplit.length>1){version=window.parseFloat(appSplit[1]);}}
+if(version<10||window.isNaN(version)){return false;}
+var activeXSupport=false;try{activeXSupport=!!new window.ActiveXObject("htmlfile");}catch(e){activeXSupport=false;}
+return!activeXSupport;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-88-115-91-23",true);
+ }};window.brightcove.checkFlashSupportStandard=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-91-68-94-91",false);
+var versions;var majorVersion;var majorRevision;var minorRevision;try{if(typeof window.navigator.plugins!='undefined'&&window.navigator.plugins.length>0){if(window.navigator.plugins["Shockwave Flash 2.0"]||window.navigator.plugins["Shockwave Flash"]){var swfVersion=window.navigator.plugins["Shockwave Flash 2.0"]?" 2.0":"";var description=window.navigator.plugins["Shockwave Flash"+swfVersion].description;var filename=window.navigator.plugins["Shockwave Flash"+swfVersion].filename;if(filename.match){if(filename.toLowerCase().match(/lite/)){throw new Error();}}
+versions=description.split(" ");majorVersion=versions[2].split(".")[0];majorRevision=versions[2].split(".")[1];minorRevision=versions[3];if(minorRevision==""){minorRevision=versions[4];}
+if(minorRevision[0]=="d"){minorRevision=minorRevision.substring(1);}else if(minorRevision[0]=="r"){minorRevision=minorRevision.substring(1);if(minorRevision.indexOf("d")>0){minorRevision=minorRevision.substring(0,minorRevision.indexOf("d"));}}}else{throw new Error();}}else{return null;}}catch(exception){return null;}
+return{majorVersion:majorVersion,majorRevision:majorRevision,minorRevision:minorRevision};
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-91-68-94-91",true);
+ }};window.brightcove.checkHtmlSupport=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-94-127-96-109",false);
+var v=window.brightcove.createElement('video');var videoSupport=true;if(!window.brightcove.userAgent.match(new RegExp("android","i"))){videoSupport=!!(v.canPlayType&&v.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"').replace(/no/,''));}
+if(window.brightcove.userAgent.match(/BlackBerry.*Version\/6\.0/)){return false;}
+var canvasSupport=!!window.brightcove.createElement('canvas').getContext;return videoSupport&&canvasSupport;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-94-127-96-109",true);
+ }};window.brightcove.isSupportedHTMLDevice=function(pUAString){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-96-150-97-14",false);
+var types=["iPad","iPhone","iPod","android","Silk","IEMobile"];var numTypes=types.length;var uaString=pUAString||window.brightcove.userAgent;for(var i=0;i<numTypes;i++){if(uaString.match(new RegExp(types[i],"i"))){return true;}}
+return false;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-96-150-97-14",true);
+ }};window.brightcove.getTechnology=function(pExperienceId){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-97-47-98-48",false);
+for(var id in window.brightcove.experiences){if(pExperienceId==id){return(window.brightcove.experiences[id].tagName=="object")?window.brightcove.playerType.FLASH:window.brightcove.playerType.HTML;}}
+return window.brightcove.playerType.NO_SUPPORT;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-97-47-98-48",true);
+ }};window.brightcove.respondToMessages=function(pMessage){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-98-85-102-177",false);
+if(window.brightcove.verifyMessage(pMessage)){var messageData=pMessage.data;if(messageData.charAt(0)=="\""){if(window.JSON){messageData=window.JSON.parse(messageData);}else{messageData=window.brightcove.json_parse(messageData);}}
+var messageParts=messageData.split("::");var type=messageParts[1];var messageInfo="";for(var index=2;index<messageParts.length;index++){messageInfo+=messageParts[index];}
+var messageJson=messageInfo.split("\n").join(" ");var messageDataObject;if(window.JSON){messageDataObject=window.JSON.parse(messageJson);}else{messageDataObject=window.brightcove.json_parse(messageJson);}
+switch(type){case"error":window.brightcove.executeMessageCallback(messageDataObject,window.brightcove.executeErrorHandlerForExperience);break;case"api":window.brightcove.handleAPICallForHTML(messageDataObject);break;case"handler":var event=window.brightcove.internal._convertDates(messageDataObject.event);try{window.brightcove.internal._handlers[messageDataObject.handler](event);}catch(e){}
+break;case"asyncGetter":var data=window.brightcove.internal._convertDates(messageDataObject.data);window.brightcove.internal._handlers[messageDataObject.handler](data);break;}}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-98-85-102-177",true);
+ }};window.brightcove.verifyMessage=function(pMessage){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-102-210-102-280",false);
+return(/^brightcove\.player/).test(pMessage.data);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-102-210-102-280",true);
+ }};window.brightcove.handleAPICallForHTML=function(pMessageObject){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-102-320-105-8",false);
+var experience=window.brightcove.experienceObjects[pMessageObject.id];if(experience==null){return;}
+var id=experience.id;var method=pMessageObject.method;switch(method){case"initializeBridge":window.brightcove.reportPlayerLoad(id);if(pMessageObject.arguments[0]){if(window.brightcove.internal!=null){window.brightcove.internal._setAPICallback(id,null,pMessageObject.arguments[1]);window.brightcove.callHandlerForPlayer(experience,"templateLoadHandler",id);}else if(window.brightcove._apiRequested){window.brightcove._queuedAPICalls.push(pMessageObject);}}
+break;case"callTemplateReady":if(window.brightcove._apiRequested&&!window.brightcove.internal){window.brightcove._queuedAPICalls.push(pMessageObject);}else{var event=pMessageObject.arguments;window.brightcove._addModuleToEvent(id,event);window.brightcove.callHandlerForPlayer(experience,"templateReadyHandler",event);}
+break;}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-102-320-105-8",true);
+ }};window.brightcove._addModuleToEvent=function(pID,pEvent){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-105-45-105-234",false);
+if(pEvent.type!=null&&window.brightcove.api){var experience=window.brightcove.api.getExperience(pID);if(experience){pEvent.target=experience.getModule("experience");}}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-105-45-105-234",true);
+ }};window.brightcove.callHandlerForPlayer=function(pExperience,pHandler,pArgument){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-105-274-106-105",false);
+if(pExperience&&pExperience.params&&pExperience.params[pHandler]){var namespaceArray=pExperience.params[pHandler].split(".");var namespaces;if((namespaces=namespaceArray.length)>1){var trace=window;for(var i=0;i<namespaces;i++){trace=trace[namespaceArray[i]];}
+if(typeof trace==="function"){trace(pArgument);}}else{window[pExperience.params[pHandler]](pArgument);}}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-105-274-106-105",true);
+ }};window.brightcove.executeErrorHandlerForExperience=function(pExperience,pErrorObject){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-106-157-106-281",false);
+window.brightcove.callHandlerForPlayer(pExperience,"templateErrorHandler",pErrorObject);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-106-157-106-281",true);
+ }};window.brightcove.executeMessageCallback=function(pMessageDataObject,pCallback){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-106-323-106-643",false);
+var experience;for(var experienceKey in window.brightcove.experienceObjects){experience=window.brightcove.experienceObjects[experienceKey];if(experience.element.src===pMessageDataObject.__srcUrl){delete pMessageDataObject.__srcUrl;pCallback(experience,pMessageDataObject);break;}}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-106-323-106-643",true);
+ }};window.brightcove.createExperience=function(pElement,pParentOrSibling,pAppend){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-106-679-108-55",false);
+if(!pElement.id||pElement.id.length<1){pElement.id='bcExperienceObj'+(window.brightcove.experienceNum++);}
+if(pAppend){pParentOrSibling.appendChild(pElement);}else{pParentOrSibling.parentNode.insertBefore(pElement,pParentOrSibling);}
+window.brightcove.createExperiences(null,pElement.id);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-106-679-108-55",true);
+ }};window.brightcove.removeExperience=function(pID){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-108-91-108-246",false);
+if(window.brightcove.experiences[pID]!=null){window.brightcove.experiences[pID].parentNode.removeChild(window.brightcove.experiences[pID]);}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-108-91-108-246",true);
+ }};window.brightcove.getURL=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-108-272-109-12",false);
+var url;if(typeof window.location.search!='undefined'){url=window.location.search;}else{url=/(\?.*)$/.exec(window.document.location.href);}
+return url;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-108-272-109-12",true);
+ }};window.brightcove.getOverrides=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-109-44-110-18",false);
+var url=window.brightcove.getURL();var query=new RegExp('@[\\w\\.]+=[^&]+','g');var value=query.exec(url);var overrides="";while(value!=null){overrides+="&"+value;value=query.exec(url);}
+return overrides;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-109-44-110-18",true);
+ }};window.brightcove.getParameter=function(pName,pDefaultValue){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-110-50-110-281",false);
+if(pDefaultValue==null)pDefaultValue="";var url=window.brightcove.getURL();var query=new RegExp(pName+'=([^&]*)');var value=query.exec(url);if(value!=null){return value[1];}else{return pDefaultValue;}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-110-50-110-281",true);
+ }};window.brightcove.createElement=function(el){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-110-314-110-486",false);
+if(window.document.createElementNS){return window.document.createElementNS('http://www.w3.org/1999/xhtml',el);}else{return window.document.createElement(el);}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-110-314-110-486",true);
+ }};window.brightcove.i18n={'BROWSER_TOO_OLD':'The browser you are using is too old. Please upgrade to the latest version of your browser.'};window.brightcove.removeListeners=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-110-658-111-357",false);
+if(/KHTML/i.test(window.navigator.userAgent)){window.clearInterval(window.checkLoad);window.document.removeEventListener('load',window.brightcove.createExperiences,false);}
+if(typeof window.document.addEventListener!='undefined'){window.document.removeEventListener('DOMContentLoaded',window.brightcove.createExperiences,false);window.document.removeEventListener('load',window.brightcove.createExperiences,false);}else if(typeof window.attachEvent!='undefined'){window.detachEvent('onload',window.brightcove.createExperiences);}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-110-658-111-357",true);
+ }};window.brightcove.getPubURL=function(source,host,pubCode){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-111-386-111-633",false);
+if(!pubCode||pubCode=="")return source;var re=/^([htps]{4,5}\:\/\/)([^\/\:]+)/i;host=host.replace("$pubcode$",pubCode).replace("$zoneprefix$$zone$",window.brightcove.pubSubdomain);return source.replace(re,"$1"+host);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-111-386-111-633",true);
+ }};window.brightcove.createExperiencesPostLoad=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-111-678-111-764",false);
+window.brightcove.removeListeners();window.brightcove.createExperiences();
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-111-678-111-764",true);
+ }};window.brightcove.encode=function(string){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-111-790-111-1094",false);
+string=window.escape(string);string=string.replace(/\+/g,"%2B");string=string.replace(/\-/g,"%2D");string=string.replace(/\*/g,"%2A");string=string.replace(/\//g,"%2F");string=string.replace(/\./g,"%2E");string=string.replace(/_/g,"%5F");string=string.replace(/@/g,"%40");return string;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-111-790-111-1094",true);
+ }};window.brightcove.decodePublisherID=function(playerKey){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-111-1131-116-31",false);
+var b64;var bytes=[];var keys=[];var byteArrayToLong=function(byteArray,length){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-111-1204-112-14",false);
+var value=0;for(var i=0;i<length;i++){value=(value*256)+byteArray[i];}
+return value;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-111-1204-112-14",true);
+ }};if(!playerKey||playerKey.indexOf(',')<0){if(window.console){console.log('The player key is in an unexpected format.  Unable to extract publisher ID for potential use with player migration.');}
+return;}
+playerKey=playerKey.replace(/\./g,"~");keys=playerKey.split(',');try{b64=window.brightcove.base64().toByteArray(keys[1]);}catch(ex){if(window.console){console.log('The player key is in an unexpected format.  Unable to extract publisher ID for potential use with player migration: '+ex.message);}
+return;}
+return byteArrayToLong(b64,8);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-111-1131-116-31",true);
+ }};window.brightcove.makeMappingFileRequest=function(publisherID,callback){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-116-73-117-83",false);
+if(!publisherID){window.brightcove.makeMetricsErrorCall('null',window.brightcove.analyticsErrors.BAD_PUBLISHER_ID);return callback();}else if(window.brightcove.mappingFileData.hasOwnProperty(publisherID)){return callback(null,window.brightcove.mappingFileData[publisherID]);}else{return window.brightcove.makeAjaxRequest('GET',window.brightcove.performCdnUrl['production']+publisherID+'/migration/mappings.json',function(err,data){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-116-516-117-79",false);
+if(window.console&&data&&data.statusCode===404){console.log('It is safe to ignore 404 messages for mappings.json file requests.');}else if(data&&data.statusCode===0){window.brightcove.makeMetricsErrorCall(publisherID,window.brightcove.analyticsErrors.MAPPINGS_CALL_FAILURE);}else if(data&&data.statusCode!==200&&data.statusCode!==404){window.brightcove.makeMetricsErrorCall(publisherID,window.brightcove.analyticsErrors.UNEXPECTED_MAPPING_RESPONSE);}
+window.brightcove.mappingFileData[publisherID]=data;return callback(err,data);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-116-516-117-79",true);
+ }});}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-116-73-117-83",true);
+ }};window.brightcove.makeAjaxRequest=function(action,url,callback){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-117-118-124-45",false);
+function createXmlHTTPObject(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-117-148-120-16",false);
+var XMLHttpFactories=[function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-117-201-117-247",false);
+return new window.XDomainRequest()
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-117-201-117-247",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-117-248-117-287",false);
+return new XMLHttpRequest()
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-117-248-117-287",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-117-288-117-349",false);
+return new window.ActiveXObject('Msxml2.XMLHTTP')
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-117-288-117-349",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-117-350-117-411",false);
+return new window.ActiveXObject('Msxml3.XMLHTTP')
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-117-350-117-411",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-117-412-117-476",false);
+return new window.ActiveXObject('Microsoft.XMLHTTP')
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-117-412-117-476",true);
+ }}];var xmlhttp=false;for(var i=0;i<XMLHttpFactories.length;i++){try{xmlhttp=XMLHttpFactories[i]();}
+catch(e){continue;}
+break;}
+return xmlhttp;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-117-148-120-16",true);
+ }}
+var xhttp=createXmlHTTPObject();if(!xhttp){return callback();}
+try{xhttp.open(action,url,true);xhttp.timeout=3000;if(!window.XDomainRequest){xhttp.onreadystatechange=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-122-103-122-216",false);
+if(xhttp.readyState==4){return callback(null,{statusCode:xhttp.status,response:xhttp.responseText});}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-122-103-122-216",true);
+ }};}else{xhttp.onload=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-122-236-122-315",false);
+return callback(null,{statusCode:200,response:xhttp.responseText});
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-122-236-122-315",true);
+ }};xhttp.ontimeout=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-122-332-122-381",false);
+return callback(null,{statusCode:0});
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-122-332-122-381",true);
+ }}
+xhttp.onprogress=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-123-17-123-29",false);
+
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-123-17-123-29",true);
+ }};xhttp.onerror=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-123-44-123-95",false);
+return callback(null,{statusCode:403});
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-123-44-123-95",true);
+ }};}
+xhttp.send();}catch(e){callback(null,null);}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-117-118-124-45",true);
+ }};window.brightcove.base64=function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-124-71-157-35",false);
+var lookup='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+var Arr=(typeof Uint8Array!=='undefined')?Uint8Array:Array
+var PLUS='+'.charCodeAt(0)
+var SLASH='/'.charCodeAt(0)
+var NUMBER='0'.charCodeAt(0)
+var LOWER='a'.charCodeAt(0)
+var UPPER='A'.charCodeAt(0)
+var PLUS_URL_SAFE='-'.charCodeAt(0)
+var SLASH_URL_SAFE='_'.charCodeAt(0)
+function decode(elt){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-133-0-139-38",false);
+var code=elt.charCodeAt(0)
+if(code===PLUS||code===PLUS_URL_SAFE)return 62
+if(code===SLASH||code===SLASH_URL_SAFE)return 63
+if(code<NUMBER)return-1
+if(code<NUMBER+10)return code-NUMBER+26+26
+if(code<UPPER+26)return code-UPPER
+if(code<LOWER+26)return code-LOWER+26
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-133-0-139-38",true);
+ }}
+function b64ToByteArray(b64){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-140-0-156-11",false);
+var i,j,l,tmp,placeHolders,arr
+if(b64.length%4>0){throw new Error('Invalid string. Length must be a multiple of 4')}
+var len=b64.length
+placeHolders=b64.charAt(len-2)==='='?2:b64.charAt(len-1)==='='?1:0
+arr=new Arr(b64.length*3/4-placeHolders)
+l=placeHolders>0?b64.length-4:b64.length
+var L=0
+function push(v){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-147-0-147-28",false);
+arr[L++]=v
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-147-0-147-28",true);
+ }}
+for(i=0,j=0;i<l;i+=4,j+=3){tmp=(decode(b64.charAt(i))<<18)|(decode(b64.charAt(i+1))<<12)|(decode(b64.charAt(i+2))<<6)|decode(b64.charAt(i+3))
+push((tmp&0xFF0000)>>16)
+push((tmp&0xFF00)>>8)
+push(tmp&0xFF)}
+if(placeHolders===2){tmp=(decode(b64.charAt(i))<<2)|(decode(b64.charAt(i+1))>>4)
+push(tmp&0xFF)}else if(placeHolders===1){tmp=(decode(b64.charAt(i))<<10)|(decode(b64.charAt(i+1))<<4)|(decode(b64.charAt(i+2))>>2)
+push((tmp>>8)&0xFF)
+push(tmp&0xFF)}
+return arr
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-140-0-156-11",true);
+ }}
+return{toByteArray:b64ToByteArray}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-124-71-157-35",true);
+ }};window.brightcove.forceRefID=function(experience){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-157-65-168-19",false);
+var videoID=experience.params.videoID;var videoPlayer=experience.params['@videoPlayer'];var playlistID=experience.params['@videoList'];var lineupID=experience.params.lineupID;var playlistTabs=experience.params['@playlistTabs'];var playlistCombo=experience.params['@playlistCombo'];var playlistVideoFeatured=experience.params['@videoList.featured'];var playlistTabsFeatured=experience.params['@playlistTabs.featured'];var playlistComboFeatured=experience.params['@playlistCombo.featured'];var playlistArray;var playlistJoined;if(playlistTabs){playlistArray=playlistTabs.split(',');}else if(playlistCombo){playlistArray=playlistCombo.split(',');}
+if(playlistArray){for(var i=0;i<playlistArray.length;i++){if(playlistArray[i].indexOf('ref:')<0){playlistArray[i]='ref:'+playlistArray[i];}}
+playlistJoined=playlistArray.join(',');}
+if(playlistTabs){experience.params['@playlistTabs']=playlistJoined;}else if(playlistCombo){experience.params['@playlistCombo']=playlistJoined;}
+if(playlistID&&playlistID.indexOf('ref:')<0){experience.params['@videoList']='ref:'+playlistID;}
+if(lineupID&&lineupID.indexOf('ref:')<0){experience.params.lineupID='ref:'+lineupID;}
+if(playlistVideoFeatured&&playlistVideoFeatured.indexOf('ref:')<0){experience.params['@videoList.featured']='ref:'+playlistVideoFeatured;}
+if(playlistTabsFeatured&&playlistTabsFeatured.indexOf('ref:')<0){experience.params['@playlistTabs.featured']='ref:'+playlistTabsFeatured;}
+if(playlistComboFeatured&&playlistComboFeatured.indexOf('ref:')<0){experience.params['@playlistCombo.featured']='ref:'+playlistComboFeatured;}
+if(videoID&&videoID.indexOf('ref:')<0){experience.params.videoID='ref:'+videoID;}
+if(videoPlayer&&videoPlayer.indexOf('ref:')<0){experience.params['@videoPlayer']='ref:'+videoPlayer;}
+return experience;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-157-65-168-19",true);
+ }};window.brightcove.getBCPlayerIframe=function(experience,accountID,playerID,embedID){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-168-56-176-21",false);
+var iframeSource=window.brightcove.performCdnUrl['production']+accountID+'/'+playerID+'_'+embedID+'/index.html?directedMigration=true&';var videoID=experience.params['@videoPlayer']||experience.params.videoID;var playlistID=experience.params['@videoList']||experience.params.lineupID;var playlistTabs=experience.params['@playlistTabs'];var playlistCombo=experience.params['@playlistCombo'];var playlistArray;var playlistVideoID=experience.params['@videoList.featured']||experience.params.videoID;if(playlistTabs){playlistArray=playlistTabs.split(',');}else if(playlistCombo){playlistArray=playlistCombo.split(',');}
+if(experience.params['@playlistTabs.featured']){playlistID=experience.params['@playlistTabs.featured'];}else if(experience.params['@playlistCombo.featured']){playlistID=experience.params['@playlistCombo.featured'];}else if(playlistArray&&playlistArray[0]){playlistID=playlistArray[0];}
+if(playlistID&&(window.isNaN(playlistID)&&playlistID.indexOf('ref:')<0)){playlistID='ref:'+playlistID;}
+if(playlistID){iframeSource+='playlistId='+playlistID+'&';}else if(videoID&&(!window.isNaN(videoID)||videoID.indexOf('ref:')>=0)){iframeSource+='videoId='+videoID+'&';}else if(videoID){iframeSource+='videoId=ref:'+videoID+'&';}
+if(playlistID&&playlistVideoID){if(playlistVideoID&&(window.isNaN(playlistVideoID)&&playlistVideoID.indexOf('ref:')<0)){playlistVideoID='ref:'+playlistVideoID;}
+iframeSource+='playlistVideoId='+playlistVideoID+'&';}
+if(experience.params.language&&experience.params.language==='jp'){iframeSource+='language=ja&';}else if(experience.params.language){iframeSource+='language='+experience.params.language+'&';}
+if(experience.params.autoStart&&experience.params.autoStart!='false'){iframeSource+='autoplay='+experience.params.autoStart+'&';}
+return iframeSource;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-168-56-176-21",true);
+ }};if(/KHTML/i.test(window.navigator.userAgent)){ window.checkLoad=window.setInterval(function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-176-105-176-258",false);
+if(/loaded|complete/.test(window.document.readyState)){window.clearInterval(window.checkLoad);window.brightcove.createExperiencesPostLoad();}
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-176-105-176-258",true);
+ }},70);window.document.addEventListener('load',window.brightcove.createExperiencesPostLoad,false);}
+if(typeof window.document.addEventListener!='undefined'){window.document.addEventListener('DOMContentLoaded',window.brightcove.createExperiencesPostLoad,false);window.document.addEventListener('load',window.brightcove.createExperiencesPostLoad,false);window.addEventListener("message",window.brightcove.respondToMessages,false);}else if(typeof window.attachEvent!='undefined'){window.attachEvent('onload',window.brightcove.createExperiencesPostLoad);}else{window.alert(window.brightcove.i18n.BROWSER_TOO_OLD);}}
+window.brightcove.json_parse=(function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-30-185-65",false);
+"use strict";var state,stack,container,key,value,escapes={'\\':'\\','"':'"','/':'/','t':'\t','n':'\n','r':'\r','f':'\f','b':'\b'},string={go:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-182-178-205",false);
+state='ok';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-182-178-205",true);
+ }},firstokey:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-216-178-252",false);
+key=value;state='colon';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-216-178-252",true);
+ }},okey:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-258-178-294",false);
+key=value;state='colon';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-258-178-294",true);
+ }},ovalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-302-178-329",false);
+state='ocomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-302-178-329",true);
+ }},firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-342-178-369",false);
+state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-342-178-369",true);
+ }},avalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-377-178-404",false);
+state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-377-178-404",true);
+ }}},number={go:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-417-178-440",false);
+state='ok';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-417-178-440",true);
+ }},ovalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-448-178-475",false);
+state='ocomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-448-178-475",true);
+ }},firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-488-178-515",false);
+state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-488-178-515",true);
+ }},avalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-523-178-550",false);
+state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-523-178-550",true);
+ }}},action={'{':{go:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-568-178-636",false);
+stack.push({state:'ok'});container={};state='firstokey';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-568-178-636",true);
+ }},ovalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-644-178-744",false);
+stack.push({container:container,state:'ocomma',key:key});container={};state='firstokey';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-644-178-744",true);
+ }},firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-757-178-849",false);
+stack.push({container:container,state:'acomma'});container={};state='firstokey';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-757-178-849",true);
+ }},avalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-857-178-949",false);
+stack.push({container:container,state:'acomma'});container={};state='firstokey';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-857-178-949",true);
+ }}},'}':{firstokey:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-966-178-1066",false);
+var pop=stack.pop();value=container;container=pop.container;key=pop.key;state=pop.state;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-966-178-1066",true);
+ }},ocomma:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1074-178-1195",false);
+var pop=stack.pop();container[key]=value;value=container;container=pop.container;key=pop.key;state=pop.state;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1074-178-1195",true);
+ }}},'[':{go:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1205-178-1275",false);
+stack.push({state:'ok'});container=[];state='firstavalue';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1205-178-1275",true);
+ }},ovalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1283-178-1385",false);
+stack.push({container:container,state:'ocomma',key:key});container=[];state='firstavalue';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1283-178-1385",true);
+ }},firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1398-178-1492",false);
+stack.push({container:container,state:'acomma'});container=[];state='firstavalue';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1398-178-1492",true);
+ }},avalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1500-178-1594",false);
+stack.push({container:container,state:'acomma'});container=[];state='firstavalue';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1500-178-1594",true);
+ }}},']':{firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1613-178-1713",false);
+var pop=stack.pop();value=container;container=pop.container;key=pop.key;state=pop.state;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1613-178-1713",true);
+ }},acomma:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1721-178-1843",false);
+var pop=stack.pop();container.push(value);value=container;container=pop.container;key=pop.key;state=pop.state;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1721-178-1843",true);
+ }}},':':{colon:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-178-1856-179-16",false);
+if(Object.hasOwnProperty.call(container,key)){throw new SyntaxError('Duplicate key "'+key+'"');}
+state='ovalue';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-1856-179-16",true);
+ }}},',':{ocomma:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-30-179-76",false);
+container[key]=value;state='okey';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-30-179-76",true);
+ }},acomma:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-84-179-133",false);
+container.push(value);state='avalue';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-84-179-133",true);
+ }}},'true':{go:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-146-179-180",false);
+value=true;state='ok';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-146-179-180",true);
+ }},ovalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-188-179-226",false);
+value=true;state='ocomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-188-179-226",true);
+ }},firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-239-179-277",false);
+value=true;state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-239-179-277",true);
+ }},avalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-285-179-323",false);
+value=true;state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-285-179-323",true);
+ }}},'false':{go:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-337-179-372",false);
+value=false;state='ok';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-337-179-372",true);
+ }},ovalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-380-179-419",false);
+value=false;state='ocomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-380-179-419",true);
+ }},firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-432-179-471",false);
+value=false;state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-432-179-471",true);
+ }},avalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-479-179-518",false);
+value=false;state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-479-179-518",true);
+ }}},'null':{go:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-531-179-565",false);
+value=null;state='ok';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-531-179-565",true);
+ }},ovalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-573-179-611",false);
+value=null;state='ocomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-573-179-611",true);
+ }},firstavalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-624-179-662",false);
+value=null;state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-624-179-662",true);
+ }},avalue:function(){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-670-179-708",false);
+value=null;state='acomma';
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-670-179-708",true);
+ }}}};function debackslashify(text){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-711-179-868",false);
+return text.replace(/\\(?:u(.{4})|([^u]))/g,function(a,b,c){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-179-785-179-865",false);
+return b?String.fromCharCode(window.parseInt(b,16)):escapes[c];
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-785-179-865",true);
+ }});
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-179-711-179-868",true);
+ }}
+return function(source,reviver){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-180-7-185-63",false);
+var r,tx=/^[\x20\t\n\r]*(?:([,:\[\]{}]|true|false|null)|(-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)|"((?:[^\r\n\t\\\"]|\\(?:["\\\/trnfb]|u[0-9a-fA-F]{4}))*)")/;state='go';stack=[];try{for(;;){r=tx.exec(source);if(!r){break;}
+if(r[1]){action[r[1]][state]();}else if(r[2]){value=+r[2];number[state]();}else{value=debackslashify(r[3]);string[state]();}
+source=source.slice(r[0].length);}}catch(e){state=e;}
+if(state!=='ok'||(/[^\x20\t\n\r]/).test(source)){throw state instanceof window.SyntaxError?state:new window.SyntaxError('JSON');}
+return typeof reviver==='function'?(function walk(holder,key){ 
+ try {__tracer.cacheInit("/js/BrightcoveExperiences.js-function-184-36-185-39",false);
+var k,v,value=holder[key];if(value&&typeof value==='object'){for(k in value){if(Object.prototype.hasOwnProperty.call(value,k)){v=walk(value,k);if(v!==window.undefined){value[k]=v;}else{delete value[k];}}}}
+return reviver.call(holder,key,value);
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-184-36-185-39",true);
+ }}({'':value},'')):value;
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-180-7-185-63",true);
+ }};
+ 
+ } finally {__tracer.exitFunction("/js/BrightcoveExperiences.js-function-178-30-185-65",true);
+ }}()); }
+[rtiDebugInfo]0 126

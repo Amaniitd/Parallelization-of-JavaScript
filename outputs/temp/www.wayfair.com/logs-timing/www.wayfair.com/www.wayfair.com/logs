@@ -1,0 +1,131 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"www.wayfair.com/","origPath":"www.wayfair.com/","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'www.wayfair.com/',
+  origPath: 'www.wayfair.com/',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: [
+    '/px/client/main.min.js-function-2-1-4-10059',
+    'www.wayfair.com/-script-5-function-190-4053-190-4112',
+    'homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-22-1565-22-1645',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-6-320-7-31878',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-2604-71-2640',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31574-24-31662',
+    '/px/client/main.min.js-function-3-10077-3-10248',
+    'www.wayfair.com/-script-18-function-328-7-328-238',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-2051-35-2069',
+    'www.wayfair.com/-script-2-function-145-11-145-138',
+    'www.wayfair.com/-script-11-function-218-30-227-11',
+    'www.wayfair.com/-script-4-function-155-21-172-18',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-29876-1-30056',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-80106-1-80454',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-80-4921-80-4955',
+    'www.wayfair.com/-script-4-function-170-52-172-11',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-10413-5-10811',
+    'www.wayfair.com/-script-7-function-197-1-197-96',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-8075-5-8780',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1813-35-1836',
+    'homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-22-1652-22-1681',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119',
+    '~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-77-48788-77-48810',
+    '~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-180-2660-180-2886',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-47-3610-47-3670',
+    'tungsten_react_wrapper.js?wfdc=dsm&react_16_9_0=ON-function-1-21-138-173',
+    '/px/client/main.min.js-function-2-7545-2-7572',
+    'www.wayfair.com/-script-19-function-331-9-348-15',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1351-71-1473',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-1-29-148-173',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1581-35-1698',
+    'www.wayfair.com/-script-9-function-198-700-198-1162',
+    'homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-1-32-35-173',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-1578-5-1618',
+    'www.wayfair.com/-script-17-function-246-9-325-19',
+    '2/~~@icons/wayfair-min.js?wfdc=dsm&react_16_9_0=ON-function-1-17-3-177',
+    'homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-22-1688-22-1855',
+    '/analytics.js-function-1-1-85-409',
+    '/px/client/main.min.js-function-3-27426-3-27506',
+    'www.wayfair.com/-script-8-function-198-62-198-678',
+    '/px/client/main.min.js-function-3-2145-3-2191',
+    '~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-77-44495-77-44683',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1764-71-2643',
+    '/px/client/main.min.js-function-3-2201-3-2365',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-80-4884-80-4914',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-80-4540-80-4687',
+    '/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-47-1148-47-1278',
+    '~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-50-6311-50-6397',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-22-5-10864',
+    '~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-1-28-367-173',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-1530-5-1556',
+    '~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-96-2067-96-2299',
+    'ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035',
+    'www.wayfair.com/-script-11-function-200-9-228-15',
+    'www.wayfair.com/-script-5-function-176-7-190-4930'
+  ]
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 2
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 2
+function source is  function __HORCRUX__(){ window.wf = {};
+      window.wf.extend = function x(t, s) {
+        if (!s) {
+          s = t;
+          t = window
+        }
+        if (t !== s) {
+          for (var n in s)if (t[n] instanceof Object && !(t[n] instanceof Array) && !t[n].jquery)t[n] = x(t[n], s[n]); else t[n] = s[n];
+        }
+        return t
+      };
+
+      window.wf.extend({"wf":{"config":{"logger":{"config":{"JS_loadModules":{"FT":"dispatch_js_loadmodules_msgs","levels":{"gelf":100}},"js_prerender_tracking":{"FT":"dispatch_js_prerender_tracking_msgs","levels":{"gelf":100}},"js_uncaught_exception":{"FT":"dispatch_js_uncaught_exception_msgs","levels":{"gelf":100}},"js_appended_scripts":{"FT":"dispatch_js_appended_scripts_msgs","levels":{"gelf":100}},"JS_Tracking":{"FT":"dispatch_js_tracking_msgs","levels":{"gelf":100}},"JSUncaught":{"FT":"dispatch_js_uncaught_msgs","levels":{"gelf":100}},"JS_engineering_bar_usage":{"levels":{"gelf":100}},"extranet_event_preview":{"levels":{"gelf":100}},"js_app_nexus_logger":{"levels":{"gelf":100}},"JS_SPA_LOGGER":{"levels":{"gelf":100}},"performance_timing":{"levels":{"gelf":100}},"uber_wizard":{"levels":{"gelf":100}},"log_info_level":{"levels":{"gelf":100}},"rp3d_logger":{"levels":{"gelf":100}},"sku_addition_front_end":{"levels":{"gelf":100}},"image_url":{"levels":{"gelf":100}},"log_payments":{"levels":{"gelf":100}},"waychat":{"levels":{"gelf":100}},"voice_transcription_center":{"levels":{"gelf":100}}},"queueMaxSend":25,"endpoint":"\/logjs.php","severityIndex":{"FATAL":1,"ERROR":2,"WARN":3,"INFO":4,"DEBUG":5,"TRACE":6,"FINE":7,"OFF":8},"severityLevel":{"1":"FATAL","2":"ERROR","3":"WARN","4":"INFO","5":"DEBUG","6":"TRACE","7":"FINE","8":"OFF"},"codeSeverityLevel":{"500":"ERROR","650":"WARN","100":"INFO","50":"DEBUG"},"errorCode":{"FATAL":500,"ERROR":500,"WARN":650,"INFO":100,"DEBUG":50},"consoleThreshold":"OFF","wfgelfs":[]}}}});window.wf.extend({"wf":{"runtime":[]}});      window.wf.runtime.start = new Date().getTime();
+      window.wf.runtime.start_date = new Date();
+            !function(){"use strict";if(window.isDevMode=function(){var devMode=!1,loc=window.location.toString();return devMode=loc.indexOf("127.0.0.1")!==-1||loc.indexOf("csnzoo")!==-1},!window.console){var logShim=function(){};window.console={log:logShim,warn:logShim,error:logShim}}window.loadJSContent=function(file,key){var head=window.document.getElementsByTagName("head")[0],script=window.document.createElement("script");script.src=file,script.onerror=function(){var message="Loading js file failed: "+file+(key?" ("+key+")":"");window.wf.logger?window.wf.logger.debug(message):null!=window.console&&window.console.warn(message)},head.appendChild(script)},window.processJSContent=function(url,callback,variable){var count=1,waittoload=function(){count<10&&(count+=1,"undefined"==typeof window[variable]?window.setTimeout(waittoload,500):callback(window[variable]))};window.loadJSContent(url),waittoload()},window.errorHandler=function(msg,url,ln,key){return key=key||"",(!url||url.indexOf(window.location.hostname)!==-1)&&(null!=window.wf&&null!=window.wf.logger&&window.wf.logger.info("errorHandler: "+msg),!0)},window.highlightMissingFiles=function(missingFiles){for(var key in missingFiles)if(missingFiles.hasOwnProperty(key)){var li=window.document.querySelector("."+key);null!==li&&(li.style.color="red")}}}();!function(){"use strict";function _checkQueueLater(){queueTimer===-1&&(queueTimer=window.setTimeout(function(){exports.sendQueue(),queueTimer=-1},QUEUE_FLUSH_TIMER))}var wf=window.wf,exports=wf.reporter={},loggerConfig=wf.config&&wf.config.logger;if(exports.endpoint=loggerConfig&&loggerConfig.endpoint,!loggerConfig||!exports.endpoint)return void(exports.send=exports.queue=exports.probeLogger=function(){});var ABSOLUTE_MAX_SEND=50,logsSent=0,loggerQueueMaxSend=loggerConfig.queueMaxSend,queue={},QUEUE_FLUSH_TIMER=50,queueTimer=-1,_marshall=function(message,data){var obj={type:"L",message:message,severityLevel:data.severityLevel,logger:data.name,mdc:data.mdc};return data.filter&&(obj.filter=data.filter),obj};exports.send=function(identity,message,data){var log={};"logger"===identity&&(log[identity]=[_marshall(message,data)],_send(log))},exports.probeLogger=function(name,callback){var log={};log.logger=[{type:"U",logger:name}],_send(log,callback)};var _send=function(data,callback){if(!(logsSent>ABSOLUTE_MAX_SEND)&&(logsSent+=1,window.JSON&&data)){var jsonData=!1,canParse=!1;try{jsonData=window.JSON.stringify({transactionID:wf.constants.TRANSACTION_ID,logger:data.logger||[]}),window.JSON.parse(jsonData),canParse=!0}catch(e){}if(canParse&&jsonData)try{_transport(jsonData,callback)}catch(e){}}},_transport=function(data,callback){try{if(!window.XMLHttpRequest)return;if("T"!==wf.constants.ENV){var request=new window.XMLHttpRequest;if(request.open("POST",exports.endpoint,"function"!=typeof callback),request.setRequestHeader("Content-Type","application/json"),request.send(data),"function"==typeof callback)return void callback(request.responseText)}}catch(e){}},_hasQueue=!1;exports.queue=function(identity,message,data){window.JSON&&message&&(_hasQueue=!0,queue[identity]=queue[identity]||[],queue[identity].push(_marshall(message,data)),queue[identity].length>loggerQueueMaxSend&&queue[identity].shift(),_checkQueueLater())},exports.flushQueue=function(){queue={},_hasQueue=!1},exports.sendQueue=function(){_hasQueue&&(_send(queue),exports.flushQueue())},window.onbeforeunload=function(){exports.sendQueue()}}();!function(){"use strict";var wf=window.wf,reporter=wf&&wf.reporter,logsSent={};if(!reporter){var noop=function(){};return void(window.wf.logger={getErrorStack:noop,reportError:noop,_warnCount:-1,_errorCount:-1,_fatalCount:-1})}var REPORTER_IDENTITY="logger",_reportError=function(message,data,sendImmediately){data&&data.mdc&&(logsSent[message]===!0&&(data.mdc.duplicate=!0),wf&&wf.ic_error===!0&&(data.mdc.ic_error=!0)),sendImmediately?reporter.send(REPORTER_IDENTITY,message,data):reporter.queue(REPORTER_IDENTITY,message,data),logsSent[message]=!0},_catchExceptions=function(){try{window.onerror=function(message,url,line){ 
+ try {__tracer.cacheInit("www.wayfair.com/-script-5-function-190-4053-190-4112",false);
+_logException(message,url,line)
+ 
+ } finally {__tracer.exitFunction("www.wayfair.com/-script-5-function-190-4053-190-4112",true);
+ }}}catch(e){}},_getErrorStack=function(error){var stack=null;if(error&&error.stack){var errorString=error.toString(),rawStack=error.stack.split("\n");0===rawStack[rawStack.length-1].length&&rawStack.pop(),stack=rawStack[0]===errorString?rawStack.join("\r\n"):rawStack}return stack},_logException=function(message,url,line){var logLevel="INFO";"Script error."===message&&0===line?message="Uncaught Error. Not AMD. Cannot be processed.":wf&&wf.features&&wf.features.log_uncaught_js_errors_as_warn&&(logLevel="WARN");var errorData={JSUncaught:!0,ErrorURL:url,severityLevel:logLevel,name:"js_uncaught_exception",stackTrace:_getErrorStack(new Error)};_reportError(message,errorData,!0)};_catchExceptions(),window.wf.logger={getErrorStack:_getErrorStack,reportError:_reportError,_warnCount:0,_errorCount:0,_fatalCount:0}}(); }
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 2
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 55
+Only instrumenting the following functions from the current script 1
+function source is  function __HORCRUX__(){ window.ga=window.ga||function(){(window.ga.q=window.ga.q||[]).push(arguments)};window.ga.l=+new Date; }
+[rtiDebugInfo]0 13

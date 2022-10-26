@@ -1,0 +1,415 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/pagead/conversion.js","origPath":"/pagead/conversion.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"rewrite","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/pagead/conversion.js',
+  origPath: '/pagead/conversion.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'rewrite',
+  proxyName: 'window',
+  cg: [
+    'www.yelp.com/-script-12-function-138-234-138-1290',
+    'www.yelp.com/-script-2-function-32-13-41-19',
+    'www.yelp.com/-script-3-function-45-17-45-780',
+    'www.yelp.com/-script-9-function-102-13-111-19',
+    'www.yelp.com/-script-1-function-26-33-26-375',
+    'www.yelp.com/-script-18-function-142-29-149-11',
+    'www.yelp.com/-script-5-function-62-9-64-53',
+    'www.yelp.com/-script-17-function-140-728-140-798',
+    'www.yelp.com/-script-4-function-57-9-59-48',
+    'www.yelp.com/-script-8-function-97-33-97-218',
+    'www.yelp.com/-script-0-function-4-29-11-11',
+    '/analytics.js-function-1-1-85-409',
+    'www.yelp.com/-script-6-function-65-96-65-251',
+    'www.yelp.com/-script-6-function-65-22-65-259',
+    'www.yelp.com/-script-10-function-122-29-129-11'
+  ],
+  signature: {
+    'www.yelp.com/-script-12-function-138-234-138-1290': { sig: [Array], time: 0 },
+    'www.yelp.com/-script-2-function-32-13-41-19': { sig: [Array], time: 2.099999999627471 },
+    'www.yelp.com/-script-3-function-45-17-45-780': { sig: [Array], time: 0.10000000149011612 },
+    'www.yelp.com/-script-9-function-102-13-111-19': { sig: [Array], time: 0 },
+    'www.yelp.com/-script-1-function-26-33-26-375': { sig: [Array], time: 1.300000000745058 },
+    'www.yelp.com/-script-18-function-142-29-149-11': { sig: [Array], time: 0 },
+    'www.yelp.com/-script-5-function-62-9-64-53': { sig: [Array], time: 0 },
+    'www.yelp.com/-script-17-function-140-728-140-798': { sig: [Array], time: 0.5 },
+    'www.yelp.com/-script-4-function-57-9-59-48': { sig: [Array], time: 0 },
+    'www.yelp.com/-script-8-function-97-33-97-218': { sig: [Array], time: 0.900000000372529 },
+    'www.yelp.com/-script-0-function-4-29-11-11': { sig: [Array], time: 0.30000000074505806 },
+    '/analytics.js-function-1-1-85-409': { sig: [Array], time: 30.300000000745058 },
+    'www.yelp.com/-script-6-function-65-96-65-251': { sig: [Array], time: 0 },
+    'www.yelp.com/-script-6-function-65-22-65-259': { sig: [Array], time: 0 },
+    'www.yelp.com/-script-10-function-122-29-129-11': { sig: [Array], time: 0 }
+  },
+  callGraph: {
+    'www.yelp.com/-script-0-function-4-29-11-11': [],
+    'www.yelp.com/-script-1-function-26-33-26-375': [ 'www.yelp.com/-script-1-function-26-58-26-291' ],
+    'www.yelp.com/-script-1-function-26-58-26-291': [],
+    'www.yelp.com/-script-2-function-32-13-41-19': [ 'www.yelp.com/-script-2-function-32-38-41-13' ],
+    'www.yelp.com/-script-2-function-32-38-41-13': [
+      'www.yelp.com/-script-2-function-35-8207-35-8307',
+      'www.yelp.com/-script-2-function-35-17-35-475'
+    ],
+    'www.yelp.com/-script-2-function-35-17-35-475': [ 'www.yelp.com/-script-2-function-35-29-35-163' ],
+    'www.yelp.com/-script-2-function-35-29-35-163': [
+      'www.yelp.com/-script-2-function-35-477-35-867',
+      'www.yelp.com/-script-2-function-35-868-35-6744',
+      'www.yelp.com/-script-2-function-35-7861-35-7959',
+      'www.yelp.com/-script-2-function-35-8165-35-8314',
+      'www.yelp.com/-script-2-function-35-7377-35-7587',
+      'www.yelp.com/-script-2-function-35-7961-35-8164',
+      'www.yelp.com/-script-2-function-35-6840-35-7376',
+      'www.yelp.com/-script-2-function-35-7588-35-7719',
+      'www.yelp.com/-script-2-function-35-7720-35-7860',
+      'www.yelp.com/-script-2-function-35-6745-35-6839'
+    ],
+    'www.yelp.com/-script-2-function-35-7961-35-8164': [ 'www.yelp.com/-script-2-function-35-29-35-163' ],
+    'www.yelp.com/-script-2-function-35-8165-35-8314': [ 'www.yelp.com/-script-2-function-35-29-35-163' ],
+    'www.yelp.com/-script-2-function-35-868-35-6744': [
+      'www.yelp.com/-script-2-function-35-1221-35-1341',
+      'www.yelp.com/-script-2-function-35-1568-35-6712',
+      'www.yelp.com/-script-2-function-35-29-35-163',
+      'www.yelp.com/-script-2-function-35-284-35-390'
+    ],
+    'www.yelp.com/-script-2-function-35-6745-35-6839': [],
+    'www.yelp.com/-script-2-function-35-6840-35-7376': [ 'www.yelp.com/-script-2-function-35-6870-35-7373' ],
+    'www.yelp.com/-script-2-function-35-6870-35-7373': [],
+    'www.yelp.com/-script-2-function-35-284-35-390': [ 'www.yelp.com/-script-2-function-35-188-35-279' ],
+    'www.yelp.com/-script-2-function-35-188-35-279': [ 'www.yelp.com/-script-2-function-35-395-35-458' ],
+    'www.yelp.com/-script-2-function-35-395-35-458': [],
+    'www.yelp.com/-script-2-function-35-7377-35-7587': [],
+    'www.yelp.com/-script-2-function-35-7588-35-7719': [],
+    'www.yelp.com/-script-2-function-35-477-35-867': [
+      'www.yelp.com/-script-2-function-35-29-35-163',
+      'www.yelp.com/-script-2-function-35-188-35-279'
+    ],
+    'www.yelp.com/-script-2-function-35-7720-35-7860': [ 'www.yelp.com/-script-2-function-35-188-35-279' ],
+    'www.yelp.com/-script-2-function-35-7861-35-7959': [ 'www.yelp.com/-script-2-function-35-29-35-163' ],
+    'www.yelp.com/-script-2-function-35-1568-35-6712': [],
+    'www.yelp.com/-script-2-function-35-1221-35-1341': [],
+    'www.yelp.com/-script-2-function-35-8207-35-8307': [
+      'www.yelp.com/-script-2-function-35-6561-35-6709',
+      'www.yelp.com/-script-2-function-35-3042-35-3142',
+      'www.yelp.com/-script-2-function-35-6514-35-6546',
+      'www.yelp.com/-script-2-function-35-5823-35-5928'
+    ],
+    'www.yelp.com/-script-2-function-35-6514-35-6546': [ 'www.yelp.com/-script-2-function-35-1579-35-2007' ],
+    'www.yelp.com/-script-2-function-35-1579-35-2007': [
+      'www.yelp.com/-script-2-function-35-1221-35-1341',
+      'www.yelp.com/-script-2-function-35-6200-35-6253'
+    ],
+    'www.yelp.com/-script-2-function-35-6200-35-6253': [
+      'www.yelp.com/-script-2-function-35-5943-35-6190',
+      'www.yelp.com/-script-2-function-35-2048-35-2249'
+    ],
+    'www.yelp.com/-script-2-function-35-5943-35-6190': [],
+    'www.yelp.com/-script-2-function-35-2048-35-2249': [ 'www.yelp.com/-script-2-function-35-2181-35-2247' ],
+    'www.yelp.com/-script-2-function-35-2181-35-2247': [ 'www.yelp.com/-script-2-function-35-2265-35-2890' ],
+    'www.yelp.com/-script-2-function-35-2265-35-2890': [
+      'www.yelp.com/-script-2-function-35-2658-35-2718',
+      'www.yelp.com/-script-2-function-35-2920-35-3025',
+      'www.yelp.com/-script-2-function-35-705-35-860',
+      'www.yelp.com/-script-2-function-35-897-35-1221',
+      'www.yelp.com/-script-1-function-26-122-26-169'
+    ],
+    'www.yelp.com/-script-2-function-35-897-35-1221': [],
+    'www.yelp.com/-script-1-function-26-122-26-169': [],
+    'www.yelp.com/-script-2-function-35-2920-35-3025': [ 'www.yelp.com/-script-2-function-35-2980-35-3023' ],
+    'www.yelp.com/-script-2-function-35-2980-35-3023': [],
+    'www.yelp.com/-script-2-function-35-2658-35-2718': [ 'www.yelp.com/-script-2-function-35-4233-35-4417' ],
+    'www.yelp.com/-script-2-function-35-4233-35-4417': [ 'www.yelp.com/-script-2-function-35-4296-35-4415' ],
+    'www.yelp.com/-script-2-function-35-4296-35-4415': [
+      'www.yelp.com/-script-2-function-35-705-35-860',
+      'www.yelp.com/-script-1-function-26-122-26-169'
+    ],
+    'www.yelp.com/-script-2-function-35-705-35-860': [
+      'www.yelp.com/-script-2-function-35-7759-35-7779',
+      'www.yelp.com/-script-2-function-35-7787-35-7859'
+    ],
+    'www.yelp.com/-script-2-function-35-7759-35-7779': [],
+    'www.yelp.com/-script-2-function-35-7787-35-7859': [],
+    'www.yelp.com/-script-2-function-35-6561-35-6709': [],
+    'www.yelp.com/-script-2-function-35-3042-35-3142': [ 'www.yelp.com/-script-2-function-35-3100-35-3140' ],
+    'www.yelp.com/-script-2-function-35-3100-35-3140': [ 'www.yelp.com/-script-2-function-35-3336-35-4013' ],
+    'www.yelp.com/-script-2-function-35-3336-35-4013': [
+      'www.yelp.com/-script-2-function-35-705-35-860',
+      'www.yelp.com/-script-1-function-26-122-26-169',
+      'www.yelp.com/-script-2-function-35-580-35-600'
+    ],
+    'www.yelp.com/-script-2-function-35-580-35-600': [],
+    'www.yelp.com/-script-2-function-35-5823-35-5928': [],
+    'www.yelp.com/-script-3-function-45-17-45-780': [ 'www.yelp.com/-script-3-function-45-42-45-725' ],
+    'www.yelp.com/-script-3-function-45-42-45-725': [ 'www.yelp.com/-script-3-function-45-495-45-599' ],
+    'www.yelp.com/-script-3-function-45-495-45-599': [ 'www.yelp.com/-script-3-function-45-576-45-597' ],
+    'www.yelp.com/-script-3-function-45-576-45-597': [],
+    'www.yelp.com/-script-4-function-57-9-59-48': [],
+    'www.yelp.com/-script-5-function-62-9-64-53': [],
+    'www.yelp.com/-script-6-function-65-22-65-259': [ 'www.yelp.com/-script-6-function-65-47-65-254' ],
+    'www.yelp.com/-script-6-function-65-47-65-254': [],
+    'www.yelp.com/-script-8-function-97-33-97-218': [],
+    'www.yelp.com/-script-9-function-102-13-111-19': [ 'www.yelp.com/-script-9-function-102-38-111-13' ],
+    'www.yelp.com/-script-9-function-102-38-111-13': [ 'www.yelp.com/-script-9-function-105-23-105-109' ],
+    'www.yelp.com/-script-9-function-105-23-105-109': [],
+    'www.yelp.com/-script-10-function-122-29-129-11': [],
+    'www.yelp.com/-script-12-function-138-234-138-1290': [ 'www.yelp.com/-script-12-function-138-259-138-1285' ],
+    'www.yelp.com/-script-12-function-138-259-138-1285': [],
+    '/analytics.js-function-1-1-85-409': [
+      '/analytics.js-function-1-26-18-775',
+      '/analytics.js-function-19-1-85-397'
+    ],
+    '/analytics.js-function-1-26-18-775': [ '/analytics.js-function-6-26-6-244' ],
+    '/analytics.js-function-6-26-6-244': [],
+    '/analytics.js-function-19-1-85-397': [
+      '/analytics.js-function-42-577-42-648',
+      '/analytics.js-function-42-652-42-701',
+      '/analytics.js-function-75-482-75-715',
+      '/analytics.js-function-42-704-42-746',
+      '/analytics.js-function-27-280-27-329',
+      '/analytics.js-function-82-125-82-143',
+      '/analytics.js-function-24-7-24-32'
+    ],
+    '/analytics.js-function-24-7-24-32': [],
+    '/analytics.js-function-27-280-27-329': [],
+    '/analytics.js-function-42-704-42-746': [ '/analytics.js-function-42-577-42-648' ],
+    '/analytics.js-function-42-577-42-648': [
+      '/analytics.js-function-27-347-27-420',
+      '/analytics.js-function-42-276-42-355'
+    ],
+    '/analytics.js-function-42-276-42-355': [],
+    '/analytics.js-function-27-347-27-420': [],
+    '/analytics.js-function-42-652-42-701': [],
+    '/analytics.js-function-82-125-82-143': [],
+    '/analytics.js-function-75-482-75-715': [ '/analytics.js-function-75-411-75-479' ],
+    '/analytics.js-function-75-411-75-479': [
+      '/analytics.js-function-85-354-85-394',
+      '/analytics.js-function-84-4-85-242'
+    ],
+    '/analytics.js-function-84-4-85-242': [
+      '/analytics.js-function-80-27-80-114',
+      '/analytics.js-function-24-858-24-936',
+      '/analytics.js-function-82-156-82-294',
+      '/analytics.js-function-49-217-49-338'
+    ],
+    '/analytics.js-function-49-217-49-338': [],
+    '/analytics.js-function-80-27-80-114': [
+      '/analytics.js-function-27-347-27-420',
+      '/analytics.js-function-27-438-27-519'
+    ],
+    '/analytics.js-function-27-438-27-519': [],
+    '/analytics.js-function-24-858-24-936': [],
+    '/analytics.js-function-82-156-82-294': [
+      '/analytics.js-function-83-4-83-376',
+      '/analytics.js-function-82-299-82-468'
+    ],
+    '/analytics.js-function-82-299-82-468': [
+      '/analytics.js-function-80-27-80-114',
+      '/analytics.js-function-75-759-76-166'
+    ],
+    '/analytics.js-function-75-759-76-166': [
+      '/analytics.js-function-24-940-24-1010',
+      '/analytics.js-function-24-815-24-854',
+      '/analytics.js-function-76-167-76-226'
+    ],
+    '/analytics.js-function-24-815-24-854': [],
+    '/analytics.js-function-76-167-76-226': [],
+    '/analytics.js-function-83-4-83-376': [
+      '/analytics.js-function-83-822-83-848',
+      '/analytics.js-function-49-242-49-337'
+    ],
+    '/analytics.js-function-83-822-83-848': [],
+    '/analytics.js-function-49-242-49-337': [
+      '/analytics.js-function-83-490-83-710',
+      '/analytics.js-function-41-814-41-956',
+      '/analytics.js-function-24-604-24-628',
+      '/analytics.js-function-42-17-42-134',
+      '/analytics.js-function-74-137-74-167',
+      '/analytics.js-function-75-18-75-289'
+    ],
+    '/analytics.js-function-83-490-83-710': [
+      '/analytics.js-function-24-815-24-854',
+      '/analytics.js-function-27-7-27-272',
+      '/analytics.js-function-29-733-30-129',
+      '/analytics.js-function-66-700-67-152',
+      '/analytics.js-function-37-196-37-236'
+    ],
+    '/analytics.js-function-27-7-27-272': [],
+    '/analytics.js-function-29-733-30-129': [ '/analytics.js-function-33-297-34-283' ],
+    '/analytics.js-function-33-297-34-283': [],
+    '/analytics.js-function-66-700-67-152': [
+      '/analytics.js-function-66-746-66-786',
+      '/analytics.js-function-67-156-71-412',
+      '/analytics.js-function-66-591-66-659',
+      '/analytics.js-function-24-1054-24-1117',
+      '/analytics.js-function-71-416-74-68',
+      '/analytics.js-function-37-291-37-312',
+      '/analytics.js-function-52-105-52-290',
+      '/analytics.js-function-66-712-66-746',
+      '/analytics.js-function-41-768-41-796',
+      '/analytics.js-function-49-242-49-337'
+    ],
+    '/analytics.js-function-41-768-41-796': [ '/analytics.js-function-27-280-27-329' ],
+    '/analytics.js-function-37-291-37-312': [],
+    '/analytics.js-function-66-712-66-746': [ '/analytics.js-function-27-347-27-420' ],
+    '/analytics.js-function-24-1054-24-1117': [],
+    '/analytics.js-function-66-746-66-786': [
+      '/analytics.js-function-37-330-37-357',
+      '/analytics.js-function-66-712-66-746'
+    ],
+    '/analytics.js-function-37-330-37-357': [],
+    '/analytics.js-function-52-105-52-290': [],
+    '/analytics.js-function-71-416-74-68': [
+      '/analytics.js-function-27-347-27-420',
+      '/analytics.js-function-49-646-50-81',
+      '/analytics.js-function-25-412-25-468',
+      '/analytics.js-function-26-304-27-3',
+      '/analytics.js-function-49-242-49-337'
+    ],
+    '/analytics.js-function-41-814-41-956': [
+      '/analytics.js-function-27-438-27-519',
+      '/analytics.js-function-24-815-24-854',
+      '/analytics.js-function-42-359-42-498'
+    ],
+    '/analytics.js-function-42-359-42-498': [
+      '/analytics.js-function-45-354-45-396',
+      '/analytics.js-function-27-438-27-519',
+      '/analytics.js-function-27-347-27-420'
+    ],
+    '/analytics.js-function-26-304-27-3': [],
+    '/analytics.js-function-42-17-42-134': [ '/analytics.js-function-42-142-42-252' ],
+    '/analytics.js-function-42-142-42-252': [
+      '/analytics.js-function-27-347-27-420',
+      '/analytics.js-function-42-359-42-498'
+    ],
+    '/analytics.js-function-49-646-50-81': [],
+    '/analytics.js-function-25-412-25-468': [ '/analytics.js-function-25-471-26-86' ],
+    '/analytics.js-function-25-471-26-86': [ '/analytics.js-function-25-118-25-230' ],
+    '/analytics.js-function-25-118-25-230': [],
+    '/analytics.js-function-67-156-71-412': [
+      '/analytics.js-function-57-31-57-280',
+      '/analytics.js-function-56-479-57-30',
+      '/analytics.js-function-18-630-18-772',
+      '/analytics.js-function-28-14-28-172',
+      '/analytics.js-function-24-1121-25-16',
+      '/analytics.js-function-41-963-41-1013',
+      '/analytics.js-function-27-347-27-420',
+      '/analytics.js-function-52-304-53-57',
+      '/analytics.js-function-24-604-24-628',
+      '/analytics.js-function-25-412-25-468',
+      '/analytics.js-function-25-118-25-230',
+      '/analytics.js-function-54-284-54-326',
+      '/analytics.js-function-26-90-26-175',
+      '/analytics.js-function-49-242-49-337'
+    ],
+    '/analytics.js-function-41-963-41-1013': [ '/analytics.js-function-49-242-49-337' ],
+    '/analytics.js-function-28-14-28-172': [],
+    '/analytics.js-function-54-284-54-326': [
+      '/analytics.js-function-41-963-41-1013',
+      '/analytics.js-function-54-330-55-301'
+    ],
+    '/analytics.js-function-54-330-55-301': [ '/analytics.js-function-24-604-24-628' ],
+    '/analytics.js-function-24-604-24-628': [ '/analytics.js-function-24-50-24-75' ],
+    '/analytics.js-function-24-50-24-75': [],
+    '/analytics.js-function-26-90-26-175': [],
+    '/analytics.js-function-57-31-57-280': [ '/analytics.js-function-28-14-28-172' ],
+    '/analytics.js-function-56-479-57-30': [],
+    '/analytics.js-function-18-630-18-772': [
+      '/analytics.js-function-12-136-12-498',
+      '/analytics.js-function-12-155-12-497',
+      '/analytics.js-function-6-251-6-313',
+      '/analytics.js-function-10-194-10-351'
+    ],
+    '/analytics.js-function-12-136-12-498': [],
+    '/analytics.js-function-10-194-10-351': [],
+    '/analytics.js-function-12-155-12-497': [
+      '/analytics.js-function-14-239-15-68',
+      '/analytics.js-function-8-243-8-483',
+      '/analytics.js-function-10-409-10-474',
+      '/analytics.js-function-6-657-8-181'
+    ],
+    '/analytics.js-function-8-243-8-483': [],
+    '/analytics.js-function-14-239-15-68': [],
+    '/analytics.js-function-6-657-8-181': [ '/analytics.js-function-8-184-8-240' ],
+    '/analytics.js-function-8-184-8-240': [],
+    '/analytics.js-function-10-409-10-474': [],
+    '/analytics.js-function-6-251-6-313': [],
+    '/analytics.js-function-24-1121-25-16': [
+      '/analytics.js-function-41-320-41-375',
+      '/analytics.js-function-19-12-19-164'
+    ],
+    '/analytics.js-function-41-320-41-375': [],
+    '/analytics.js-function-19-12-19-164': [],
+    '/analytics.js-function-52-304-53-57': [
+      '/analytics.js-function-27-347-27-420',
+      '/analytics.js-function-41-963-41-1013',
+      '/analytics.js-function-53-61-53-345',
+      '/analytics.js-function-41-1016-41-1078',
+      '/analytics.js-function-49-242-49-337'
+    ],
+    '/analytics.js-function-41-1016-41-1078': [ '/analytics.js-function-49-242-49-337' ],
+    '/analytics.js-function-53-61-53-345': [
+      '/analytics.js-function-55-480-56-29',
+      '/analytics.js-function-56-279-56-416',
+      '/analytics.js-function-41-963-41-1013',
+      '/analytics.js-function-54-154-54-280',
+      '/analytics.js-function-28-176-29-68'
+    ],
+    '/analytics.js-function-54-154-54-280': [
+      '/analytics.js-function-55-480-56-29',
+      '/analytics.js-function-41-963-41-1013',
+      '/analytics.js-function-56-420-56-475',
+      '/analytics.js-function-29-72-29-190'
+    ],
+    '/analytics.js-function-29-72-29-190': [],
+    '/analytics.js-function-55-480-56-29': [],
+    '/analytics.js-function-56-420-56-475': [ '/analytics.js-function-56-279-56-416' ],
+    '/analytics.js-function-56-279-56-416': [],
+    '/analytics.js-function-28-176-29-68': [
+      '/analytics.js-function-27-744-28-6',
+      '/analytics.js-function-28-14-28-172'
+    ],
+    '/analytics.js-function-27-744-28-6': [],
+    '/analytics.js-function-66-591-66-659': [ '/analytics.js-function-41-320-41-375' ],
+    '/analytics.js-function-37-196-37-236': [],
+    '/analytics.js-function-74-137-74-167': [ '/analytics.js-function-49-242-49-337' ],
+    '/analytics.js-function-45-354-45-396': [ '/analytics.js-function-42-276-42-355' ],
+    '/analytics.js-function-75-18-75-289': [
+      '/analytics.js-function-37-373-37-546',
+      '/analytics.js-function-27-7-27-272',
+      '/analytics.js-function-49-242-49-337'
+    ],
+    '/analytics.js-function-37-373-37-546': [
+      '/analytics.js-function-40-377-40-456',
+      '/analytics.js-function-24-815-24-854',
+      '/analytics.js-function-53-398-53-463',
+      '/analytics.js-function-37-623-37-666',
+      '/analytics.js-function-25-103-25-115',
+      '/analytics.js-function-41-269-41-312',
+      '/analytics.js-function-37-666-37-747',
+      '/analytics.js-function-49-242-49-337'
+    ],
+    '/analytics.js-function-37-623-37-666': [
+      '/analytics.js-function-41-963-41-1013',
+      '/analytics.js-function-27-744-28-6'
+    ],
+    '/analytics.js-function-25-103-25-115': [],
+    '/analytics.js-function-40-377-40-456': [],
+    '/analytics.js-function-37-666-37-747': [],
+    '/analytics.js-function-41-269-41-312': [ '/analytics.js-function-49-242-49-337' ],
+    '/analytics.js-function-53-398-53-463': [
+      '/analytics.js-function-41-963-41-1013',
+      '/analytics.js-function-52-304-53-57'
+    ],
+    '/analytics.js-function-85-354-85-394': [ '/analytics.js-function-82-156-82-294' ],
+    '/analytics.js-function-24-940-24-1010': [],
+    'www.yelp.com/-script-6-function-65-96-65-251': [],
+    'www.yelp.com/-script-17-function-140-728-140-798': [],
+    'www.yelp.com/-script-18-function-142-29-149-11': []
+  }
+}
+Wrote to wrappedSrc: /home/aman/Desktop/Parallelization-of-JavaScript/outputs/temp/www.yelp.com/logs-rewrite/www.yelp.com/pageadconversion.js/wrapped.js
+>>>>>[/pagead/conversion.js]: instrument 0 function(s)
+[rtiDebugInfo]0 0

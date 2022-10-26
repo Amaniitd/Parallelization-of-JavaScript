@@ -1,0 +1,15 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"923178%3F&hn=www.googleadservices.com&rfmt=1&fmt=4","origPath":"/pagead/conversion/864073483/?random=1598471126022&cv=9&fst=1598471126022&num=1&label=SuCZCJq78m8Qi-6CnAM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2F6372968.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3B~oref%3Dhttps%3A%2F%2Fm.yelp.com%2F&ref=https%3A%2F%2F6372968.fls.doubleclick.net%2Factivityi%3Bsrc%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3F&hn=www.googleadservices.com&rfmt=1&fmt=4","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '923178%3F&hn=www.googleadservices.com&rfmt=1&fmt=4',
+  origPath: '/pagead/conversion/864073483/?random=1598471126022&cv=9&fst=1598471126022&num=1&label=SuCZCJq78m8Qi-6CnAM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2F6372968.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3B~oref%3Dhttps%3A%2F%2Fm.yelp.com%2F&ref=https%3A%2F%2F6372968.fls.doubleclick.net%2Factivityi%3Bsrc%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3F&hn=www.googleadservices.com&rfmt=1&fmt=4',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+[rtiDebugInfo]0 6

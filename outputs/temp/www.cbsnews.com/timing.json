@@ -1,0 +1,849 @@
+{
+  "type": "object",
+  "value": {
+    "www.cbsnews.com/-script-0-function-10-114-10-8519_count0": [
+      93,
+      95.59999999962747
+    ],
+    "www.cbsnews.com/-script-4-function-5252-4-5255-5_count0": [
+      239.09999999962747,
+      239.2000000011176
+    ],
+    "www.cbsnews.com/-script-5-function-5355-2-5359-4303_count0": [
+      304.7000000011176,
+      309.90000000037253
+    ],
+    "www.cbsnews.com/-script-6-function-5365-6-5384-7_count0": [
+      310.5,
+      310.5
+    ],
+    "www.cbsnews.com/-script-7-function-5429-6-5430-140_count0": [
+      310.59999999962747,
+      310.59999999962747
+    ],
+    "www.cbsnews.com/-script-8-function-5432-6-5460-142_count0": [
+      311.5,
+      311.5
+    ],
+    "www.cbsnews.com/-script-10-function-5462-9-5478-11_count0": [
+      325.59999999962747,
+      332.2000000011176
+    ],
+    "www.cbsnews.com/-script-11-function-5479-45-5479-370_count0": [
+      332.80000000074506,
+      332.80000000074506
+    ],
+    "www.cbsnews.com/-script-0-function-10-6459-10-6521_count0": [
+      333.40000000037253,
+      333.7000000011176
+    ],
+    "www.cbsnews.com/-script-0-function-10-1741-10-1947_count0": [
+      338.80000000074506,
+      338.80000000074506
+    ],
+    "www.cbsnews.com/-script-0-function-10-1947-10-2021_count0": [
+      339.2000000011176,
+      339.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-2-5-46370_count0": [
+      352.90000000037253,
+      370
+    ],
+    "www.cbsnews.com/-script-0-function-10-1947-10-2021_count1": [
+      374.90000000037253,
+      374.90000000037253
+    ],
+    "www.cbsnews.com/-script-0-function-10-2021-10-2103_count0": [
+      374.90000000037253,
+      375.30000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-41233-5-41256_count0": [
+      375.30000000074506,
+      375.30000000074506
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-2-1-12169_count0": [
+      375.40000000037253,
+      378
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count0": [
+      378,
+      378.80000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count1": [
+      378.80000000074506,
+      380.80000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count2": [
+      380.80000000074506,
+      380.80000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count3": [
+      380.80000000074506,
+      380.90000000037253
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count4": [
+      380.90000000037253,
+      382.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count5": [
+      382.30000000074506,
+      383
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count6": [
+      389,
+      389
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count7": [
+      389,
+      389.09999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count8": [
+      389.09999999962747,
+      389.09999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count9": [
+      389.80000000074506,
+      390.30000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count10": [
+      390.30000000074506,
+      391.09999999962747
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-5920-1-6015_count0": [
+      391.09999999962747,
+      391.30000000074506
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-2468-1-2512_count0": [
+      391.5,
+      392.59999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count11": [
+      393.09999999962747,
+      393.59999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count12": [
+      393.59999999962747,
+      394.30000000074506
+    ],
+    "/cookieconsentpub/v1/geo/location-function-1-1-1-226_count0": [
+      400.09999999962747,
+      400.2000000011176
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-3044-1-3059_count0": [
+      400.2000000011176,
+      401.59999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count13": [
+      402.7000000011176,
+      403.09999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count14": [
+      404.2000000011176,
+      404.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355_count15": [
+      404.5,
+      420.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count0": [
+      410.90000000037253,
+      420
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count0": [
+      420.40000000037253,
+      420.40000000037253
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count1": [
+      421.5,
+      421.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count1": [
+      423.09999999962747,
+      424.09999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917_count0": [
+      423.5,
+      423.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917_count1": [
+      423.90000000037253,
+      424
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917_count2": [
+      424.09999999962747,
+      424.09999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917_count3": [
+      424.09999999962747,
+      424.09999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count2": [
+      424.40000000037253,
+      424.40000000037253
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count2": [
+      424.40000000037253,
+      424.40000000037253
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-32857-5-33204_count0": [
+      437.59999999962747,
+      439.90000000037253
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count3": [
+      439.90000000037253,
+      439.90000000037253
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count0": [
+      441.59999999962747,
+      441.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39190-5-39239_count0": [
+      441.7000000011176,
+      441.80000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39190-5-39239_count1": [
+      441.80000000074506,
+      441.80000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39190-5-39239_count2": [
+      441.80000000074506,
+      441.80000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39190-5-39239_count3": [
+      441.80000000074506,
+      441.80000000074506
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-32857-5-33204_count1": [
+      442.80000000074506,
+      445.09999999962747
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count4": [
+      445.5,
+      445.5
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-1-7-318885_count0": [
+      446.5,
+      482.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count5": [
+      482.5,
+      482.5
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count0": [
+      513.7000000011176,
+      513.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count6": [
+      515.5999999996275,
+      515.5999999996275
+    ],
+    "www.cbsnews.com/-script-0-function-10-2021-10-2103_count1": [
+      515.7000000011176,
+      515.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count1": [
+      515.7000000011176,
+      515.7000000011176
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count1": [
+      518.5,
+      518.5
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count2": [
+      518.5,
+      518.5
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-316641-7-318867_count0": [
+      518.5,
+      528
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count3": [
+      533.7000000011176,
+      534
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count4": [
+      535.4000000003725,
+      535.4000000003725
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count5": [
+      535.4000000003725,
+      535.4000000003725
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count6": [
+      535.4000000003725,
+      535.4000000003725
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count7": [
+      537,
+      537
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count8": [
+      537,
+      537.4000000003725
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count9": [
+      537.4000000003725,
+      537.9000000003725
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count10": [
+      537.9000000003725,
+      537.9000000003725
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count11": [
+      537.9000000003725,
+      538
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550_count12": [
+      538,
+      569.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count7": [
+      569.4000000003725,
+      569.4000000003725
+    ],
+    "/scripttemplates/6.0.0/otBannerSdk.js-function-7-228342-7-228437_count0": [
+      569.8000000007451,
+      570
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count8": [
+      570,
+      570
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36209-5-36225_count0": [
+      582.0999999996275,
+      582.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count2": [
+      582.2000000011176,
+      582.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count3": [
+      589.3000000007451,
+      589.3000000007451
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36349-5-36379_count0": [
+      589.7000000011176,
+      590.8000000007451
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count9": [
+      630.0999999996275,
+      630.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count3": [
+      632.4000000003725,
+      632.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count4": [
+      682.5999999996275,
+      682.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count5": [
+      733.2000000011176,
+      733.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36209-5-36225_count1": [
+      755.2000000011176,
+      755.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count4": [
+      755.8000000007451,
+      755.8000000007451
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36349-5-36379_count1": [
+      755.9000000003725,
+      756.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count6": [
+      783.5,
+      783.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count7": [
+      833.5,
+      833.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count8": [
+      883.8000000007451,
+      883.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count9": [
+      934.0999999996275,
+      934.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count10": [
+      984.2000000011176,
+      984.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count11": [
+      1034.300000000745,
+      1034.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count12": [
+      1084.4000000003725,
+      1084.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count13": [
+      1134.5,
+      1134.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count14": [
+      1184.5999999996275,
+      1184.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count15": [
+      1234.9000000003725,
+      1234.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count16": [
+      1285.5,
+      1285.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count10": [
+      1285.5999999996275,
+      1285.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count11": [
+      1285.7000000011176,
+      1285.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count12": [
+      1292.2000000011176,
+      1292.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count17": [
+      1335.800000000745,
+      1335.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count18": [
+      1386.2000000011176,
+      1386.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36209-5-36225_count2": [
+      1410.7000000011176,
+      1410.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count5": [
+      1411,
+      1411.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36349-5-36379_count2": [
+      1412.800000000745,
+      1414
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count19": [
+      1436.5,
+      1436.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count20": [
+      1486.800000000745,
+      1486.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count21": [
+      1536.800000000745,
+      1536.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count22": [
+      1587.0999999996275,
+      1587.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count23": [
+      1638.0999999996275,
+      1638.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count24": [
+      1689.4000000003725,
+      1689.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count25": [
+      1739.5999999996275,
+      1739.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count26": [
+      1789.9000000003725,
+      1790
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count27": [
+      1840.7000000011176,
+      1840.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count28": [
+      1891.0999999996275,
+      1891.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count29": [
+      1941.2000000011176,
+      1941.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count30": [
+      1991.300000000745,
+      1991.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count31": [
+      2041.7000000011176,
+      2041.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count32": [
+      2092,
+      2092
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count33": [
+      2142.0999999996275,
+      2142.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count34": [
+      2192.2000000011176,
+      2192.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count35": [
+      2242.5,
+      2242.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count13": [
+      2294.800000000745,
+      2294.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-38289-5-38322_count0": [
+      2295.0999999996275,
+      2295.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count6": [
+      2296.5999999996275,
+      2296.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917_count4": [
+      2296.5999999996275,
+      2296.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count14": [
+      2296.7000000011176,
+      2296.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count15": [
+      2301.300000000745,
+      2301.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-38289-5-38322_count1": [
+      2301.300000000745,
+      2301.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count36": [
+      2302.5,
+      2302.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count7": [
+      2305.7000000011176,
+      2305.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917_count5": [
+      2305.7000000011176,
+      2305.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count16": [
+      2305.9000000003725,
+      2305.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count37": [
+      2353,
+      2353
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count38": [
+      2403,
+      2403
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36209-5-36225_count3": [
+      2420.300000000745,
+      2420.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count8": [
+      2420.5,
+      2420.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36349-5-36379_count3": [
+      2422.5,
+      2423.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count39": [
+      2453.4000000003725,
+      2453.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count40": [
+      2503.7000000011176,
+      2503.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count41": [
+      2553.7000000011176,
+      2553.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count42": [
+      2604,
+      2604
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count43": [
+      2654.300000000745,
+      2654.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count44": [
+      2704.4000000003725,
+      2704.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count45": [
+      2754.5,
+      2754.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count46": [
+      2804.5999999996275,
+      2805.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count47": [
+      2855.5,
+      2855.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count48": [
+      2905.9000000003725,
+      2905.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917_count6": [
+      2919.5,
+      2919.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count49": [
+      2956.2000000011176,
+      2956.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count50": [
+      3006.300000000745,
+      3006.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count51": [
+      3056.5,
+      3056.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count17": [
+      3080.2000000011176,
+      3080.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count18": [
+      3140.9000000003725,
+      3140.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count52": [
+      3148.800000000745,
+      3148.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count53": [
+      3199.2000000011176,
+      3199.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36209-5-36225_count4": [
+      3205.300000000745,
+      3205.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071_count9": [
+      3205.800000000745,
+      3205.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36349-5-36379_count4": [
+      3205.9000000003725,
+      3207.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count54": [
+      3249.2000000011176,
+      3249.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count55": [
+      3299.4000000003725,
+      3299.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count56": [
+      3349.5,
+      3349.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count57": [
+      3399.7000000011176,
+      3399.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count58": [
+      3449.5999999996275,
+      3450.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count59": [
+      3500.4000000003725,
+      3500.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count60": [
+      3550.5,
+      3550.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count61": [
+      3600.7000000011176,
+      3600.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count62": [
+      3650.7000000011176,
+      3650.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count63": [
+      3700.800000000745,
+      3700.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count64": [
+      3751.2000000011176,
+      3751.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count65": [
+      3801.5,
+      3801.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count66": [
+      3851.5999999996275,
+      3851.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count67": [
+      3902,
+      3902
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count68": [
+      3952.2000000011176,
+      3952.2000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count69": [
+      4002.5,
+      4002.5
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count70": [
+      4052.7000000011176,
+      4052.7000000011176
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count71": [
+      4102.9000000003725,
+      4102.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count72": [
+      4153.200000001118,
+      4153.200000001118
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count73": [
+      4203.5999999996275,
+      4203.5999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count74": [
+      4253.9000000003725,
+      4253.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count75": [
+      4303.9000000003725,
+      4303.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count76": [
+      4354.0999999996275,
+      4354.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count77": [
+      4404.200000001118,
+      4404.200000001118
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count78": [
+      4454.700000001118,
+      4454.700000001118
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count79": [
+      4505,
+      4505
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count80": [
+      4555,
+      4555
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count81": [
+      4605.0999999996275,
+      4605.0999999996275
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count82": [
+      4655.200000001118,
+      4655.200000001118
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count83": [
+      4705.300000000745,
+      4705.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count84": [
+      4755.4000000003725,
+      4755.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count85": [
+      4805.800000000745,
+      4805.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count86": [
+      4855.9000000003725,
+      4855.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count87": [
+      4905.9000000003725,
+      4905.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count88": [
+      4956,
+      4956
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count89": [
+      5006.200000001118,
+      5006.200000001118
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count90": [
+      5056.300000000745,
+      5056.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count91": [
+      5106.700000001118,
+      5106.700000001118
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count92": [
+      5156.800000000745,
+      5156.800000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count93": [
+      5206.9000000003725,
+      5206.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count94": [
+      5256.9000000003725,
+      5256.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count95": [
+      5307.300000000745,
+      5307.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323_count96": [
+      5357.4000000003725,
+      5357.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-13134-5-13408_count0": [
+      5391.300000000745,
+      5392
+    ],
+    "www.cbsnews.com/-script-0-function-10-6034-10-6415_count0": [
+      5394.0999999996275,
+      5395.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count19": [
+      5395.300000000745,
+      5395.300000000745
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39663-5-39745_count0": [
+      5395.4000000003725,
+      5395.4000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39931-5-40082_count0": [
+      5395.9000000003725,
+      5395.9000000003725
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count20": [
+      5412.9000000003725,
+      5413
+    ],
+    "s-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576_count21": [
+      5413,
+      5413
+    ]
+  }
+}

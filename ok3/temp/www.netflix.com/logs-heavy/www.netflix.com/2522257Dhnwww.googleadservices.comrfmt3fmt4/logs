@@ -1,0 +1,45 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4","origPath":"/pagead/conversion/981179826/?random=1598468013022&cv=9&fst=1598468013022&num=1&label=40zWCLqP1XUQsrvu0wM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4',
+  origPath: '/pagead/conversion/981179826/?random=1598468013022&cv=9&fst=1598468013022&num=1&label=40zWCLqP1XUQsrvu0wM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: [
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-1-8-611976',
+    'www.netflix.com/-script-0-function-1-1277-1-1870',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-5-199439-5-199646',
+    'www.netflix.com/-script-4-function-1-4401-1-7317',
+    'www.netflix.com/-script-1-function-1-3406-1-3667',
+    'www.netflix.com/-script-10-function-3-21952-3-311544',
+    '4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none-function-1-1-1-9370',
+    'www.netflix.com/-script-3-function-1-3972-1-4379',
+    'www.netflix.com/-script-6-function-1-7512-1-7942',
+    'www.netflix.com/-script-13-function-4-1-12-3',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-5-80407-5-80497',
+    'www.netflix.com/-script-8-function-1-8252-1-8428',
+    'www.netflix.com/-script-7-function-1-7964-1-8230',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-5-198911-5-198994',
+    'www.netflix.com/-script-2-function-1-3689-1-3950',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-387488-8-387752',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-169879-8-170026',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-566949-8-566989',
+    'www.netflix.com/-script-5-function-1-7339-1-7490',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-3-26627-3-26976',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-5633-1-5705',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-160292-8-160425',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-103302-1-103324',
+    'www.netflix.com/-script-13-function-5-59-11-5',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-1-187376-1-187485',
+    '4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none-function-8-154472-8-154685'
+  ]
+}
+List of functions to be instrumented: 26
+Only instrumenting the following functions from the current script 
+[rtiDebugInfo]0 0

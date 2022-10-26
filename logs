@@ -1,0 +1,133 @@
+INFO: currently in: /home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation
+www.netflix.com
+www.netflix.com
+This directory has  36  number of files
+Instrumenting: save.ysH4kA is a js file
+Executing  node  record.js -i 8273 -n 'www.netflix.com;;;;/pagead/conversion/981179826/?random=1598468013022&cv=9&fst=1598468013022&num=1&label=40zWCLqP1XUQsrvu0wM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4' -t js -p cg
+Instrumenting: save.Pk4LpA is a js file
+Executing  node  record.js -i 8275 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/bootstrap.js,common%7Cbootstrap.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none' -t js -p cg
+Instrumenting: save.Vku5oW is a js file
+Executing  node  record.js -i 8276 -n 'www.netflix.com;;;;/pagead/conversion.js' -t js -p cg
+Instrumenting: save.yhZlwa is a js file
+Executing  node  record.js -i 8274 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/signup%7Chome%7CourStory%7Cfuji%7CfujiFrameworkClient.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none' -t js -p cg
+All the JS child processes died..
+ Main thread terminating
+Instrumenting: save.nao7UR is a html file
+Executing  node  record.js -i 8479 -n 'www.netflix.com;;;;/ddm/fls/i/src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766;~oref=https://ae.nflximg.net/monet/scripts/netflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D' -t html -p cg
+Instrumenting: save.sz593S is a html file
+Executing  node  record.js -i 8480 -n 'www.netflix.com;;;;/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?' -t html -p cg
+Instrumenting: save.Jq9esF is a html file
+Executing  node  record.js -i 8476 -n 'www.netflix.com;;;;/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin' -t html -p cg
+Instrumenting: save.b3YT29 is a html file
+Executing  node  record.js -i 8481 -n 'www.netflix.com;;;;/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -p cg
+Instrumenting: save.0z0P81 is a html file
+Executing  node  record.js -i 8477 -n 'www.netflix.com;;;;/monet/scripts/netflix_tag_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -p cg
+Instrumenting: save.gu4eT4 is a html file
+Executing  node  record.js -i 8478 -n 'www.netflix.com;;;;/' -t html -p cg
+All the HTML child processes died..
+ Main thread terminating
+Static analysis time: 0
+
+>>> [www.netflix.com] light instrumented!
+page load time: 5.798696999999947
+
+page load time: 5.798696999999947
+>>> [www.netflix.com] generated super root and call graph!
+www.netflix.com
+This directory has  36  number of files
+Instrumenting: save.ysH4kA is a js file
+Executing  node  record.js -i 9299 -n 'www.netflix.com;;;;/pagead/conversion/981179826/?random=1598468013022&cv=9&fst=1598468013022&num=1&label=40zWCLqP1XUQsrvu0wM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.Pk4LpA is a js file
+Executing  node  record.js -i 9301 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/bootstrap.js,common%7Cbootstrap.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.Vku5oW is a js file
+Executing  node  record.js -i 9304 -n 'www.netflix.com;;;;/pagead/conversion.js' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.yhZlwa is a js file
+Executing  node  record.js -i 9300 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/signup%7Chome%7CourStory%7Cfuji%7CfujiFrameworkClient.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+All the JS child processes died..
+ Main thread terminating
+Instrumenting: save.Jq9esF is a html file
+Executing  node  record.js -i 9451 -n 'www.netflix.com;;;;/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.nao7UR is a html file
+Executing  node  record.js -i 9454 -n 'www.netflix.com;;;;/ddm/fls/i/src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766;~oref=https://ae.nflximg.net/monet/scripts/netflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.b3YT29 is a html file
+Executing  node  record.js -i 9456 -n 'www.netflix.com;;;;/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.sz593S is a html file
+Executing  node  record.js -i 9455 -n 'www.netflix.com;;;;/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.0z0P81 is a html file
+Executing  node  record.js -i 9452 -n 'www.netflix.com;;;;/monet/scripts/netflix_tag_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+Instrumenting: save.gu4eT4 is a html file
+Executing  node  record.js -i 9453 -n 'www.netflix.com;;;;/' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p cg
+All the HTML child processes died..
+ Main thread terminating
+Static analysis time: 0
+
+>>> [www.netflix.com] timing instrumented!
+page load time: 5.848394999999982
+
+page load time: 5.848394999999982
+>>> [www.netflix.com] generated timing!
+www.netflix.com
+This directory has  36  number of files
+Instrumenting: save.ysH4kA is a js file
+Executing  node  record.js -i 10219 -n 'www.netflix.com;;;;/pagead/conversion/981179826/?random=1598468013022&cv=9&fst=1598468013022&num=1&label=40zWCLqP1XUQsrvu0wM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.Pk4LpA is a js file
+Executing  node  record.js -i 10221 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/bootstrap.js,common%7Cbootstrap.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.Vku5oW is a js file
+Executing  node  record.js -i 10222 -n 'www.netflix.com;;;;/pagead/conversion.js' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.yhZlwa is a js file
+Executing  node  record.js -i 10220 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/signup%7Chome%7CourStory%7Cfuji%7CfujiFrameworkClient.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none' -t js -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+All the JS child processes died..
+ Main thread terminating
+Instrumenting: save.nao7UR is a html file
+Executing  node  record.js -i 10370 -n 'www.netflix.com;;;;/ddm/fls/i/src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766;~oref=https://ae.nflximg.net/monet/scripts/netflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.b3YT29 is a html file
+Executing  node  record.js -i 10372 -n 'www.netflix.com;;;;/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.Jq9esF is a html file
+Executing  node  record.js -i 10367 -n 'www.netflix.com;;;;/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.sz593S is a html file
+Executing  node  record.js -i 10371 -n 'www.netflix.com;;;;/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.0z0P81 is a html file
+Executing  node  record.js -i 10368 -n 'www.netflix.com;;;;/monet/scripts/netflix_tag_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+Instrumenting: save.gu4eT4 is a html file
+Executing  node  record.js -i 10369 -n 'www.netflix.com;;;;/' -t html -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -p record
+All the HTML child processes died..
+ Main thread terminating
+Static analysis time: 0
+
+>>> [www.netflix.com] heavy instrumented!
+page load time: 0.45156299999996463
+
+page load time: 0.45156299999996463
+Changed signature length: 0 -> 12
+>>> [www.netflix.com] generated signature-super!
+
+>>> [www.netflix.com] generated signature-final!
+www.netflix.com
+This directory has  36  number of files
+Instrumenting: save.ysH4kA is a js file
+Executing  node  record.js -i 11036 -n 'www.netflix.com;;;;/pagead/conversion/981179826/?random=1598468013022&cv=9&fst=1598468013022&num=1&label=40zWCLqP1XUQsrvu0wM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D&hn=www.googleadservices.com&rfmt=3&fmt=4' -t js -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/2522257Dhnwww.googleadservices.comrfmt3fmt4/wrapped.js
+Instrumenting: save.Pk4LpA is a js file
+Executing  node  record.js -i 11038 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/bootstrap.js,common%7Cbootstrap.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/bck/true/none' -t js -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/4K080o004M4p4w4n4G4c4v4y4e4d0a024I14bcktruenone/wrapped.js
+Instrumenting: save.Vku5oW is a js file
+Executing  node  record.js -i 11039 -n 'www.netflix.com;;;;/pagead/conversion.js' -t js -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/pageadconversion.js/wrapped.js
+Instrumenting: save.yhZlwa is a js file
+Executing  node  record.js -i 11037 -n 'www.netflix.com;;;;/%5E3.0.0/truthBundle/webui/0.0.1-shakti-js-ve3e2a57b/js/js/signup%7Chome%7CourStory%7Cfuji%7CfujiFrameworkClient.js/2/4L034k4a4m4A06464u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14/l/true/none' -t js -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/4u4K080o004M4p4w4n4G4c4v4y4e4d0a024I14ltruenone/wrapped.js
+All the JS child processes died..
+ Main thread terminating
+Instrumenting: save.Jq9esF is a html file
+Executing  node  record.js -i 11201 -n 'www.netflix.com;;;;/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin' -t html -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/ate201703translate_ranker_model_20170329.pb.bin/wrapped.html
+Instrumenting: save.sz593S is a html file
+Executing  node  record.js -i 11205 -n 'www.netflix.com;;;;/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?' -t html -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/enaanz-nmcatdcmna0u1USord5422740604454.766/wrapped.html
+Instrumenting: save.nao7UR is a html file
+Executing  node  record.js -i 11204 -n 'www.netflix.com;;;;/ddm/fls/i/src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766;~oref=https://ae.nflximg.net/monet/scripts/netflix_tag_05.html%3Fdata%3D%257B%2522membership_status%2522%253A%2522ANONYMOUS%2522%252C%2522country%2522%253A%2522US%2522%252C%2522region_code%2522%253A%2522MI%2522%252C%2522fbaId%2522%253A%2522777ef978-a28f-4d32-94e3-fea1696bd07c%2522%252C%2522is_member%2522%253A%2522ANONYMOUS%2522%252C%2522wasFormerMember%2522%253Afalse%252C%2522referrer%2522%253A%2522nmLanding%2522%257D' -t html -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/52C2522referrer2522253A2522nmLanding2522257D/wrapped.html
+Instrumenting: save.b3YT29 is a html file
+Executing  node  record.js -i 11206 -n 'www.netflix.com;;;;/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/r223Afalse2C22referrer223A22nmLanding227D/wrapped.html
+Instrumenting: save.0z0P81 is a html file
+Executing  node  record.js -i 11202 -n 'www.netflix.com;;;;/monet/scripts/netflix_tag_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22US%22%2C%22region_code%22%3A%22MI%22%2C%22fbaId%22%3A%22777ef978-a28f-4d32-94e3-fea1696bd07c%22%2C%22is_member%22%3A%22ANONYMOUS%22%2C%22wasFormerMember%22%3Afalse%2C%22referrer%22%3A%22nmLanding%22%7D' -t html -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/r223Afalse2C22referrer223A22nmLanding227D/wrapped.html
+Instrumenting: save.gu4eT4 is a html file
+Executing  node  record.js -i 11203 -n 'www.netflix.com;;;;/' -t html -p rewrite -c /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/roots-nc.json -g /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/call-graph-nc.json -s /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/signature-final.json -w /home/aman/Desktop/Parallelization-of-JavaScript/ok2/temp/www.netflix.com/logs-rewrite/www.netflix.com/www.netflix.com/wrapped.html
+All the HTML child processes died..
+ Main thread terminating
+Static analysis time: 0
+
+----------------------------------------

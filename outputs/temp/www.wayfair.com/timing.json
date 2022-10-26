@@ -1,0 +1,409 @@
+{
+  "type": "object",
+  "value": {
+    "www.wayfair.com/-script-2-function-145-11-145-138_count0": [
+      100.90000000037253,
+      101.40000000037253
+    ],
+    "www.wayfair.com/-script-4-function-155-21-172-18_count0": [
+      106.40000000037253,
+      106.60000000149012
+    ],
+    "www.wayfair.com/-script-5-function-176-7-190-4930_count0": [
+      107.5,
+      107.80000000074506
+    ],
+    "/analytics.js-function-1-1-85-409_count0": [
+      246.60000000149012,
+      249.40000000037253
+    ],
+    "www.wayfair.com/-script-7-function-197-1-197-96_count0": [
+      251.30000000074506,
+      251.30000000074506
+    ],
+    "www.wayfair.com/-script-8-function-198-62-198-678_count0": [
+      251.5,
+      251.80000000074506
+    ],
+    "www.wayfair.com/-script-9-function-198-700-198-1162_count0": [
+      251.90000000037253,
+      251.90000000037253
+    ],
+    "www.wayfair.com/-script-11-function-200-9-228-15_count0": [
+      268.6000000014901,
+      271
+    ],
+    "www.wayfair.com/-script-17-function-246-9-325-19_count0": [
+      322.7000000011176,
+      323.2000000011176
+    ],
+    "www.wayfair.com/-script-11-function-218-30-227-11_count0": [
+      323.2000000011176,
+      323.2000000011176
+    ],
+    "www.wayfair.com/-script-18-function-328-7-328-238_count0": [
+      323.7000000011176,
+      323.7000000011176
+    ],
+    "www.wayfair.com/-script-19-function-331-9-348-15_count0": [
+      324,
+      325.90000000037253
+    ],
+    "2/~~@icons/wayfair-min.js?wfdc=dsm&react_16_9_0=ON-function-1-17-3-177_count0": [
+      335.2000000011176,
+      344.7000000011176
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-22-5-10864_count0": [
+      354.5,
+      369.6000000014901
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-6-320-7-31878_count0": [
+      369.6000000014901,
+      379.6000000014901
+    ],
+    "www.wayfair.com/-script-11-function-218-30-227-11_count1": [
+      380.1000000014901,
+      380.1000000014901
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-29876-1-30056_count0": [
+      392.80000000074506,
+      393.90000000037253
+    ],
+    "homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-1-32-35-173_count0": [
+      400.80000000074506,
+      401.5
+    ],
+    "www.wayfair.com/-script-11-function-218-30-227-11_count2": [
+      401.6000000014901,
+      401.6000000014901
+    ],
+    "/px/client/main.min.js-function-2-1-4-10059_count0": [
+      401.6000000014901,
+      432.6000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-1-29-148-173_count0": [
+      433.1000000014901,
+      433.40000000037253
+    ],
+    "www.wayfair.com/-script-11-function-218-30-227-11_count3": [
+      433.6000000014901,
+      433.7000000011176
+    ],
+    "tungsten_react_wrapper.js?wfdc=dsm&react_16_9_0=ON-function-1-21-138-173_count0": [
+      433.90000000037253,
+      435.6000000014901
+    ],
+    "www.wayfair.com/-script-11-function-218-30-227-11_count4": [
+      435.6000000014901,
+      435.7000000011176
+    ],
+    "~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-1-28-367-173_count0": [
+      435.7000000011176,
+      436.7000000011176
+    ],
+    "www.wayfair.com/-script-11-function-218-30-227-11_count5": [
+      436.7000000011176,
+      646.3000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1764-71-2643_count0": [
+      646.3000000007451,
+      647.9000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1764-71-2643_count1": [
+      647.9000000003725,
+      648.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1764-71-2643_count2": [
+      648.2000000011176,
+      648.4000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1764-71-2643_count3": [
+      648.4000000003725,
+      648.4000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1351-71-1473_count0": [
+      648.6000000014901,
+      648.7000000011176
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1351-71-1473_count1": [
+      648.7000000011176,
+      648.7000000011176
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1351-71-1473_count2": [
+      648.7000000011176,
+      648.7000000011176
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-1351-71-1473_count3": [
+      648.8000000007451,
+      648.8000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-2604-71-2640_count0": [
+      648.8000000007451,
+      676.8000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-2604-71-2640_count1": [
+      676.8000000007451,
+      678.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-2604-71-2640_count2": [
+      678.3000000007451,
+      737.1000000014901
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count0": [
+      687,
+      687.5
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count1": [
+      702.5,
+      702.6000000014901
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count2": [
+      711.4000000003725,
+      711.4000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-71-2604-71-2640_count3": [
+      737.1000000014901,
+      796
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count3": [
+      769,
+      769
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count4": [
+      772.8000000007451,
+      773.1000000014901
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count5": [
+      777.8000000007451,
+      778.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-2051-35-2069_count0": [
+      797.1000000014901,
+      797.5
+    ],
+    "/px/client/main.min.js-function-3-2145-3-2191_count0": [
+      804.4000000003725,
+      804.4000000003725
+    ],
+    "/px/client/main.min.js-function-3-2145-3-2191_count1": [
+      804.4000000003725,
+      804.4000000003725
+    ],
+    "/px/client/main.min.js-function-3-2145-3-2191_count2": [
+      805.2000000011176,
+      805.2000000011176
+    ],
+    "/px/client/main.min.js-function-3-2201-3-2365_count0": [
+      805.4000000003725,
+      809
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31574-24-31662_count0": [
+      810.2000000011176,
+      811.9000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count0": [
+      810.3000000007451,
+      811.9000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count1": [
+      812.2000000011176,
+      812.3000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count2": [
+      812.3000000007451,
+      812.4000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count3": [
+      812.9000000003725,
+      812.9000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count4": [
+      812.9000000003725,
+      813.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count5": [
+      813.1000000014901,
+      813.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count6": [
+      813.1000000014901,
+      813.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count7": [
+      813.1000000014901,
+      813.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count8": [
+      813.1000000014901,
+      813.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count9": [
+      813.1000000014901,
+      813.1000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count10": [
+      813.1000000014901,
+      813.5
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count11": [
+      813.5,
+      813.6000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count12": [
+      813.6000000014901,
+      813.6000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-24-31692-24-32119_count13": [
+      813.6000000014901,
+      813.6000000014901
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-1530-5-1556_count0": [
+      813.7000000011176,
+      813.7000000011176
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-1578-5-1618_count0": [
+      813.7000000011176,
+      813.7000000011176
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1581-35-1698_count0": [
+      814.2000000011176,
+      814.4000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1813-35-1836_count0": [
+      814.5,
+      814.5
+    ],
+    "~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-96-2067-96-2299_count0": [
+      815,
+      815.9000000003725
+    ],
+    "~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-50-6311-50-6397_count0": [
+      815.9000000003725,
+      816
+    ],
+    "/px/client/main.min.js-function-3-10077-3-10248_count0": [
+      818.1000000014901,
+      828.3000000007451
+    ],
+    "/px/client/main.min.js-function-3-27426-3-27506_count0": [
+      828.5,
+      831.8000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1581-35-1698_count1": [
+      831.8000000007451,
+      832.2000000011176
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-80106-1-80454_count0": [
+      833.9000000003725,
+      835.3000000007451
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-80106-1-80454_count1": [
+      836.4000000003725,
+      836.9000000003725
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-80106-1-80454_count2": [
+      838.1000000014901,
+      838.2000000011176
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-80-4540-80-4687_count0": [
+      838.8000000007451,
+      838.8000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-80-4884-80-4914_count0": [
+      839.1000000014901,
+      839.2000000011176
+    ],
+    "homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-22-1565-22-1645_count0": [
+      839.6000000014901,
+      839.6000000014901
+    ],
+    "homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-22-1652-22-1681_count0": [
+      839.7000000011176,
+      839.7000000011176
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-80106-1-80454_count3": [
+      841.1000000014901,
+      841.3000000007451
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-80106-1-80454_count4": [
+      842.3000000007451,
+      842.3000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1813-35-1836_count1": [
+      842.7000000011176,
+      842.7000000011176
+    ],
+    "/px/client/main.min.js-function-3-10077-3-10248_count1": [
+      842.7000000011176,
+      844.7000000011176
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count6": [
+      853,
+      854.4000000003725
+    ],
+    "www.wayfair.com/-script-5-function-190-4053-190-4112_count0": [
+      854.7000000011176,
+      855.8000000007451
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-80-4921-80-4955_count0": [
+      856.7000000011176,
+      856.7000000011176
+    ],
+    "~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-77-48788-77-48810_count0": [
+      856.7000000011176,
+      856.7000000011176
+    ],
+    "~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-77-44495-77-44683_count0": [
+      856.7000000011176,
+      860.6000000014901
+    ],
+    "homepage_tarot_adapter.js?wfdc=dsm&react_16_9_0=ON-function-22-1688-22-1855_count0": [
+      860.6000000014901,
+      860.6000000014901
+    ],
+    "~tarot_deck~video_hero.js?wfdc=dsm&react_16_9_0=ON-function-180-2660-180-2886_count0": [
+      860.8000000007451,
+      860.8000000007451
+    ],
+    "www.wayfair.com/-script-4-function-170-52-172-11_count0": [
+      862.8000000007451,
+      862.8000000007451
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-8075-5-8780_count0": [
+      862.9000000003725,
+      863.5
+    ],
+    "/px/client/main.min.js-function-2-7545-2-7572_count0": [
+      863.5,
+      863.9000000003725
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-47-3610-47-3670_count0": [
+      863.9000000003725,
+      864
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-47-1148-47-1278_count0": [
+      864,
+      864.5
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-1-37923-1-38035_count7": [
+      864.5,
+      864.5
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-2051-35-2069_count1": [
+      866.3000000007451,
+      866.6000000014901
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1581-35-1698_count2": [
+      867.7000000011176,
+      867.7000000011176
+    ],
+    "/~~init_wf_mobile_page.js?wfdc=dsm&react_16_9_0=ON-function-35-1813-35-1836_count2": [
+      868.3000000007451,
+      868.3000000007451
+    ],
+    "ff556bd90d6d8af8023564e9bc590fdcf2551e.js?wfdc=dsm-function-5-10413-5-10811_count0": [
+      868.7000000011176,
+      892
+    ]
+  }
+}

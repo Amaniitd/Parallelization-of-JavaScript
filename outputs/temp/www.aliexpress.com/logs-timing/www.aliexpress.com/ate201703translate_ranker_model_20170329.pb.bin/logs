@@ -1,0 +1,26 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"ate/2017/03/translate_ranker_model_20170329.pb.bin","origPath":"/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'ate/2017/03/translate_ranker_model_20170329.pb.bin',
+  origPath: '/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: [
+    '/?tracelog=wwwhome2mobilesitehome-script-1-function-99-216-99-266',
+    '/?tracelog=wwwhome2mobilesitehome-script-1-function-98-9-99-427',
+    '/?tracelog=wwwhome2mobilesitehome-script-6-function-196-5-209-15',
+    '/?tracelog=wwwhome2mobilesitehome-script-3-function-110-37-110-934',
+    '/?tracelog=wwwhome2mobilesitehome-script-2-function-102-9-102-3521',
+    '/?tracelog=wwwhome2mobilesitehome-script-2-function-102-2849-102-3372',
+    '/?tracelog=wwwhome2mobilesitehome-script-0-function-96-13-96-82'
+  ]
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

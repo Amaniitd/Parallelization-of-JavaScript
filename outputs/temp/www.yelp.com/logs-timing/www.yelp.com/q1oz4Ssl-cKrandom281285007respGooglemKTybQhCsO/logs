@@ -1,0 +1,34 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"q1oz4Ssl-cK&random=281285007&resp=GooglemKTybQhCsO","origPath":"/pagead/1p-conversion/864073483/?random=1712388196&cv=9&fst=*&num=1&label=SuCZCJq78m8Qi-6CnAM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https://6372968.fls.doubleclick.net/ddm/fls/r/src%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3B~oref%3Dhttps://m.yelp.com/&ref=https://6372968.fls.doubleclick.net/activityi%3Bsrc%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3F&hn=www.googleadservices.com&fmt=1&ctc_id=CAIVAgAAAB0CAAAA&ct_cookie_present=false&sscte=1&crd=&is_vtc=1&ocp_id=1rtGX7KbA9nSggaeg6eIDA&cid=CAQSKQCNIrLM5tgvy3vr3FdRVhFFefubmuU-zadivGsWm9487q1oz4Ssl-cK&random=281285007&resp=GooglemKTybQhCsO","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'q1oz4Ssl-cK&random=281285007&resp=GooglemKTybQhCsO',
+  origPath: '/pagead/1p-conversion/864073483/?random=1712388196&cv=9&fst=*&num=1&label=SuCZCJq78m8Qi-6CnAM&bg=ffffff&hl=en&guid=ON&resp=GooglemKTybQhCsO&u_h=731&u_w=411&u_ah=731&u_aw=411&u_cd=24&u_his=2&u_tz=-240&u_java=false&u_nplug=0&u_nmime=0&sendb=1&ig=1&frm=2&url=https://6372968.fls.doubleclick.net/ddm/fls/r/src%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3B~oref%3Dhttps://m.yelp.com/&ref=https://6372968.fls.doubleclick.net/activityi%3Bsrc%3D6372968%3Btype%3Dinvmedia%3Bcat%3Dqr3hlsqk%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D9541322923178%3F&hn=www.googleadservices.com&fmt=1&ctc_id=CAIVAgAAAB0CAAAA&ct_cookie_present=false&sscte=1&crd=&is_vtc=1&ocp_id=1rtGX7KbA9nSggaeg6eIDA&cid=CAQSKQCNIrLM5tgvy3vr3FdRVhFFefubmuU-zadivGsWm9487q1oz4Ssl-cK&random=281285007&resp=GooglemKTybQhCsO',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: [
+    'www.yelp.com/-script-12-function-138-234-138-1290',
+    'www.yelp.com/-script-2-function-32-13-41-19',
+    'www.yelp.com/-script-3-function-45-17-45-780',
+    'www.yelp.com/-script-9-function-102-13-111-19',
+    'www.yelp.com/-script-1-function-26-33-26-375',
+    'www.yelp.com/-script-18-function-142-29-149-11',
+    'www.yelp.com/-script-5-function-62-9-64-53',
+    'www.yelp.com/-script-17-function-140-728-140-798',
+    'www.yelp.com/-script-4-function-57-9-59-48',
+    'www.yelp.com/-script-8-function-97-33-97-218',
+    'www.yelp.com/-script-0-function-4-29-11-11',
+    '/analytics.js-function-1-1-85-409',
+    'www.yelp.com/-script-6-function-65-96-65-251',
+    'www.yelp.com/-script-6-function-65-22-65-259',
+    'www.yelp.com/-script-10-function-122-29-129-11'
+  ]
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

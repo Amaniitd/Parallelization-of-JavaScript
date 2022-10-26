@@ -1,0 +1,67 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/scripttemplates/6.0.0/otBannerSdk.js","origPath":"/scripttemplates/6.0.0/otBannerSdk.js","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/scripttemplates/6.0.0/otBannerSdk.js',
+  origPath: '/scripttemplates/6.0.0/otBannerSdk.js',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: [
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36349-5-36379',
+    'www.cbsnews.com/-script-0-function-10-114-10-8519',
+    '/scripttemplates/otSDKStub.js-function-1-2468-1-2512',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36209-5-36225',
+    'www.cbsnews.com/-script-6-function-5365-6-5384-7',
+    '/cookieconsentpub/v1/geo/location-function-1-1-1-226',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39931-5-40082',
+    '/scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550',
+    'www.cbsnews.com/-script-0-function-10-1741-10-1947',
+    '/dist/optanon-v1.1.0.js-function-1-5910-1-6051',
+    '/scripttemplates/6.0.0/otBannerSdk.js-function-7-316641-7-318867',
+    'www.cbsnews.com/-script-0-function-10-6034-10-6415',
+    '/scripttemplates/otSDKStub.js-function-1-5920-1-6015',
+    '/scripttemplates/otSDKStub.js-function-1-3044-1-3059',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39663-5-39745',
+    'www.cbsnews.com/-script-4-function-5252-4-5255-5',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36484-5-36576',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-32857-5-33204',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-11274-5-11355',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-38289-5-38322',
+    'www.cbsnews.com/-script-8-function-5432-6-5460-142',
+    '/dist/optanon-v1.1.0.js-function-1-1-8-29389',
+    '/scripttemplates/6.0.0/otBannerSdk.js-function-7-1-7-318885',
+    'www.cbsnews.com/-script-10-function-5462-9-5478-11',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-39190-5-39239',
+    '/dist/optanon-v1.1.0.js-function-8-616-8-710',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-2-5-46370',
+    'www.cbsnews.com/-script-0-function-10-2021-10-2103',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-35996-5-36071',
+    '/scripttemplates/otSDKStub.js-function-1-2-1-12169',
+    '/dist/optanon-v1.1.0.js-function-8-11996-8-12370',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-36873-5-36917',
+    'www.cbsnews.com/-script-0-function-10-1947-10-2021',
+    'www.cbsnews.com/-script-11-function-5479-45-5479-370',
+    '/dist/optanon-v1.1.0.js-function-8-12590-8-12958',
+    '/scripttemplates/6.0.0/otBannerSdk.js-function-7-228342-7-228437',
+    'www.cbsnews.com/-script-7-function-5429-6-5430-140',
+    'www.cbsnews.com/-script-0-function-10-6459-10-6521',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-13134-5-13408',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-4304-5-4323',
+    'www.cbsnews.com/-script-5-function-5359-2879-5359-3001',
+    's-build/main.js?v=b1aba683ab0fc5d51f209cfb03d81d01-function-5-41233-5-41256',
+    'www.cbsnews.com/-script-5-function-5355-2-5359-4303'
+  ]
+}
+[Static analyzer] Function matching reported a match
+List of functions to be instrumented: 43
+Only instrumenting the following functions from the current script /scripttemplates/6.0.0/otBannerSdk.js-function-7-504-7-550,/scripttemplates/6.0.0/otBannerSdk.js-function-7-316641-7-318867,/scripttemplates/6.0.0/otBannerSdk.js-function-7-1-7-318885,/scripttemplates/6.0.0/otBannerSdk.js-function-7-228342-7-228437
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[rtiDebugInfo]4 4

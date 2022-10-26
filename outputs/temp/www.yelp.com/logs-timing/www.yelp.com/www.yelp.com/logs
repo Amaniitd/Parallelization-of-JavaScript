@@ -1,0 +1,106 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"www.yelp.com/","origPath":"www.yelp.com/","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'www.yelp.com/',
+  origPath: 'www.yelp.com/',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: [
+    'www.yelp.com/-script-12-function-138-234-138-1290',
+    'www.yelp.com/-script-2-function-32-13-41-19',
+    'www.yelp.com/-script-3-function-45-17-45-780',
+    'www.yelp.com/-script-9-function-102-13-111-19',
+    'www.yelp.com/-script-1-function-26-33-26-375',
+    'www.yelp.com/-script-18-function-142-29-149-11',
+    'www.yelp.com/-script-5-function-62-9-64-53',
+    'www.yelp.com/-script-17-function-140-728-140-798',
+    'www.yelp.com/-script-4-function-57-9-59-48',
+    'www.yelp.com/-script-8-function-97-33-97-218',
+    'www.yelp.com/-script-0-function-4-29-11-11',
+    '/analytics.js-function-1-1-85-409',
+    'www.yelp.com/-script-6-function-65-96-65-251',
+    'www.yelp.com/-script-6-function-65-22-65-259',
+    'www.yelp.com/-script-10-function-122-29-129-11'
+  ]
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+function source is  function __HORCRUX__(){ window.yPerfTimings = window.yPerfTimings || [];
+
+        if (false) {
+            window.yPageStart = new Date().getTime();
+            window.yPerfTimings.push(["body:end", window.yPageStart]);
+        } else {
+            window.yPerfTimings.push(["body:end", new Date().getTime()]);
+        } }
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 0
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+function source is  function __HORCRUX__(){ window.yPerfTimings = window.yPerfTimings || [];
+
+        if (false) {
+            window.yPageStart = new Date().getTime();
+            window.yPerfTimings.push(["body:start", window.yPageStart]);
+        } else {
+            window.yPerfTimings.push(["body:start", new Date().getTime()]);
+        } }
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 2
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+function source is  function __HORCRUX__(){ !function(n,e){var t,o,i,c=[],f={passive:!0,capture:!0},r=new Date,a="pointerup",u="pointercancel";function p(n,c){t||(t=c,o=n,i=new Date,w(e),s())}function s(){o>=0&&o<i-r&&(c.forEach(function(n){n(o,t)}),c=[])}function l(t){if(t.cancelable){var o=(t.timeStamp>1e12?new Date:window.performance.now())-t.timeStamp;"pointerdown"==t.type?function(t,o){function i(){p(t,o),r()}function c(){r()}function r(){e(a,i,f),e(u,c,f)}n(a,i,f),n(u,c,f)}(o,t):p(o,t)}}function w(n){["click","mousedown","keydown","touchstart","pointerdown"].forEach(function(e){n(e,l,f)})}w(n),window.self.perfMetrics=window.self.perfMetrics||{},window.self.perfMetrics.onFirstInputDelay=function(n){c.push(n),s()}}(window.addEventListener,window.removeEventListener); }
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+function source is  function __HORCRUX__(){ (function() {
+                var main = null;
+
+                !function(t){function e(i){if(n[i])return n[i].exports;var r=n[i]={i:i,l:!1,exports:{}};return t[i].call(r.exports,r,r.exports,e),r.l=!0,r.exports}var n={};e.m=t,e.c=n,e.d=function(t,n,i){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:i})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="",e(e.s=9)}([function(t,e,n){"use strict";n.d(e,"c",function(){return r}),n.d(e,"b",function(){return o}),n.d(e,"a",function(){return s});var i=n(6),r="global",o="biz",s="biz_gtag",a=[r,"m","www",o,"webview","api","admin","error_pages",s],c=function(t,e){if(Object(i.a)(a,e)>=0)return[e,t].join(".");throw new Error("google analytics attempted to set "+t+" to an unrecognized tracker alias: "+e)};e.d=c},function(t,e,n){"use strict";function i(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{},i=Object.keys(n);"function"==typeof Object.getOwnPropertySymbols&&(i=i.concat(Object.getOwnPropertySymbols(n).filter(function(t){return Object.getOwnPropertyDescriptor(n,t).enumerable}))),i.forEach(function(e){r(t,e,n[e])})}return t}function r(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}var o=n(2),s=n(3),a=n.n(s),c=n(4),u=n(5),f=n(0),l=n(7);Object.keys||a.a.shim(),Object.entries||(Object.entries=function(t){for(var e=Object.keys(t),n=new Array(e.length),i=0;i<e.length;i+=1)n[i]=[e[i],t[e[i]]];return n});var h=function(){function t(t){r(this,"clientID",void 0),r(this,"dimensions",void 0),r(this,"domain",void 0),r(this,"friendlyMap",void 0),r(this,"jsDimensions",void 0),r(this,"metrics",void 0),r(this,"temporaryDimensions",void 0),r(this,"temporaryMetrics",void 0),r(this,"trackers",void 0),r(this,"userID",void 0),r(this,"enableHighVolumeEvents",void 0),window.ga||(window.ga=function(){}),window.gtag||(window.gtag=function(){}),this.reload(t)}var e=t.prototype;return e.setupTrackers=function(){var t=this;this.friendlyMap={},this.temporaryDimensions={},this.temporaryMetrics={},Object.entries(this.trackers).forEach(function(e){var n=e[0],i=e[1];t.setupTracker(String(n),String(i))})},e.setupTracker=function(t,e){var n=this,r=i({cookieDomain:this.domain,name:t,clientId:this.clientID},this.userID?{userId:this.userID}:{});window.ga("create",e,r),this.friendlyMap[t]={},this.temporaryDimensions[t]={},this.temporaryMetrics[t]={},this.addDimensionsToFriendlyMap(t,this.dimensions),this.addDimensionsToFriendlyMap(t,this.jsDimensions),this.dimensions[t]&&Object.keys(this.dimensions[t]).forEach(function(e){n.setDimension(String(e),n.dimensions[t][e][1])}),this.metrics[t]&&Object.keys(this.metrics[t]).forEach(function(e){n.setMetric(n.metrics[t][e][0],n.metrics[t][e][1],t)}),window.ga(Object(f.d)("set",t),"anonymizeIp",!0)},e.addDimensionsToFriendlyMap=function(t,e){var n=this;e&&e[t]&&Object.keys(e[t]).forEach(function(i){n.friendlyMap[t][i]=e[t][i][0]})},e.firePageviews=function(t){var e=this;Object.keys(this.trackers).forEach(function(n){e.firePageview(String(n),t)})},e.firePageviewsWithGlobalTrackerSampled=function(t){var e=this;Object.keys(this.trackers).forEach(function(n){(n!==f.c||e.enableHighVolumeEvents)&&e.firePageview(String(n),t)})},e.firePageview=function(t,e){if(t===f.a){var n=this.trackers[t],r=i({},this.dimensions[t],this.jsDimensions[t]),o=Object.keys(r).map(function(t){return r[t]}).reduce(function(t,e){var n,r=e[0],o=e[1];return i({},t,(n={},n["dimension"+r]=null===o?o:o.toString(),n))},{}),s=this.metrics[t]||{},a=Object.keys(s).map(function(t){return s[t]}).reduce(function(t,e){var n,r=e[0],o=e[1];return i({},t,(n={},n["metric"+r]=o,n))},{});window.gtag("event","page_view",i({send_to:n,anonymize_ip:!0,cookie_domain:this.domain,client_id:this.clientID},o,a,this.userID?{user_id:this.userID}:{},e?{page_path:e}:{}))}else e&&window.ga(Object(f.d)("set",t),"page",e),window.ga(Object(f.d)("send",t),"pageview")},e.setDimensionOneEvent=function(t,e){var n=this;Object.keys(this.friendlyMap).forEach(function(i){var r=n.friendlyMap[i][t];void 0!==r&&null!==e&&(n.temporaryDimensions[i]["dimension"+r]=e.toString())})},e.setDimension=function(t,e){var n=this;Object.keys(this.friendlyMap).forEach(function(i){var r=n.friendlyMap[i][t];void 0!==r&&null!==e&&window.ga(Object(f.d)("set",i),"dimension"+r,e.toString())})},e.setDimensions=function(t){var e=this;Object.keys(t).forEach(function(n){e.setDimension(n,t[n])})},e.setMetric=function(t,e,n){window.ga(Object(f.d)("set",n),"metric"+t,e)},e.setMetricOneEvent=function(t,e,n){this.temporaryMetrics[n]["metric"+t]=e},e.trackEvent=function(t,e,n,r,o){var s=this;Object.keys(this.trackers).forEach(function(a){if(a===f.a){var c=s.trackers[a];window.gtag("event",e,i({send_to:c,event_category:t,non_interaction:!0},s.temporaryDimensions[a],s.temporaryMetrics[a],n&&{event_label:n},r&&{value:r},o&&{event_callback:o}))}else if(a!==f.c){var u=i({hitType:"event",eventCategory:t,eventAction:e,eventLabel:n,eventValue:r},o&&{hitCallback:o},{nonInteraction:!0},s.temporaryDimensions[a],s.temporaryMetrics[a]);Object(l.a)(String(a),u)}s.temporaryDimensions[a]={},s.temporaryMetrics[a]={}})},e.trackTiming=function(t,e,n,i){var r={hitType:"timing",timingCategory:t,timingVar:e,timingValue:n,timingLabel:i};Object.keys(this.trackers).forEach(function(t){Object(l.a)(String(t),r)})},e.trackEventHighVolume=function(t,e,n,i,r){if(this.enableHighVolumeEvents){var o=t+" / 10";this.trackEvent(o,e,n,i,r)}},e.trackEventWithTime=function(t,e,n){this.trackEvent(t,e,n,Object(u.a)())},e.initTimeOnPageEvent=function(){var t=this;Object(o.a)(window).on("beforeunload",function(){var e=Object(u.a)(),n=Object(c.a)(e);t.trackEventHighVolume("time on page","unload",n,e)})},e.initDwellTimeEvent=function(){var t=this;window.setTimeout(function(){t.trackEvent("dwell time","dwell","30 seconds")},3e4)},e.applyConfig=function(t){this.trackers=t.trackers,this.domain=t.domain,this.clientID=t.clientID,this.userID=t.user_id,this.dimensions=t.dimensions,this.metrics=t.metrics,this.jsDimensions=t.js_dimensions,this.enableHighVolumeEvents=t.enable_high_volume_events},e.reload=function(t){this.applyConfig(t),this.setupTrackers()},e.getGaConfig=function(){return{trackers:this.trackers,domain:this.domain,clientID:this.clientID,user_id:this.userID,dimensions:this.dimensions,metrics:this.metrics,js_dimensions:this.jsDimensions,enable_high_volume_events:this.enableHighVolumeEvents}},t.init=function(e){t.instance=new t(e)},t.getInstance=function(){var e=t.instance;if(null==e)throw Error("yelp_google_analytics.GoogleAnalytics not initialized. Call a site-specific GA init!");return e},t}();r(h,"instance",void 0),e.a=h},function(t,e,n){"use strict";e.a=function(){var t;return(t=window).jQuery.apply(t,arguments)}},function(t,e,n){"use strict";!function(){Object.keys||(Object.keys=function(){var t=Object.prototype.hasOwnProperty,e=!{toString:null}.propertyIsEnumerable("toString"),n=["toString","toLocaleString","valueOf","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","constructor"],i=n.length;return function(r){if("object"!=typeof r&&("function"!=typeof r||null===r))throw new TypeError("Object.keys called on non-object");var o,s,a=[];for(o in r)t.call(r,o)&&a.push(o);if(e)for(s=0;s<i;s++)t.call(r,n[s])&&a.push(n[s]);return a}}())}()},function(t,e,n){"use strict";var i=function(t){var e="240+";return t<=0?e="5":t<=30?e=(5*Math.ceil(t/5)).toString():t<=120?e=(15*Math.ceil(t/15)).toString():t<=240&&(e=(30*Math.ceil(t/30)).toString()),e};e.a=i},function(t,e,n){"use strict";var i=function(){return window.parseInt(((new Date).getTime()-window.ygaPageStartTime)/1e3,10)};e.a=i},function(t,e,n){"use strict";n.d(e,"a",function(){return i});var i=function(t,e){for(var n=0;n<t.length;n+=1)if(t[n]===e)return n;return-1}},function(t,e,n){"use strict";var i=n(0),r=function(t,e){window.ga(Object(i.d)("send",t),e)};e.a=r},,function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(10),r=n(1);window.yelp_google_analytics={google_analytics:r.a},window.ygaPageStartTime=(new Date).getTime(),main=i.a},function(t,e,n){"use strict";var i=n(1),r=function(t,e){i.a.init(t),i.a.getInstance().firePageviews(e),i.a.getInstance().initDwellTimeEvent()};e.a=r}]);
+
+                if (main === null) {
+                    throw 'invalid inline script, missing main declaration.';
+                }
+                main({"clientID": "0E1F3EB18DBF32CB", "dimensions": {"global": {"full_url": [15, "/"], "internal_ip": [18, false], "referrer": [28, "none"]}, "m": {"full_url": [34, "/"], "internal_ip": [35, false], "referrer": [53, "none"]}}, "domain": "m.yelp.com", "enable_high_volume_events": false, "ga_enabled": true, "js_dimensions": {"global": {}, "m": {}}, "metrics": {"global": {}, "m": {}}, "trackers": {"m": "UA-30501-46", "global": "UA-30501-1"}, "user_id": null},"/home/");
+            })(); }
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 5
+function source is  function __HORCRUX__(){ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,window.document,'script','//www.google-analytics.com/analytics.js','ga'); }
+List of functions to be instrumented: 15
+Only instrumenting the following functions from the current script 1
+function source is  function __HORCRUX__(){ window.yPerfTimings = window.yPerfTimings || [];
+
+        if (true) {
+            window.yPageStart = new Date().getTime();
+            window.yPerfTimings.push(["head:start", window.yPageStart]);
+        } else {
+            window.yPerfTimings.push(["head:start", new Date().getTime()]);
+        } }
+[rtiDebugInfo]0 14

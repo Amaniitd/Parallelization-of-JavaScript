@@ -1,0 +1,17 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"e=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?","origPath":"/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'e=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?',
+  origPath: '/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=US;ord=5422740604454.766?',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

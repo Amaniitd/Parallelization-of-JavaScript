@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<script id='__horcrux_worker__' type='javascript/worker'>
+const setupDone = Date.now();
+// workerId is set through the 'start' cmd sent from main
+// The worker should include its workerId in all of its messages to main
+let workerId = 0;
+
+/** Helper function for JSON stringify when the value is a function
+ * @param {string} key
+ * @param {string} value
+ * @return {string} stringified value
+ */
+function functionStringifier(key, value) {
+    if (typeof(value) === 'function') {
+        return value.toString();
+    }
+    return value;
+}
+
+/** Helper function for JSON parse when the value is a function
+ * @param {string} key
+ * @param {string} value
+ * @return {string} stringified functions is reconstructed as functions
+ */
+function functionReviver(key, value) {
+    if (typeof value === 'string') {
+        const rfunc = /function[^\(]*\(([^\)]*)\)[^\{]*\{([\s\S]*)\}/;
+        const match = value.match(rfunc);
+        if (match) {
+            const args = match[1].split(',').map(function(arg) {
+                return arg.replace(/\s+/, '');
+            });
+            return new Function(args, match[2]);
+        }
+    }
+    return value;
+}
+
+/** Assign closure variables to worker scope as closure variables
+ * @param {Array} inputValues
+ */
+function initializeClosures(inputValues) {
+    for (const key in inputValues) {
+        if (Object.prototype.hasOwnProperty.call(inputValues, key)) {
+            self[key] = inputValues[key];
+        }
+    }
+}
+
+/** Copy updated closure variables to be sent back to main
+ * @param {Object.<string, string[]>} outputValues
+ * @return {Object.<string, Object>} a clone of updated closure variables
+ */
+function cloneClosures(outputValues) {
+    const updated = {};
+    Object.keys(outputValues).forEach((location) => {
+        const updatedVars = outputValues[location];
+        updated[location] = {};
+        updatedVars.forEach((varName) => {
+            const parts = varName.split(';;;;');
+            // TODO: more efficient way would be to only send back the inner
+            // field which is updated instead of the whole object
+            updated[location][parts[0]] = self[parts[0]];
+        });
+    });
+    return updated;
+}
+
+
+self.addEventListener('message', (event) => {
+    // console.log(`Worker received ${JSON.stringify(event.data)}`);
+    if (event.data.cmd == 'start') {
+        workerId = event.data.id;
+        // send a message to main thread to confirm setup is done
+        self.postMessage({'status': 'ready',
+            'id': workerId,
+            'setupDone': setupDone});
+    } else if (event.data.cmd == 'execute') {
+        const fnBody = event.data.fnBody;
+        const fnArgs = event.data.fnArgs;
+        if (fnBody === 'undefined' || fnArgs === 'undefined') {
+            const errorMsg = 'Error: function body or args are undefined';
+            console.error(errorMsg);
+            return;
+        }
+        const funcStart = Date.now();
+        // initialize window var in the worker's global scope
+        self.window = JSON.parse(event.data.window, functionReviver);
+        // initialize the closure variables
+        initializeClosures(event.data.inputValues);
+        const reconstructed = new Function(fnArgs, fnBody);
+        reconstructed();
+        const updatedClosures = cloneClosures(event.data.outputValues);
+        if (Object.keys(updatedClosures).length !== 0) {
+            // console.log('Worker updated closures:', updatedClosures);
+        }
+        const runtime = Date.now() - funcStart;
+        self.postMessage({
+            'status': 'executed',
+            'id': workerId,
+            'window': JSON.stringify(self.window, functionStringifier),
+            'updated': updatedClosures,
+            'runtime': runtime,
+        });
+    }
+});
+
+</script>
+
+<script>
+
+Date=function(r){function e(e,n,t,a,u,i,f){var o;switch(arguments.length){case 0:o=new r(0);break;case 1:o=new r(e);break;default:t=t||1,a=a||0,u=u||0,i=i||0,f=f||0,o=new r(e,n,t,a,u,i,f)}return o}return e.parse=r.parse,e.UTC=r.UTC,e.toString=r.toString,e.prototype=r.prototype,e.now=function(){return 0},e}(Date),Math.exp=function(){function r(r){var e=new ArrayBuffer(8);return new Float64Array(e)[0]=r,0|new Uint32Array(e)[1]}function e(r){var e=new ArrayBuffer(8);return new Float64Array(e)[0]=r,new Uint32Array(e)[0]}function n(r,e){var n=new ArrayBuffer(8);return new Uint32Array(n)[1]=r,new Uint32Array(n)[0]=e,new Float64Array(n)[0]}var t=[.5,-.5],a=[.6931471803691238,-.6931471803691238],u=[1.9082149292705877e-10,-1.9082149292705877e-10];return function(i){var f,o=0,c=0,w=0,y=r(i),s=y>>31&1;if((y&=2147483647)>=1082535490){if(y>=2146435072)return isNaN(i)?i:0==s?i:0;if(i>709.782712893384)return 1/0;if(i<-745.1332191019411)return 0}if(y>1071001154){if(y<1072734898){if(1==i)return Math.E;c=i-a[s],w=u[s],o=1-s-s}else o=1.4426950408889634*i+t[s]|0,f=o,c=i-f*a[0],w=f*u[0];i=c-w}else{if(y<1043333120)return 1+i;o=0}f=i*i;var v=i-f*(.16666666666666602+f*(f*(6613756321437934e-20+f*(4.1381367970572385e-8*f-16533902205465252e-22))-.0027777777777015593));if(0==o)return 1-(i*v/(v-2)-i);var A=1-(w-i*v/(2-v)-c);return o>=-1021?A=n((o<<20)+r(A),e(A)):(A=n((o+1e3<<20)+r(A),e(A)),A*=9.332636185032189e-302)}}(),Math.random=function(){var r,e,n,t;return r=.8725217853207141,e=.520505596883595,n=.22893249243497849,t=1,function(){var a=2091639*r+2.3283064365386963e-10*t;return r=e,e=n,t=0|a,n=a-t}}(),Object.keys=function(r){return function(e){var n;return n=r(e),n.sort(),n}}(Object.keys);
+
+const webWorkerScriptID = '__horcrux_worker__';
+const numOfWorkers = 3;
+
+/**
+ * defines the __callScheduler__ function globally which acts as wake up call.
+ * sets up a number of workers, and adds them to the list of available workers.
+ */
+function __defineScheduler__() {
+    // List of all workers
+    const workers = [];
+    // List of available workers
+    const availableWorkers = [];
+    setUpWorkers();
+    // Horcrux special event queue: holds functions in order to be executed
+    const horcruxQueue = [];    
+    /** Map from closure def location to defined variables in that location.
+     * value is a dictionary of variable names to their corresponding values
+     * @type {Object.<string, Object.<string, Object>>}
+     */
+    const closureMap = new Map();
+
+    /** Checks if the two given functions have dependency conflicts.
+     * Two functions have dependency conflicts if both of them are sharing
+     * access to one variable and one of the accesses is write (e.g., R-W,
+     * W-R, W-W). There is not a dependency conflict if both of functions are
+     * just reading the variable.
+     * @param {Array} candidateSignature
+     * @param {Array} otherSignature
+     * @return {boolean} returns true if there is any conflict
+     */
+    function _hasConflict(candidateSignature, otherSignature) {
+        let conflict = false;
+        for (let i = 0; i < candidateSignature.length; ++i) {
+            const candidateDep = candidateSignature[i];
+            const lastIndex = candidateDep[0].lastIndexOf('_');
+            const scope = candidateDep[0].substring(0, lastIndex);
+            const readWrite = candidateDep[0].substring(lastIndex+1);
+            for (let j = 0; j < otherSignature.length; ++j) {
+                const otherDep = otherSignature[j];
+                const otherLastIndex = otherDep[0].lastIndexOf('_');
+                if (scope !== otherDep[0].substring(0, otherLastIndex)) {
+                    continue;
+                }
+                const otherReadWrite = otherDep[0].substring(otherLastIndex+1);
+                if (readWrite === 'reads' && otherReadWrite === 'reads') {
+                    continue;
+                }
+                if (candidateDep[1].includes(otherDep[1]) ||
+                    otherDep[1].includes(candidateDep[1])) {
+                    conflict = true;
+                    break;
+                }
+            }
+            if (conflict) {
+                break;
+            }
+        }
+        return conflict;
+    }
+
+    /** Makes sure the given candidate function does not have any dependency
+     * conflicts with either any of the functions running on the web workers
+     * or the ones ahead of it in the queue.
+     * @param {Object.<index, fnBody, fnSignature, touchDOM>} candidate
+     * @return {boolean} returns false if candidate has any dependency conflict
+     */
+    function _safeToExecute(candidate) {
+        let safe = true;
+        // first check the already offloaded functions
+        for (let i = 0; i < workers.length; ++i) {
+            if (workers[i].executing &&
+                _hasConflict(candidate.fnSignature, workers[i].signature)) {
+                safe = false;
+                break;
+            }
+        }
+        if (!safe) {
+            return false;
+        }
+        for (let i = 0; i < horcruxQueue.length; ++i) {
+            if (horcruxQueue[i] == candidate) {
+                // found itself; Have checked all functions ahead of it
+                break;
+            }
+            if (_hasConflict(candidate.fnSignature,
+                horcruxQueue[i].fnSignature)) {
+                safe = false;
+                break;
+            }
+        }
+        return safe;
+    }
+
+
+    /** Wakes up the scheduler to execute the next function in the queue
+     * Gets called when either the worker or the main thread has finished
+     * executing the previous function.
+     */
+    function executeNextFunction() {
+        console.log("length of queue: " + horcruxQueue.length);
+        if (horcruxQueue.length == 0) {
+            return;
+        }
+        let domPause = false;
+        if (availableWorkers.length > 0 && !domPause) {
+            let qindex = 0;
+            while (qindex < horcruxQueue.length) {
+                const candidate = horcruxQueue[qindex];
+                if (candidate.touchDOM) {
+                    domPause = true;
+                    break;
+                } else {
+                    if (_safeToExecute(candidate)) {
+                        // found a candidate
+                        break;
+                    }
+                }
+                qindex += 1;
+            }
+            if (!domPause) {
+                if (qindex !== horcruxQueue.length) {
+                    // no DOM in queue and found a candidate that is safe
+                    // take qindex-th item out of queue, returns array of size 1
+                    const candidate = horcruxQueue.splice(qindex, 1);
+                    const worker = availableWorkers.shift();
+                    offloadToWorker(worker,
+                        candidate[0].index,
+                        candidate[0].fnBody,
+                        candidate[0].fnSignature);
+                }
+            } else if (domPause && qindex == 0) {
+                // if the head of queue is touching dom
+                if (_safeToExecute(horcruxQueue[qindex])) {
+                    // and has no conflict with the ones executing on workers
+                    const head = horcruxQueue.shift();
+                    domPause = false;
+                    executeOnMain(head.index, head.fnBody, head.fnSignature);
+                } else {
+                    // cannot execute yet, has to wait on some worker to finish
+                    // console.log('DOM pause! Has to wait for worker to finish');
+                    return;
+                }
+            } else {
+                // console.log('DOM pause! Has to wait for others to finish');
+                return;
+            }
+        }
+    }
+
+    /** Gets called from inside a rewritten IIFE (<script>).
+     * It adds the function to Horcrux queue and delegates the offloading
+     * decision to scheduler wake-up call!
+     * @see executeNextFunction.
+     * -- This function is defined as a property of window so that
+     * it can be called from inside rewritten IIFE and async functions.
+     * @param {string} index location of function that invoked callScheduler
+     * @param {string} fnBody stringified function body, sent to constructor
+     * @param {Array} fnSignature list of function dependencies
+     * @param {boolean} touchDOM whether the to-be function is accessing DOM
+     */
+    window.__callScheduler__ = function(index, fnBody, fnSignature, touchDOM) {
+        // Shorthand property names -- e.g., {a:a, b:b, c:c}
+        horcruxQueue.push({index, fnBody, fnSignature, touchDOM}); 
+        // call executeNextFunction since there might be an idle worker waiting
+        // and none of the previously present functions could be offloaded to it
+        executeNextFunction();
+    };
+
+    /** Helper function for JSON stringify when the value is a function
+     * @param {string} key
+     * @param {string} value
+     * @return {string} stringified value
+     */
+    function functionStringifier(key, value) {
+        if (typeof(value) === 'function') {
+            return value.toString();
+        }
+        return value;
+    }
+
+    /** Helper function for JSON parse when the value is a function
+     * @param {string} key
+     * @param {string} value
+     * @return {string} stringified functions is reconstructed as functions
+     */
+    function functionReviver(key, value) {
+        if (typeof value === 'string') {
+            const rfunc = /function[^\(]*\(([^\)]*)\)[^\{]*\{([\s\S]*)\}/;
+            const match = value.match(rfunc);
+            if (match) {
+                const args = match[1].split(',').map(function(arg) {
+                    return arg.replace(/\s+/, '');
+                });
+                return new Function(args, match[2]);
+            }
+        }
+        return value;
+    }
+
+    /** Offloads a function to a web worker using postMessage
+     * @param {Object} worker wrapper around actual worker object
+     * @param {string} index original function location
+     * @param {string} fnBody stringified function body to be offloaded
+     * @param {Array} fnSignature list of function dependencies
+     */
+    function offloadToWorker(worker, index, fnBody, fnSignature) {
+        const fnArgs = [];
+        const windowClone = {};
+        const inputValues = [];
+        /** a dictionary of closure definition location to closure variables
+         * defined in that location and updated in the worker
+         * @type{Object.<string, string[]>}
+         */
+        const outputValues = {};
+        // prepare the input arguments for the fnBody using the signature
+        fnSignature.forEach((dependency) => {
+            // should not split using '_', since the function location might
+            // contain '_'. Instead use the first and last underline
+            const firstUnder = dependency[0].indexOf('_');
+            const lastUnder = dependency[0].lastIndexOf('_');
+            const scope = dependency[0].slice(0, firstUnder);
+            const location = dependency[0].slice(firstUnder, lastUnder);
+            const access = dependency[0].slice(lastUnder);
+            const name = dependency[1].substring(4); // removes ';;;;'
+            if (scope == 'global') {
+                handleGlobalDependency(access, name);
+            } else if (scope == 'closure') {
+                if (location != "") {
+                    const value = (access == 'reads') ? dependency[2] : '';
+                    handleClosureDependency(location, access, name, value);
+                }
+            }
+        });
+        worker.signature = fnSignature;
+        worker.executing = true;
+        // console.log(`Offloading ${index} to worker`);
+        worker.workerObj.postMessage({
+            'cmd': 'execute',
+            'fnBody': fnBody,
+            'fnArgs': fnArgs.toString(),
+            'window': JSON.stringify(windowClone, functionStringifier),
+            'inputValues': inputValues,
+            'outputValues': outputValues,
+        });
+
+        /* private helper functions for handling dependencies */
+        /**
+         * @param {string} access 'reads' or 'writes'
+         * @param {string} name global variable name without window.
+         */
+        function handleGlobalDependency(access, name) {
+            // for cases where window.name is accessed (read or write)
+            // if window.name is undefined, it will not be passed to worker
+            windowClone[name] = window[name];
+        };
+
+        /** Preparing closure dependencies to be passed to worker
+         * @param {string} location of surrounding function that defines closure
+         * @param {string} access 'reads' or 'writes'
+         * @param {string} name closure variable name (might be path)
+         * @param {string} value of the closure variable that is read
+         */
+        function handleClosureDependency(location, access, name, value) {
+            if (access == 'reads') {
+                // console.log(`reads closure ${name} = ${value}`);
+                const nameParts = name.split(';;;;');
+                if (nameParts.length == 1) {
+                    const valueParts = value.split(';;&;;');
+                    if (valueParts[1] == 'object' &&
+                        valueParts[3] == 'Object') {
+                        inputValues[name] = JSON.parse(valueParts[0]);
+                        if (!closureMap.has(location)) {
+                            closureMap.set(location, {name: inputValues[name]});
+                        } else {
+                            // just double-checking the values in closureMap
+                            const old = closureMap.get(location);
+                        }
+                    }
+                }
+            } else if (access == 'writes') {
+                if (outputValues[location] === undefined) {
+                    outputValues[location] = [];
+                }
+                outputValues[location].push(name);
+            }
+        };
+    };
+
+    /** Takes care of applying the worker updates/outputs to the main
+     * @param {Object} workerWindow updated window in worker scope
+     * @param {Object.<string, Object>} updatedClosures dictionary from
+     * closure definition location to the updated closure variables
+     */
+    function applyWorkerUpdates(workerWindow, updatedClosures) {
+        for (const name in workerWindow) {
+            if (workerWindow[name] !== 'undefined') {
+                window[name] = workerWindow[name];
+            }
+        }
+        for (const location in updatedClosures) {
+            if (closureMap.has(location)) {
+                // TODO: should not set the whole object
+                // if parts of object is sent from worker only those fields
+                // need to be updated here
+                closureMap.get(location);
+                closureMap.set(location, updatedClosures[location]);
+            }
+        }
+        // for (const [key, value] of closureMap.entries()) {
+        //     console.log(`closureMap: ${key} = ${JSON.stringify(value)}`);
+        // }
+    };
+
+    /** Main thread 'message' event handler.
+     * @param {MessageEvent} event Received message from worker in event.data
+     */
+    function mainThreadListener(event) {
+        // console.log(`Main received: ${JSON.stringify(event.data)}`);
+        const workerId = event.data.id;
+        if (workerId === 'undefined' || workerId >= numOfWorkers) {
+            console.error('Error: web worker message does not indicate the id');
+            return;
+        }
+        const worker = workers[workerId];
+        if (event.data.status == 'ready') {
+            const setupTime = event.data.setupDone - worker.setupStart;
+            worker['setupTime'] = setupTime;
+            availableWorkers.push(worker);
+        } else if (event.data.status == 'executed') {
+            const workerWindow = JSON.parse(event.data.window, functionReviver);
+            applyWorkerUpdates(workerWindow, event.data.updated);
+            // free up the worker and add it to available workers
+            worker.signature = null;
+            worker.executing = false;
+            availableWorkers.push(worker);
+        }
+        // wake up the scheduler to continue
+        executeNextFunction();
+    }
+
+    /**
+     * Sets up numOfWorkers of workers using with the content of <script>
+     * identified by webWorkerScriptID.
+     */
+    function setUpWorkers() {
+        for (let workerId = 0; workerId < numOfWorkers; ++workerId) {
+            const start = Date.now();
+            const blob = new Blob([
+                document.getElementById(webWorkerScriptID).textContent,
+            ], {
+                type: 'text/javascript',
+            });
+            const worker = new Worker(window.URL.createObjectURL(blob));
+            worker.addEventListener('message', mainThreadListener);
+            const workerInfo = {
+                id: workerId,
+                workerObj: worker,
+                setupStart: start,
+                executing: false,
+                signature: null,
+            };
+            /* This message is not necessary to start the web worker, it
+             has already started, but more importantly it tells the web worker
+             its id. */
+            worker.postMessage({'cmd': 'start', 'id': workerId});
+            workers.push(workerInfo);
+        }
+    };
+
+    /** Executes the given function here (on the main thread) by reconstructing
+     * it similar to how web workers do it.
+     * Note: If there is a closure variable which was created/updated by workers
+     * then must use the value tracked by closureMap.
+     * To provide access to closure variables in the reconstructed function,
+     * assign each closure variable to an input argument with the same name
+     * Passing these values as input arguments should solve the problem.
+     * @param {string} index
+     * @param {string} fnBody
+     * @param {Array} fnSignature
+     */
+    function executeOnMain(index, fnBody, fnSignature) {
+        const fnArgs = '';
+        fnSignature.forEach((dependency) => {
+            // should not split using '_', since the function location might
+            // contain '_'. Instead use the first and last underline
+            const firstUnder = dependency[0].indexOf('_');
+            const lastUnder = dependency[0].lastIndexOf('_');
+            const scope = dependency[0].slice(0, firstUnder);
+            const location = dependency[0].slice(firstUnder, lastUnder);
+            const access = dependency[0].slice(lastUnder); // "reads"/"writes"
+            const name = dependency[1].substring(4); // removes ';;;;'
+            if (scope == 'closure') {
+                // console.log('Running on main:', scopeAccess.length);
+                const value = (access == 'reads') ? dependency[2] : '';
+            }
+        });
+
+        // console.log(`Executing ${index} on main`);
+        // reconstruct the function
+        const reconstructed = new Function(fnArgs, fnBody);
+        reconstructed();
+        // then wake up the scheduler
+        executeNextFunction();
+    }
+};
+
+if (typeof __scheduler__ === 'undefined') {
+    __scheduler__ = new __defineScheduler__();
+}
+
+
+//  LocalWords:  workerId workerInfo postMessage closureMap updatedClosures
+//  LocalWords:  executeNextFunction
+
+</script>
+
+<html>
+    <head>
+        <script>
+(function __HORCRUX__(){ window.module = {};
+            window.module.exports=function(){var e={tags:{fb_simplicity_nmLanding:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829253787145710&amp;ev=NM_landing&amp;dl=Netflix.com" />',logOnly:!(window.onerror=function(e,t,a,o,n){r("object"==typeof i?i:{},void 0,{msg:e,url:t,line:a,col:o,err:n})}),throttle:"once_per_visitor",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},fb_simplicity_orderFinal:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829253787145710&amp;ev=Purchase&amp;cd[Group_status]=Nantucket&amp;dl=Netflix.com" />',logOnly:!1,throttle:"once_per_session",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},fb_simplicity_testPixel:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829253787145710&amp;ev=TestPixel&amp;cd[Group_status]=Nantucket&amp;dl=Netflix.com" />\n',logOnly:!1,throttle:"once_per_session",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},fb_orderFinal_2020_gsv_test:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=239067027073813&amp;ev=Purchase&amp;cd[Group_status]=Nantucket&amp;eid=[[encryptedEmail]]&amp;dl=Netflix.com" />\n',throttle:"once_per_session",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["encryptedEmail"]},fb_simplicity_orderFinal_combined:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=260558521328948&amp;ev=Purchase&amp;cd[Group_status]=Nantucket&amp;eid=[[encryptedEmail]]&amp;dl=Netflix.com" />\n',logOnly:!0,throttle:"once_per_session",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"},{key:"country",val:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","CH"],matcher:"avoid"}],replace:["encryptedEmail"]},fb_simplicity_orderFinalRejoin:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829253787145710&amp;ev=Purchase&amp;cd[Group_status]=Rio&amp;dl=Netflix.com" />',logOnly:!1,throttle:"once_per_session",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},fb_orderFinalRejoin_2020_gsv_test:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=239067027073813&amp;ev=Purchase&amp;cd[Group_status]=Rio&amp;eid=[[encryptedEmail]]&amp;dl=Netflix.com" />\n',throttle:"once_per_session",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["encryptedEmail"]},fb_simplicity_orderFinalRejoin_combined:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=260558521328948&amp;ev=Purchase&amp;cd[Group_status]=Rio&amp;eid=[[encryptedEmail]]&amp;dl=Netflix.com" />\n',logOnly:!0,throttle:"once_per_session",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"},{key:"country",val:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","CH"],matcher:"avoid"}],replace:["encryptedEmail"]},fb_simplicity_payment:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829253787145710&amp;ev=AddPaymentInfo&amp;cd[member_status]=[[is_member]]&amp;dl=Netflix.com" />',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["is_member"]},fb_simplicity_registration:{tagHtml:'<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=829253787145710&amp;ev=CompleteRegistration&amp;dl=Netflix.com" />',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},gcm_Asia_Registration:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Asia - Registration\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com/\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 06/15/2016\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-00;cat=dcmas0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-00;cat=dcmas0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["KZ","KG","TJ","TM","UZ","CN","HK","MO","JP","KP","KR","MN","TW","AF","BD","BT","IN","IR","MV","NP","PK","LK","BN","KH","ID","LA","MY","MM","PH","SG","TH","TL","VN"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},gcm_Global_Registration:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Global - Registration\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 06/15/2016\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-re0;cat=dcmgl0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-re0;cat=dcmgl0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},gcm_Global_NonMemberPayment:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Global - Payment\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/payment\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/05/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\n\ndocument.write(\'<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-pmt;cat=dcmgl0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-pmt;cat=dcmgl0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_Global_OrderFinalRejoin:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Global - Order Final REJOIN\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/05/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-of;cat=dcmgl00;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-of;cat=dcmgl00;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e\n',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_Global_OrderFinalNewMember:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Global - Order Final NEW MEMBER\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/05/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-of;cat=dcmgl0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-of;cat=dcmgl0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"wasFormerMember",val:!1},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_Global_PaymentConfirmCard:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Global - Payment_Confirm_Card\nURL of the webpage where the tag is expected to be placed: https://www.netflix.com/signup/confirmform\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 09/18/2017\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-web;cat=dcmgl105;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-web;cat=dcmgl105;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},gcm_Global_NonMemberHome:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Global - Nonmember Home\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com/\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/01/2017\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-nmh;cat=dcmgl0;u1=[[country]];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4954221.fls.doubleclick.net/activityi;src=4954221;type=gl-nmh;cat=dcmgl0;u1=[[country]];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"is_member",val:["anonymous"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_NAANZ_Registration:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM NAANZ - Registration\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 06/15/2016\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz00;cat=dcmna0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz00;cat=dcmna0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["US","CA","AU","NZ"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},gcm_NAANZ_PaymentNonMember:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM NAANZ - Payment\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/payment\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-pm;cat=dcmna0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-pm;cat=dcmna0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["US","CA","AU","NZ"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_NAANZ_OrderFinalRejoin:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM NAANZ - Order Final REJOIN\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-of;cat=dcmna00;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-of;cat=dcmna00;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["US","CA","AU","NZ"]},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_NAANZ_OrderFinalNewMember:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM NAANZ - Order Final NEW MEMBER\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-of;cat=dcmna0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-of;cat=dcmna0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["US","CA","AU","NZ"]},{key:"wasFormerMember",val:!1},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_NAANZ_NonMemberHome:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM NAANZ - Nonmember home\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com/\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\n\ndocument.write(\'<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4968236.fls.doubleclick.net/activityi;src=4968236;type=naanz-nm;cat=dcmna0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e\n',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["US","CA","AU","NZ"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_LATAM_Registration:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM LATAM - Registration\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 06/15/2016\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam00;cat=dcmla0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam00;cat=dcmla0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["AI","AG","AW","BS","BB","BQ","VG","KY","CU","CW","DM","DO","GD","GP","HT","JM","MQ","MS","PR","BL","KN","LC","MF","VC","SX","TT","TC","VI","BZ","CR","SV","GT","HN","MX","NI","PA","AR","BO","BR","CL","CO","EC","FK","GF","GY","PY","PE","SR","UY","VE"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},gcm_LATAM_PaymentNonMember:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM LATAM - Payment\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/payment\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-pm;cat=dcmla0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-pm;cat=dcmla0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e\n',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["AI","AG","AW","BS","BB","BQ","VG","KY","CU","CW","DM","DO","GD","GP","HT","JM","MQ","MS","PR","BL","KN","LC","MF","VC","SX","TT","TC","VI","BZ","CR","SV","GT","HN","MX","NI","PA","AR","BO","BR","CL","CO","EC","FK","GF","GY","PY","PE","SR","UY","VE"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_LATAM_OrderFinalRejoin:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM LATAM - Order Final REJOIN\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-of;cat=dcmla00;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-of;cat=dcmla00;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e\n',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["AI","AG","AW","BS","BB","BQ","VG","KY","CU","CW","DM","DO","GD","GP","HT","JM","MQ","MS","PR","BL","KN","LC","MF","VC","SX","TT","TC","VI","BZ","CR","SV","GT","HN","MX","NI","PA","AR","BO","BR","CL","CO","EC","FK","GF","GY","PY","PE","SR","UY","VE"]},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_LATAM_OrderFinalNewMembern:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM LATAM - Order Final NEW MEMBER\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-of;cat=dcmla0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-of;cat=dcmla0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["AI","AG","AW","BS","BB","BQ","VG","KY","CU","CW","DM","DO","GD","GP","HT","JM","MQ","MS","PR","BL","KN","LC","MF","VC","SX","TT","TC","VI","BZ","CR","SV","GT","HN","MX","NI","PA","AR","BO","BR","CL","CO","EC","FK","GF","GY","PY","PE","SR","UY","VE"]},{key:"wasFormerMember",val:!1},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_LATAM_NonMemberHome:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM LATAM - Nonmember Home\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com/\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\n\ndocument.write(\'<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-nm;cat=dcmla0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967237.fls.doubleclick.net/activityi;src=4967237;type=latam-nm;cat=dcmla0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["AI","AG","AW","BS","BB","BQ","VG","KY","CU","CW","DM","DO","GD","GP","HT","JM","MQ","MS","PR","BL","KN","LC","MF","VC","SX","TT","TC","VI","BZ","CR","SV","GT","HN","MX","NI","PA","AR","BO","BR","CL","CO","EC","FK","GF","GY","PY","PE","SR","UY","VE"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_EMEA_Registration:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM EU - Registration\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 06/15/2016\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-re0;cat=dcmeu0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-re0;cat=dcmeu0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e\n',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["SE","FI","NO","DK","AD","AL","AT","AX","BA","BE","BG","BY","CH","CZ","DE","EE","ES","FO","FR","GB","GG","GI","GR","HR","HU","IE","IM","IS","IT","JE","LI","LT","LU","LV","MC","MD","ME","MK","MT","NL","PL","PT","RO","RS","RU","SI","SJ","SK","SM","UA","VA","AM","AZ","BH","CY","GE","IQ","IL","JO","KW","LB","PS","OM","QA","SA","SY","TR","AE","YE","AO","BF","BI","BJ","BW","CD","CF","CG","CI","CM","CV","DJ","DZ","EG","EH","ER","ET","GA","GH","GM","GN","GQ","GW","KE","KM","LR","LS","LY","MA","MG","ML","MR","MU","MW","MZ","NA","NE","NG","RE","RW","SC","SD","SH","SL","SN","SO","SS","ST","SZ","TD","TG","TN","TZ","UG","YT","ZA","ZM","ZW"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},gcm_EMEA_PaymentNonMember:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM EU - Payment\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/payment\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\ndocument.write(\'<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-pmt;cat=dcmeu0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-pmt;cat=dcmeu0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["SE","FI","NO","DK","AD","AL","AT","AX","BA","BE","BG","BY","CH","CZ","DE","EE","ES","FO","FR","GB","GG","GI","GR","HR","HU","IE","IM","IS","IT","JE","LI","LT","LU","LV","MC","MD","ME","MK","MT","NL","PL","PT","RO","RS","RU","SI","SJ","SK","SM","UA","VA","AM","AZ","BH","CY","GE","IQ","IL","JO","KW","LB","PS","OM","QA","SA","SY","TR","AE","YE","AO","BF","BI","BJ","BW","CD","CF","CG","CI","CM","CV","DJ","DZ","EG","EH","ER","ET","GA","GH","GM","GN","GQ","GW","KE","KM","LR","LS","LY","MA","MG","ML","MR","MU","MW","MZ","NA","NE","NG","RE","RW","SC","SD","SH","SL","SN","SO","SS","ST","SZ","TD","TG","TN","TZ","UG","YT","ZA","ZM","ZW"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_EMEA_OrderFinalRejoin:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM EU - Order Final REJOIN\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-of;cat=dcmeu00;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-of;cat=dcmeu00;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["SE","FI","NO","DK","AD","AL","AT","AX","BA","BE","BG","BY","CH","CZ","DE","EE","ES","FO","FR","GB","GG","GI","GR","HR","HU","IE","IM","IS","IT","JE","LI","LT","LU","LV","MC","MD","ME","MK","MT","NL","PL","PT","RO","RS","RU","SI","SJ","SK","SM","UA","VA","AM","AZ","BH","CY","GE","IQ","IL","JO","KW","LB","PS","OM","QA","SA","SY","TR","AE","YE","AO","BF","BI","BJ","BW","CD","CF","CG","CI","CM","CV","DJ","DZ","EG","EH","ER","ET","GA","GH","GM","GN","GQ","GW","KE","KM","LR","LS","LY","MA","MG","ML","MR","MU","MW","MZ","NA","NE","NG","RE","RW","SC","SD","SH","SL","SN","SO","SS","ST","SZ","TD","TG","TN","TZ","UG","YT","ZA","ZM","ZW"]},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_EMEA_OrderFinalNewMember:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM EU - Order Final NEW MEMBER\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-of;cat=dcmeu0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-of;cat=dcmeu0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["SE","FI","NO","DK","AD","AL","AT","AX","BA","BE","BG","BY","CH","CZ","DE","EE","ES","FO","FR","GB","GG","GI","GR","HR","HU","IE","IM","IS","IT","JE","LI","LT","LU","LV","MC","MD","ME","MK","MT","NL","PL","PT","RO","RS","RU","SI","SJ","SK","SM","UA","VA","AM","AZ","BH","CY","GE","IQ","IL","JO","KW","LB","PS","OM","QA","SA","SY","TR","AE","YE","AO","BF","BI","BJ","BW","CD","CF","CG","CI","CM","CV","DJ","DZ","EG","EH","ER","ET","GA","GH","GM","GN","GQ","GW","KE","KM","LR","LS","LY","MA","MG","ML","MR","MU","MW","MZ","NA","NE","NG","RE","RW","SC","SD","SH","SL","SN","SO","SS","ST","SZ","TD","TG","TN","TZ","UG","YT","ZA","ZM","ZW"]},{key:"wasFormerMember",val:!1},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_EMEA_NonMemberHome:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM EU - Nonmember Home\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com/\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/14/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-nmh;cat=dcmeu0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4967238.fls.doubleclick.net/activityi;src=4967238;type=eu-nmh;cat=dcmeu0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"is_member",val:["anonymous"]},{key:"country",val:["SE","FI","NO","DK","AD","AL","AT","AX","BA","BE","BG","BY","CH","CZ","DE","EE","ES","FO","FR","GB","GG","GI","GR","HR","HU","IE","IM","IS","IT","JE","LI","LT","LU","LV","MC","MD","ME","MK","MT","NL","PL","PT","RO","RS","RU","SI","SJ","SK","SM","UA","VA","AM","AZ","BH","CY","GE","IQ","IL","JO","KW","LB","PS","OM","QA","SA","SY","TR","AE","YE","AO","BF","BI","BJ","BW","CD","CF","CG","CI","CM","CV","DJ","DZ","EG","EH","ER","ET","GA","GH","GM","GN","GQ","GW","KE","KM","LR","LS","LY","MA","MG","ML","MR","MU","MW","MZ","NA","NE","NG","RE","RW","SC","SD","SH","SL","SN","SO","SS","ST","SZ","TD","TG","TN","TZ","UG","YT","ZA","ZM","ZW"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_ASIA_OrderFinalRejoin:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Asia - Order Final REJOIN\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/13/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-of;cat=dcmas00;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-of;cat=dcmas00;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["KZ","KG","TJ","TM","UZ","CN","HK","MO","JP","KP","KR","MN","TW","AF","BD","BT","IN","IR","MV","NP","PK","LK","BN","KH","ID","LA","MY","MM","PH","SG","TH","TL","VN"]},{key:"wasFormerMember",val:!0},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_ASIA_OrderFinalNewMember:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Asia - Order Final NEW MEMBER\nURL of the webpage where the tag is expected to be placed: http://signup.netflix.com/orderfinal\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/13/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\n\ndocument.write(\'<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-of;cat=dcmas0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-of;cat=dcmas0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"membership_status",val:["CURRENT_MEMBER","NON_REGISTERED_MEMBER","NEVER_MEMBER","FORMER_MEMBER","ANONYMOUS","DVD_ONLY_MEMBER"]},{key:"country",val:["KZ","KG","TJ","TM","UZ","CN","HK","MO","JP","KP","KR","MN","TW","AF","BD","BT","IN","IR","MV","NP","PK","LK","BN","KH","ID","LA","MY","MM","PH","SG","TH","TL","VN"]},{key:"wasFormerMember",val:!1},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},gcm_ASIA_NonMemberHome:{tagHtml:'\x3c!--\nStart of DoubleClick Floodlight Tag: Please do not remove\nActivity name of this tag: DCM Asia - Nonmember Home\nURL of the webpage where the tag is expected to be placed: http://www.netflix.com/\nThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.\nCreation Date: 08/13/2015\n--\x3e\n<script type="text/javascript">\nvar axel = Math.random() + "";\nvar a = axel * 10000000000000;\n\ndocument.write(\'<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-nmh;cat=dcmas0;u1=[[country]];ord=\' + a + \'?" width="1" height="1" frameborder="0" style="display:none"></iframe>\');\n<\/script>\n<noscript>\n<iframe src="https://4953227.fls.doubleclick.net/activityi;src=4953227;type=asia-nmh;cat=dcmas0;u1=[[country]];ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>\n</noscript>\n\x3c!-- End of DoubleClick Floodlight Tag: Please do not remove --\x3e',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"is_member",val:["anonymous"]},{key:"country",val:["KZ","KG","TJ","TM","UZ","CN","HK","MO","JP","KP","KR","MN","TW","AF","BD","BT","IN","IR","MV","NP","PK","LK","BN","KH","ID","LA","MY","MM","PH","SG","TH","TL","VN"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}],replace:["country","country"]},adwords_Simplicity_NMLanding:{tagHtml:'\x3c!-- Google Code for Netflix Parent MCC - NM Landing Conversion Page --\x3e\n<script type="text/javascript">\n/* <![CDATA[ */\nvar google_conversion_id = 981179826;\nvar google_conversion_language = "en";\nvar google_conversion_format = "3";\nvar google_conversion_color = "ffffff";\nvar google_conversion_label = "40zWCLqP1XUQsrvu0wM";\nvar google_remarketing_only = false;\n/* ]]> */\n<\/script>\n<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">\n<\/script>\n<noscript>\n<div style="display:inline;">\n<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/981179826/?label=40zWCLqP1XUQsrvu0wM&amp;guid=ON&amp;script=0"/>\n</div>\n</noscript>',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},adwords_Simplicity_Registration:{tagHtml:'\x3c!-- Google Code for Netflix Parent MCC - Registration Entry Conversion Page --\x3e\n<script type="text/javascript">\n/* <![CDATA[ */\nvar google_conversion_id = 981179826;\nvar google_conversion_language = "en";\nvar google_conversion_format = "3";\nvar google_conversion_color = "ffffff";\nvar google_conversion_label = "1eOkCMHPwnUQsrvu0wM";\nvar google_remarketing_only = false;\n/* ]]> */\n<\/script>\n<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">\n<\/script>\n<noscript>\n<div style="display:inline;">\n<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/981179826/?label=1eOkCMHPwnUQsrvu0wM&amp;guid=ON&amp;script=0"/>\n</div>\n</noscript>',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},adwords_Simplicity_OrderFinal:{tagHtml:'\x3c!-- Google Code for Netflix Parent MCC - Signup Conversion Page --\x3e\n<script type="text/javascript">\n/* <![CDATA[ */\nvar google_conversion_id = 981179826;\nvar google_conversion_language = "en";\nvar google_conversion_format = "3";\nvar google_conversion_color = "ffffff";\nvar google_conversion_label = "Pz-aCKHH1mYQsrvu0wM";\nvar google_remarketing_only = false;\n/* ]]> */\n<\/script>\n<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">\n<\/script>\n<noscript>\n<div style="display:inline;">\n<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/981179826/?label=Pz-aCKHH1mYQsrvu0wM&amp;guid=ON&amp;script=0"/>\n</div>\n</noscript>',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},adwords_Simplicity_Payment:{tagHtml:'\x3c!-- Google Code for Netflix Parent MCC - Add Payment Info Conversion Page --\x3e\n<script type="text/javascript">\n/* <![CDATA[ */\nvar google_conversion_id = 981179826;\nvar google_conversion_language = "en";\nvar google_conversion_format = "3";\nvar google_conversion_color = "ffffff";\nvar google_conversion_label = "hilTCMfPwnUQsrvu0wM";\nvar google_remarketing_only = false;\n/* ]]> */\n<\/script>\n<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">\n<\/script>\n<noscript>\n<div style="display:inline;">\n<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/981179826/?label=hilTCMfPwnUQsrvu0wM&amp;guid=ON&amp;script=0"/>\n</div>\n</noscript>',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},twitter_JP_Conversions:{tagHtml:'<script src="//platform.twitter.com/oct.js" type="text/javascript"><\/script>\n<script type="text/javascript">twttr.conversion.trackPid(\'l6p4n\', { tw_sale_amount: 0, tw_order_quantity: 0 });<\/script>\n<noscript>\n<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6p4n&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />\n<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6p4n&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />\n</noscript>\n',logOnly:!1,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["JP"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]},yahoo_JP_Conversions:{tagHtml:'<script type="text/javascript" language="javascript">\n  /* <![CDATA[ */\n  var yahoo_ydn_conv_io = "RYHYUEUOLDXHBjuSQZM2";\n  var yahoo_ydn_conv_label = "ED91NHFPJIJ7EERKEGX570329";\n  var yahoo_ydn_conv_transaction_id = "";\n  var yahoo_ydn_conv_value = "0";\n  /* ]]> */\n<\/script>\n<script type="text/javascript" language="javascript" charset="UTF-8" src="https://b90.yahoo.co.jp/conv.js"><\/script>\n',logOnly:!0,throttle:"none",paramMatch:[{key:"deniedConsentCookieGroups",val:"C0004",matcher:"notContains"},{key:"country",val:["JP"]},{key:"country::region_code",val:["US::CA"],matcher:"avoid"}]}},rules:[{referrer:"nmLanding",tags:["fb_simplicity_nmLanding","gcm_Global_NonMemberHome","gcm_NAANZ_NonMemberHome","gcm_LATAM_NonMemberHome","gcm_EMEA_NonMemberHome","gcm_ASIA_NonMemberHome","adwords_Simplicity_NMLanding"]},{referrer:"orderfinal",tags:["fb_simplicity_orderFinal","fb_simplicity_testPixel","fb_orderFinal_2020_gsv_test","fb_simplicity_orderFinal_combined","fb_simplicity_orderFinalRejoin","fb_orderFinalRejoin_2020_gsv_test","fb_simplicity_orderFinalRejoin_combined","gcm_Global_OrderFinalRejoin","gcm_Global_OrderFinalNewMember","gcm_NAANZ_OrderFinalRejoin","gcm_NAANZ_OrderFinalNewMember","gcm_LATAM_OrderFinalRejoin","gcm_LATAM_OrderFinalNewMembern","gcm_EMEA_OrderFinalRejoin","gcm_EMEA_OrderFinalNewMember","gcm_ASIA_OrderFinalRejoin","gcm_ASIA_OrderFinalNewMember","adwords_Simplicity_OrderFinal"]},{referrer:"payment",tags:["fb_simplicity_payment","gcm_Global_NonMemberPayment","gcm_NAANZ_PaymentNonMember","gcm_LATAM_PaymentNonMember","gcm_EMEA_PaymentNonMember","adwords_Simplicity_Payment"]},{referrer:"registration",tags:["fb_simplicity_registration","gcm_Asia_Registration","gcm_Global_Registration","gcm_NAANZ_Registration","gcm_LATAM_Registration","gcm_EMEA_Registration","adwords_Simplicity_Registration"]},{referrer:"orderConfirm",tags:["gcm_Global_NonMemberPayment","gcm_Global_PaymentConfirmCard","gcm_NAANZ_PaymentNonMember","gcm_LATAM_PaymentNonMember","gcm_EMEA_PaymentNonMember","twitter_JP_Conversions","yahoo_JP_Conversions"]}]};function t(e,t,a){if(a){var o=new Date;o.setTime(Date.now()+24*a*60*60*1e3);var n="; expires="+o.toGMTString()}else n="";window.document.cookie="nflx_tags_"+e+"="+t+n+"; path=/"}function a(e){for(var t="nflx_tags_"+e+"=",a=window.document.cookie.split(";"),o=0;o<a.length;o++){for(var n=a[o];" "==n.charAt(0);)n=n.substring(1,n.length);if(0==n.indexOf(t))return n.substring(t.length,n.length)}return null}function r(e,t,a){var o=JSON.stringify({appName:"android",events:[{name:"advdevtag",data:{advdevtag_type:"web",ad_vendor_sync_type:"netflix",event_type:e.referrer,user_agent:window.navigator.userAgent,tags:t,err:a,params:e,country:e.country,tagLoaderVersion:"20200807-1509"}}]}),n=new XMLHttpRequest;n.withCredentials=!0,n.onload=function(){},n.open("POST","https://ichnaea-web.netflix.com/log",!0),n.setRequestHeader("Content-Type","application/json"),n.setRequestHeader("X-Netflix.ichnaea.request.type","IchnaeaRequest"),n.send(o)}void 0!==window.MOCK_NFLX_TAG_DATA&&(e=window.MOCK_NFLX_TAG_DATA);for(var i=function(e){var t,a,o=e.slice(1).split("&");for(a=0;a<o.length;a++)if((t=o[a].split("="))&&t[0]&&"data"===t[0]&&t[1])return JSON.parse(window.decodeURIComponent(t[1]))||{};return{}}(window.location.search),o=[],n=0;n<e.rules.length;n++){(m=e.rules[n]).referrerRegex&&i.referrer.match(new RegExp(m.referrerRegex,"i"))?o.push.apply(o,m.tags):i.referrer===m.referrer&&o.push.apply(o,m.tags)}var c,l=[],s=[];for(n=0;n<o.length;n++){var d=o[n],m=e.tags[d],p=!0;if(-1!==s.indexOf(d)&&(p=!1),m.throttle&&"none"!==m.throttle&&a(d)&&(p=!1),m.paramMatch)for(var h=0;h<m.paramMatch.length;h++){var g=m.paramMatch[h],y=i[g.key];if(-1!==g.key.indexOf("::")){var v=g.key.split("::");y=[];for(var f=0;f<v.length;f++)y.push(i[v[f]]||"");y=y.join("::")}!0===g.exists?y||(p=!1):!1===g.exists?y&&(p=!1):"avoid"===g.matcher?Array.isArray(g.val)?-1!==g.val.indexOf(y)&&(p=!1):y===g.val&&(p=!1):"contains"===g.matcher?-1===(y||"").indexOf(g.val)&&(p=!1):"notContains"===g.matcher?-1!==(y||"").indexOf(g.val)&&(p=!1):Array.isArray(g.val)?-1===g.val.indexOf(y)&&(p=!1):y!==g.val&&(p=!1)}if(p&&(s.push(d),"once_per_day"===m.throttle&&t(d,!0,1),"once_per_week"===m.throttle&&t(d,!0,7),"once_per_visitor"===m.throttle&&t(d,!0,365),"once_per_session"===m.throttle&&t(d,!0),!m.logOnly)){var u=m.tagHtml;if(m.replace)for(h=0;h<m.replace.length;h++){var C=m.replace[h];u=u.replace("[["+C+"]]","number"==typeof(c=i[C])?c:"boolean"==typeof c?c:"string"!=typeof c?"":c.replace(/[^A-Za-z0-9_\- ]/g,""))}l.push(u)}}r(i,s);for(n=l.length-1;0<n;n--){h=Math.floor(Math.random()*(n+1));var b=l[n];l[n]=l[h],l[h]=b}for(n=0;n<l.length;n++)window.document.write(l[n])};
+            window.module.exports() })();
+</script>
+    </head>
+    <body>
+    </body>
+</html>

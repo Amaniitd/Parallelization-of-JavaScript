@@ -1,0 +1,78 @@
+error while parsing SyntaxError: Unexpected token (3:12)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp.unexpected (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:647:8)
+    at Parser.pp.semicolon (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:624:64)
+    at Parser.pp$1.parseExpressionStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1093:8)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:818:24)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37) {
+  pos: 16,
+  loc: Position { line: 3, column: 12 },
+  raisedAt: 17
+}
+[PARSING EXCEPTION]www.apple.com/-script-6: SyntaxError: Unexpected token (3:12)SyntaxError: Unexpected token (3:12)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp.unexpected (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:647:8)
+    at Parser.pp.semicolon (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:624:64)
+    at Parser.pp$1.parseExpressionStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1093:8)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:818:24)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37)
+error while parsing SyntaxError: Unexpected token (3:12)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp.unexpected (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:647:8)
+    at Parser.pp.semicolon (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:624:64)
+    at Parser.pp$1.parseExpressionStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1093:8)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:818:24)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37) {
+  pos: 16,
+  loc: Position { line: 3, column: 12 },
+  raisedAt: 17
+}
+[PARSING EXCEPTION]www.apple.com/-script-8: SyntaxError: Unexpected token (3:12)SyntaxError: Unexpected token (3:12)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp.unexpected (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:647:8)
+    at Parser.pp.semicolon (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:624:64)
+    at Parser.pp$1.parseExpressionStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1093:8)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:818:24)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37)
+error while parsing SyntaxError: Unexpected token (3:12)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp.unexpected (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:647:8)
+    at Parser.pp.semicolon (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:624:64)
+    at Parser.pp$1.parseExpressionStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1093:8)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:818:24)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37) {
+  pos: 16,
+  loc: Position { line: 3, column: 12 },
+  raisedAt: 17
+}
+[PARSING EXCEPTION]www.apple.com/-script-9: SyntaxError: Unexpected token (3:12)SyntaxError: Unexpected token (3:12)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp.unexpected (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:647:8)
+    at Parser.pp.semicolon (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:624:64)
+    at Parser.pp$1.parseExpressionStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1093:8)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:818:24)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37)

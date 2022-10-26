@@ -1,0 +1,60 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/ac/ac-films/6.5.0/scripts/autofilms.built.js","origPath":"/ac/ac-films/6.5.0/scripts/autofilms.built.js","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/ac/ac-films/6.5.0/scripts/autofilms.built.js',
+  origPath: '/ac/ac-films/6.5.0/scripts/autofilms.built.js',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: [
+    'www.apple.com/-script-1-function-56-4-57-37',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3081-1-3578',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-171381-1-171400',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-8482-4-10242',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-17210-4-17255',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-2227-1-2370',
+    '/metrics/target/scripts/1.0/at.js-function-7-1-16-107',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3372-1-3576',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-4914-1-4944',
+    'balfooter/6/en_US/scripts/ac-globalfooter.built.js-function-1-1-1-9109',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3617-1-3774',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-96908-1-97016',
+    '/v/home/l/built/scripts/main.built.js-function-1-1-1-179913',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-4835-1-4866',
+    '/metrics/data-relay/1.1.4/scripts/auto-relay.js-function-1-1-1-238',
+    '/v/home/l/built/scripts/main.built.js-function-1-40326-1-40627',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-3585-1-3597',
+    '/metrics/data-relay/1.1.4/scripts/data-relay.js-function-1-1374-1-15997',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-213283-1-213637',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-1-5-10096',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-170602-1-170661',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-1-23404-1-23645',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-184047-1-184165',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-97447-1-97526',
+    '/v/home/l/built/scripts/head.built.js-function-1-6167-1-6184',
+    '/ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-383519-1-383535',
+    '/v/home/l/built/scripts/main.built.js-function-1-84212-1-86952',
+    '/metrics/data-relay/1.1.4/scripts/data-relay.js-function-1-1-1-40',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-1-1-270427',
+    'leswitcher/3/en_US/scripts/localeswitcher.built.js-function-1-1-7-7013',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-130825-1-131058',
+    '/ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-1-1-383618',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-13632-4-13831',
+    'etrics/ac-analytics/2.10.0/scripts/ac-analytics.js-function-1-137289-1-137884',
+    '/v/home/l/built/scripts/main.built.js-function-1-44690-1-44738',
+    'ac/globalnav/6/en_US/scripts/ac-globalnav.built.js-function-4-14113-4-14179',
+    '/v/home/l/built/scripts/head.built.js-function-1-1-1-49391',
+    '/v/home/l/built/scripts/main.built.js-function-1-77515-1-77581',
+    '/v/home/l/built/scripts/main.built.js-function-1-74856-1-75830'
+  ]
+}
+List of functions to be instrumented: 39
+Only instrumenting the following functions from the current script /ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-383519-1-383535,/ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-1-1-383618
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[rtiDebugInfo]2 2

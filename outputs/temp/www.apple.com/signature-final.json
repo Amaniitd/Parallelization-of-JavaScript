@@ -1,0 +1,142 @@
+{
+  "www.apple.com/-script-1-function-56-4-57-37": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;AB"
+      ],
+      [
+        "global_writes",
+        ";;;;AB"
+      ],
+      [
+        "global_writes",
+        ";;;;AB;;;;isAbTestActive"
+      ]
+    ],
+    "time": 0.7999999988824129
+  },
+  "/metrics/target/scripts/1.0/at.js-function-7-1-16-107": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;adobe"
+      ],
+      [
+        "global_writes",
+        ";;;;adobe"
+      ],
+      [
+        "global_reads",
+        ";;;;document"
+      ],
+      [
+        "global_reads",
+        ";;;;targetGlobalSettings"
+      ],
+      [
+        "global_writes",
+        ";;;;adobe;;;;target"
+      ],
+      [
+        "global_writes",
+        ";;;;mboxCreate"
+      ],
+      [
+        "global_writes",
+        ";;;;mboxDefine"
+      ],
+      [
+        "global_writes",
+        ";;;;mboxUpdate"
+      ],
+      [
+        "global_reads",
+        ";;;;console"
+      ],
+      [
+        "global_reads",
+        ";;;;console;;;;warn"
+      ],
+      [
+        "global_reads",
+        ";;;;location"
+      ],
+      [
+        "global_reads",
+        ";;;;adobe;;;;target;;;;event;;;;REQUEST_SUCCEEDED"
+      ],
+      [
+        "global_reads",
+        ";;;;targetSucessCallback"
+      ],
+      [
+        "global_reads",
+        ";;;;adobe;;;;target;;;;event;;;;REQUEST_FAILED"
+      ],
+      [
+        "global_reads",
+        ";;;;targetFailureCallback"
+      ]
+    ],
+    "time": 20.59999999962747
+  },
+  "/metrics/data-relay/1.1.4/scripts/data-relay.js-function-1-1374-1-15997": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;require"
+      ],
+      [
+        "global_writes",
+        ";;;;require"
+      ]
+    ],
+    "time": 0.09999999962747097
+  },
+  "/v/home/l/built/scripts/head.built.js-function-1-6167-1-6184": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;document"
+      ],
+      [
+        "global_reads",
+        ";;;;addEventListener"
+      ]
+    ],
+    "time": 0.2000000011175871
+  },
+  "/ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-383519-1-383535": {
+    "sig": [
+      [
+        "closure_/ac/ac-films/6.5.0/scripts/autofilms.built.js-function-1-383450-1-383600_writes",
+        ";;;;n",
+        null
+      ]
+    ],
+    "time": 0
+  },
+  "/v/home/l/built/scripts/main.built.js-function-1-84212-1-86952": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;getComputedStyle"
+      ]
+    ],
+    "time": 0.5
+  },
+  "/metrics/data-relay/1.1.4/scripts/data-relay.js-function-1-1-1-40": {
+    "sig": [],
+    "time": 0
+  },
+  "/v/home/l/built/scripts/main.built.js-function-1-77515-1-77581": {
+    "sig": [
+      [
+        "global_reads",
+        ";;;;document"
+      ]
+    ],
+    "time": 0
+  }
+}

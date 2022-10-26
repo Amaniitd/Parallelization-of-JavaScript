@@ -12,7 +12,7 @@ function __defineScheduler__() {
     const availableWorkers = [];
     setUpWorkers();
     // Horcrux special event queue: holds functions in order to be executed
-    const horcruxQueue = [];    //TODO: make this a priority queue?
+    const horcruxQueue = [];    
     /** Map from closure def location to defined variables in that location.
      * value is a dictionary of variable names to their corresponding values
      * @type {Object.<string, Object.<string, Object>>}
@@ -90,7 +90,19 @@ function __defineScheduler__() {
         }
         return safe;
     }
+    function pushInQueue(horcruxQueue, candidate) {
 
+        // horcruxQueue.push(candidate);
+        // return;
+
+        let i = horcruxQueue.length - 1;
+        while (i >= 0) {
+            if (horcruxQueue[i].dependencies > candidate.dependencies) break;
+            if (_hasConflict(candidate, horcruxQueue[i])) break;
+            i--;
+        }
+        horcruxQueue.splice(i + 1, 0, candidate);
+    }
 
     /** Wakes up the scheduler to execute the next function in the queue
      * Gets called when either the worker or the main thread has finished
@@ -158,9 +170,10 @@ function __defineScheduler__() {
      * @param {Array} fnSignature list of function dependencies
      * @param {boolean} touchDOM whether the to-be function is accessing DOM
      */
-    window.__callScheduler__ = function(index, fnBody, fnSignature, touchDOM) {
+    window.__callScheduler__ = function(index, fnBody, fnSignature, dependencies, touchDOM) {
         // Shorthand property names -- e.g., {a:a, b:b, c:c}
-        horcruxQueue.push({index, fnBody, fnSignature, touchDOM}); //TODO: create a priority queue
+
+        pushInQueue(horcruxQueue, { index, fnBody, fnSignature, dependencies, touchDOM });
         // call executeNextFunction since there might be an idle worker waiting
         // and none of the previously present functions could be offloaded to it
         executeNextFunction();

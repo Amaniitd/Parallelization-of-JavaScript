@@ -1,0 +1,1000 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js","origPath":"/sites/ny.gov/files/advagg_js/js__ci6beUoaUKFcz_C4PcvMzvkQhcvAY4wFsOjAxRfKvd4__2rJmJa1IucheXISKex0ZJHAuPxvYOgMXlgcStJz4iSY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js',
+  origPath: '/sites/ny.gov/files/advagg_js/js__ci6beUoaUKFcz_C4PcvMzvkQhcvAY4wFsOjAxRfKvd4__2rJmJa1IucheXISKex0ZJHAuPxvYOgMXlgcStJz4iSY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+function source is  function(input,inst){var year=$webformDatepicker.find('select.year, input.year').val(),month=$webformDatepicker.find('select.month').val(),day=$webformDatepicker.find('select.day').val(),today=new Date();year=year?year:today.getFullYear();month=month?month:today.getMonth()+1;day=day?day:today.getDate();year=(year<startYear||year>endYear)?startYear:year;$(input).val(year+'-'+month+'-'+day)}
+function source is  function(){var $webformDatepicker=$(this),$calendar=$webformDatepicker.find('input.webform-calendar');if($calendar.length==0)return;var startDate=$calendar[0].className.replace(/.*webform-calendar-start-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),endDate=$calendar[0].className.replace(/.*webform-calendar-end-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),firstDay=$calendar[0].className.replace(/.*webform-calendar-day-(\d).*/,'$1');startDate=new Date(startDate[0],startDate[1]-1,startDate[2]);endDate=new Date(endDate[0],endDate[1]-1,endDate[2]);if(startDate>endDate){var laterDate=startDate;startDate=endDate;endDate=laterDate};var startYear=startDate.getFullYear(),endYear=endDate.getFullYear();$calendar.datepicker({dateFormat:'yy-mm-dd',yearRange:startYear+':'+endYear,firstDay:window.parseInt(firstDay),minDate:startDate,maxDate:endDate,onSelect:function(dateText,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",false);
+var date=dateText.split('-');$webformDatepicker.find('select.year, input.year').val(+date[0]).trigger('change');$webformDatepicker.find('select.month').val(+date[1]).trigger('change');$webformDatepicker.find('select.day').val(+date[2]).trigger('change')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",true);
+ }},beforeShow:function(input,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",false);
+var year=$webformDatepicker.find('select.year, input.year').val(),month=$webformDatepicker.find('select.month').val(),day=$webformDatepicker.find('select.day').val(),today=new Date();year=year?year:today.getFullYear();month=month?month:today.getMonth()+1;day=day?day:today.getDate();year=(year<startYear||year>endYear)?startYear:year;$(input).val(year+'-'+month+'-'+day)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",true);
+ }}});$calendar.click(function(event){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",false);
+if(event.clientX!==0&&event.clientY!==0){$(this).focus();event.preventDefault()}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",true);
+ }});$calendar.keyup(function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",false);
+if(e.keyCode==8||e.keyCode==46)$.datepicker._clearDate(this)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",true);
+ }})}
+function source is  function(context){$('div.webform-datepicker').each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-448-5-2182",false);
+var $webformDatepicker=$(this),$calendar=$webformDatepicker.find('input.webform-calendar');if($calendar.length==0)return;var startDate=$calendar[0].className.replace(/.*webform-calendar-start-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),endDate=$calendar[0].className.replace(/.*webform-calendar-end-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),firstDay=$calendar[0].className.replace(/.*webform-calendar-day-(\d).*/,'$1');startDate=new Date(startDate[0],startDate[1]-1,startDate[2]);endDate=new Date(endDate[0],endDate[1]-1,endDate[2]);if(startDate>endDate){var laterDate=startDate;startDate=endDate;endDate=laterDate};var startYear=startDate.getFullYear(),endYear=endDate.getFullYear();$calendar.datepicker({dateFormat:'yy-mm-dd',yearRange:startYear+':'+endYear,firstDay:window.parseInt(firstDay),minDate:startDate,maxDate:endDate,onSelect:function(dateText,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",false);
+var date=dateText.split('-');$webformDatepicker.find('select.year, input.year').val(+date[0]).trigger('change');$webformDatepicker.find('select.month').val(+date[1]).trigger('change');$webformDatepicker.find('select.day').val(+date[2]).trigger('change')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",true);
+ }},beforeShow:function(input,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",false);
+var year=$webformDatepicker.find('select.year, input.year').val(),month=$webformDatepicker.find('select.month').val(),day=$webformDatepicker.find('select.day').val(),today=new Date();year=year?year:today.getFullYear();month=month?month:today.getMonth()+1;day=day?day:today.getDate();year=(year<startYear||year>endYear)?startYear:year;$(input).val(year+'-'+month+'-'+day)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",true);
+ }}});$calendar.click(function(event){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",false);
+if(event.clientX!==0&&event.clientY!==0){$(this).focus();event.preventDefault()}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",true);
+ }});$calendar.keyup(function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",false);
+if(e.keyCode==8||e.keyCode==46)$.datepicker._clearDate(this)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-448-5-2182",true);
+ }})}
+function source is  function($){"use strict";window.Drupal.behaviors.webform=window.Drupal.behaviors.webform||{};window.Drupal.behaviors.webform.attach=function(context){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-133-5-315",false);
+window.Drupal.webform.datepicker(context);if(window.Drupal.settings.webform&&window.Drupal.settings.webform.conditionals)window.Drupal.webform.conditional(context)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-133-5-315",true);
+ }};window.Drupal.webform=window.Drupal.webform||{};window.Drupal.webform.datepicker=function(context){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-397-5-2184",false);
+$('div.webform-datepicker').each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-448-5-2182",false);
+var $webformDatepicker=$(this),$calendar=$webformDatepicker.find('input.webform-calendar');if($calendar.length==0)return;var startDate=$calendar[0].className.replace(/.*webform-calendar-start-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),endDate=$calendar[0].className.replace(/.*webform-calendar-end-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),firstDay=$calendar[0].className.replace(/.*webform-calendar-day-(\d).*/,'$1');startDate=new Date(startDate[0],startDate[1]-1,startDate[2]);endDate=new Date(endDate[0],endDate[1]-1,endDate[2]);if(startDate>endDate){var laterDate=startDate;startDate=endDate;endDate=laterDate};var startYear=startDate.getFullYear(),endYear=endDate.getFullYear();$calendar.datepicker({dateFormat:'yy-mm-dd',yearRange:startYear+':'+endYear,firstDay:window.parseInt(firstDay),minDate:startDate,maxDate:endDate,onSelect:function(dateText,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",false);
+var date=dateText.split('-');$webformDatepicker.find('select.year, input.year').val(+date[0]).trigger('change');$webformDatepicker.find('select.month').val(+date[1]).trigger('change');$webformDatepicker.find('select.day').val(+date[2]).trigger('change')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",true);
+ }},beforeShow:function(input,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",false);
+var year=$webformDatepicker.find('select.year, input.year').val(),month=$webformDatepicker.find('select.month').val(),day=$webformDatepicker.find('select.day').val(),today=new Date();year=year?year:today.getFullYear();month=month?month:today.getMonth()+1;day=day?day:today.getDate();year=(year<startYear||year>endYear)?startYear:year;$(input).val(year+'-'+month+'-'+day)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",true);
+ }}});$calendar.click(function(event){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",false);
+if(event.clientX!==0&&event.clientY!==0){$(this).focus();event.preventDefault()}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",true);
+ }});$calendar.keyup(function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",false);
+if(e.keyCode==8||e.keyCode==46)$.datepicker._clearDate(this)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-448-5-2182",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-397-5-2184",true);
+ }};window.Drupal.webform.conditional=function(context){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2219-5-2654",false);
+$.each(window.Drupal.settings.webform.conditionals,function(formKey,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2288-5-2652",false);
+var $form=$('.'+formKey+':not(.webform-conditional-processed)');$form.each(function(index,currentForm){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2390-5-2650",false);
+var $currentForm=$(currentForm);$currentForm.addClass('webform-conditional-processed');$currentForm.bind('change',{settings:settings},window.Drupal.webform.conditionalCheck);window.Drupal.webform.doConditions($currentForm,settings)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2390-5-2650",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2288-5-2652",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2219-5-2654",true);
+ }};window.Drupal.webform.conditionalCheck=function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2694-5-3046",false);
+var $triggerElement=$(e.target).closest('.webform-component');if(!$triggerElement.length)return;var $form=$triggerElement.closest('form'),triggerElementKey=$triggerElement.attr('class').match(/webform-component--[^ ]+/)[0],settings=e.data.settings;if(settings.sourceMap[triggerElementKey])window.Drupal.webform.doConditions($form,settings)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2694-5-3046",true);
+ }};window.Drupal.webform.doConditions=function($form,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-3082-9-3330",false);
+var stackPointer,resultStack
+function executionStackInitialize(andor){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-6-0-6-98",false);
+stackPointer=-1;resultStack=[];executionStackPush(andor)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-6-0-6-98",true);
+ }}
+function executionStackPush(andor){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-7-0-7-88",false);
+resultStack[++stackPointer]={results:[],andor:andor}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-7-0-7-88",true);
+ }}
+function executionStackAccumulate(result){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-8-0-8-92",false);
+resultStack[stackPointer]['results'].push(result)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-8-0-8-92",true);
+ }}
+function executionStackPop(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-0-9-339",false);
+var stackFrame=resultStack[stackPointer];stackPointer=Math.max(0,stackPointer-1);var $conditionalResults=stackFrame.results,filteredResults=$.map($conditionalResults,function(val){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-195-9-229",false);
+return val?val:null
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-195-9-229",true);
+ }});return stackFrame.andor==='or'?filteredResults.length>0:filteredResults.length===$conditionalResults.length
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-0-9-339",true);
+ }};$.each(settings.ruleGroups,function(rgid_key,rule_group){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-367-9-3254",false);
+var ruleGroup=settings.ruleGroups[rgid_key];executionStackInitialize(ruleGroup.andor);$.each(ruleGroup.rules,function(m,rule){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-506-9-946",false);
+switch(rule.source_type){case'component':var elementKey=rule.source,element=$form.find('.'+elementKey)[0],existingValue=settings.values[elementKey]?settings.values[elementKey]:null;executionStackAccumulate(window.Drupal['webform'][rule.callback](element,existingValue,rule.value));break;case'conditional_start':executionStackPush(rule.andor);break;case'conditional_end':executionStackAccumulate(executionStackPop());break}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-506-9-946",true);
+ }});var conditionalResult=executionStackPop();$.each(ruleGroup.actions,function(aid,action){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-1015-9-3252",false);
+var $target=$form.find('.'+action.target),actionResult=action.invert?!conditionalResult:conditionalResult;switch(action.action){case'show':var changed=actionResult!=window.Drupal.webform.isVisible($target);if(actionResult){$target.find('.webform-conditional-disabled:not(.webform-disabled-flag)').removeClass('webform-conditional-disabled').webformProp('disabled',false);$target.removeClass('webform-conditional-hidden').show();$form.find('.chosen-disabled').prev().trigger('chosen:updated.chosen')}else $target.hide().addClass('webform-conditional-hidden').find(':input').addClass('webform-conditional-disabled webform-disabled-flag').webformProp('disabled',true);if(changed&&$target.is('tr'))window.Drupal.webform.restripeTable($target.closest('table').first());break;case'require':var $requiredSpan=$target.find('.form-required, .form-optional').first();if(actionResult!=$requiredSpan.hasClass('form-required')){var $targetInputElements=$target.find("input:text,textarea,input[type='email'],select,input:radio,input:checkbox,input:file");window.Drupal.detachBehaviors($requiredSpan);$targetInputElements.webformProp('required',actionResult).toggleClass('required',actionResult);if(actionResult){$requiredSpan.replaceWith('<span class="form-required" title="'+window.Drupal.t('This field is required.')+'">*</span>')}else $requiredSpan.replaceWith('<span class="form-optional"></span>');window.Drupal.attachBehaviors($requiredSpan)};break;case'set':var $texts=$target.find("input:text,textarea,input[type='email']"),$selects=$target.find('select,select option,input:radio,input:checkbox'),$markups=$target.filter('.webform-component-markup');if(actionResult){var multiple=$.map(action.argument.split(','),$.trim);$selects.webformVal(multiple).webformProp('disabled',true).addClass('webform-disabled-flag');$texts.val([action.argument]).webformProp('readonly',true).addClass('webform-disabled-flag');$markups.html(action.argument)}else{$selects.not('.webform-disabled-flag').webformProp('disabled',false);$texts.not('.webform-disabled-flag').webformProp('readonly',false);$markups.each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3123-9-3242",false);
+var $this=$(this),original=$this.data('webform-markup');if(original!==window.undefined)$this.html(original)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3123-9-3242",true);
+ }})};break}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-1015-9-3252",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-367-9-3254",true);
+ }});$form.find('.webform-disabled-flag').removeClass('webform-disabled-flag')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-3082-9-3330",true);
+ }};window.Drupal.webform.stopEvent=function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3363-9-3387",false);
+return false
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3363-9-3387",true);
+ }};window.Drupal.webform.conditionalOperatorStringEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3441-9-3715",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3595-9-3694",false);
+if(value.toLowerCase()===ruleValue.toLowerCase()){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3595-9-3694",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3441-9-3715",true);
+ }};window.Drupal.webform.conditionalOperatorStringNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3772-9-4013",false);
+var found=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3920-9-3998",false);
+if(value.toLowerCase()===ruleValue.toLowerCase())found=true
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3920-9-3998",true);
+ }});return!found
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3772-9-4013",true);
+ }};window.Drupal.webform.conditionalOperatorStringContains=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4070-9-4354",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4224-9-4333",false);
+if(value.toLowerCase().indexOf(ruleValue.toLowerCase())>-1){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4224-9-4333",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4070-9-4354",true);
+ }};window.Drupal.webform.conditionalOperatorStringDoesNotContain=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4417-9-4668",false);
+var found=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4565-9-4653",false);
+if(value.toLowerCase().indexOf(ruleValue.toLowerCase())>-1)found=true
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4565-9-4653",true);
+ }});return!found
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4417-9-4668",true);
+ }};window.Drupal.webform.conditionalOperatorStringBeginsWith=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4727-9-5012",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4881-9-4991",false);
+if(value.toLowerCase().indexOf(ruleValue.toLowerCase())===0){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4881-9-4991",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4727-9-5012",true);
+ }};window.Drupal.webform.conditionalOperatorStringEndsWith=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5069-9-5386",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5223-9-5365",false);
+if(value.toLowerCase().lastIndexOf(ruleValue.toLowerCase())===value.length-ruleValue.length){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5223-9-5365",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5069-9-5386",true);
+ }};window.Drupal.webform.conditionalOperatorStringEmpty=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5440-9-5679",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),returnValue=true;$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5593-9-5658",false);
+if(value!==''){returnValue=false;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5593-9-5658",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5440-9-5679",true);
+ }};window.Drupal.webform.conditionalOperatorStringNotEmpty=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5736-9-5871",false);
+return!window.Drupal.webform.conditionalOperatorStringEmpty(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5736-9-5871",true);
+ }};window.Drupal.webform.conditionalOperatorSelectGreaterThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5931-9-6128",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.Drupal.webform.compare_select(currentValue[0],ruleValue,element)>0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5931-9-6128",true);
+ }};window.Drupal.webform.conditionalOperatorSelectGreaterThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6193-9-6428",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),comparison=window.Drupal.webform.compare_select(currentValue[0],ruleValue,element);return comparison>0||comparison===0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6193-9-6428",true);
+ }};window.Drupal.webform.conditionalOperatorSelectLessThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6485-9-6682",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.Drupal.webform.compare_select(currentValue[0],ruleValue,element)<0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6485-9-6682",true);
+ }};window.Drupal.webform.conditionalOperatorSelectLessThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6744-9-6979",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),comparison=window.Drupal.webform.compare_select(currentValue[0],ruleValue,element);return comparison<0||comparison===0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6744-9-6979",true);
+ }};window.Drupal.webform.conditionalOperatorNumericEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7034-9-7285",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),epsilon=0.000001;return currentValue[0]===''?false:(Math.abs(window.parseFloat(currentValue[0])-window.parseFloat(ruleValue))<epsilon)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7034-9-7285",true);
+ }};window.Drupal.webform.conditionalOperatorNumericNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7343-9-7594",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),epsilon=0.000001;return currentValue[0]===''?true:(Math.abs(window.parseFloat(currentValue[0])-window.parseFloat(ruleValue))>=epsilon)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7343-9-7594",true);
+ }};window.Drupal.webform.conditionalOperatorNumericGreaterThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7655-9-7842",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.parseFloat(currentValue[0])>window.parseFloat(ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7655-9-7842",true);
+ }};window.Drupal.webform.conditionalOperatorNumericGreaterThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7908-9-8138",false);
+return window.Drupal.webform.conditionalOperatorNumericGreaterThan(element,existingValue,ruleValue)||window.Drupal.webform.conditionalOperatorNumericEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7908-9-8138",true);
+ }};window.Drupal.webform.conditionalOperatorNumericLessThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8196-9-8383",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.parseFloat(currentValue[0])<window.parseFloat(ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8196-9-8383",true);
+ }};window.Drupal.webform.conditionalOperatorNumericLessThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8446-9-8673",false);
+return window.Drupal.webform.conditionalOperatorNumericLessThan(element,existingValue,ruleValue)||window.Drupal.webform.conditionalOperatorNumericEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8446-9-8673",true);
+ }};window.Drupal.webform.conditionalOperatorDateEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8725-9-8871",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return currentValue===ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8725-9-8871",true);
+ }};window.Drupal.webform.conditionalOperatorDateNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8926-9-9059",false);
+return!window.Drupal.webform.conditionalOperatorDateEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8926-9-9059",true);
+ }};window.Drupal.webform.conditionalOperatorDateBefore=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9112-9-9279",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&currentValue<ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9112-9-9279",true);
+ }};window.Drupal.webform.conditionalOperatorDateBeforeEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9337-9-9532",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&(currentValue<ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9337-9-9532",true);
+ }};window.Drupal.webform.conditionalOperatorDateAfter=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9584-9-9751",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&currentValue>ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9584-9-9751",true);
+ }};window.Drupal.webform.conditionalOperatorDateAfterEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9808-9-10003",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&(currentValue>ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9808-9-10003",true);
+ }};window.Drupal.webform.conditionalOperatorTimeEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10055-9-10201",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return currentValue===ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10055-9-10201",true);
+ }};window.Drupal.webform.conditionalOperatorTimeNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10256-9-10389",false);
+return!window.Drupal.webform.conditionalOperatorTimeEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10256-9-10389",true);
+ }};window.Drupal.webform.conditionalOperatorTimeBefore=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10442-9-10611",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue<ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10442-9-10611",true);
+ }};window.Drupal.webform.conditionalOperatorTimeBeforeEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10669-9-10864",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue<ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10669-9-10864",true);
+ }};window.Drupal.webform.conditionalOperatorTimeAfter=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10916-9-11085",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue>ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10916-9-11085",true);
+ }};window.Drupal.webform.conditionalOperatorTimeAfterEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11142-9-11337",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue>ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11142-9-11337",true);
+ }};window.Drupal.webform.compare_select=function(a,b,element){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11375-9-11643",false);
+var optionList=[];$('option,input:radio,input:checkbox',element).each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11467-9-11509",false);
+optionList.push($(this).val())
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11467-9-11509",true);
+ }});var a_position=optionList.indexOf(a),b_position=optionList.indexOf(b);return(a_position<0||b_position<0)?null:a_position-b_position
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11375-9-11643",true);
+ }};window.Drupal.webform.isVisible=function($element){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11676-9-11879",false);
+return $element.hasClass('webform-component-hidden')?!$element.find('input').first().hasClass('webform-conditional-disabled'):$element.closest('.webform-conditional-hidden').length==0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11676-9-11879",true);
+ }};window.Drupal.webform.stringValue=function(element,existingValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11914-9-12565",false);
+var value=[];if(element){var $element=$(element);if(window.Drupal.webform.isVisible($element)){$element.find('input[type=checkbox]:checked,input[type=radio]:checked').each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12118-9-12152",false);
+value.push(this.value)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12118-9-12152",true);
+ }});if(!value.length){var selectValue=$element.find('select').val();if(selectValue)if($.isArray(selectValue)){value=selectValue}else value.push(selectValue)};if(!value.length)$element.find('input:not([type=checkbox],[type=radio]),textarea').each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12396-9-12430",false);
+value.push(this.value)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12396-9-12430",true);
+ }})}}else switch($.type(existingValue)){case'array':value=existingValue;break;case'string':value.push(existingValue);break};return value
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11914-9-12565",true);
+ }};window.Drupal.webform.dateValue=function(element,existingValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12598-9-13224",false);
+var value=false;if(element){var $element=$(element);if(window.Drupal.webform.isVisible($element)){var day=$element.find('[name*=day]').val(),month=$element.find('[name*=month]').val(),year=$element.find('[name*=year]').val();if(month)month--;if(year!==''&&month!==''&&day!=='')value=Date.UTC(year,month,day)/1e3}}else{if($.type(existingValue)==='array'&&existingValue.length)existingValue=existingValue[0];if($.type(existingValue)==='string')existingValue=existingValue.split('-');if(existingValue.length===3)value=Date.UTC(existingValue[0],existingValue[1],existingValue[2])/1e3};return value
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12598-9-13224",true);
+ }};window.Drupal.webform.timeValue=function(element,existingValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-13257-9-14053",false);
+var value=false;if(element){var $element=$(element);if(window.Drupal.webform.isVisible($element)){var hour=$element.find('[name*=hour]').val(),minute=$element.find('[name*=minute]').val(),ampm=$element.find('[name*=ampm]:checked').val();hour=(hour==='')?hour:window.parseInt(hour);minute=(minute==='')?minute:window.parseInt(minute);if(hour!==''){hour=(hour<12&&ampm=='pm')?hour+12:hour;hour=(hour===12&&ampm=='am')?0:hour};if(hour!==''&&minute!=='')value=Date.UTC(1970,0,1,hour,minute)/1e3}}else{if($.type(existingValue)==='array'&&existingValue.length)existingValue=existingValue[0];if($.type(existingValue)==='string')existingValue=existingValue.split(':');if(existingValue.length>=2)value=Date.UTC(1970,0,1,existingValue[0],existingValue[1])/1e3};return value
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-13257-9-14053",true);
+ }};$.fn.webformProp=$.fn.webformProp||function(name,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14089-9-14245",false);
+if(value){return $.fn.prop?this.prop(name,true):this.attr(name,true)}else return $.fn.prop?this.prop(name,false):this.removeAttr(name)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14089-9-14245",true);
+ }};$.fn.webformVal=function(values){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14262-9-14493",false);
+this.each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14289-9-14479",false);
+var $this=$(this),value=$this.val(),on=$.inArray($this.val(),values)!=-1;if(this.nodeName=='OPTION'){$this.webformProp('selected',on?value:false)}else $this.val(on?[value]:false)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14289-9-14479",true);
+ }});return this
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14262-9-14493",true);
+ }};window.Drupal.webform.restripeTable=function(table){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14530-9-14738",false);
+$('> tbody > tr, > tr',table).filter(':visible:odd').filter('.odd').removeClass('odd').addClass('even').end().end().filter(':visible:even').filter('.even').removeClass('even').addClass('odd')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14530-9-14738",true);
+ }}}
+function source is  function __HORCRUX__(){ (function($){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-26-2-1992",false);
+var jQuery=$;window.NY=typeof window.NY==='undefined'?{}:window.NY;window.NY.GLOBAL_BASE={body:null,isNYGovTheme:false,GOOGLE_API_KEY:'',GOOGLE_CLIENT_ID:'gme-officefortechnology',loggedIn:false,viewportHeight:0,viewportWidth:0,documentHeight:0,documentWidth:0,mobileBp:480,tabletBp:768,isTablet:false,isMobile:false,isDesktop:false,init:function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-376-2-507",false);
+this.body=$('body');this.setViewportHeight();this.setViewportWidth();this.setDeviceType();this.onResize();this.onLoad()
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-376-2-507",true);
+ }},setDeviceType:function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-522-2-1067",false);
+if(this.viewportWidth>=this.tabletBp){this.body.removeClass('is-tablet');this.body.removeClass('is-mobile');this.isDesktop=true;this.isTablet=false;this.isMobile=false};if(this.viewportWidth<this.tabletBp&&this.viewportWidth>=this.mobileBp){this.body.addClass('is-tablet');this.body.removeClass('is-mobile');this.isDesktop=false;this.isTablet=true;this.isMobile=false};if(this.viewportWidth<this.mobileBp){this.body.addClass('is-mobile');this.body.removeClass('is-tablet');this.isDesktop=false;this.isTablet=false;this.isMobile=true}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-522-2-1067",true);
+ }},onResize:function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1077-2-1303",false);
+var updateLayout=window._.debounce(function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1123-2-1255",false);
+this.setViewportHeight();this.setViewportWidth();this.setDocumentHeight();this.setDeviceType();window.NY.Nav.onResize()
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1123-2-1255",true);
+ }}.bind(this),100);$(window).resize(updateLayout)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1077-2-1303",true);
+ }},onLoad:function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1311-2-1447",false);
+$(window.document).ready(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1347-2-1434",false);
+this.setDocumentHeight();window.NY.Nav.onLoad();window.NY.Services.onLoad()
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1347-2-1434",true);
+ }}.bind(this))
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1311-2-1447",true);
+ }},setViewportHeight:function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1466-2-1620",false);
+var height=Math.max(window.document.documentElement.clientHeight,window.innerHeight||0);if(this.loggedIn)height-=29;this.viewportHeight=height
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1466-2-1620",true);
+ }},setViewportWidth:function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1638-2-1759",false);
+var width=Math.max(window.document.documentElement.clientWidth,window.innerWidth||0);this.viewportWidth=width
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1638-2-1759",true);
+ }},setDocumentHeight:function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1778-2-1990",false);
+var body=window.document.body,html=window.document.documentElement,height=Math.max(body.scrollHeight,body.offsetHeight,html.clientHeight,html.scrollHeight,html.offsetHeight);this.documentHeight=height
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-1778-2-1990",true);
+ }}}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-2-26-2-1992",true);
+ }})(window.$182||window.$||window.jQuery);;
+/* Source and licensing information for the above line(s) can be found at https://www.ny.gov/sites/all/themes/ny_gov/js/ny-gov-global.js. */
+/* Source and licensing information for the line(s) below can be found at https://www.ny.gov/sites/all/modules/contrib/webform/js/webform.js. */
+(function($){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1-9-14739",false);
+"use strict";window.Drupal.behaviors.webform=window.Drupal.behaviors.webform||{};window.Drupal.behaviors.webform.attach=function(context){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-133-5-315",false);
+window.Drupal.webform.datepicker(context);if(window.Drupal.settings.webform&&window.Drupal.settings.webform.conditionals)window.Drupal.webform.conditional(context)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-133-5-315",true);
+ }};window.Drupal.webform=window.Drupal.webform||{};window.Drupal.webform.datepicker=function(context){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-397-5-2184",false);
+$('div.webform-datepicker').each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-448-5-2182",false);
+var $webformDatepicker=$(this),$calendar=$webformDatepicker.find('input.webform-calendar');if($calendar.length==0)return;var startDate=$calendar[0].className.replace(/.*webform-calendar-start-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),endDate=$calendar[0].className.replace(/.*webform-calendar-end-(\d{4}-\d{2}-\d{2}).*/,'$1').split('-'),firstDay=$calendar[0].className.replace(/.*webform-calendar-day-(\d).*/,'$1');startDate=new Date(startDate[0],startDate[1]-1,startDate[2]);endDate=new Date(endDate[0],endDate[1]-1,endDate[2]);if(startDate>endDate){var laterDate=startDate;startDate=endDate;endDate=laterDate};var startYear=startDate.getFullYear(),endYear=endDate.getFullYear();$calendar.datepicker({dateFormat:'yy-mm-dd',yearRange:startYear+':'+endYear,firstDay:window.parseInt(firstDay),minDate:startDate,maxDate:endDate,onSelect:function(dateText,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",false);
+var date=dateText.split('-');$webformDatepicker.find('select.year, input.year').val(+date[0]).trigger('change');$webformDatepicker.find('select.month').val(+date[1]).trigger('change');$webformDatepicker.find('select.day').val(+date[2]).trigger('change')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1291-5-1569",true);
+ }},beforeShow:function(input,inst){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",false);
+var year=$webformDatepicker.find('select.year, input.year').val(),month=$webformDatepicker.find('select.month').val(),day=$webformDatepicker.find('select.day').val(),today=new Date();year=year?year:today.getFullYear();month=month?month:today.getMonth()+1;day=day?day:today.getDate();year=(year<startYear||year>endYear)?startYear:year;$(input).val(year+'-'+month+'-'+day)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1581-5-1973",true);
+ }}});$calendar.click(function(event){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",false);
+if(event.clientX!==0&&event.clientY!==0){$(this).focus();event.preventDefault()}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1992-5-2089",true);
+ }});$calendar.keyup(function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",false);
+if(e.keyCode==8||e.keyCode==46)$.datepicker._clearDate(this)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2107-5-2180",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-448-5-2182",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-397-5-2184",true);
+ }};window.Drupal.webform.conditional=function(context){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2219-5-2654",false);
+$.each(window.Drupal.settings.webform.conditionals,function(formKey,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2288-5-2652",false);
+var $form=$('.'+formKey+':not(.webform-conditional-processed)');$form.each(function(index,currentForm){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2390-5-2650",false);
+var $currentForm=$(currentForm);$currentForm.addClass('webform-conditional-processed');$currentForm.bind('change',{settings:settings},window.Drupal.webform.conditionalCheck);window.Drupal.webform.doConditions($currentForm,settings)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2390-5-2650",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2288-5-2652",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2219-5-2654",true);
+ }};window.Drupal.webform.conditionalCheck=function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2694-5-3046",false);
+var $triggerElement=$(e.target).closest('.webform-component');if(!$triggerElement.length)return;var $form=$triggerElement.closest('form'),triggerElementKey=$triggerElement.attr('class').match(/webform-component--[^ ]+/)[0],settings=e.data.settings;if(settings.sourceMap[triggerElementKey])window.Drupal.webform.doConditions($form,settings)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-2694-5-3046",true);
+ }};window.Drupal.webform.doConditions=function($form,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-3082-9-3330",false);
+var stackPointer,resultStack
+function executionStackInitialize(andor){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-6-0-6-98",false);
+stackPointer=-1;resultStack=[];executionStackPush(andor)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-6-0-6-98",true);
+ }}
+function executionStackPush(andor){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-7-0-7-88",false);
+resultStack[++stackPointer]={results:[],andor:andor}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-7-0-7-88",true);
+ }}
+function executionStackAccumulate(result){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-8-0-8-92",false);
+resultStack[stackPointer]['results'].push(result)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-8-0-8-92",true);
+ }}
+function executionStackPop(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-0-9-339",false);
+var stackFrame=resultStack[stackPointer];stackPointer=Math.max(0,stackPointer-1);var $conditionalResults=stackFrame.results,filteredResults=$.map($conditionalResults,function(val){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-195-9-229",false);
+return val?val:null
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-195-9-229",true);
+ }});return stackFrame.andor==='or'?filteredResults.length>0:filteredResults.length===$conditionalResults.length
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-0-9-339",true);
+ }};$.each(settings.ruleGroups,function(rgid_key,rule_group){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-367-9-3254",false);
+var ruleGroup=settings.ruleGroups[rgid_key];executionStackInitialize(ruleGroup.andor);$.each(ruleGroup.rules,function(m,rule){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-506-9-946",false);
+switch(rule.source_type){case'component':var elementKey=rule.source,element=$form.find('.'+elementKey)[0],existingValue=settings.values[elementKey]?settings.values[elementKey]:null;executionStackAccumulate(window.Drupal['webform'][rule.callback](element,existingValue,rule.value));break;case'conditional_start':executionStackPush(rule.andor);break;case'conditional_end':executionStackAccumulate(executionStackPop());break}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-506-9-946",true);
+ }});var conditionalResult=executionStackPop();$.each(ruleGroup.actions,function(aid,action){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-1015-9-3252",false);
+var $target=$form.find('.'+action.target),actionResult=action.invert?!conditionalResult:conditionalResult;switch(action.action){case'show':var changed=actionResult!=window.Drupal.webform.isVisible($target);if(actionResult){$target.find('.webform-conditional-disabled:not(.webform-disabled-flag)').removeClass('webform-conditional-disabled').webformProp('disabled',false);$target.removeClass('webform-conditional-hidden').show();$form.find('.chosen-disabled').prev().trigger('chosen:updated.chosen')}else $target.hide().addClass('webform-conditional-hidden').find(':input').addClass('webform-conditional-disabled webform-disabled-flag').webformProp('disabled',true);if(changed&&$target.is('tr'))window.Drupal.webform.restripeTable($target.closest('table').first());break;case'require':var $requiredSpan=$target.find('.form-required, .form-optional').first();if(actionResult!=$requiredSpan.hasClass('form-required')){var $targetInputElements=$target.find("input:text,textarea,input[type='email'],select,input:radio,input:checkbox,input:file");window.Drupal.detachBehaviors($requiredSpan);$targetInputElements.webformProp('required',actionResult).toggleClass('required',actionResult);if(actionResult){$requiredSpan.replaceWith('<span class="form-required" title="'+window.Drupal.t('This field is required.')+'">*</span>')}else $requiredSpan.replaceWith('<span class="form-optional"></span>');window.Drupal.attachBehaviors($requiredSpan)};break;case'set':var $texts=$target.find("input:text,textarea,input[type='email']"),$selects=$target.find('select,select option,input:radio,input:checkbox'),$markups=$target.filter('.webform-component-markup');if(actionResult){var multiple=$.map(action.argument.split(','),$.trim);$selects.webformVal(multiple).webformProp('disabled',true).addClass('webform-disabled-flag');$texts.val([action.argument]).webformProp('readonly',true).addClass('webform-disabled-flag');$markups.html(action.argument)}else{$selects.not('.webform-disabled-flag').webformProp('disabled',false);$texts.not('.webform-disabled-flag').webformProp('readonly',false);$markups.each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3123-9-3242",false);
+var $this=$(this),original=$this.data('webform-markup');if(original!==window.undefined)$this.html(original)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3123-9-3242",true);
+ }})};break}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-1015-9-3252",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-367-9-3254",true);
+ }});$form.find('.webform-disabled-flag').removeClass('webform-disabled-flag')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-3082-9-3330",true);
+ }};window.Drupal.webform.stopEvent=function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3363-9-3387",false);
+return false
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3363-9-3387",true);
+ }};window.Drupal.webform.conditionalOperatorStringEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3441-9-3715",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3595-9-3694",false);
+if(value.toLowerCase()===ruleValue.toLowerCase()){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3595-9-3694",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3441-9-3715",true);
+ }};window.Drupal.webform.conditionalOperatorStringNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3772-9-4013",false);
+var found=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3920-9-3998",false);
+if(value.toLowerCase()===ruleValue.toLowerCase())found=true
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3920-9-3998",true);
+ }});return!found
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-3772-9-4013",true);
+ }};window.Drupal.webform.conditionalOperatorStringContains=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4070-9-4354",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4224-9-4333",false);
+if(value.toLowerCase().indexOf(ruleValue.toLowerCase())>-1){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4224-9-4333",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4070-9-4354",true);
+ }};window.Drupal.webform.conditionalOperatorStringDoesNotContain=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4417-9-4668",false);
+var found=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4565-9-4653",false);
+if(value.toLowerCase().indexOf(ruleValue.toLowerCase())>-1)found=true
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4565-9-4653",true);
+ }});return!found
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4417-9-4668",true);
+ }};window.Drupal.webform.conditionalOperatorStringBeginsWith=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4727-9-5012",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4881-9-4991",false);
+if(value.toLowerCase().indexOf(ruleValue.toLowerCase())===0){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4881-9-4991",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-4727-9-5012",true);
+ }};window.Drupal.webform.conditionalOperatorStringEndsWith=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5069-9-5386",false);
+var returnValue=false,currentValue=window.Drupal.webform.stringValue(element,existingValue);$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5223-9-5365",false);
+if(value.toLowerCase().lastIndexOf(ruleValue.toLowerCase())===value.length-ruleValue.length){returnValue=true;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5223-9-5365",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5069-9-5386",true);
+ }};window.Drupal.webform.conditionalOperatorStringEmpty=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5440-9-5679",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),returnValue=true;$.each(currentValue,function(n,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5593-9-5658",false);
+if(value!==''){returnValue=false;return false}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5593-9-5658",true);
+ }});return returnValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5440-9-5679",true);
+ }};window.Drupal.webform.conditionalOperatorStringNotEmpty=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5736-9-5871",false);
+return!window.Drupal.webform.conditionalOperatorStringEmpty(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5736-9-5871",true);
+ }};window.Drupal.webform.conditionalOperatorSelectGreaterThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5931-9-6128",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.Drupal.webform.compare_select(currentValue[0],ruleValue,element)>0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-5931-9-6128",true);
+ }};window.Drupal.webform.conditionalOperatorSelectGreaterThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6193-9-6428",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),comparison=window.Drupal.webform.compare_select(currentValue[0],ruleValue,element);return comparison>0||comparison===0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6193-9-6428",true);
+ }};window.Drupal.webform.conditionalOperatorSelectLessThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6485-9-6682",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.Drupal.webform.compare_select(currentValue[0],ruleValue,element)<0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6485-9-6682",true);
+ }};window.Drupal.webform.conditionalOperatorSelectLessThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6744-9-6979",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),comparison=window.Drupal.webform.compare_select(currentValue[0],ruleValue,element);return comparison<0||comparison===0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-6744-9-6979",true);
+ }};window.Drupal.webform.conditionalOperatorNumericEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7034-9-7285",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),epsilon=0.000001;return currentValue[0]===''?false:(Math.abs(window.parseFloat(currentValue[0])-window.parseFloat(ruleValue))<epsilon)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7034-9-7285",true);
+ }};window.Drupal.webform.conditionalOperatorNumericNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7343-9-7594",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue),epsilon=0.000001;return currentValue[0]===''?true:(Math.abs(window.parseFloat(currentValue[0])-window.parseFloat(ruleValue))>=epsilon)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7343-9-7594",true);
+ }};window.Drupal.webform.conditionalOperatorNumericGreaterThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7655-9-7842",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.parseFloat(currentValue[0])>window.parseFloat(ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7655-9-7842",true);
+ }};window.Drupal.webform.conditionalOperatorNumericGreaterThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7908-9-8138",false);
+return window.Drupal.webform.conditionalOperatorNumericGreaterThan(element,existingValue,ruleValue)||window.Drupal.webform.conditionalOperatorNumericEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-7908-9-8138",true);
+ }};window.Drupal.webform.conditionalOperatorNumericLessThan=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8196-9-8383",false);
+var currentValue=window.Drupal.webform.stringValue(element,existingValue);return window.parseFloat(currentValue[0])<window.parseFloat(ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8196-9-8383",true);
+ }};window.Drupal.webform.conditionalOperatorNumericLessThanEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8446-9-8673",false);
+return window.Drupal.webform.conditionalOperatorNumericLessThan(element,existingValue,ruleValue)||window.Drupal.webform.conditionalOperatorNumericEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8446-9-8673",true);
+ }};window.Drupal.webform.conditionalOperatorDateEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8725-9-8871",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return currentValue===ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8725-9-8871",true);
+ }};window.Drupal.webform.conditionalOperatorDateNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8926-9-9059",false);
+return!window.Drupal.webform.conditionalOperatorDateEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-8926-9-9059",true);
+ }};window.Drupal.webform.conditionalOperatorDateBefore=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9112-9-9279",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&currentValue<ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9112-9-9279",true);
+ }};window.Drupal.webform.conditionalOperatorDateBeforeEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9337-9-9532",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&(currentValue<ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9337-9-9532",true);
+ }};window.Drupal.webform.conditionalOperatorDateAfter=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9584-9-9751",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&currentValue>ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9584-9-9751",true);
+ }};window.Drupal.webform.conditionalOperatorDateAfterEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9808-9-10003",false);
+var currentValue=window.Drupal.webform.dateValue(element,existingValue);return(currentValue!==false)&&(currentValue>ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-9808-9-10003",true);
+ }};window.Drupal.webform.conditionalOperatorTimeEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10055-9-10201",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return currentValue===ruleValue
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10055-9-10201",true);
+ }};window.Drupal.webform.conditionalOperatorTimeNotEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10256-9-10389",false);
+return!window.Drupal.webform.conditionalOperatorTimeEqual(element,existingValue,ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10256-9-10389",true);
+ }};window.Drupal.webform.conditionalOperatorTimeBefore=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10442-9-10611",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue<ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10442-9-10611",true);
+ }};window.Drupal.webform.conditionalOperatorTimeBeforeEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10669-9-10864",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue<ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10669-9-10864",true);
+ }};window.Drupal.webform.conditionalOperatorTimeAfter=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10916-9-11085",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue>ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-10916-9-11085",true);
+ }};window.Drupal.webform.conditionalOperatorTimeAfterEqual=function(element,existingValue,ruleValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11142-9-11337",false);
+var currentValue=window.Drupal.webform.timeValue(element,existingValue);return(currentValue!==false)&&(currentValue>ruleValue||currentValue===ruleValue)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11142-9-11337",true);
+ }};window.Drupal.webform.compare_select=function(a,b,element){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11375-9-11643",false);
+var optionList=[];$('option,input:radio,input:checkbox',element).each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11467-9-11509",false);
+optionList.push($(this).val())
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11467-9-11509",true);
+ }});var a_position=optionList.indexOf(a),b_position=optionList.indexOf(b);return(a_position<0||b_position<0)?null:a_position-b_position
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11375-9-11643",true);
+ }};window.Drupal.webform.isVisible=function($element){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11676-9-11879",false);
+return $element.hasClass('webform-component-hidden')?!$element.find('input').first().hasClass('webform-conditional-disabled'):$element.closest('.webform-conditional-hidden').length==0
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11676-9-11879",true);
+ }};window.Drupal.webform.stringValue=function(element,existingValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11914-9-12565",false);
+var value=[];if(element){var $element=$(element);if(window.Drupal.webform.isVisible($element)){$element.find('input[type=checkbox]:checked,input[type=radio]:checked').each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12118-9-12152",false);
+value.push(this.value)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12118-9-12152",true);
+ }});if(!value.length){var selectValue=$element.find('select').val();if(selectValue)if($.isArray(selectValue)){value=selectValue}else value.push(selectValue)};if(!value.length)$element.find('input:not([type=checkbox],[type=radio]),textarea').each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12396-9-12430",false);
+value.push(this.value)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12396-9-12430",true);
+ }})}}else switch($.type(existingValue)){case'array':value=existingValue;break;case'string':value.push(existingValue);break};return value
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-11914-9-12565",true);
+ }};window.Drupal.webform.dateValue=function(element,existingValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12598-9-13224",false);
+var value=false;if(element){var $element=$(element);if(window.Drupal.webform.isVisible($element)){var day=$element.find('[name*=day]').val(),month=$element.find('[name*=month]').val(),year=$element.find('[name*=year]').val();if(month)month--;if(year!==''&&month!==''&&day!=='')value=Date.UTC(year,month,day)/1e3}}else{if($.type(existingValue)==='array'&&existingValue.length)existingValue=existingValue[0];if($.type(existingValue)==='string')existingValue=existingValue.split('-');if(existingValue.length===3)value=Date.UTC(existingValue[0],existingValue[1],existingValue[2])/1e3};return value
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-12598-9-13224",true);
+ }};window.Drupal.webform.timeValue=function(element,existingValue){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-13257-9-14053",false);
+var value=false;if(element){var $element=$(element);if(window.Drupal.webform.isVisible($element)){var hour=$element.find('[name*=hour]').val(),minute=$element.find('[name*=minute]').val(),ampm=$element.find('[name*=ampm]:checked').val();hour=(hour==='')?hour:window.parseInt(hour);minute=(minute==='')?minute:window.parseInt(minute);if(hour!==''){hour=(hour<12&&ampm=='pm')?hour+12:hour;hour=(hour===12&&ampm=='am')?0:hour};if(hour!==''&&minute!=='')value=Date.UTC(1970,0,1,hour,minute)/1e3}}else{if($.type(existingValue)==='array'&&existingValue.length)existingValue=existingValue[0];if($.type(existingValue)==='string')existingValue=existingValue.split(':');if(existingValue.length>=2)value=Date.UTC(1970,0,1,existingValue[0],existingValue[1])/1e3};return value
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-13257-9-14053",true);
+ }};$.fn.webformProp=$.fn.webformProp||function(name,value){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14089-9-14245",false);
+if(value){return $.fn.prop?this.prop(name,true):this.attr(name,true)}else return $.fn.prop?this.prop(name,false):this.removeAttr(name)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14089-9-14245",true);
+ }};$.fn.webformVal=function(values){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14262-9-14493",false);
+this.each(function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14289-9-14479",false);
+var $this=$(this),value=$this.val(),on=$.inArray($this.val(),values)!=-1;if(this.nodeName=='OPTION'){$this.webformProp('selected',on?value:false)}else $this.val(on?[value]:false)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14289-9-14479",true);
+ }});return this
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14262-9-14493",true);
+ }};window.Drupal.webform.restripeTable=function(table){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14530-9-14738",false);
+$('> tbody > tr, > tr',table).filter(':visible:odd').filter('.odd').removeClass('odd').addClass('even').end().end().filter(':visible:even').filter('.even').removeClass('even').addClass('odd')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-9-14530-9-14738",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-5-1-9-14739",true);
+ }})(window.jQuery);;
+/* Source and licensing information for the above line(s) can be found at https://www.ny.gov/sites/all/modules/contrib/webform/js/webform.js. */
+/* Source and licensing information for the line(s) below can be found at https://www.ny.gov/sites/all/modules/custom/features/basic_configuration_settings/js/basic_configuration.js. */
+(function($){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1-12-4307",false);
+window.Drupal.behaviors.exitPages={attach:function(context,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-55-12-3738",false);
+window.jQuery(window).on('load',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-114-12-188",false);
+if(window.location.hash=='#exit-modal')window.location.hash=''
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-114-12-188",true);
+ }});window.jQuery(window.document).bind('cssmodal:show',function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-242-12-341",false);
+window.jQuery('.modal-content-wrapper').show().css('max-height',window.innerHeight*.9)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-242-12-341",true);
+ }});window.jQuery(window.document).bind('cssmodal:hide',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-395-12-519",false);
+window.jQuery('.modal-content-wrapper').hide();window.jQuery('.modal-content-wrapper a.button').attr('href','#')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-395-12-519",true);
+ }});window.jQuery(".l-content a[href^='http']").on('click',function(evt){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-576-12-1153",false);
+var href=window.jQuery(evt.currentTarget).attr('href'),target=window.jQuery(evt.currentTarget).attr('target'),ext_re=/https?:\/\/.*(\.ny\.gov|\.acquia-sites\.com|\.codeandtheory\.net|youtube\.com|iloveny\.com|youtu\.be|facebook\.com|twitter\.com|vine\.co|instagram\.com|flickr\.com).*/i;window.jQuery('.modal-content-wrapper a.button').attr('href',href);if(typeof target!==typeof window.undefined&&target!==false)window.jQuery('.modal-content-wrapper a.button').attr('target',target);if(!ext_re.test(href)){evt.preventDefault();window.location.hash='exit-modal'}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-576-12-1153",true);
+ }});window.jQuery('.modal-content-wrapper a.button').on('click',function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1215-12-1425",false);
+e.preventDefault();window.location.hash='';if(window.jQuery(this).attr('target')==='_blank'){window.open(window.jQuery(this).attr('href'))}else window.location.href=window.jQuery(this).attr('href')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1215-12-1425",true);
+ }});$=window.jQuery;$('.share-on-twitter').on('click',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1477-12-1569",false);
+window.open($(this).attr('href'),'mywindow','width=400,height=500');return false
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1477-12-1569",true);
+ }});$('.share-on-facebook').on('click',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1606-12-1698",false);
+window.open($(this).attr('href'),'mywindow','width=400,height=500');return false
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1606-12-1698",true);
+ }});$('.share').on('click',function(event){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1723-12-2005",false);
+var classClicked=event.toElement.classList[1];if(classClicked==='no-link')if(!$(this).parent().hasClass('actions')){event.preventDefault();if($(this).prev().css('width')=='0px'){$(this).prev().animate({width:'71%'},500)}else $(this).prev().animate({width:'0'},500)}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1723-12-2005",true);
+ }});$('.read-more .watch-video').on('click',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2047-12-2240",false);
+$(this).parents('.views-row').find('.video-wrapper').show();if($('body').hasClass('is-mobile'))$(window).scrollTop($(this).parents('.views-row').find('.video-wrapper').offset().top)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2047-12-2240",true);
+ }});$('.read-more .liveflag').on('click',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2279-12-2472",false);
+$(this).parents('.views-row').find('.video-wrapper').show();if($('body').hasClass('is-mobile'))$(window).scrollTop($(this).parents('.views-row').find('.video-wrapper').offset().top)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2279-12-2472",true);
+ }});$('.close-video, .nygov-custom-node-layout header .close-video').on('click',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2550-12-2585",false);
+$(this).parent().hide()
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2550-12-2585",true);
+ }});$('.nygov-custom-node-layout header .watch-video').on('click',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2649-12-2707",false);
+$(this).parent().find('.video-wrapper').show()
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-2649-12-2707",true);
+ }});if($('#videoplayer').length>0){var srcurl=$('#videoplayer iframe').attr('src'),iframeheight=$('#videoplayer').height(),iframewidth=$('.video-wrapper').width();if(iframewidth>920)iframewidth=920;$('#videoplayer iframe').attr('src',srcurl+'&height='+iframeheight+'&width='+iframewidth);$('.video-wrapper.brightcove').parent().find('#watch-video, #liveflag-video').on('click',function(e){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3082-12-3572",false);
+e.preventDefault();var playerAutoStart=false;if(window.innerWidth>1024){var srcurl=$('#videoplayer iframe').attr('src'),iframeheight=$('#videoplayer').height(),iframewidth=$('.video-wrapper').width();playerAutoStart=true;if(iframewidth>920)iframewidth=920;var videoUrl=srcurl.replace(/(height=)[^\&]+/,'$1'+iframeheight);videoUrl=videoUrl.replace(/(width=)[^\&]+/,'$1'+iframewidth);if(playerAutoStart)videoUrl=videoUrl+'&autoplay';$('#videoplayer iframe').attr('src',videoUrl)}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3082-12-3572",true);
+ }})};if($('body').hasClass('page-node'))$('.chapter .field-item.documents ul').each(function(n){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3654-12-3736",false);
+if($(this).find('li:first').hasClass('file'))$(this).addClass('file')
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3654-12-3736",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-55-12-3738",true);
+ }}};window.Drupal.behaviors.onestopRSSsection={attach:function(context,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3790-12-4305",false);
+$.each($('.rss-section-content'),function(idx,itm){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3850-12-4303",false);
+var res_list=$('.rss-section-items',itm),feed_url=$(res_list).data('rss-url'),feed_id=$(res_list).data('rss-id'),tok=$(res_list).data('token'),nid=$(res_list).data('nid');$.ajax({type:'POST',url:'/ajax/onestop-rss-chapter',data:{rss_url:window.decodeURIComponent(feed_url),token:tok,nid:nid},success:function(data,status,xhr){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-4168-12-4300",false);
+if(data.feed.items.length>0)$('#rss-'+feed_id).append(window.Drupal.theme('onestopRSSSection',data.feed))
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-4168-12-4300",true);
+ }}})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3850-12-4303",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-3790-12-4305",true);
+ }}}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-1-12-4307",true);
+ }})(window.jQuery);window.Drupal.theme.prototype.onestopRSSSection=function(feed){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-4372-12-4705",false);
+var out='<li>'+feed.title+'</li>';window.jQuery.each(feed.items,function(idx,itm){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-4451-12-4692",false);
+var itm_data='<li><p>';itm_data+='<a target="_blank" href="'+itm.link+'">'+itm.title+'</a><span>';if(itm.authors)itm_data+=itm.authors;itm_data+=' * <span>'+itm.pub_date+"</span></span>";itm_data+='</p></li>';out+=itm_data
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-4451-12-4692",true);
+ }});return out
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-12-4372-12-4705",true);
+ }};
+/* Source and licensing information for the above line(s) can be found at https://www.ny.gov/sites/all/modules/custom/features/basic_configuration_settings/js/basic_configuration.js. */
+/* Source and licensing information for the line(s) below can be found at https://www.ny.gov/sites/all/modules/contrib/scald_file/scald_file.js. */
+(function($){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-1-15-340",false);
+window.Drupal.behaviors.scaldFile={attach:function(context,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-55-15-338",false);
+$('body').once('scald-file',function(){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-110-15-336",false);
+if(typeof window.CKEDITOR!=='undefined')window.CKEDITOR.on('instanceReady',function(ev){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-196-15-334",false);
+window.CKEDITOR.instances[ev.editor.name].document.appendStyleSheet(window.Drupal.settings.basePath+settings.scaldFile.path)
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-196-15-334",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-110-15-336",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-55-15-338",true);
+ }}}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-15-1-15-340",true);
+ }})(window.jQuery);;
+/* Source and licensing information for the above line(s) can be found at https://www.ny.gov/sites/all/modules/contrib/scald_file/scald_file.js. */
+/* Source and licensing information for the line(s) below can be found at https://www.ny.gov/sites/all/modules/contrib/scald/modules/providers/scald_image/scald_image.js. */
+(function($){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-1-18-655",false);
+window.Drupal.behaviors.scaldImage={attach:function(context,settings){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-56-18-653",false);
+if(typeof window.Drupal.dndck4!=='undefined')window.Drupal.dndck4.addOption('txtLink','image','atom','scald_image',function(infoTab,dialogDefinition){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-198-18-651",false);
+infoTab.add({id:'txtLink',type:'text',label:'Link',setup:function(widget){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-290-18-422",false);
+var options=JSON.parse(widget.data.options);if(options.link)this.setValue(window.decodeURIComponent(options.link))
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-290-18-422",true);
+ }},commit:function(widget){ 
+ try {__tracer.cacheInit("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-430-18-648",false);
+var options=JSON.parse(widget.data.options),value=this.getValue();if(value!=''){options.link=window.encodeURIComponent(value)}else delete options.link;widget.setData('options',JSON.stringify(options))
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-430-18-648",true);
+ }}})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-198-18-651",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-56-18-653",true);
+ }}}
+ 
+ } finally {__tracer.exitFunction("SY__B625yWP7HIMttDHhmbkP79hAFFAYhIdpKTY0a8z5Hxs.js-function-18-1-18-655",true);
+ }})(window.jQuery);; }
+[rtiDebugInfo]0 113

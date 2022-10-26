@@ -26,7 +26,7 @@
 		window.domJSON = factory(root);
 	}
 })(this, function(win){
-	"use strict";
+	"use strict";  // TODO: Remove this?
 
 	/** 
 	 * domJSON is a global variable to store two methods: `.toJSON()` to convert a DOM Node into a JSON object, and `.toDOM()` to turn that JSON object back into a DOM Node

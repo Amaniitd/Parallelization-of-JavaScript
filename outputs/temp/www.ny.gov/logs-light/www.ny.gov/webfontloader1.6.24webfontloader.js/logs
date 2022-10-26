@@ -1,0 +1,1081 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/webfontloader/1.6.24/webfontloader.js","origPath":"/webfontloader/1.6.24/webfontloader.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/webfontloader/1.6.24/webfontloader.js',
+  origPath: '/webfontloader/1.6.24/webfontloader.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+[Static Analyzer] Unhandled: setTimeout in source code
+function source is  function(){return+new Date}
+function source is  function(){function aa(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-37-2-94",false);
+return a.call.apply(a.bind,arguments)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-37-2-94",true);
+ }}function ba(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-94-2-367",false);
+if(!a)throw Error();if(2<arguments.length){var c=Array.prototype.slice.call(arguments,2);return function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-209-2-319",false);
+var d=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(d,c);return a.apply(b,d)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-209-2-319",true);
+ }}}return function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-327-2-366",false);
+return a.apply(b,arguments)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-327-2-366",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-94-2-367",true);
+ }}function p(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-367-2-511",false);
+p=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return p.apply(null,arguments)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-367-2-511",true);
+ }}var q=Date.now||function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-527-2-554",false);
+return+new Date
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-527-2-554",true);
+ }};function ca(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-555-2-616",false);
+this.a=a;this.m=b||a;this.c=this.m.document
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-555-2-616",true);
+ }}var da=!!window.FontFace;function t(a,b,d,c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-641-2-831",false);
+b=a.c.createElement(b);if(d)for(var e in d)d.hasOwnProperty(e)&&("style"==e?b.style.cssText=d[e]:b.setAttribute(e,d[e]));c&&b.appendChild(a.c.createTextNode(c));return b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-641-2-831",true);
+ }}function u(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-831-2-951",false);
+a=a.c.getElementsByTagName(b)[0];a||(a=window.document.documentElement);a.insertBefore(d,a.lastChild)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-831-2-951",true);
+ }}function v(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-951-2-1007",false);
+a.parentNode&&a.parentNode.removeChild(a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-951-2-1007",true);
+ }}
+function w(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-3-0-3-336",false);
+b=b||[];d=d||[];for(var c=a.className.split(/\s+/),e=0;e<b.length;e+=1){for(var f=!1,g=0;g<c.length;g+=1)if(b[e]===c[g]){f=!0;break}f||c.push(b[e])}b=[];for(e=0;e<c.length;e+=1){f=!1;for(g=0;g<d.length;g+=1)if(c[e]===d[g]){f=!0;break}f||b.push(c[e])}a.className=b.join(" ").replace(/\s+/g," ").replace(/^\s+|\s+$/,"")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-3-0-3-336",true);
+ }}function y(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-3-336-3-439",false);
+for(var d=a.className.split(/\s+/),c=0,e=d.length;c<e;c++)if(d[c]==b)return!0;return!1
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-3-336-3-439",true);
+ }}
+function z(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-4-0-4-152",false);
+if("string"===typeof a.f)return a.f;var b=a.m.location.protocol;"about:"==b&&(b=a.a.location.protocol);return"https:"==b?"https:":"http:"
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-4-0-4-152",true);
+ }}function ea(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-4-152-4-219",false);
+return a.m.location.hostname||a.a.location.hostname
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-4-152-4-219",true);
+ }}
+function A(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-0-5-296",false);
+function c(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-18-5-54",false);
+k&&e&&f&&(k(g),k=null)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-18-5-54",true);
+ }}b=t(a,"link",{rel:"stylesheet",href:b,media:"all"});var e=!1,f=!0,g=null,k=d||null;da?(b.onload=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-150-5-170",false);
+e=!0;c()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-150-5-170",true);
+ }},b.onerror=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-181-5-238",false);
+e=!0;g=Error("Stylesheet failed to load");c()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-181-5-238",true);
+ }}):window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-258-5-278",false);
+e=!0;c()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-258-5-278",true);
+ }},0);u(a,"head",b)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-0-5-296",true);
+ }}
+function B(a,b,d,c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-0-6-440",false);
+var e=a.c.getElementsByTagName("head")[0];if(e){var f=t(a,"script",{src:b}),g=!1;f.onload=f.onreadystatechange=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-131-6-318",false);
+g||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(g=!0,d&&d(null),f.onload=f.onreadystatechange=null,"HEAD"==f.parentNode.tagName&&e.removeChild(f))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-131-6-318",true);
+ }};e.appendChild(f);window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-354-6-410",false);
+g||(g=!0,d&&d(Error("Script load timeout")))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-354-6-410",true);
+ }},c||5E3);return f}return null
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-0-6-440",true);
+ }};function C(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-441-6-475",false);
+this.a=0;this.c=null
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-441-6-475",true);
+ }}function D(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-475-6-525",false);
+a.a++;return function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-502-6-524",false);
+a.a--;E(a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-502-6-524",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-475-6-525",true);
+ }}function F(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-525-6-552",false);
+a.c=b;E(a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-525-6-552",true);
+ }}function E(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-552-6-596",false);
+0==a.a&&a.c&&(a.c(),a.c=null)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-552-6-596",true);
+ }};function G(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-597-6-625",false);
+this.a=a||"-"
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-597-6-625",true);
+ }}G.prototype.c=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-639-6-770",false);
+for(var b=[],d=0;d<arguments.length;d++)b.push(arguments[d].replace(/[\W_]+/g,"").toLowerCase());return b.join(this.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-639-6-770",true);
+ }};function H(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-771-6-908",false);
+this.c=a;this.f=4;this.a="n";var d=(b||"n4").match(/^([nio])([1-9])$/i);d&&(this.a=d[1],this.f=window.parseInt(d[2],10))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-771-6-908",true);
+ }}function fa(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-908-6-967",false);
+return I(a)+" "+(a.f+"00")+" 300px "+J(a.c)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-908-6-967",true);
+ }}function J(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-967-6-1148",false);
+var b=[];a=a.split(/,\s*/);for(var d=0;d<a.length;d++){var c=a[d].replace(/['"]/g,"");-1!=c.indexOf(" ")||/^\d/.test(c)?b.push("'"+c+"'"):b.push(c)}return b.join(",")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-967-6-1148",true);
+ }}function K(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-1148-6-1177",false);
+return a.a+a.f
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-1148-6-1177",true);
+ }}function I(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-1177-6-1261",false);
+var b="normal";"o"===a.a?b="oblique":"i"===a.a&&(b="italic");return b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-1177-6-1261",true);
+ }}
+function ga(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-0-7-267",false);
+var b=4,d="n",c=null;a&&((c=a.match(/(normal|oblique|italic)/i))&&c[1]&&(d=c[1].substr(0,1).toLowerCase()),(c=a.match(/([1-9]00|normal|bold)/i))&&c[1]&&(/bold/i.test(c[1])?b=7:/[1-9]00/.test(c[1])&&(b=window.parseInt(c[1].substr(0,1),10))));return d+b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-0-7-267",true);
+ }};function ha(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-268-7-400",false);
+this.c=a;this.f=a.m.document.documentElement;this.h=b;this.a=new G("-");this.j=!1!==b.events;this.g=!1!==b.classes
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-268-7-400",true);
+ }}function ia(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-400-7-466",false);
+a.g&&w(a.f,[a.a.c("wf","loading")]);L(a,"loading")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-400-7-466",true);
+ }}function M(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-466-7-614",false);
+if(a.g){var b=y(a.f,a.a.c("wf","active")),d=[],c=[a.a.c("wf","loading")];b||d.push(a.a.c("wf","inactive"));w(a.f,d,c)}L(a,"inactive")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-466-7-614",true);
+ }}function L(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-614-7-683",false);
+if(a.j&&a.h[b])if(d)a.h[b](d.c,K(d));else a.h[b]()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-614-7-683",true);
+ }};function ja(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-684-7-708",false);
+this.c={}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-684-7-708",true);
+ }}function ka(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-708-7-816",false);
+var c=[],e;for(e in b)if(b.hasOwnProperty(e)){var f=a.c[e];f&&c.push(f(b[e],d))}return c
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-708-7-816",true);
+ }};function N(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-817-7-905",false);
+this.c=a;this.f=b;this.a=t(this.c,"span",{"aria-hidden":"true"},this.f)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-817-7-905",true);
+ }}function O(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-905-7-937",false);
+u(a.c,"body",a.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-905-7-937",true);
+ }}function P(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-937-7-1208",false);
+return"display:block;position:absolute;top:-9999px;left:-9999px;font-size:300px;width:auto;height:auto;line-height:normal;margin:0;padding:0;font-variant:normal;white-space:nowrap;font-family:"+J(a.c)+";"+("font-style:"+I(a)+";font-weight:"+(a.f+"00")+";")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-937-7-1208",true);
+ }};function Q(a,b,d,c,e,f){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1209-7-1300",false);
+this.g=a;this.j=b;this.a=c;this.c=d;this.f=e||3E3;this.h=f||void 0
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1209-7-1300",true);
+ }}Q.prototype.start=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1318-7-1652",false);
+var a=this.c.m.document,b=this,d=q(),c=new Promise(function(c,e){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1380-7-1527",false);
+function k(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1394-7-1523",false);
+q()-d>=b.f?e():a.fonts.load(fa(b.a),b.h).then(function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1453-7-1505",false);
+1<=a.length?c():window.setTimeout(k,25)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1453-7-1505",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1506-7-1521",false);
+e()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1506-7-1521",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1394-7-1523",true);
+ }}k()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1380-7-1527",true);
+ }}),e=new Promise(function(a,c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1543-7-1582",false);
+window.setTimeout(c,b.f)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1543-7-1582",true);
+ }});Promise.race([e,c]).then(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1609-7-1629",false);
+b.g(b.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1609-7-1629",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1630-7-1650",false);
+b.j(b.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1630-7-1650",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1318-7-1652",true);
+ }};function R(a,b,d,c,e,f,g){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1653-8-70",false);
+this.v=a;this.B=b;this.c=d;this.a=c;this.s=g||"BESbswy";this.f={};this.w=e||3E3;this.u=f||null;this.o=this.j=this.h=this.g=null;this.g=new N(this.c,this.s);this.h=new N(this.c,this.s);this.j=new N(this.c,this.s);this.o=new N(this.c,this.s);a=new H(this.a.c+",serif",K(this.a));a=P(a);this.g.a.style.cssText=a;a=new H(this.a.c+",sans-serif",K(this.a));a=P(a);this.h.a.style.cssText=a;a=new H("serif",K(this.a));a=P(a);this.j.a.style.cssText=a;a=new H("sans-serif",K(this.a));a=
+P(a);this.o.a.style.cssText=a;O(this.g);O(this.h);O(this.j);O(this.o)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1653-8-70",true);
+ }}var S={D:"serif",C:"sans-serif"},T=null;function U(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-8-110-8-322",false);
+if(null===T){var a=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);T=!!a&&(536>window.parseInt(a[1],10)||536===window.parseInt(a[1],10)&&11>=window.parseInt(a[2],10))}return T
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-8-110-8-322",true);
+ }}R.prototype.start=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-8-340-8-447",false);
+this.f.serif=this.j.a.offsetWidth;this.f["sans-serif"]=this.o.a.offsetWidth;this.A=q();la(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-8-340-8-447",true);
+ }};
+function ma(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-0-9-105",false);
+for(var c in S)if(S.hasOwnProperty(c)&&b===a.f[S[c]]&&d===a.f[S[c]])return!0;return!1
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-0-9-105",true);
+ }}function la(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-105-9-331",false);
+var b=a.g.a.offsetWidth,d=a.h.a.offsetWidth,c;(c=b===a.f.serif&&d===a.f["sans-serif"])||(c=U()&&ma(a,b,d));c?q()-a.A>=a.w?U()&&ma(a,b,d)&&(null===a.u||a.u.hasOwnProperty(a.a.c))?V(a,a.v):V(a,a.B):na(a):V(a,a.v)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-105-9-331",true);
+ }}function na(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-331-9-394",false);
+window.setTimeout(p(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-366-9-386",false);
+la(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-366-9-386",true);
+ }},a),50)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-331-9-394",true);
+ }}function V(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-394-9-506",false);
+window.setTimeout(p(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-430-9-499",false);
+v(this.g.a);v(this.h.a);v(this.j.a);v(this.o.a);b(this.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-430-9-499",true);
+ }},a),0)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-394-9-506",true);
+ }};function W(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-507-9-578",false);
+this.c=a;this.a=b;this.f=0;this.o=this.j=!1;this.s=d
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-507-9-578",true);
+ }}var X=null;W.prototype.g=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-603-9-809",false);
+var b=this.a;b.g&&w(b.f,[b.a.c("wf",a.c,K(a).toString(),"active")],[b.a.c("wf",a.c,K(a).toString(),"loading"),b.a.c("wf",a.c,K(a).toString(),"inactive")]);L(b,"fontactive",a);this.o=!0;oa(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-603-9-809",true);
+ }};
+W.prototype.h=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-14-10-248",false);
+var b=this.a;if(b.g){var d=y(b.f,b.a.c("wf",a.c,K(a).toString(),"active")),c=[],e=[b.a.c("wf",a.c,K(a).toString(),"loading")];d||c.push(b.a.c("wf",a.c,K(a).toString(),"inactive"));w(b.f,c,e)}L(b,"fontinactive",a);oa(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-14-10-248",true);
+ }};function oa(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-249-10-396",false);
+0==--a.f&&a.j&&(a.o?(a=a.a,a.g&&w(a.f,[a.a.c("wf","active")],[a.a.c("wf","loading"),a.a.c("wf","inactive")]),L(a,"active")):M(a.a))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-249-10-396",true);
+ }};function pa(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-397-10-461",false);
+this.j=a;this.a=new ja;this.h=0;this.f=this.g=!0
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-397-10-461",true);
+ }}pa.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-479-10-602",false);
+this.c=new ca(this.j,a.context||this.j);this.g=!1!==a.events;this.f=!1!==a.classes;qa(this,new ha(this.c,a),a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-479-10-602",true);
+ }};
+function ra(a,b,d,c,e){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-11-0-12-54",false);
+var f=0==--a.h;(a.f||a.g)&&window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-11-68-12-50",false);
+var a=e||null,k=c||null||{};if(0===d.length&&f)M(b.a);else{b.f+=d.length;f&&(b.j=f);var h,m=[];for(h=0;h<d.length;h++){var l=d[h],n=k[l.c],r=b.a,x=l;r.g&&w(r.f,[r.a.c("wf",x.c,K(x).toString(),"loading")]);L(r,"fontloading",x);r=null;null===X&&(X=window.FontFace?(x=/Gecko.*Firefox\/(\d+)/.exec(window.navigator.userAgent))?42<window.parseInt(x[1],10):!0:!1);X?r=new Q(p(b.g,b),p(b.h,b),b.c,l,b.s,n):r=new R(p(b.g,b),p(b.h,b),b.c,l,b.s,a,
+n);m.push(r)}for(h=0;h<m.length;h++)m[h].start()}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-11-68-12-50",true);
+ }},0)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-11-0-12-54",true);
+ }}function qa(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-54-12-219",false);
+var c=[],e=d.timeout;ia(b);var c=ka(a.a,d,a.c),f=new W(a.c,b,e);a.h=c.length;b=0;for(d=c.length;b<d;b++)c[b].load(function(b,c,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-187-12-217",false);
+ra(a,f,b,c,d)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-187-12-217",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-54-12-219",true);
+ }};function sa(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-220-12-255",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-220-12-255",true);
+ }}function ta(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-255-12-400",false);
+var c=z(a.c);a=(a.a.api||"fast.fonts.net/jsapi").replace(/^.*http(s?):(\/\/)?/,"");return c+"//"+a+"/"+b+".js"+(d?"?v="+d:"")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-255-12-400",true);
+ }}
+sa.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-18-13-473",false);
+function b(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-30-13-324",false);
+if(e["__mti_fntLst"+d]){var c=e["__mti_fntLst"+d](),g=[],k;if(c)for(var h=0;h<c.length;h++){var m=c[h].fontfamily;void 0!=c[h].fontStyle&&void 0!=c[h].fontWeight?(k=c[h].fontStyle+c[h].fontWeight,g.push(new H(m,k))):g.push(new H(m))}a(g)}else window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-304-13-319",false);
+b()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-304-13-319",true);
+ }},50)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-30-13-324",true);
+ }}var d=this.a.projectId,c=this.a.version;if(d){var e=this.c.m;B(this.c,ta(this,d,c),function(c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-407-13-431",false);
+c?a([]):b()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-407-13-431",true);
+ }}).id="__MonotypeAPIScript__"+d}else a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-18-13-473",true);
+ }};function ua(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-474-13-509",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-474-13-509",true);
+ }}ua.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-527-13-849",false);
+var b,d,c=this.a.urls||[],e=this.a.families||[],f=this.a.testStrings||{},g=new C;b=0;for(d=c.length;b<d;b++)A(this.c,c[b],D(g));var k=[];b=0;for(d=e.length;b<d;b++)if(c=e[b].split(":"),c[1])for(var h=c[1].split(","),m=0;m<h.length;m+=1)k.push(new H(c[0],h[m]));else k.push(new H(c[0]));F(g,function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-829-13-847",false);
+a(k,f)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-829-13-847",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-527-13-849",true);
+ }};function va(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-850-13-925",false);
+a?this.c=a:this.c=b+wa;this.a=[];this.f=[];this.g=d||""
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-850-13-925",true);
+ }}var wa="//fonts.googleapis.com/css";function xa(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-961-13-1124",false);
+for(var d=b.length,c=0;c<d;c++){var e=b[c].split(":");3==e.length&&a.f.push(e.pop());var f="";2==e.length&&""!=e[1]&&(f=":");a.a.push(e.join(f))}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-961-13-1124",true);
+ }}
+function ya(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-14-0-14-317",false);
+if(0==a.a.length)throw Error("No fonts to load!");if(-1!=a.c.indexOf("kit="))return a.c;for(var b=a.a.length,d=[],c=0;c<b;c++)d.push(a.a[c].replace(/ /g,"+"));b=a.c+"?family="+d.join("%7C");0<a.f.length&&(b+="&subset="+a.f.join(","));0<a.g.length&&(b+="&text="+window.encodeURIComponent(a.g));return b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-14-0-14-317",true);
+ }};function za(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-14-318-14-362",false);
+this.f=a;this.a=[];this.c={}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-14-318-14-362",true);
+ }}
+var Aa={latin:"BESbswy",cyrillic:"\u0439\u044f\u0416",greek:"\u03b1\u03b2\u03a3",khmer:"\u1780\u1781\u1782",Hanuman:"\u1780\u1781\u1782"},Ba={thin:"1",extralight:"2","extra-light":"2",ultralight:"2","ultra-light":"2",light:"3",regular:"4",book:"4",medium:"5","semi-bold":"6",semibold:"6","demi-bold":"6",demibold:"6",bold:"7","extra-bold":"8",extrabold:"8","ultra-bold":"8",ultrabold:"8",black:"9",heavy:"9",l:"3",r:"4",b:"7"},Ca={i:"i",italic:"i",n:"n",normal:"n"},Da=/^(thin|(?:(?:extra|ultra)-?)?light|regular|book|medium|(?:(?:semi|demi|extra|ultra)-?)?bold|black|heavy|l|r|b|[1-9]00)?(n|i|normal|italic)?$/;
+function Ea(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-16-0-17-119",false);
+for(var b=a.f.length,d=0;d<b;d++){var c=a.f[d].split(":"),e=c[0].replace(/\+/g," "),f=["n4"];if(2<=c.length){var g;var k=c[1];g=[];if(k)for(var k=k.split(","),h=k.length,m=0;m<h;m++){var l;l=k[m];if(l.match(/^[\w-]+$/)){var n=Da.exec(l.toLowerCase());if(null==n)l="";else{l=n[2];l=null==l||""==l?"n":Ca[l];n=n[1];if(null==n||""==n)n="4";else var r=Ba[n],n=r?r:window.isNaN(n)?"4":n.substr(0,1);l=[l,n].join("")}}else l="";l&&g.push(l)}0<g.length&&(f=g);3==c.length&&(c=c[2],g=[],c=c?c.split(","):
+g,0<c.length&&(c=Aa[c[0]])&&(a.c[e]=c))}a.c[e]||(c=Aa[e])&&(a.c[e]=c);for(c=0;c<f.length;c+=1)a.a.push(new H(e,f[c]))}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-16-0-17-119",true);
+ }};function Fa(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-120-17-155",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-120-17-155",true);
+ }}var Ga={Arimo:!0,Cousine:!0,Tinos:!0};Fa.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-211-17-377",false);
+var b=new C,d=this.c,c=new va(this.a.api,z(d),this.a.text),e=this.a.families;xa(c,e);var f=new za(e);Ea(f);A(d,ya(c),D(b));F(b,function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-350-17-375",false);
+a(f.a,f.c,Ga)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-350-17-375",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-211-17-377",true);
+ }};function Ha(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-378-17-413",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-378-17-413",true);
+ }}Ha.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-431-17-814",false);
+var b=this.a.id,d=this.c.m;b?B(this.c,(this.a.api||"https://use.typekit.net")+"/"+b+".js",function(b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-533-17-802",false);
+if(b)a([]);else if(d.Typekit&&d.Typekit.config&&d.Typekit.config.fn){b=d.Typekit.config.fn;for(var e=[],f=0;f<b.length;f+=2)for(var g=b[f],k=b[f+1],h=0;h<k.length;h++)e.push(new H(g,k[h]));try{d.Typekit.load({events:!1,classes:!1,async:!0})}catch(m){}a(e)}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-533-17-802",true);
+ }},2E3):a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-431-17-814",true);
+ }};function Ia(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-815-17-860",false);
+this.c=a;this.f=b;this.a=[]
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-815-17-860",true);
+ }}Ia.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-878-17-1287",false);
+var b=this.f.id,d=this.c.m,c=this;b?(d.__webfontfontdeckmodule__||(d.__webfontfontdeckmodule__={}),d.__webfontfontdeckmodule__[b]=function(b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1020-17-1171",false);
+for(var g=0,k=d.fonts.length;g<k;++g){var h=d.fonts[g];c.a.push(new H(h.name,ga("font-weight:"+h.weight+";font-style:"+h.style)))}a(c.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1020-17-1171",true);
+ }},B(this.c,z(this.c)+(this.f.api||"//f.fontdeck.com/s/css/js/")+ea(this.c)+"/"+b+".js",function(b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1257-17-1278",false);
+b&&a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1257-17-1278",true);
+ }})):a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-878-17-1287",true);
+ }};var Y=new pa(window);Y.a.c.custom=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1322-17-1355",false);
+return new ua(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1322-17-1355",true);
+ }};Y.a.c.fontdeck=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1371-17-1404",false);
+return new Ia(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1371-17-1404",true);
+ }};Y.a.c.monotype=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1420-17-1453",false);
+return new sa(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1420-17-1453",true);
+ }};Y.a.c.typekit=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1468-17-1501",false);
+return new Ha(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1468-17-1501",true);
+ }};Y.a.c.google=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1515-17-1548",false);
+return new Fa(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1515-17-1548",true);
+ }};var Z={load:p(Y.load,Y)};"function"===typeof window.define&&window.define.amd?window.define(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1641-17-1661",false);
+return Z
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1641-17-1661",true);
+ }}):"undefined"!==typeof window.module&&window.module.exports?window.module.exports=Z:(window.WebFont=Z,window.WebFontConfig&&Y.load(window.WebFontConfig));}
+function source is  function __HORCRUX__(){ (function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-26-17-1816",false);
+function aa(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-37-2-94",false);
+return a.call.apply(a.bind,arguments)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-37-2-94",true);
+ }}function ba(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-94-2-367",false);
+if(!a)throw Error();if(2<arguments.length){var c=Array.prototype.slice.call(arguments,2);return function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-209-2-319",false);
+var d=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(d,c);return a.apply(b,d)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-209-2-319",true);
+ }}}return function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-327-2-366",false);
+return a.apply(b,arguments)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-327-2-366",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-94-2-367",true);
+ }}function p(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-367-2-511",false);
+p=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return p.apply(null,arguments)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-367-2-511",true);
+ }}var q=Date.now||function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-527-2-554",false);
+return+new Date
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-527-2-554",true);
+ }};function ca(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-555-2-616",false);
+this.a=a;this.m=b||a;this.c=this.m.document
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-555-2-616",true);
+ }}var da=!!window.FontFace;function t(a,b,d,c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-641-2-831",false);
+b=a.c.createElement(b);if(d)for(var e in d)d.hasOwnProperty(e)&&("style"==e?b.style.cssText=d[e]:b.setAttribute(e,d[e]));c&&b.appendChild(a.c.createTextNode(c));return b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-641-2-831",true);
+ }}function u(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-831-2-951",false);
+a=a.c.getElementsByTagName(b)[0];a||(a=window.document.documentElement);a.insertBefore(d,a.lastChild)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-831-2-951",true);
+ }}function v(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-2-951-2-1007",false);
+a.parentNode&&a.parentNode.removeChild(a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-951-2-1007",true);
+ }}
+function w(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-3-0-3-336",false);
+b=b||[];d=d||[];for(var c=a.className.split(/\s+/),e=0;e<b.length;e+=1){for(var f=!1,g=0;g<c.length;g+=1)if(b[e]===c[g]){f=!0;break}f||c.push(b[e])}b=[];for(e=0;e<c.length;e+=1){f=!1;for(g=0;g<d.length;g+=1)if(c[e]===d[g]){f=!0;break}f||b.push(c[e])}a.className=b.join(" ").replace(/\s+/g," ").replace(/^\s+|\s+$/,"")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-3-0-3-336",true);
+ }}function y(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-3-336-3-439",false);
+for(var d=a.className.split(/\s+/),c=0,e=d.length;c<e;c++)if(d[c]==b)return!0;return!1
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-3-336-3-439",true);
+ }}
+function z(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-4-0-4-152",false);
+if("string"===typeof a.f)return a.f;var b=a.m.location.protocol;"about:"==b&&(b=a.a.location.protocol);return"https:"==b?"https:":"http:"
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-4-0-4-152",true);
+ }}function ea(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-4-152-4-219",false);
+return a.m.location.hostname||a.a.location.hostname
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-4-152-4-219",true);
+ }}
+function A(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-0-5-296",false);
+function c(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-18-5-54",false);
+k&&e&&f&&(k(g),k=null)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-18-5-54",true);
+ }}b=t(a,"link",{rel:"stylesheet",href:b,media:"all"});var e=!1,f=!0,g=null,k=d||null;da?(b.onload=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-150-5-170",false);
+e=!0;c()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-150-5-170",true);
+ }},b.onerror=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-181-5-238",false);
+e=!0;g=Error("Stylesheet failed to load");c()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-181-5-238",true);
+ }}):window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-5-258-5-278",false);
+e=!0;c()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-258-5-278",true);
+ }},0);u(a,"head",b)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-5-0-5-296",true);
+ }}
+function B(a,b,d,c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-0-6-440",false);
+var e=a.c.getElementsByTagName("head")[0];if(e){var f=t(a,"script",{src:b}),g=!1;f.onload=f.onreadystatechange=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-131-6-318",false);
+g||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(g=!0,d&&d(null),f.onload=f.onreadystatechange=null,"HEAD"==f.parentNode.tagName&&e.removeChild(f))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-131-6-318",true);
+ }};e.appendChild(f);window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-354-6-410",false);
+g||(g=!0,d&&d(Error("Script load timeout")))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-354-6-410",true);
+ }},c||5E3);return f}return null
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-0-6-440",true);
+ }};function C(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-441-6-475",false);
+this.a=0;this.c=null
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-441-6-475",true);
+ }}function D(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-475-6-525",false);
+a.a++;return function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-502-6-524",false);
+a.a--;E(a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-502-6-524",true);
+ }}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-475-6-525",true);
+ }}function F(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-525-6-552",false);
+a.c=b;E(a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-525-6-552",true);
+ }}function E(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-552-6-596",false);
+0==a.a&&a.c&&(a.c(),a.c=null)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-552-6-596",true);
+ }};function G(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-597-6-625",false);
+this.a=a||"-"
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-597-6-625",true);
+ }}G.prototype.c=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-639-6-770",false);
+for(var b=[],d=0;d<arguments.length;d++)b.push(arguments[d].replace(/[\W_]+/g,"").toLowerCase());return b.join(this.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-639-6-770",true);
+ }};function H(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-771-6-908",false);
+this.c=a;this.f=4;this.a="n";var d=(b||"n4").match(/^([nio])([1-9])$/i);d&&(this.a=d[1],this.f=window.parseInt(d[2],10))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-771-6-908",true);
+ }}function fa(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-908-6-967",false);
+return I(a)+" "+(a.f+"00")+" 300px "+J(a.c)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-908-6-967",true);
+ }}function J(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-967-6-1148",false);
+var b=[];a=a.split(/,\s*/);for(var d=0;d<a.length;d++){var c=a[d].replace(/['"]/g,"");-1!=c.indexOf(" ")||/^\d/.test(c)?b.push("'"+c+"'"):b.push(c)}return b.join(",")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-967-6-1148",true);
+ }}function K(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-1148-6-1177",false);
+return a.a+a.f
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-1148-6-1177",true);
+ }}function I(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-6-1177-6-1261",false);
+var b="normal";"o"===a.a?b="oblique":"i"===a.a&&(b="italic");return b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-6-1177-6-1261",true);
+ }}
+function ga(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-0-7-267",false);
+var b=4,d="n",c=null;a&&((c=a.match(/(normal|oblique|italic)/i))&&c[1]&&(d=c[1].substr(0,1).toLowerCase()),(c=a.match(/([1-9]00|normal|bold)/i))&&c[1]&&(/bold/i.test(c[1])?b=7:/[1-9]00/.test(c[1])&&(b=window.parseInt(c[1].substr(0,1),10))));return d+b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-0-7-267",true);
+ }};function ha(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-268-7-400",false);
+this.c=a;this.f=a.m.document.documentElement;this.h=b;this.a=new G("-");this.j=!1!==b.events;this.g=!1!==b.classes
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-268-7-400",true);
+ }}function ia(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-400-7-466",false);
+a.g&&w(a.f,[a.a.c("wf","loading")]);L(a,"loading")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-400-7-466",true);
+ }}function M(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-466-7-614",false);
+if(a.g){var b=y(a.f,a.a.c("wf","active")),d=[],c=[a.a.c("wf","loading")];b||d.push(a.a.c("wf","inactive"));w(a.f,d,c)}L(a,"inactive")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-466-7-614",true);
+ }}function L(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-614-7-683",false);
+if(a.j&&a.h[b])if(d)a.h[b](d.c,K(d));else a.h[b]()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-614-7-683",true);
+ }};function ja(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-684-7-708",false);
+this.c={}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-684-7-708",true);
+ }}function ka(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-708-7-816",false);
+var c=[],e;for(e in b)if(b.hasOwnProperty(e)){var f=a.c[e];f&&c.push(f(b[e],d))}return c
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-708-7-816",true);
+ }};function N(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-817-7-905",false);
+this.c=a;this.f=b;this.a=t(this.c,"span",{"aria-hidden":"true"},this.f)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-817-7-905",true);
+ }}function O(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-905-7-937",false);
+u(a.c,"body",a.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-905-7-937",true);
+ }}function P(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-937-7-1208",false);
+return"display:block;position:absolute;top:-9999px;left:-9999px;font-size:300px;width:auto;height:auto;line-height:normal;margin:0;padding:0;font-variant:normal;white-space:nowrap;font-family:"+J(a.c)+";"+("font-style:"+I(a)+";font-weight:"+(a.f+"00")+";")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-937-7-1208",true);
+ }};function Q(a,b,d,c,e,f){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1209-7-1300",false);
+this.g=a;this.j=b;this.a=c;this.c=d;this.f=e||3E3;this.h=f||void 0
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1209-7-1300",true);
+ }}Q.prototype.start=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1318-7-1652",false);
+var a=this.c.m.document,b=this,d=q(),c=new Promise(function(c,e){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1380-7-1527",false);
+function k(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1394-7-1523",false);
+q()-d>=b.f?e():a.fonts.load(fa(b.a),b.h).then(function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1453-7-1505",false);
+1<=a.length?c():window.setTimeout(k,25)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1453-7-1505",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1506-7-1521",false);
+e()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1506-7-1521",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1394-7-1523",true);
+ }}k()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1380-7-1527",true);
+ }}),e=new Promise(function(a,c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1543-7-1582",false);
+window.setTimeout(c,b.f)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1543-7-1582",true);
+ }});Promise.race([e,c]).then(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1609-7-1629",false);
+b.g(b.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1609-7-1629",true);
+ }},function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1630-7-1650",false);
+b.j(b.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1630-7-1650",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1318-7-1652",true);
+ }};function R(a,b,d,c,e,f,g){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-7-1653-8-70",false);
+this.v=a;this.B=b;this.c=d;this.a=c;this.s=g||"BESbswy";this.f={};this.w=e||3E3;this.u=f||null;this.o=this.j=this.h=this.g=null;this.g=new N(this.c,this.s);this.h=new N(this.c,this.s);this.j=new N(this.c,this.s);this.o=new N(this.c,this.s);a=new H(this.a.c+",serif",K(this.a));a=P(a);this.g.a.style.cssText=a;a=new H(this.a.c+",sans-serif",K(this.a));a=P(a);this.h.a.style.cssText=a;a=new H("serif",K(this.a));a=P(a);this.j.a.style.cssText=a;a=new H("sans-serif",K(this.a));a=
+P(a);this.o.a.style.cssText=a;O(this.g);O(this.h);O(this.j);O(this.o)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-7-1653-8-70",true);
+ }}var S={D:"serif",C:"sans-serif"},T=null;function U(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-8-110-8-322",false);
+if(null===T){var a=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);T=!!a&&(536>window.parseInt(a[1],10)||536===window.parseInt(a[1],10)&&11>=window.parseInt(a[2],10))}return T
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-8-110-8-322",true);
+ }}R.prototype.start=function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-8-340-8-447",false);
+this.f.serif=this.j.a.offsetWidth;this.f["sans-serif"]=this.o.a.offsetWidth;this.A=q();la(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-8-340-8-447",true);
+ }};
+function ma(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-0-9-105",false);
+for(var c in S)if(S.hasOwnProperty(c)&&b===a.f[S[c]]&&d===a.f[S[c]])return!0;return!1
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-0-9-105",true);
+ }}function la(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-105-9-331",false);
+var b=a.g.a.offsetWidth,d=a.h.a.offsetWidth,c;(c=b===a.f.serif&&d===a.f["sans-serif"])||(c=U()&&ma(a,b,d));c?q()-a.A>=a.w?U()&&ma(a,b,d)&&(null===a.u||a.u.hasOwnProperty(a.a.c))?V(a,a.v):V(a,a.B):na(a):V(a,a.v)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-105-9-331",true);
+ }}function na(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-331-9-394",false);
+window.setTimeout(p(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-366-9-386",false);
+la(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-366-9-386",true);
+ }},a),50)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-331-9-394",true);
+ }}function V(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-394-9-506",false);
+window.setTimeout(p(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-430-9-499",false);
+v(this.g.a);v(this.h.a);v(this.j.a);v(this.o.a);b(this.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-430-9-499",true);
+ }},a),0)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-394-9-506",true);
+ }};function W(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-507-9-578",false);
+this.c=a;this.a=b;this.f=0;this.o=this.j=!1;this.s=d
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-507-9-578",true);
+ }}var X=null;W.prototype.g=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-9-603-9-809",false);
+var b=this.a;b.g&&w(b.f,[b.a.c("wf",a.c,K(a).toString(),"active")],[b.a.c("wf",a.c,K(a).toString(),"loading"),b.a.c("wf",a.c,K(a).toString(),"inactive")]);L(b,"fontactive",a);this.o=!0;oa(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-9-603-9-809",true);
+ }};
+W.prototype.h=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-14-10-248",false);
+var b=this.a;if(b.g){var d=y(b.f,b.a.c("wf",a.c,K(a).toString(),"active")),c=[],e=[b.a.c("wf",a.c,K(a).toString(),"loading")];d||c.push(b.a.c("wf",a.c,K(a).toString(),"inactive"));w(b.f,c,e)}L(b,"fontinactive",a);oa(this)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-14-10-248",true);
+ }};function oa(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-249-10-396",false);
+0==--a.f&&a.j&&(a.o?(a=a.a,a.g&&w(a.f,[a.a.c("wf","active")],[a.a.c("wf","loading"),a.a.c("wf","inactive")]),L(a,"active")):M(a.a))
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-249-10-396",true);
+ }};function pa(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-397-10-461",false);
+this.j=a;this.a=new ja;this.h=0;this.f=this.g=!0
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-397-10-461",true);
+ }}pa.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-10-479-10-602",false);
+this.c=new ca(this.j,a.context||this.j);this.g=!1!==a.events;this.f=!1!==a.classes;qa(this,new ha(this.c,a),a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-10-479-10-602",true);
+ }};
+function ra(a,b,d,c,e){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-11-0-12-54",false);
+var f=0==--a.h;(a.f||a.g)&&window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-11-68-12-50",false);
+var a=e||null,k=c||null||{};if(0===d.length&&f)M(b.a);else{b.f+=d.length;f&&(b.j=f);var h,m=[];for(h=0;h<d.length;h++){var l=d[h],n=k[l.c],r=b.a,x=l;r.g&&w(r.f,[r.a.c("wf",x.c,K(x).toString(),"loading")]);L(r,"fontloading",x);r=null;null===X&&(X=window.FontFace?(x=/Gecko.*Firefox\/(\d+)/.exec(window.navigator.userAgent))?42<window.parseInt(x[1],10):!0:!1);X?r=new Q(p(b.g,b),p(b.h,b),b.c,l,b.s,n):r=new R(p(b.g,b),p(b.h,b),b.c,l,b.s,a,
+n);m.push(r)}for(h=0;h<m.length;h++)m[h].start()}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-11-68-12-50",true);
+ }},0)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-11-0-12-54",true);
+ }}function qa(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-54-12-219",false);
+var c=[],e=d.timeout;ia(b);var c=ka(a.a,d,a.c),f=new W(a.c,b,e);a.h=c.length;b=0;for(d=c.length;b<d;b++)c[b].load(function(b,c,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-187-12-217",false);
+ra(a,f,b,c,d)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-187-12-217",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-54-12-219",true);
+ }};function sa(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-220-12-255",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-220-12-255",true);
+ }}function ta(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-12-255-12-400",false);
+var c=z(a.c);a=(a.a.api||"fast.fonts.net/jsapi").replace(/^.*http(s?):(\/\/)?/,"");return c+"//"+a+"/"+b+".js"+(d?"?v="+d:"")
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-12-255-12-400",true);
+ }}
+sa.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-18-13-473",false);
+function b(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-30-13-324",false);
+if(e["__mti_fntLst"+d]){var c=e["__mti_fntLst"+d](),g=[],k;if(c)for(var h=0;h<c.length;h++){var m=c[h].fontfamily;void 0!=c[h].fontStyle&&void 0!=c[h].fontWeight?(k=c[h].fontStyle+c[h].fontWeight,g.push(new H(m,k))):g.push(new H(m))}a(g)}else window.setTimeout(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-304-13-319",false);
+b()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-304-13-319",true);
+ }},50)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-30-13-324",true);
+ }}var d=this.a.projectId,c=this.a.version;if(d){var e=this.c.m;B(this.c,ta(this,d,c),function(c){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-407-13-431",false);
+c?a([]):b()
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-407-13-431",true);
+ }}).id="__MonotypeAPIScript__"+d}else a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-18-13-473",true);
+ }};function ua(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-474-13-509",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-474-13-509",true);
+ }}ua.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-527-13-849",false);
+var b,d,c=this.a.urls||[],e=this.a.families||[],f=this.a.testStrings||{},g=new C;b=0;for(d=c.length;b<d;b++)A(this.c,c[b],D(g));var k=[];b=0;for(d=e.length;b<d;b++)if(c=e[b].split(":"),c[1])for(var h=c[1].split(","),m=0;m<h.length;m+=1)k.push(new H(c[0],h[m]));else k.push(new H(c[0]));F(g,function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-829-13-847",false);
+a(k,f)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-829-13-847",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-527-13-849",true);
+ }};function va(a,b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-850-13-925",false);
+a?this.c=a:this.c=b+wa;this.a=[];this.f=[];this.g=d||""
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-850-13-925",true);
+ }}var wa="//fonts.googleapis.com/css";function xa(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-13-961-13-1124",false);
+for(var d=b.length,c=0;c<d;c++){var e=b[c].split(":");3==e.length&&a.f.push(e.pop());var f="";2==e.length&&""!=e[1]&&(f=":");a.a.push(e.join(f))}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-13-961-13-1124",true);
+ }}
+function ya(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-14-0-14-317",false);
+if(0==a.a.length)throw Error("No fonts to load!");if(-1!=a.c.indexOf("kit="))return a.c;for(var b=a.a.length,d=[],c=0;c<b;c++)d.push(a.a[c].replace(/ /g,"+"));b=a.c+"?family="+d.join("%7C");0<a.f.length&&(b+="&subset="+a.f.join(","));0<a.g.length&&(b+="&text="+window.encodeURIComponent(a.g));return b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-14-0-14-317",true);
+ }};function za(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-14-318-14-362",false);
+this.f=a;this.a=[];this.c={}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-14-318-14-362",true);
+ }}
+var Aa={latin:"BESbswy",cyrillic:"\u0439\u044f\u0416",greek:"\u03b1\u03b2\u03a3",khmer:"\u1780\u1781\u1782",Hanuman:"\u1780\u1781\u1782"},Ba={thin:"1",extralight:"2","extra-light":"2",ultralight:"2","ultra-light":"2",light:"3",regular:"4",book:"4",medium:"5","semi-bold":"6",semibold:"6","demi-bold":"6",demibold:"6",bold:"7","extra-bold":"8",extrabold:"8","ultra-bold":"8",ultrabold:"8",black:"9",heavy:"9",l:"3",r:"4",b:"7"},Ca={i:"i",italic:"i",n:"n",normal:"n"},Da=/^(thin|(?:(?:extra|ultra)-?)?light|regular|book|medium|(?:(?:semi|demi|extra|ultra)-?)?bold|black|heavy|l|r|b|[1-9]00)?(n|i|normal|italic)?$/;
+function Ea(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-16-0-17-119",false);
+for(var b=a.f.length,d=0;d<b;d++){var c=a.f[d].split(":"),e=c[0].replace(/\+/g," "),f=["n4"];if(2<=c.length){var g;var k=c[1];g=[];if(k)for(var k=k.split(","),h=k.length,m=0;m<h;m++){var l;l=k[m];if(l.match(/^[\w-]+$/)){var n=Da.exec(l.toLowerCase());if(null==n)l="";else{l=n[2];l=null==l||""==l?"n":Ca[l];n=n[1];if(null==n||""==n)n="4";else var r=Ba[n],n=r?r:window.isNaN(n)?"4":n.substr(0,1);l=[l,n].join("")}}else l="";l&&g.push(l)}0<g.length&&(f=g);3==c.length&&(c=c[2],g=[],c=c?c.split(","):
+g,0<c.length&&(c=Aa[c[0]])&&(a.c[e]=c))}a.c[e]||(c=Aa[e])&&(a.c[e]=c);for(c=0;c<f.length;c+=1)a.a.push(new H(e,f[c]))}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-16-0-17-119",true);
+ }};function Fa(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-120-17-155",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-120-17-155",true);
+ }}var Ga={Arimo:!0,Cousine:!0,Tinos:!0};Fa.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-211-17-377",false);
+var b=new C,d=this.c,c=new va(this.a.api,z(d),this.a.text),e=this.a.families;xa(c,e);var f=new za(e);Ea(f);A(d,ya(c),D(b));F(b,function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-350-17-375",false);
+a(f.a,f.c,Ga)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-350-17-375",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-211-17-377",true);
+ }};function Ha(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-378-17-413",false);
+this.c=a;this.a=b
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-378-17-413",true);
+ }}Ha.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-431-17-814",false);
+var b=this.a.id,d=this.c.m;b?B(this.c,(this.a.api||"https://use.typekit.net")+"/"+b+".js",function(b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-533-17-802",false);
+if(b)a([]);else if(d.Typekit&&d.Typekit.config&&d.Typekit.config.fn){b=d.Typekit.config.fn;for(var e=[],f=0;f<b.length;f+=2)for(var g=b[f],k=b[f+1],h=0;h<k.length;h++)e.push(new H(g,k[h]));try{d.Typekit.load({events:!1,classes:!1,async:!0})}catch(m){}a(e)}
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-533-17-802",true);
+ }},2E3):a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-431-17-814",true);
+ }};function Ia(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-815-17-860",false);
+this.c=a;this.f=b;this.a=[]
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-815-17-860",true);
+ }}Ia.prototype.load=function(a){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-878-17-1287",false);
+var b=this.f.id,d=this.c.m,c=this;b?(d.__webfontfontdeckmodule__||(d.__webfontfontdeckmodule__={}),d.__webfontfontdeckmodule__[b]=function(b,d){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1020-17-1171",false);
+for(var g=0,k=d.fonts.length;g<k;++g){var h=d.fonts[g];c.a.push(new H(h.name,ga("font-weight:"+h.weight+";font-style:"+h.style)))}a(c.a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1020-17-1171",true);
+ }},B(this.c,z(this.c)+(this.f.api||"//f.fontdeck.com/s/css/js/")+ea(this.c)+"/"+b+".js",function(b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1257-17-1278",false);
+b&&a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1257-17-1278",true);
+ }})):a([])
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-878-17-1287",true);
+ }};var Y=new pa(window);Y.a.c.custom=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1322-17-1355",false);
+return new ua(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1322-17-1355",true);
+ }};Y.a.c.fontdeck=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1371-17-1404",false);
+return new Ia(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1371-17-1404",true);
+ }};Y.a.c.monotype=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1420-17-1453",false);
+return new sa(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1420-17-1453",true);
+ }};Y.a.c.typekit=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1468-17-1501",false);
+return new Ha(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1468-17-1501",true);
+ }};Y.a.c.google=function(a,b){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1515-17-1548",false);
+return new Fa(b,a)
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1515-17-1548",true);
+ }};var Z={load:p(Y.load,Y)};"function"===typeof window.define&&window.define.amd?window.define(function(){ 
+ try {__tracer.cacheInit("/webfontloader/1.6.24/webfontloader.js-function-17-1641-17-1661",false);
+return Z
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-17-1641-17-1661",true);
+ }}):"undefined"!==typeof window.module&&window.module.exports?window.module.exports=Z:(window.WebFont=Z,window.WebFontConfig&&Y.load(window.WebFontConfig));
+ 
+ } finally {__tracer.exitFunction("/webfontloader/1.6.24/webfontloader.js-function-2-26-17-1816",true);
+ }}()); }
+[rtiDebugInfo]0 104

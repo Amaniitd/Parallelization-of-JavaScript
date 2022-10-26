@@ -1,0 +1,46 @@
+error while parsing SyntaxError: Invalid assignment in for-in loop head (86:43)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp$1.parseForIn (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1148:14)
+    at Parser.pp$1.parseForStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:914:17)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:773:32)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseIfStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:931:26)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:780:31)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34) {
+  pos: 33771,
+  loc: Position { line: 86, column: 43 },
+  raisedAt: 33799
+}
+[PARSING EXCEPTION]/prod/utag.js?v=202007071746: SyntaxError: Invalid assignment in for-in loop head (86:43)SyntaxError: Invalid assignment in for-in loop head (86:43)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp$1.parseForIn (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1148:14)
+    at Parser.pp$1.parseForStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:914:17)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:773:32)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseIfStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:931:26)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:780:31)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+[PARSING EXCEPTION] SyntaxError: Invalid assignment in for-in loop head (86:43)
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_rewriter.js:349
+        throw e;
+        ^
+
+SyntaxError: Invalid assignment in for-in loop head (86:43)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp$1.parseForIn (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1148:14)
+    at Parser.pp$1.parseForStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:914:17)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:773:32)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34)
+    at Parser.pp$1.parseIfStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:931:26)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:780:31)
+    at Parser.pp$1.parseBlock (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:1112:23)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:791:34) {
+  pos: 33771,
+  loc: Position { line: 86, column: 43 },
+  raisedAt: 33799
+}

@@ -36,6 +36,21 @@ function countDependencies(candidateSignature, allSignatures) {
     return count;
 }
 
+function incomingDependencies(candidateSignature, allSignatures) {
+    dependent = [];
+    for (const item in allSignatures) {
+        if (_hasConflict(allSignatures[item]['sig'], candidateSignature)) dependent.push(item);
+    }
+    return dependent;
+}
+
+function outgoingDependencies(candidateSignature, allSignatures) {
+    dependent = [];
+    for (const item in allSignatures) {
+        if (_hasConflict(candidateSignature, allSignatures[item]['sig'])) dependent.push(item);
+    }
+    return dependent;
+}
 
 
 // load a json file from the filesystem
@@ -49,6 +64,8 @@ const data = JSON.parse(json);
 
 for (const item in data) {
     data[item].dependencies = countDependencies(data[item]['sig'], data);
+    data[item].incomingDependencies = incomingDependencies(data[item]['sig'], data);
+    data[item].outgoingDependencies = outgoingDependencies(data[item]['sig'], data);
 }
 
 // write the json file to the filesystem

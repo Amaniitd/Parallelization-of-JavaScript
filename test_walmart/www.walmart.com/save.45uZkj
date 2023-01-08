@@ -1,0 +1,34 @@
+
+35.190.10.96»"ð
+POST /api/v2/collector HTTP/1.1)
+Host!collector-pxu6b0qd2s.px-cloud.net
+
+Connection
+keep-alive
+Content-Length4804
+	sec-ch-ua'"Not?A_Brand";v="8", "Chromium";v="108"
+sec-ch-ua-platform"Linux"
+sec-ch-ua-mobile?0s
+
+User-AgenteMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361
+Content-type!application/x-www-form-urlencoded
+Accept*/*!
+Originhttps://www.walmart.com
+Sec-Fetch-Site
+cross-site
+Sec-Fetch-Modecors
+Sec-Fetch-Destempty#
+Refererhttps://www.walmart.com/$
+Accept-Encodinggzip, deflate, br-
+Accept-Languageen-GB,en-US;q=0.9,en;q=0.8àpayload=aUkQRhAIEGJqAwIKAwQQHhBWEAhJEGJqAwIBBAIQCBBaRkZCQQgdHUVFRRxFU15fU0BGHFFdXx0QHhBiagMCCwALEAgCHhBiagMDAwoEEAgQfltcR0oSSgoEbQQGEB4QYmoDAgQAABAIAh4QYmoGDAgAF^ABAIAwULASR4QYmoDAgsFAhAI}AQDQCAhNK4QYm8oDAgDILBhNaAIAwQF>AQIFCgMDKAwsAAh4QYmoDAwICBhA`IAwQFAQKIF}CgMKAwsGAAx4QYmoDAgACBBAIEFEEUwZWCgMCHwpXBAIKfAwNX7Vh9TVAZUH1RQBwNRUwEBAVRRAhAeEGJ7qAwICCgoQCEZAR1dPT28=&appId=PXu6b0qd2S&tag=v7.2.4&uuid=c6a4d810-8e60-11ed-af4f-fb51ca333fc0&ft=245&seq=0&en=NTA&pc=4612439774117787&rsc=1*“
+HTTP/1.1 200 OK%
+DateSat, 07 Jan 2023 07:56:22 GMT/
+Content-Typeapplication/json; charset=utf-8
+Content-Length390(
+ Access-Control-Allow-Credentialstrue>
+Access-Control-Allow-MethodsGET,HEAD,PUT,PATCH,POST,DELETE6
+Access-Control-Allow-Originhttps://www.walmart.com
+Timing-Allow-Origin*
+Via
+1.1 google9
+Alt-Svc.h3=":443"; ma=2592000,h3-29=":443"; ma=2592000†{"do":["sid|c6eceba3-8e60-11ed-b7ec-44564c757a50","pnf|cu","cls|82732887963591419868|24704373900450635252","sts|1673078182400","wcs|cesib9g32pir7gek0udg","drc|2685","cts|c6ecef3e-8e60-11ed-b7ec-44564c757a50|true","cs|bd714527134b2d729dded3a91863b7a8306b9b07d3cec52759d7ab2686d05b4b","vid|c6ece327-8e60-11ed-b7ec-44564c757a50|31536000|true","sff|cc|60|U2FtZVNpdGU9TGF4Ow==","sff|cfp|60|1"]}

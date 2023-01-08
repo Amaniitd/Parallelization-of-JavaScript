@@ -1,0 +1,52 @@
+
+103.48.124.92»"Õ
+POST /v1/p HTTP/1.1
+Hostdncapi.sbicard.org
+
+Connection
+keep-alive
+Content-Length8874
+	sec-ch-ua'"Not?A_Brand";v="8", "Chromium";v="108"
+sec-ch-ua-platform"Linux"
+sec-ch-ua-mobile?0s
+
+User-AgenteMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Content-Type
+text/plain
+Accept*/*!
+Originhttps://www.sbicard.com
+Sec-Fetch-Site
+cross-site
+Sec-Fetch-Modecors
+Sec-Fetch-Destempty#
+Refererhttps://www.sbicard.com/$
+Accept-Encodinggzip, deflate, br-
+Accept-Languageen-GB,en-US;q=0.9,en;q=0.8÷{"timestamp":"2023-01-07T08:07:13.967Z","context":{"page":{"path":"/","referrer":"","search":"","title":"SBI Credit Card Online - SBI Credit Card Services | SBI Card","url":"https://www.sbicard.com/"},"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","locale":"en-GB","library":{"name":"analytics.js","version":"4.0.4"}},"integrations":{},"properties":{"path":"/","referrer":"","search":"","title":"SBI Credit Card Online - SBI Credit Card Services | SBI Card","url":"https://www.sbicard.com/"},"messageId":"ajs-b1fefcdfa22034e6e228c7464aa3b911","anonymousId":"e1f9664b-2d72-4753-8fb3-70568fd6e0a1","type":"page","writeKey":"bhIvpTrevUg01jvB5BCDAAjDREI4vvsL","userId":null,"sentAt":"2023-01-07T08:07:13.969Z","_metadata":{"bundled":["Segment.io","Visual Tagger"],"unbundled":[],"bundledIds":["604465a3af4e5750e1ef4cb5"]}}*Æ	
+HTTP/1.1 200 OK%
+DateSat, 07 Jan 2023 08:07:13 GMT
+ServerApachef
+Vary^Origin,Accept-Encoding,User-Agent,Access-Control-Request-Method,Access-Control-Request-Headers6
+Access-Control-Allow-Originhttps://www.sbicard.com(
+ Access-Control-Allow-Credentialstrue:
+Access-Control-Allow-MethodsPOST, GET, OPTIONS, DELETE
+Access-Control-Max-Age3600S
+Access-Control-Allow-Headers3Content-Type, Accept, X-Requested-With, remember-me!
+X-Content-Type-Optionsnosniff!
+X-XSS-Protection1; mode=block?
+Cache-Control.no-cache, no-store, max-age=0, must-revalidate
+Pragmano-cache
+Expires0.
+Content-Typeapplication/json;charset=UTF-8 
+
+Keep-Alivetimeout=5, max=100
+
+Connection
+Keep-Alive™
+
+Set-CookieŠTS2c38df22029=08a60e6dd7ab28003a6b78f223e30d987988d46d9aec6da7ba6af02909041534343dd277564b7d4196aee72eac5d85b8; Secure; Max-Age=30; Path=/í
+
+Set-CookieÞTSedd6d187027=08a60e6dd7ab2000303ee46fc66e6ec818a0e0170d3134a0d6fe4646628a8d810539d5bff6713915089154afbf113000e52d647badf8967cf3ff3b133d11ba57f5f06a657957dc4e5d4341384fe72668e9f020d80dd107956d03dcc0bb40fb4c; Secure; Path=/
+Transfer-Encodingchunked@35
+{"status":"success","statusCode":null,"message":null}
+0
+

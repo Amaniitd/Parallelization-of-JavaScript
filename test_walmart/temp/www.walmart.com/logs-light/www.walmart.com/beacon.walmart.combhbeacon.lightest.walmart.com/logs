@@ -1,0 +1,145 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"=beacon.walmart.com&bh=beacon.lightest.walmart.com","origPath":"/beacon/beacon.js?bd=beacon.walmart.com&bh=beacon.lightest.walmart.com","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '=beacon.walmart.com&bh=beacon.lightest.walmart.com',
+  origPath: '/beacon/beacon.js?bd=beacon.walmart.com&bh=beacon.lightest.walmart.com',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+var _bcq=_bcq||[];!function(t){"use strict";t.options=t.options||{},t.options.bh=t.options.bh||"beacon.developer.walmart.com",t.options.bh=t.options.bh||"beacon.walmart.com",t.utils=t.utils||{},t.batchUtils=t.batchUtils||{},t.qmUtils=t.qmUtils||{},t.commands=t.commands||{},t.handlers=t.handlers||{},t.mappingsExecuter=t.mappingsExecuter||{},t.store=t.store||{},t.utils.log=function(o){},t.utils.warn=function(o){try{console.warn?console.warn(o):console.log(o)}catch(o){}},t.utils.error=function(o){try{console.error?console.error(o):console.log(o)}catch(o){}},t.utils.urlSerialize=function(o){function n(o){return void 0===o?"":encodeURIComponent(o)}var t,i=[];for(t in o)o.hasOwnProperty(t)&&i.push(n(t)+"="+n(o[t]));return i.join("&")},t.utils.getPageViewId=function(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(o){var n=16*Math.random()|0;return("x"===o?n:3&n|8).toString(16)})},t.utils.loadScript=function(o,n){var t=document.createElement("script");t.type="text/javascript",t.src=o,t.async="async","function"==typeof n&&(t.onload=n),document.head.appendChild(t)},t.utils.merge=function(){var o,n=1;if(!arguments[0])return arguments[0];for(;n<arguments.length;n++)for(o in arguments[n])arguments[n].hasOwnProperty(o)&&(arguments[0][o]=arguments[n][o]);return arguments[0]},function(){var o,n;if(Array.isArray(t.queue))for(o=0;o<t.queue.length;o++)n=t.queue[o],Array.isArray(n)&&n[0]&&"_setOptions"===n[0]&&t.utils.merge(t.options,n[1])}(),t.page_view_id=t.page_view_id||t.utils.getPageViewId();var o,n,i,e="_bcq_override_",s="rum.js";t.domain="https://"+(t.options.bd?t.options.bd:t.options.bh)+"/";try{for(o in n=window&&window.sessionStorage)"string"==typeof o&&0<=o.indexOf(e)&&(t.options[o.replace(e,"")]=sessionStorage[o]);for(o in n=0<="".indexOf(e)?"".split("&"):[])"string"==typeof n[o]&&0<=n[o].indexOf(e)&&(i=n[o].split("="),t.options[i[0].replace(e,"")]=i[1],window.sessionStorage.setItem(i[0],i[1]))}catch(o){}t.options.domain=t.options.domain||t.domain,t.options.nossl&&(t.domain=t.domain.replace("https://","http://")),t.options.apiq&&(t.apiq=[]),"debug"===t.options.mode&&(t.utils.log=function(o){try{console.log(o)}catch(o){}},s="rum.debug.js",t.utils.log("Analytics library running on debug mode.")),s+="?"+t.utils.urlSerialize({bh:t.options.bh}),t.utils.loadScript(t.domain+s)}(_bcq={queue:_bcq,pendingPtnsmappingsQueue:[],isPtnsMappingsLoaded:!1,batchIntervalFuns:{},push:function(){"use strict";var o,n=arguments.length;for(o=0;o<n;o++)this.queue.push(arguments[o])}});
+function source is  function(o){var n=16*Math.random()|0;return("x"===o?n:3&n|8).toString(16)}
+function source is  function(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-876-1-950",false);
+var n=16*Math.random()|0;return("x"===o?n:3&n|8).toString(16)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-876-1-950",true);
+ }})}
+function source is  function(t){"use strict";t.options=t.options||{},t.options.bh=t.options.bh||"beacon.developer.walmart.com",t.options.bh=t.options.bh||"beacon.walmart.com",t.utils=t.utils||{},t.batchUtils=t.batchUtils||{},t.qmUtils=t.qmUtils||{},t.commands=t.commands||{},t.handlers=t.handlers||{},t.mappingsExecuter=t.mappingsExecuter||{},t.store=t.store||{},t.utils.log=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-410-1-423",false);
+
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-410-1-423",true);
+ }},t.utils.warn=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-437-1-508",false);
+try{console.warn?console.warn(o):console.log(o)}catch(o){}
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-437-1-508",true);
+ }},t.utils.error=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-523-1-596",false);
+try{console.error?console.error(o):console.log(o)}catch(o){}
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-523-1-596",true);
+ }},t.utils.urlSerialize=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-618-1-781",false);
+function n(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-630-1-694",false);
+return void 0===o?"":window.encodeURIComponent(o)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-630-1-694",true);
+ }}var t,i=[];for(t in o)o.hasOwnProperty(t)&&i.push(n(t)+"="+n(o[t]));return i.join("&")
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-618-1-781",true);
+ }},t.utils.getPageViewId=function(){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-804-1-952",false);
+return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-876-1-950",false);
+var n=16*Math.random()|0;return("x"===o?n:3&n|8).toString(16)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-876-1-950",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-804-1-952",true);
+ }},t.utils.loadScript=function(o,n){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-972-1-1152",false);
+var t=window.document.createElement("script");t.type="text/javascript",t.src=o,t.async="async","function"==typeof n&&(t.onload=n),window.document.head.appendChild(t)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-972-1-1152",true);
+ }},t.utils.merge=function(){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1167-1-1361",false);
+var o,n=1;if(!arguments[0])return arguments[0];for(;n<arguments.length;n++)for(o in arguments[n])arguments[n].hasOwnProperty(o)&&(arguments[0][o]=arguments[n][o]);return arguments[0]
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1167-1-1361",true);
+ }},function(){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1362-1-1525",false);
+var o,n;if(Array.isArray(t.queue))for(o=0;o<t.queue.length;o++)n=t.queue[o],Array.isArray(n)&&n[0]&&"_setOptions"===n[0]&&t.utils.merge(t.options,n[1])
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1362-1-1525",true);
+ }}(),t.page_view_id=t.page_view_id||t.utils.getPageViewId();var o,n,i,e="_bcq_override_",s="rum.js";t.domain="https://"+(t.options.bd?t.options.bd:t.options.bh)+"/";try{for(o in n=window&&window.sessionStorage)"string"==typeof o&&0<=o.indexOf(e)&&(t.options[o.replace(e,"")]=window.sessionStorage[o]);for(o in n=0<="".indexOf(e)?"".split("&"):[])"string"==typeof n[o]&&0<=n[o].indexOf(e)&&(i=n[o].split("="),t.options[i[0].replace(e,"")]=i[1],window.sessionStorage.setItem(i[0],i[1]))}catch(o){}t.options.domain=t.options.domain||t.domain,t.options.nossl&&(t.domain=t.domain.replace("https://","http://")),t.options.apiq&&(t.apiq=[]),"debug"===t.options.mode&&(t.utils.log=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-2196-1-2238",false);
+try{console.log(o)}catch(o){}
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-2196-1-2238",true);
+ }},s="rum.debug.js",t.utils.log("Analytics library running on debug mode.")),s+="?"+t.utils.urlSerialize({bh:t.options.bh}),t.utils.loadScript(t.domain+s)}
+function source is  function __HORCRUX__(){ window._bcq=window._bcq||[];!function(t){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-55-1-2391",false);
+"use strict";t.options=t.options||{},t.options.bh=t.options.bh||"beacon.developer.walmart.com",t.options.bh=t.options.bh||"beacon.walmart.com",t.utils=t.utils||{},t.batchUtils=t.batchUtils||{},t.qmUtils=t.qmUtils||{},t.commands=t.commands||{},t.handlers=t.handlers||{},t.mappingsExecuter=t.mappingsExecuter||{},t.store=t.store||{},t.utils.log=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-410-1-423",false);
+
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-410-1-423",true);
+ }},t.utils.warn=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-437-1-508",false);
+try{console.warn?console.warn(o):console.log(o)}catch(o){}
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-437-1-508",true);
+ }},t.utils.error=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-523-1-596",false);
+try{console.error?console.error(o):console.log(o)}catch(o){}
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-523-1-596",true);
+ }},t.utils.urlSerialize=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-618-1-781",false);
+function n(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-630-1-694",false);
+return void 0===o?"":window.encodeURIComponent(o)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-630-1-694",true);
+ }}var t,i=[];for(t in o)o.hasOwnProperty(t)&&i.push(n(t)+"="+n(o[t]));return i.join("&")
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-618-1-781",true);
+ }},t.utils.getPageViewId=function(){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-804-1-952",false);
+return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-876-1-950",false);
+var n=16*Math.random()|0;return("x"===o?n:3&n|8).toString(16)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-876-1-950",true);
+ }})
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-804-1-952",true);
+ }},t.utils.loadScript=function(o,n){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-972-1-1152",false);
+var t=window.document.createElement("script");t.type="text/javascript",t.src=o,t.async="async","function"==typeof n&&(t.onload=n),window.document.head.appendChild(t)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-972-1-1152",true);
+ }},t.utils.merge=function(){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1167-1-1361",false);
+var o,n=1;if(!arguments[0])return arguments[0];for(;n<arguments.length;n++)for(o in arguments[n])arguments[n].hasOwnProperty(o)&&(arguments[0][o]=arguments[n][o]);return arguments[0]
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1167-1-1361",true);
+ }},function(){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1362-1-1525",false);
+var o,n;if(Array.isArray(t.queue))for(o=0;o<t.queue.length;o++)n=t.queue[o],Array.isArray(n)&&n[0]&&"_setOptions"===n[0]&&t.utils.merge(t.options,n[1])
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-1362-1-1525",true);
+ }}(),t.page_view_id=t.page_view_id||t.utils.getPageViewId();var o,n,i,e="_bcq_override_",s="rum.js";t.domain="https://"+(t.options.bd?t.options.bd:t.options.bh)+"/";try{for(o in n=window&&window.sessionStorage)"string"==typeof o&&0<=o.indexOf(e)&&(t.options[o.replace(e,"")]=window.sessionStorage[o]);for(o in n=0<="".indexOf(e)?"".split("&"):[])"string"==typeof n[o]&&0<=n[o].indexOf(e)&&(i=n[o].split("="),t.options[i[0].replace(e,"")]=i[1],window.sessionStorage.setItem(i[0],i[1]))}catch(o){}t.options.domain=t.options.domain||t.domain,t.options.nossl&&(t.domain=t.domain.replace("https://","http://")),t.options.apiq&&(t.apiq=[]),"debug"===t.options.mode&&(t.utils.log=function(o){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-2196-1-2238",false);
+try{console.log(o)}catch(o){}
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-2196-1-2238",true);
+ }},s="rum.debug.js",t.utils.log("Analytics library running on debug mode.")),s+="?"+t.utils.urlSerialize({bh:t.options.bh}),t.utils.loadScript(t.domain+s)
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-55-1-2391",true);
+ }}(window._bcq={queue:window._bcq,pendingPtnsmappingsQueue:[],isPtnsMappingsLoaded:!1,batchIntervalFuns:{},push:function(){ 
+ try {__tracer.cacheInit("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-2501-1-2596",false);
+"use strict";var o,n=arguments.length;for(o=0;o<n;o++)this.queue.push(arguments[o])
+ 
+ } finally {__tracer.exitFunction("=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-2501-1-2596",true);
+ }}}); }
+[rtiDebugInfo]0 14

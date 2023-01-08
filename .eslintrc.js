@@ -8,7 +8,7 @@ module.exports = {
     'google',
   ],
   'parserOptions': {
-    'ecmaVersion': 12,
+    'ecmaVersion': 2020,
   },
   'rules': {
     'indent': ['error', 4],

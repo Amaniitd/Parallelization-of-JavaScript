@@ -1,0 +1,43 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/edgedl/chrome/dict/en-gb-10-1.bdic","origPath":"/edgedl/chrome/dict/en-gb-10-1.bdic","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/edgedl/chrome/dict/en-gb-10-1.bdic',
+  origPath: '/edgedl/chrome/dict/en-gb-10-1.bdic',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: [
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1701961-2-1702108',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1694047-2-1694180',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1751470-2-1751502',
+    '/scripttemplates/202211.2.0/otBannerSdk.js-function-7-1-7-394733',
+    '/scripttemplates/202211.2.0/otBannerSdk.js-function-7-508-7-554',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1289266-2-1289294',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1082387-2-1082493',
+    '/scripttemplates/otSDKStub.js-function-1-2-1-21911',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1828164-2-1828543',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824483-2-1824524',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1688355-2-1688562',
+    '/in/-script-0-function-1-963-1-1525',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1753977-2-1754077',
+    '/scripttemplates/otSDKStub.js-function-1-8928-1-9067',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824932-2-1824962',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1828639-2-1828680',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-466698-2-466855',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1-2-1859709',
+    'mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-252991-2-253253',
+    '/scripttemplates/otSDKStub.js-function-1-13667-1-13739',
+    '/scripttemplates/otSDKStub.js-function-1-9078-1-9093',
+    '/in/-script-16-function-5-52-11-5'
+  ]
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+[rtiDebugInfo]0 0

@@ -1,0 +1,17 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"7.js?_sw-precache=86bf263f7d6e17f041b3a4ef58670082","origPath":"/vi-assets/static-assets/headerfullbleedhorizontal-6b86b55e3145591b7df7.js?_sw-precache=86bf263f7d6e17f041b3a4ef58670082","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '7.js?_sw-precache=86bf263f7d6e17f041b3a4ef58670082',
+  origPath: '/vi-assets/static-assets/headerfullbleedhorizontal-6b86b55e3145591b7df7.js?_sw-precache=86bf263f7d6e17f041b3a4ef58670082',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+(window.webpackJsonp=window.webpackJsonp||[]).push([[67],{"l+kF":function(n,p,w){"use strict";w.r(p);var a=w("pGlb"),o=w.n(a);p.default=o.a}}]);
+//# sourceMappingURL=headerfullbleedhorizontal-6b86b55e3145591b7df7.js.map
+[rtiDebugInfo]0 2

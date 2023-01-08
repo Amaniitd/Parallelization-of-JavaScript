@@ -1,0 +1,76 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/sw-register.js","origPath":"/sw-register.js","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/sw-register.js',
+  origPath: '/sw-register.js',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: [
+    'US/_next/static/chunks/webpack-4d33f682e4bee2c8.js-function-1-1-1-72748',
+    '/chunks/ads_ui_btf_ads-btf-cmp.2160c073080b3946.js-function-1-1-1-47909',
+    'lib_utils_listenForPostMessage.26819f6fde1c8129.js-function-1-1-1-32818',
+    'ks/ads_core_hooks_use-load-ivt-8777800673e02d96.js-function-1-1-1-18993',
+    'ore_components_feature-wrapper-fc02aab9149a9f60.js-function-1-1-1-21499',
+    'uction_20221221T182841134Z-en-US/_buildManifest.js-function-1-1-1-28166',
+    '/_next/static/chunks/framework-a29671b22cd7f2e1.js-function-1-1-1-143926',
+    'nks/ads_provider_utils_ad-util-42ce30f24acc6b2f.js-function-1-1-1-24046',
+    '/akam/13/2ca6b89e-function-2-7949-2-7999',
+    '/px/PXu6b0qd2S/init.js-function-2-9269-2-9296',
+    'obal-nav_footer_cookie-checker.65075abf78263646.js-function-1-1-1-1160',
+    'www.walmart.com/-script-38-function-1-118965-1-120085',
+    'www.walmart.com/-script-0-function-1-2148-1-2597',
+    '/akam/13/2ca6b89e-function-2-1069-2-1180',
+    'tic/chunks/ads_core_fire-pixel.ea8353e924c1991d.js-function-1-1-1-1756',
+    '/px/PXu6b0qd2S/init.js-function-2-28803-2-28960',
+    '/ui_hero-pov_components_mobile.da9296253cdf83ca.js-function-1-1-1-8183',
+    '_hooks_use-is-tracking-enabled-ce90d61f45ce12ec.js-function-1-1-1-10025',
+    '/px/PXu6b0qd2S/init.js-function-2-29251-2-29276',
+    '/sw-register.js-function-1-4002-1-7330',
+    's/ads_ui_btf_brand-box-wrapper-bed633793cb36fb9.js-function-1-1-1-18117',
+    '/akam/13/2ca6b89e-function-1-1-2-12431',
+    'www.walmart.com/-script-38-function-1-120096-1-120540',
+    'd-components_CardV2_CardItemV2-65914919627f78d0.js-function-1-1-1-12455',
+    '/a14/capabilities.min.js-function-1-3348-1-3372',
+    'tatic/chunks/ui_calloutWrapper.b8230e018592ed29.js-function-1-1-1-306',
+    '_next/static/chunks/ads_ui_btf.bcb1b5b0ba50a251.js-function-1-1-1-11984',
+    'www.walmart.com/-script-0-function-1-1612-1-3258',
+    '/sw-register.js-function-1-1-1-7496',
+    '_next/static/chunks/pages/_app-2e66789b1f4731dd.js-function-1-1-1-588775',
+    '.2_node_modules_debounce_index-2405d2e97fffdb3f.js-function-1-1-1-8308',
+    'next/static/chunks/pages/index-a9f433b0d1cd67f7.js-function-1-1-1-69826',
+    '/akam/13/2ca6b89e-function-2-8070-2-8103',
+    '/a14/capabilities.min.js-function-1-3840-1-3863',
+    '/akam/13/2ca6b89e-function-2-7820-2-7940',
+    'oduction_20221221T182841134Z-en-US/_ssgManifest.js-function-1-1-1-132',
+    '/px/PXu6b0qd2S/init.js-function-2-1-8-15589',
+    'ds_core_components_lazy-render.bcc6f21aca8e3799.js-function-1-1-1-10609',
+    '/a14/capabilities.min.js-function-1-3101-1-3136',
+    'ntity-stepper_quantity-stepper-b714a82a52f5b22a.js-function-1-1-1-7805',
+    '/a14/capabilities.min.js-function-1-1-1-4862',
+    '/px/PXu6b0qd2S/init.js-function-8-14206-8-14678',
+    'www.walmart.com/-script-0-function-1-2597-1-3025',
+    'ads_core_hooks_get-ads-context-8737b2adfa67fccf.js-function-1-1-1-39747',
+    '=beacon.walmart.com&bh=beacon.lightest.walmart.com-function-1-2-1-2601',
+    'l-scroller_horizontal-scroller-43bc1937d6d7c3f7.js-function-1-1-1-18043',
+    '/akam/13/2ca6b89e-function-2-1297-2-1371',
+    '_provider_ads-context-provider-7159c3f8f216a02e.js-function-1-1-1-8243',
+    '/px/PXu6b0qd2S/init.js-function-4-4876-4-4922',
+    '/px/PXu6b0qd2S/init.js-function-4-4932-4-5123',
+    '/sw-register.js-function-1-6564-1-6669',
+    's/cart_add-to-cart_add-to-cart-8ca166d479a04434.js-function-1-1-1-14564',
+    'almart_use-safeframe_lib_index-73db399cc238d48a.js-function-1-1-1-12901'
+  ]
+}
+!function(n){var t={};function e(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return n[r].call(o.exports,o,o.exports,e),o.l=!0,o.exports}e.m=n,e.c=t,e.d=function(n,t,r){e.o(n,t)||Object.defineProperty(n,t,{enumerable:!0,get:r})},e.r=function(n){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(n,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(n,"__esModule",{value:!0})},e.t=function(n,t){if(1&t&&(n=e(n)),8&t)return n;if(4&t&&"object"==typeof n&&n&&n.__esModule)return n;var r=Object.create(null);if(e.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:n}),2&t&&"string"!=typeof n)for(var o in n)e.d(r,o,function(t){return n[t]}.bind(null,o));return r},e.n=function(n){var t=n&&n.__esModule?function(){return n.default}:function(){return n};return e.d(t,"a",t),t},e.o=function(n,t){return Object.prototype.hasOwnProperty.call(n,t)},e.p="",e(e.s=0)}([function(n,t,e){"use strict";function r(n,t){return function(n){if(Array.isArray(n))return n}(n)||function(n,t){if("undefined"==typeof Symbol||!(Symbol.iterator in Object(n)))return;var e=[],r=!0,o=!1,i=void 0;try{for(var a,u=n[Symbol.iterator]();!(r=(a=u.next()).done)&&(e.push(a.value),!t||e.length!==t);r=!0);}catch(n){o=!0,i=n}finally{try{r||null==u.return||u.return()}finally{if(o)throw i}}return e}(n,t)||function(n,t){if(!n)return;if("string"==typeof n)return o(n,t);var e=Object.prototype.toString.call(n).slice(8,-1);"Object"===e&&n.constructor&&(e=n.constructor.name);if("Map"===e||"Set"===e)return Array.from(n);if("Arguments"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e))return o(n,t)}(n,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function o(n,t){(null==t||t>n.length)&&(t=n.length);for(var e=0,r=new Array(t);e<t;e++)r[e]=n[e];return r}e.r(t);function i(n,t){var e;if("undefined"==typeof Symbol||null==n[Symbol.iterator]){if(Array.isArray(n)||(e=function(n,t){if(!n)return;if("string"==typeof n)return a(n,t);var e=Object.prototype.toString.call(n).slice(8,-1);"Object"===e&&n.constructor&&(e=n.constructor.name);if("Map"===e||"Set"===e)return Array.from(n);if("Arguments"===e||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(e))return a(n,t)}(n))||t&&n&&"number"==typeof n.length){e&&(n=e);var r=0,o=function(){};return{s:o,n:function(){return r>=n.length?{done:!0}:{done:!1,value:n[r++]}},e:function(n){throw n},f:o}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,u=!0,c=!1;return{s:function(){e=n[Symbol.iterator]()},n:function(){var n=e.next();return u=n.done,n},e:function(n){c=!0,i=n},f:function(){try{u||null==e.return||e.return()}finally{if(c)throw i}}}}function a(n,t){(null==t||t>n.length)&&(t=n.length);for(var e=0,r=new Array(t);e<t;e++)r[e]=n[e];return r}!function(){if(navigator.serviceWorker){window.globalPluginDefinitions=window.globalPluginDefinitions||[],window.globalWorkerMessages=window.globalWorkerMessages||[];var n=new URL(window.location.href);n.pathname="/sw.js";var t,e=i(n.searchParams.keys());try{for(e.s();!(t=e.n()).done;){var o=t.value;n.searchParams.delete(o)}}catch(n){e.e(n)}finally{e.f()}window.globalPluginDefinitions.length&&n.searchParams.set("plugin_paths",btoa(window.globalPluginDefinitions.join(","))),["environment","publish_sampling_rate","publish_url","install_min_duration_ms","navigation_preload","status_check_url","status_check_interval_ms"].forEach((function(t){return!(!window.SERVICE_WORKER_CONFIGURATION||!window.SERVICE_WORKER_CONFIGURATION[t])&&n.searchParams.set(t,window.SERVICE_WORKER_CONFIGURATION[t])}));var a,u=n.toString(),c=function(n,t){var e=new Date;e.setDate(e.getDate()+14),document.cookie="".concat(n,"=").concat(t,"; expires=").concat(e,"; domain=").concat(window.SW_DOMAIN,"; path=/")};a=function(){var n,t,e,o,i,a,s,f=(t=[(a="service_worker_",function(n){return function(t,e){return n(a+t,e)}}),(i={version:"c3aadde",environment:window.SERVICE_WORKER_CONFIGURATION&&window.SERVICE_WORKER_CONFIGURATION.environment||"not_available"},function(n){return function(t,e){return n(t,Object.assign({},i,e))}}),(o=function(n){},function(n){return function(t,e){return n(t,e).catch(o)}}),(e=Number.parseFloat(window.SERVICE_WORKER_CONFIGURATION&&window.SERVICE_WORKER_CONFIGURATION.publish_sampling_rate)||0,function(n){return function(t,r){return Math.random()>e?Promise.resolve():n(t,r)}})],function(n){return t.reduce((function(n,t){return t(n)}),n)});try{n=f(n=function(n,t){return function(e,o){var i=new URL(t);i.searchParams.set("event_type",e);for(var a=0,u=Object.entries(o);a<u.length;a++){var c=r(u[a],2),s=c[0],f=c[1];i.searchParams.set(s,f)}return n(new Request(i))}}((s=window.fetch?window.fetch:function(n){var t=new XMLHttpRequest;return t.open(n.method,n.url),"include"===n.credentials&&(t.withCredentials=!0),t.send(),Promise.resolve()},function(n){var t=new Request(n,{mode:"cors",credentials:"include"});return s(t)}),window.SERVICE_WORKER_CONFIGURATION&&window.SERVICE_WORKER_CONFIGURATION.publish_url||"https://beacon.walmart.com/ll.gif"))}catch(t){n=function(){}}var l,d,w,v=function(n){return function(t){return function(e){for(var r=0;r<t.length;r++){var o=t[r];n(e,o)}}}}(function(n){return function(t,e){"SET_PLUGIN_STATE"==e.command&&e.data&&e.data.filter&&(e.data.filterContext={location:window.location.href}),n(t,e)}}((function(n,t){n.postMessage(t)})))(window.globalWorkerMessages);l=function(n,t){return function(e){if(e.active){var r=e.active;"activated"!=r.state||t(r)}else e.addEventListener("updatefound",n)}}(function(n){return function(t){t.target.installing.addEventListener("statechange",n)}}(function(n){return function(t){var e=t.target;"activated"==e.state&&n(e)}}(v)),v),l=function(n){return function(t){return function(e){return n("register",{status:"OK"}),t(e)}}}(n)(l),d=function(n){return function(){n("tb_sw_registered","false")}}(c),d=function(n){return function(t){return function(e){return n("register",{status:"FAIL",error:e}),t(e)}}}(n)(d),w=function(){},w=function(n){return function(t){return function(e){return n("unregister",{status:"OK",found:e}),t(e)}}}(n)(w);var g=function(n,t){return function(){navigator.serviceWorker.register(u,{updateViaCache:"none"}).then(n).catch(t)}}(l,d),m=function(n){return function(){navigator.serviceWorker.getRegistration(u).then((function(t){t&&t.active&&t.active.postMessage({command:"DISABLE_ALL_PLUGINS"}),t&&t.unregister().then(n)}))}}(w),R=!!navigator.serviceWorker,E=!!window.NavigationPreloadManager,_=!1;if(navigator.deviceMemory){var b=window.SERVICE_WORKER_CONFIGURATION&&Number.parseInt(window.SERVICE_WORKER_CONFIGURATION.min_required_memory_gb)||2;_=navigator.deviceMemory>=b}R&&E&&_||(c("tb_sw_supported","false"),window.globalWorkerMessages.push({command:"UNREGISTER_SERVICE_WORKER"}));for(var h="",p=0;p<window.globalWorkerMessages.length;p++){var y=window.globalWorkerMessages[p];if(y.command)switch(y.command){case"REGISTER_SERVICE_WORKER":h="REGISTER";break;case"UNREGISTER_SERVICE_WORKER":h="UNREGISTER"}}switch(h){case"UNREGISTER":m();break;default:g()}},"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",a,!1):window.attachEvent&&window.attachEvent("onload",a):a()}}()}]);
+List of functions to be instrumented: 53
+Only instrumenting the following functions from the current script /sw-register.js-function-1-4002-1-7330,/sw-register.js-function-1-1-1-7496,/sw-register.js-function-1-6564-1-6669
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[rtiDebugInfo]3 3

@@ -48,16 +48,16 @@ async function navigate(chrome) {
         //     }
         // });
 
-        await Network.setUserAgentOverride({
-            userAgent: 'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2)' +
-            ' AppleWebKit/537.36 (KHTML, like Gecko)' +
-            ' Chrome/73.0.3683.90 Mobile Safari/537.36'});
-        await Emulation.setDeviceMetricsOverride({
-            width: 411,
-            height: 731,
-            mobile: true,
-            deviceScaleFactor: 0,
-        });
+        // await Network.setUserAgentOverride({
+        //     userAgent: 'Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2)' +
+        //     ' AppleWebKit/537.36 (KHTML, like Gecko)' +
+        //     ' Chrome/73.0.3683.90 Mobile Safari/537.36'});
+        // await Emulation.setDeviceMetricsOverride({
+        //     width: 411,
+        //     height: 731,
+        //     mobile: true,
+        //     deviceScaleFactor: 0,
+        // });
         if (program.throttle) {
             await Emulation.setCPUThrottlingRate({rate: 2.75});
         }
@@ -102,7 +102,6 @@ async function navigate(chrome) {
             }
             throw new Error('Writing to files timed out!');
         }, 180000);
-
         if (program.mode == 'light') {
             const rootInvocsProcess = await Runtime.evaluate({
                 expression: '__tracer.getRootInvocs()',
@@ -188,7 +187,7 @@ chromeFlags = [
     '--user-data-dir=' + chromeDataDir,
 ]
 if (!program.keepAlive) {
-    chromeFlags.push('--headless')
+    // chromeFlags.push('--headless')
 }
 
 chromeLauncher.launch({

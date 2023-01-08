@@ -10,7 +10,7 @@ _CHROME_JS: str = os.path.abspath('chrome.js')
 ITERATION_MAX: int = 1
 
 def run_command(command: str) -> str:
-    # print(f"Running command: {command}")
+    print(f"Running command: {command}")
     completed = subprocess.run(command, shell=True, capture_output=True)
     print(completed.stdout.decode('utf-8'))
     if completed.returncode != 0:

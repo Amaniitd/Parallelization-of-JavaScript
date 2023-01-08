@@ -1,1 +1,0 @@
-(function __HORCRUX__(){ window.jsonFeed({"country":"US","state":"MI","stateName":"Michigan","zipcode":"48105","timezone":"America/Detroit","latitude":"42.30680","longitude":"-83.70590","city":"Ann Arbor","continent":"NA"}); })();

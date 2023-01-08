@@ -1,0 +1,7 @@
+{
+  "type": "object",
+  "subtype": "error",
+  "className": "ReferenceError",
+  "description": "ReferenceError: __tracer is not defined\n    at <anonymous>:1:1",
+  "objectId": "8161208198722546128.1.3"
+}

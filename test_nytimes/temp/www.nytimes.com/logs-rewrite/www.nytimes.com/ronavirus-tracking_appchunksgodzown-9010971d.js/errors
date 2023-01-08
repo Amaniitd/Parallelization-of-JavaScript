@@ -1,0 +1,76 @@
+a
+b
+e
+f
+g
+h
+i
+j
+a
+x
+Error: evalmachine.<anonymous>:1
+潣獮⁴㵳栢瑴獰⼺眯睷渮瑹浩獥挮浯Ⱒ㵲栢瑴獰⼺眯睷献杴渮瑹浩獥挮浯㬢敬⁴㵮㭳畦据楴湯挠攨笩敲畴湲朢摯潺湷∺攫晽湵瑣潩⁮⡬笩祴数景氠捯瑡潩Ⅾ∽湵敤楦敮≤☦⼨潬慣桬獯⽴琮獥⡴潬慣楴湯栮獯湴浡⥥籼瀯敲楶睥ⸯ整瑳氨捯瑡潩⹮潨瑳慮敭⤩☦渨爽紩獡湹⁣畦据楴湯搠攨笩牴筹潣獮⁴㵯睡楡⁴敦捴⡨①湻⽽癳⽣湩⽴潧穤睯⽮⽵笤絥Ⱡ桻慥敤獲笺捁散瑰∺灡汰捩瑡潩⽮獪湯索挬敲敤瑮慩獬∺湩汣摵≥⥽第潣瑮湥獴琺㵽睡楡⁴⹯獪湯⤨爻瑥牵⁮絴慣捴筨牴筹敬⁴㵴半乏瀮牡敳氨捯污瑓牯条孥⡣⥥⥝爻瑥牵⁮⡩ⱥ⥴琬捽瑡档琨笩敲畴湲挠湯潳敬攮牲牯∨潬慣卬潴慲敧爠慥⁤慦汩摥Ⱒ⥴測汵絬絽獡湹⁣畦据楴湯椠攨漬笽⥽捻湯瑳琠䨽体⹎瑳楲杮晩⡹⥯琻祲汻捯污瑓牯条孥⡣⥥㵝絴慣捴⡨⥡捻湯潳敬攮牲牯∨潬慣卬潴慲敧猠瑥映楡敬≤愬紩睡楡⁴敦捴⡨⭮⼢癳⽣湩⽴潧穤睯⽮⽵⬢ⱥ浻瑥潨㩤倢协≔栬慥敤獲笺捁散瑰∺灡汰捩瑡潩⽮獪湯Ⱒ䌢湯整瑮吭灹≥∺灡汰捩瑡潩⽮獪湯索挬敲敤瑮慩獬∺湩汣摵≥戬摯㩹絴紩硥潰瑲汻愠⁳ⱡ⁤獡朠椬愠⁳絳਻
+  
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:88:7)
+    at main (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:553:17)
+    at Object.<anonymous> (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:575:20)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+yy
+x
+xx
+error while parsing SyntaxError: 'import' and 'export' may appear only with 'sourceType: module' (1:814)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:799:16)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37)
+    at module.exports (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js:22:15)
+    at fala (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:69:21)
+    at Object.wrap (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/global-code-wrapper.js:97:19)
+    at instrumentJavaScript (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:419:40)
+    at main (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:561:15) {
+  pos: 814,
+  loc: Position { line: 1, column: 814 },
+  raisedAt: 820
+}
+x1
+[PARSING EXCEPTION]ronavirus-tracking/_app/chunks/godzown-9010971d.js: SyntaxError: 'import' and 'export' may appear only with 'sourceType: module' (1:814)SyntaxError: 'import' and 'export' may appear only with 'sourceType: module' (1:814)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:799:16)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37)
+    at module.exports (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js:22:15)
+    at fala (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_window.js:281:20)
+    at traceFilter (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_window.js:840:7)
+    at Object.instrument (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_window.js:186:11)
+    at instrumentJavaScript (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:422:37)
+x2
+xxx
+[PARSING EXCEPTION] SyntaxError: 'import' and 'export' may appear only with 'sourceType: module' (1:814)
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_rewriter.js:349
+        throw e;
+        ^
+
+SyntaxError: 'import' and 'export' may appear only with 'sourceType: module' (1:814)
+    at Parser.pp$4.raise (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:2757:13)
+    at Parser.pp$1.parseStatement (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:799:16)
+    at Parser.pp$1.parseTopLevel (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:706:23)
+    at Parser.parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:551:15)
+    at parse (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/node_modules/acorn/dist/acorn.js:5290:37)
+    at module.exports (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js:22:15)
+    at fala (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_rewriter.js:207:29)
+    at traceFilter (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_rewriter.js:218:29)
+    at Object.instrument (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/JSAnalyzer/index_rewriter.js:169:26)
+    at instrumentJavaScript (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:435:24) {
+  pos: 814,
+  loc: Position { line: 1, column: 814 },
+  raisedAt: 820
+}

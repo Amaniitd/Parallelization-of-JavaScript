@@ -1,0 +1,265 @@
+{
+  "type": "object",
+  "value": {
+    "/in/-script-0-function-1-963-1-1525_count0": [
+      835.9000000059605,
+      837.5
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-2-1-21911_count0": [
+      838.4000000059605,
+      855.4000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1-2-1859709_count0": [
+      1073.1000000014901,
+      1716.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-466698-2-466855_count0": [
+      1628.3000000044703,
+      1645.1000000014901
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-466698-2-466855_count1": [
+      1652.2000000029802,
+      1701.6000000014901
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count0": [
+      1718.2000000029802,
+      1718.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count1": [
+      1718.8000000044703,
+      1718.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count2": [
+      1718.8000000044703,
+      1718.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count3": [
+      1718.8000000044703,
+      1718.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count4": [
+      1718.9000000059605,
+      1718.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count5": [
+      1718.9000000059605,
+      1718.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count6": [
+      1718.9000000059605,
+      1718.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count7": [
+      1718.9000000059605,
+      1719
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count8": [
+      1719,
+      1719
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count9": [
+      1719.5,
+      1719.5
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count10": [
+      1719.5,
+      1719.5
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-470607-2-470632_count11": [
+      1719.5,
+      1719.5
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-8928-1-9067_count0": [
+      1742.2000000029802,
+      1745.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1694047-2-1694180_count0": [
+      1750.5,
+      1750.5
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824483-2-1824524_count0": [
+      1751.1000000014901,
+      1751.1000000014901
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1701961-2-1702108_count0": [
+      1751.3000000044703,
+      1751.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1082387-2-1082493_count0": [
+      1752.8000000044703,
+      1770.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1688355-2-1688562_count0": [
+      1772,
+      1777
+    ],
+    "/in/-script-16-function-5-52-11-5_count0": [
+      1777.6000000014901,
+      1777.6000000014901
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-252991-2-253253_count0": [
+      1777.6000000014901,
+      1777.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-466698-2-466855_count2": [
+      1777.8000000044703,
+      1777.8000000044703
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-9078-1-9093_count0": [
+      1785.5,
+      1788
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count0": [
+      1791.5,
+      1793.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count1": [
+      1794.1000000014901,
+      1794.2000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count2": [
+      1794.2000000029802,
+      1794.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count3": [
+      1794.8000000044703,
+      1794.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count4": [
+      1794.8000000044703,
+      1795.2000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count5": [
+      1795.2000000029802,
+      1795.2000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-466698-2-466855_count3": [
+      1795.2000000029802,
+      1795.5
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824483-2-1824524_count1": [
+      1801.1000000014901,
+      1801.6000000014901
+    ],
+    "/scripttemplates/otSDKStub.js-function-1-13667-1-13739_count0": [
+      1801.9000000059605,
+      1801.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count6": [
+      1802.4000000059605,
+      1802.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count7": [
+      1803,
+      1803.5
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count8": [
+      1805.3000000044703,
+      1805.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count9": [
+      1805.7000000029802,
+      1805.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1289266-2-1289294_count0": [
+      1814.5,
+      1815
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count10": [
+      1820.2000000029802,
+      1820.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count11": [
+      1820.7000000029802,
+      1820.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count12": [
+      1821.2000000029802,
+      1821.2000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count13": [
+      1821.6000000014901,
+      1821.6000000014901
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count14": [
+      1821.6000000014901,
+      1821.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count15": [
+      1821.7000000029802,
+      1821.7000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count16": [
+      1821.7000000029802,
+      1821.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count17": [
+      1821.8000000044703,
+      1821.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count18": [
+      1821.8000000044703,
+      1821.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1454249-2-1454857_count19": [
+      1822.3000000044703,
+      1822.3000000044703
+    ],
+    "/scripttemplates/202211.2.0/otBannerSdk.js-function-7-1-7-394733_count0": [
+      1832.3000000044703,
+      1888.8000000044703
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-466698-2-466855_count4": [
+      1889.4000000059605,
+      1889.6000000014901
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1828639-2-1828680_count0": [
+      1891.2000000029802,
+      1891.2000000029802
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1753977-2-1754077_count0": [
+      1891.2000000029802,
+      1891.9000000059605
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1751470-2-1751502_count0": [
+      1892,
+      1892
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824932-2-1824962_count0": [
+      1892,
+      1892
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824932-2-1824962_count1": [
+      1892,
+      1892
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824932-2-1824962_count2": [
+      1892,
+      1892
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824932-2-1824962_count3": [
+      1892,
+      1892
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824932-2-1824962_count4": [
+      1892,
+      1892
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1824932-2-1824962_count5": [
+      1892,
+      1892
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-466698-2-466855_count5": [
+      1894,
+      1894
+    ],
+    "mhp/nmhpFrameworkClient.js.e46ebcc0820d08889fc9.js-function-2-1828164-2-1828543_count0": [
+      1894.5,
+      1895.1000000014901
+    ],
+    "/scripttemplates/202211.2.0/otBannerSdk.js-function-7-508-7-554_count0": [
+      1896.4000000059605,
+      1896.8000000044703
+    ]
+  }
+}

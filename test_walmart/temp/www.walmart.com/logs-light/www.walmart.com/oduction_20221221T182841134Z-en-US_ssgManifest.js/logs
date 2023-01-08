@@ -1,0 +1,16 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"oduction_20221221T182841134Z-en-US/_ssgManifest.js","origPath":"/dfw/63fd9f59-d6bf/49c2ec22-3192-4487-b5a6-ea6a3f7eb24b/v2/en-US/_next/static/production_20221221T182841134Z-en-US/_ssgManifest.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'oduction_20221221T182841134Z-en-US/_ssgManifest.js',
+  origPath: '/dfw/63fd9f59-d6bf/49c2ec22-3192-4487-b5a6-ea6a3f7eb24b/v2/en-US/_next/static/production_20221221T182841134Z-en-US/_ssgManifest.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+self.__SSG_MANIFEST=new Set,self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB();
+[rtiDebugInfo]0 1

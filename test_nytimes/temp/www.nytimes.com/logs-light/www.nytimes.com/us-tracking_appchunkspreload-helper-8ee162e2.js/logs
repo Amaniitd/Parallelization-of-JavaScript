@@ -1,0 +1,31 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"us-tracking/_app/chunks/preload-helper-8ee162e2.js","origPath":"/newsgraphics/2021/coronavirus-tracking/_app/chunks/preload-helper-8ee162e2.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'us-tracking/_app/chunks/preload-helper-8ee162e2.js',
+  origPath: '/newsgraphics/2021/coronavirus-tracking/_app/chunks/preload-helper-8ee162e2.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+error evalmachine.<anonymous>:1
+const a="modulepreload",o={},u="https://static01.nyt.com/newsgraphics/2021/coronavirus-tracking/_app/",f=function(s,n){return!n||n.length===0?s():Promise.all(n.map(e=>{if(e=`${u}${e}`,e in o)return;o[e]=!0;const t=e.endsWith(".css"),i=t?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${e}"]${i}`))return;const r=document.createElement("link");if(r.rel=t?"stylesheet":a,t||(r.as="script",r.crossOrigin=""),r.href=e,document.head.appendChild(r),t)return new Promise((c,l)=>{r.addEventListener("load",c),r.addEventListener("error",()=>l(new Error(`Unable to preload CSS for ${e}`)))})})).then(()=>s())};export{f as _};
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at new Script (vm.js:88:7)
+    at main (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:547:13)
+    at Object.<anonymous> (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:575:20)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+const a="modulepreload",o={},u="https://static01.nyt.com/newsgraphics/2021/coronavirus-tracking/_app/",f=function(s,n){return!n||n.length===0?s():Promise.all(n.map(e=>{if(e=`${u}${e}`,e in o)return;o[e]=!0;const t=e.endsWith(".css"),i=t?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${e}"]${i}`))return;const r=document.createElement("link");if(r.rel=t?"stylesheet":a,t||(r.as="script",r.crossOrigin=""),r.href=e,document.head.appendChild(r),t)return new Promise((c,l)=>{r.addEventListener("load",c),r.addEventListener("error",()=>l(new Error(`Unable to preload CSS for ${e}`)))})})).then(()=>s())};export{f as _};
+
+[rtiDebugInfo]0 0

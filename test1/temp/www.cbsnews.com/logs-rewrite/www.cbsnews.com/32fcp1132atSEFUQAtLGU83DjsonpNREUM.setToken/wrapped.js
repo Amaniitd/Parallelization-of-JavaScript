@@ -1,1 +1,0 @@
-(function __HORCRUX__(){ window.NREUM.setToken({'stn':1,'err':1,'ins':1,'cap':0,'spa':1}) })();

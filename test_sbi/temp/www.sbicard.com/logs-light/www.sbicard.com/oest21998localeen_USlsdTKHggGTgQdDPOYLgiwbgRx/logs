@@ -1,0 +1,16 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"oest=21998&locale=en_US&lsd=TKHggGTgQdDPOYLgiwbgRx","origPath":"/ajax/bz?__a=1&__ccg=GOOD&__comet_req=0&__dyn=7xeUmKewgUowmUK2WmhwRwQwQwAxu13wqovzEcWwMwu84mdwJwyU5C0TUhwem265o3wwobG3q5U4m0x82WxO0FE667Uy1-w5CKdwGwQw4iwBgK7o1yEfo2IwcK0RE5a1qw8W5U4q0HUvw6iyES0gq0Lo4K2e1FwLw8O&__hs=19364.BP%3Aplugin_default_pkg.2.0.0.0.0&__hsi=7185818890561515679&__req=2&__rev=1006796463&__s=%3A%3Ag8x79t&__sp=1&__user=0&dpr=1&jazoest=21998&locale=en_US&lsd=TKHggGTgQdDPOYLgiwbgRx","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'oest=21998&locale=en_US&lsd=TKHggGTgQdDPOYLgiwbgRx',
+  origPath: '/ajax/bz?__a=1&__ccg=GOOD&__comet_req=0&__dyn=7xeUmKewgUowmUK2WmhwRwQwQwAxu13wqovzEcWwMwu84mdwJwyU5C0TUhwem265o3wwobG3q5U4m0x82WxO0FE667Uy1-w5CKdwGwQw4iwBgK7o1yEfo2IwcK0RE5a1qw8W5U4q0HUvw6iyES0gq0Lo4K2e1FwLw8O&__hs=19364.BP%3Aplugin_default_pkg.2.0.0.0.0&__hsi=7185818890561515679&__req=2&__rev=1006796463&__s=%3A%3Ag8x79t&__sp=1&__user=0&dpr=1&jazoest=21998&locale=en_US&lsd=TKHggGTgQdDPOYLgiwbgRx',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+
+Error: Empty source

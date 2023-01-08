@@ -5,20 +5,20 @@ const windowRewriter = require("../JSAnalyzer/index_window.js");
 var fondue = require("../JSAnalyzer/index.js");
 var fondue_plugin = require("../JSAnalyzer/index_plugin.js");
 var fondue_replay = require("../JSAnalyzer/index_replay.js");
-var {spawnSync} = require('child_process');
+var { spawnSync } = require('child_process');
 var makeId = fondue.makeId;
 var properties = require("properties");
 var config;
 
 const PATH_TO_PROPERTIES = "../JSAnalyzer/" + "/tracer.ini";
-properties.parse(PATH_TO_PROPERTIES, {path: true, sections: true}, function(err, obj){ config = obj ;})
+properties.parse(PATH_TO_PROPERTIES, { path: true, sections: true }, function (err, obj) { config = obj; })
 // var fondue = require("fondue");
-var fs =require("fs")
+var fs = require("fs")
 var program = require('commander');
 var vm = require('vm');
 var deterministic = require('deterministic');
 
-spawnSync("ls ../JSAnalyzer",{shell:true});
+spawnSync("ls ../JSAnalyzer", { shell: true });
 var OMNISTRINGIFYPATH = "../JSAnalyzer/omni.min.js";
 var omniStringify = fs.readFileSync(OMNISTRINGIFYPATH, "utf-8");
 
@@ -32,12 +32,12 @@ var hostCounter = 0;
 
 program
     .version("0.1.0")
-    .option("-i, --input [input]","path to the input file")
+    .option("-i, --input [input]", "path to the input file")
     .option("-n, --name [name]", "name of the file being instrumented")
     .option("-t , --type [type]", "[HTML | Javascript (js)]", "html")
-    .option("-j, --js-profile [file]","profile containing js runtime information")
+    .option("-j, --js-profile [file]", "profile containing js runtime information")
     .option("-c, --cg-info [file]", "an array containing root invocations")
-    .option("-p, --pattern [pattern]","instrumentation pattern, either cg, record (signature), or rewrite")
+    .option("-p, --pattern [pattern]", "instrumentation pattern, either cg, record (signature), or rewrite")
     .option("-s, --signature [file]", "final signature containing function dependencies")
     .option("-g, --call-graph [file]", "final call graph file")
     .option("-w, --wrapped-src-path [file]", "File path to save the globally wrapped HTML file")
@@ -63,7 +63,7 @@ staticInfo.staticUncacheableFunctions = {};
 
 //Create file for communicating information back to the python script
 var returnInfoFile = program.input + ".info";
-fs.writeFileSync(returnInfoFile,"");
+fs.writeFileSync(returnInfoFile, "");
 
 let fala = function () {
     var m = falafel.apply(this, arguments);
@@ -81,6 +81,13 @@ function instrumentHTML(src, fondueOptions) {
 
     // test if the file is html or javascript
     // certain javascript files have the header "doc"
+    // console.error("Hello!!!");
+    // console.error(src);
+    // src = removedoctype(src);
+    if (IsJsonString(src)) {
+        console.error("It is a json file");
+        return src;
+    }
     var isHtml, isXML;
 
     // try {
@@ -103,8 +110,10 @@ function instrumentHTML(src, fondueOptions) {
     if (IsJsonString(src))
         return src;
 
-    if (!isHtml)
+    if (!isHtml) {
+        console.error("It is a javascript file");
         return instrumentJavaScript(src, fondueOptions);
+    }
 
     //pretty print HTML
     // src = pretty(src);
@@ -123,27 +132,27 @@ function instrumentHTML(src, fondueOptions) {
     var scriptEndRegexp = /<\s*\/\s*script/i;
     var lastScriptEnd = 0;
     var match, newline = /\n/ig;
-    var integrityMatch, integrityLocs = [], newLoc=0;
+    var integrityMatch, integrityLocs = [], newLoc = 0;
     var asyncMatch, asyncLocs = [], nLoc = 0;
 
     //Traverse the matches to eliminate any integrity checks
-    while (integrityMatch = scriptBeginRegexp.exec(src)){
-        if (integrityMatch[0].indexOf("integrity")>=0){
+    while (integrityMatch = scriptBeginRegexp.exec(src)) {
+        if (integrityMatch[0].indexOf("integrity") >= 0) {
             integrityLocs.push(integrityMatch);
         }
     }
 
     // newLoc is used to keep track of the new location after every splice
-    integrityLocs.forEach((integrity)=>{
+    integrityLocs.forEach((integrity) => {
         var _initLen = src.length;
-        src = src.slice(0,integrity.index-newLoc) + integrity[0].replace(/integrity=[\"\'][^"^']*[\"\']/,'') +
-             src.slice(integrity.index-newLoc + integrity[0].length,src.length);
+        src = src.slice(0, integrity.index - newLoc) + integrity[0].replace(/integrity=[\"\'][^"^']*[\"\']/, '') +
+            src.slice(integrity.index - newLoc + integrity[0].length, src.length);
         var _finalLen = src.length;
-        newLoc += _initLen -  _finalLen;
+        newLoc += _initLen - _finalLen;
     })
 
-    while (asyncMatch = scriptBeginRegexp.exec(src)){
-        if (asyncMatch[0].indexOf("async")>=0){
+    while (asyncMatch = scriptBeginRegexp.exec(src)) {
+        if (asyncMatch[0].indexOf("async") >= 0) {
             asyncLocs.push(asyncMatch);
         }
     }
@@ -170,13 +179,13 @@ function instrumentHTML(src, fondueOptions) {
         immediately after the <Script> tag or not, because
         it will account for the correct offset
         */
-        var _prevScript = src.slice(0,scriptBegin+1);
-        while(nMatch = newline.exec(_prevScript))
+        var _prevScript = src.slice(0, scriptBegin + 1);
+        while (nMatch = newline.exec(_prevScript))
             scriptOffset++;
         var endMatch = scriptEndRegexp.exec(src.slice(scriptBegin));
         if (endMatch) {
             var scriptEnd = scriptBegin + endMatch.index;
-            scriptLocs.push({ start: scriptBegin, end: scriptEnd , offset: scriptOffset});
+            scriptLocs.push({ start: scriptBegin, end: scriptEnd, offset: scriptOffset });
             lastScriptEnd = scriptEnd;
         }
     }
@@ -193,34 +202,35 @@ function instrumentHTML(src, fondueOptions) {
     where updated (wrapped) script locations are used.
     */
     // iterate over the scripts (forward) and globally wrap each one
-    for (let i = 0; i < scriptLocs.length; ++i) {
-        const options = mergeInto(fondueOptions, {});
-        options.origPath = options.path;
-        options.path = options.path + "-script-" + i;
-        options.include_prefix = false;
-        options.jsInHTML = true;
+    // for (let i = 0; i < scriptLocs.length; ++i) {
+    //     const options = mergeInto(fondueOptions, {});
+    //     options.origPath = options.path;
+    //     options.path = options.path + "-script-" + i;
+    //     options.include_prefix = false;
+    //     options.jsInHTML = true;
 
-        let loc = scriptLocs[i];
-        const scriptSrc = src.slice(loc.start, loc.end);
-        // wrap each IIFE in an anonymous function
-        let wrappedSrc = globalWrapper.wrap(scriptSrc, fala);
+    //     let loc = scriptLocs[i];
+    //     const scriptSrc = src.slice(loc.start, loc.end);
+    //     // wrap each IIFE in an anonymous function
+    //     let wrappedSrc = globalWrapper.wrap(scriptSrc, fala);
+    //     console.error("wrappedSrc is here!");
+    //     console.error(wrappedSrc);
+    //     // rewrite all global variables to use window.
+    //     wrappedSrc = windowRewriter.instrument(wrappedSrc, options).toString()
 
-        // rewrite all global variables to use window.
-        wrappedSrc = windowRewriter.instrument(wrappedSrc, options).toString()
-
-        src = src.slice(0, loc.start) + wrappedSrc + src.slice(loc.end);
-        // shift the end of this script and the rest of below scripts locations
-        const shift = wrappedSrc.length - scriptSrc.length;
-        loc.end += shift;
-        for (let j = i+1; j < scriptLocs.length; ++j) {
-            scriptLocs[j].start += shift;
-            scriptLocs[j].end += shift;
-        }
-        // just to double-check the locations -- remove later
-        if (wrappedSrc !== src.slice(loc.start, loc.end)) {
-            console.error('---------- BAD NEWS ----------');
-        }
-    }
+    //     src = src.slice(0, loc.start) + wrappedSrc + src.slice(loc.end);
+    //     // shift the end of this script and the rest of below scripts locations
+    //     const shift = wrappedSrc.length - scriptSrc.length;
+    //     loc.end += shift;
+    //     for (let j = i + 1; j < scriptLocs.length; ++j) {
+    //         scriptLocs[j].start += shift;
+    //         scriptLocs[j].end += shift;
+    //     }
+    //     // just to double-check the locations -- remove later
+    //     if (wrappedSrc !== src.slice(loc.start, loc.end)) {
+    //         console.error('---------- BAD NEWS ----------');
+    //     }
+    // }
 
     if (program.wrappedSrcPath) {
         console.log(`Wrote to wrappedSrc: ${program.wrappedSrcPath}`);
@@ -228,7 +238,7 @@ function instrumentHTML(src, fondueOptions) {
     }
     if (program.pattern == "rewrite") {
         // send in the wrapped HTML source as part of options
-        fondueOptions = mergeInto({srcLines: src.split('\n')}, fondueOptions);
+        fondueOptions = mergeInto({ srcLines: src.split('\n') }, fondueOptions);
     }
 
     // process the scripts in reverse order
@@ -248,7 +258,7 @@ function instrumentHTML(src, fondueOptions) {
         // newlineCount = (prefix.match(/\n/g) || []).length;
         // console.log('# of \\n:', newlineCount);
         if (program.pattern == "timing")
-            prefix="";
+            prefix = "";
         // console.log("Instrumenting " + JSON.stringify(loc));
         src = src.slice(0, loc.start) + instrumentJavaScript(prefix + script, options, true) + src.slice(loc.end);
         // console.log("And the final src is :" + src)
@@ -265,7 +275,7 @@ function instrumentHTML(src, fondueOptions) {
         src = src.slice(doctypeMatch[1].length);
     }
     mergeStaticInformation_uncacheable(options);
-    if (!hostCounter){
+    if (!hostCounter) {
         hostCounter++;
         var deterministicCode = '\n' + deterministic.header + '\n';
         // fs.writeFileSync(hostDir+"/deterministic.js", deterministicCode);
@@ -296,17 +306,19 @@ function instrumentHTML(src, fondueOptions) {
             "\n</script>\n" + src;
     }
     else if (program.pattern != "timing")
-        src = doctype + "\n<script>\n" +  deterministicCode + omniStringify + fondue.instrumentationPrefix(options, program.pattern) + "\n</script>\n" + src;
+        src = doctype + "\n<script>\n" + omniStringify + fondue.instrumentationPrefix(options, program.pattern) + "\n</script>\n" + src;
     // console.log("ANd the ultimately final source being" + src)
     console.log("[rtiDebugInfo]" + staticInfo.rtiDebugInfo.totalNodes.length,
-         staticInfo.rtiDebugInfo.matchedNodes.length);
+        staticInfo.rtiDebugInfo.matchedNodes.length);
     computeRTITimeMatched();
     src = removeUseStrict(src);
+    console.error(src);
+    // src = removeUndefined(src);
     return src;
 }
 
-function createScriptTag(url){
-    var src = "\n<script src =" + hostUrl +  url + "></script>";
+function createScriptTag(url) {
+    var src = "\n<script src =" + hostUrl + url + "></script>";
     return src;
 }
 
@@ -319,10 +331,10 @@ function IsJsonString(str) {
     return true;
 }
 
-function stringifyUncacheableFunctions(options){
-        //Before returning process the Uncacheable Functions into a stringifiable format
-    Object.keys(staticInfo.uncacheableFunctions).forEach((reason)=>{
-         staticInfo.staticUncacheableFunctions[reason] = staticInfo.uncacheableFunctions[reason].map((fn)=>{
+function stringifyUncacheableFunctions(options) {
+    //Before returning process the Uncacheable Functions into a stringifiable format
+    Object.keys(staticInfo.uncacheableFunctions).forEach((reason) => {
+        staticInfo.staticUncacheableFunctions[reason] = staticInfo.uncacheableFunctions[reason].map((fn) => {
             var index = makeId("function", options.path, fn);
             return index;
         });
@@ -331,13 +343,13 @@ function stringifyUncacheableFunctions(options){
 
 }
 
-function mergeStaticInformation_uncacheable(options){
+function mergeStaticInformation_uncacheable(options) {
     stringifyUncacheableFunctions(options);
     //Fetch the previously obtained static dumps
-    var _staticDumpFiles = spawnSync("ls staticDump*", {shell:true});
+    var _staticDumpFiles = spawnSync("ls staticDump*", { shell: true });
     var staticDumpFiles = _staticDumpFiles.stdout.toString().trim().split('\n');
     var scriptsStaticInfo = [];
-    staticDumpFiles.forEach((dumpFile)=>{
+    staticDumpFiles.forEach((dumpFile) => {
         if (dumpFile != "") {
             var staticUncacheableFunctions = JSON.parse(fs.readFileSync(dumpFile, "utf-8"));
             scriptsStaticInfo.push(staticUncacheableFunctions);
@@ -345,18 +357,18 @@ function mergeStaticInformation_uncacheable(options){
     })
 
     //Merge with the current static dump
-    scriptsStaticInfo.forEach((si)=>{
-        Object.keys(si).forEach((reason)=>{
+    scriptsStaticInfo.forEach((si) => {
+        Object.keys(si).forEach((reason) => {
             // console.log("data: " + JSON.stringify(staticInfo.staticUncacheableFunctions), reason)
             staticInfo.staticUncacheableFunctions[reason] =
-            staticInfo.staticUncacheableFunctions[reason].concat(si[reason]);
+                staticInfo.staticUncacheableFunctions[reason].concat(si[reason]);
         })
     })
 
 }
 
 
-function computeRTITimeMatched(){
+function computeRTITimeMatched() {
     var time = {};
     // Object.keys(staticInfo.rtiDebugInfo).forEach((type)=>{
     //     if (type != "totalNodes" && type != "matchedNodes") return;
@@ -369,11 +381,11 @@ function computeRTITimeMatched(){
     //     staticInfo.rtiDebugInfo.totalNodes.length + " " + staticInfo.rtiDebugInfo.matchedNodes.length
     //     + " " + (staticInfo.rtiDebugInfo.totalNodes.time || 0)
     //     + " " + staticInfo.rtiDebugInfo.matchedNodes.reduce((acc,cur)=>{return cur[1] + acc},0));
-    fs.writeFileSync(returnInfoFile,staticInfo.rtiDebugInfo.ALL + " " + staticInfo.rtiDebugInfo.totalNodes.length + " " + staticInfo.rtiDebugInfo.matchedNodes.length );
+    fs.writeFileSync(returnInfoFile, staticInfo.rtiDebugInfo.ALL + " " + staticInfo.rtiDebugInfo.totalNodes.length + " " + staticInfo.rtiDebugInfo.matchedNodes.length);
     // fs.writeFileSync(returnInfoFile, JSON.stringify(staticInfo.rtiDebugInfo.ND));
 }
 
-function dumpStaticInformation_uncacheable(options){
+function dumpStaticInformation_uncacheable(options) {
     stringifyUncacheableFunctions(options);
     var staticDumpFileName = "staticDump" + process.pid;
     fs.writeFileSync(staticDumpFileName, JSON.stringify(staticInfo.staticUncacheableFunctions));
@@ -382,21 +394,25 @@ function dumpStaticInformation_uncacheable(options){
 
 function instrumentJavaScript(src, fondueOptions, jsInHTML) {
     // console.log("Instrumenting a js file");
-    var fondueOptions = mergeInto({include_prefix: false}, fondueOptions);
+    var fondueOptions = mergeInto({ include_prefix: false }, fondueOptions);
     fondueOptions.jsInHTML = jsInHTML
     if (IsJsonString(src)) {
         if (jsInHTML)
             return src.replace(/^\s+|\s+$/g, '');
         else return src;
     }
-
+    console.error("x");
     // if this is an external script source, it has not been globally wrapped
     // and the global variables are not rewritten to use window
     if (!jsInHTML) {
+        console.error("xx");
         // wrap each IIFE in an anonymous function
+        console.log(src);
         let wrappedSrc = globalWrapper.wrap(src, fala);
+        console.error("x1");
         // rewrite all global variables to use window.
         wrappedSrc = windowRewriter.instrument(wrappedSrc, fondueOptions).toString();
+        console.error("x2");
         // update the src
         src = wrappedSrc;
         if (program.wrappedSrcPath) {
@@ -404,14 +420,14 @@ function instrumentJavaScript(src, fondueOptions, jsInHTML) {
             fs.writeFileSync(program.wrappedSrcPath, src);
         }
         if (program.pattern == "rewrite") {
-            fondueOptions = mergeInto({srcLines: src.split('\n')}, fondueOptions);
+            fondueOptions = mergeInto({ srcLines: src.split('\n') }, fondueOptions);
         }
     }
-
+    console.error("xxx");
     src = instrumentor.instrument(src, fondueOptions).toString();
     if (program.type == "js") {
         console.log("[rtiDebugInfo]" + staticInfo.rtiDebugInfo.totalNodes.length,
-         staticInfo.rtiDebugInfo.matchedNodes.length);
+            staticInfo.rtiDebugInfo.matchedNodes.length);
         dumpStaticInformation_uncacheable(fondueOptions);
         computeRTITimeMatched();
     }
@@ -428,102 +444,124 @@ function mergeInto(options, defaultOptions) {
     return defaultOptions;
 }
 
-var unique = function(arr){
-    return [...new Set(arr) ];
+var unique = function (arr) {
+    return [...new Set(arr)];
 }
 
-var main = function(){
+var main = function () {
     //Required for the fondue library, to determine how to instrument
     // create obfuscate path name for readability purposes
+    console.error("a");
     var url = program.name.split(';;;')[0];
     var origPath = program.name.split(';;;;')[1];
     origPath = origPath == "/" ? url + origPath : origPath;
-    var path = origPath.length>50?origPath.substring(origPath.length-50,origPath.length) : origPath;
-    var fondueOptions = mergeInto({}, {useProxy: true, caching: false,  include_prefix: false, path: path, origPath: origPath,
-        e2eTesting: false, pageLoaded: config[program.pattern].pageLoaded, invocation_limit:config[program.pattern].invocation_limit,
-         pattern:program.pattern, proxyName:config[program.pattern].proxyName
-     });
+    var path = origPath.length > 50 ? origPath.substring(origPath.length - 50, origPath.length) : origPath;
+    var fondueOptions = mergeInto({}, {
+        useProxy: true, caching: false, include_prefix: false, path: path, origPath: origPath,
+        e2eTesting: false, pageLoaded: config[program.pattern].pageLoaded, invocation_limit: config[program.pattern].invocation_limit,
+        pattern: program.pattern, proxyName: config[program.pattern].proxyName
+    });
     console.log("Options are " + JSON.stringify(fondueOptions))
-
+    console.error("b");
     if (program.jsProfile) {
         try {
+            console.error("c");
             var rti = JSON.parse(fs.readFileSync(program.jsProfile, "utf-8"));
-            fondueOptions = mergeInto(fondueOptions, {rti: rti})
-            console.log("rti time:" + rti.reduce((acc, cur)=>{return acc+cur.self},0))
+            fondueOptions = mergeInto(fondueOptions, { rti: rti })
+            console.log("rti time:" + rti.reduce((acc, cur) => { return acc + cur.self }, 0))
             staticInfo.rtiDebugInfo.ALL = rti.length;
-        } catch (err){
+        } catch (err) {
             console.error("Error while reading the JS Profile " + err);
         }
+        console.error("d");
     }
-    if (program.cgInfo){
-        try{
-            var _cg = JSON.parse(fs.readFileSync(program.cgInfo),"utf-8");
+    if (program.cgInfo) {
+        try {
+            console.error("e");
+            var _cg = JSON.parse(fs.readFileSync(program.cgInfo), "utf-8");
             // var cg = _cg.map(e=>e[0]);
             var cg = _cg;
             // var cgTime = _cg.map(e=>e[2]);
             // console.log(cg);
-            fondueOptions = mergeInto({cg: cg}, fondueOptions);
+            fondueOptions = mergeInto({ cg: cg }, fondueOptions);
             staticInfo.rtiDebugInfo.ALL = cg.length;
+            console.error("f");
             // console.log("cg nodes:" + cg);
-        } catch (err){
+        } catch (err) {
             console.error("Error while reading the call graph Profile " + err);
-            fondueOptions = mergeInto(fondueOptions, {cg: [], cgTime:[]});
+            fondueOptions = mergeInto(fondueOptions, { cg: [], cgTime: [] });
             return;
         }
     }
     if (program.callGraph && program.signature) {
+        console.error("g");
         try {
             let callGraph = JSON.parse(fs.readFileSync(program.callGraph), "utf-8");
             let sig = JSON.parse(fs.readFileSync(program.signature), "utf-8");
-            fondueOptions = mergeInto({signature: sig, callGraph: callGraph}, fondueOptions);
+            fondueOptions = mergeInto({ signature: sig, callGraph: callGraph }, fondueOptions);
         } catch (err) {
             console.error("Error while parsing either callGraph or signature file", err);
             // fondueOptions = mergeInto(fondueOptions, {signature: {}});
             return;
         }
+        console.error("h");
     }
     console.log(fondueOptions);
     if (program.pattern == "rewrite") {
         // check if all the needed files are given
+        console.error("i");
         if (!fondueOptions.cg ||
             !fondueOptions.signature ||
             !fondueOptions.callGraph) {
             console.error("Error while rewriting: " +
-                        "one or more of roots(cg), callGraph, or signature" +
-                        "files are not provided");
+                "one or more of roots(cg), callGraph, or signature" +
+                "files are not provided");
             return;
         }
         if (!program.wrappedSrcPath) {
             console.error("Error: rewriter expected --wrappedSrcPath (-w)");
         }
+        console.error("j");
     }
-    src = fs.readFileSync(program.input,"utf-8")
-
+    src = fs.readFileSync(program.input, "utf-8")
+    console.error("a");
     // filename = path.basename(program.input)
 
-    if (program.type == "js"){
+    if (program.type == "js") {
         // Some js files are utf-16 encoded, therefore src might be an invalid file
+        if (IsJsonString(src)) {
+            console.error("It is a json file");
+            fs.writeFileSync(program.input, src)
+            return;
+        }
+        console.error("x");
         try {
             new vm.Script(src);
         } catch (e) {
-            var _ucs2_ = fs.readFileSync(program.input,"ucs2")
+            console.log("error", e);
+            var _ucs2_ = fs.readFileSync(program.input, "ucs2")
             /*If still invalid just return the actual source*/
             try {
                 new vm.Script(_ucs2_);
                 src = _ucs2_;
-            } catch (e){
-
+            } catch (e) {
+                console.error("Error:", e);
             }
 
         }
+        console.error("yy");
         src = instrumentJavaScript(src, fondueOptions, false)
+        console.error("y");
         // src = src
     } else {
         src = instrumentHTML(src, fondueOptions)
         // src = src
     }
-
+    console.error("z");
+    if (src == "") 
+        console.log("Error: Empty source");
     fs.writeFileSync(program.input, src)
+    console.error("End");
 }
 
 if (program.input) main();

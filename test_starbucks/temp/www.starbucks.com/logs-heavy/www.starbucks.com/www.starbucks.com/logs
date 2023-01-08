@@ -1,0 +1,72 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"www.starbucks.com/","origPath":"www.starbucks.com/","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'www.starbucks.com/',
+  origPath: 'www.starbucks.com/',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: [
+    'www.starbucks.com/-script-0-function-2-18569-2-18905',
+    'www.starbucks.com/-script-1-function-5-9-8-9',
+    'www.starbucks.com/-script-15-function-11-39-11-3057',
+    'www.starbucks.com/-script-0-function-2-18949-2-19011',
+    'www.starbucks.com/-script-17-function-11-3525-15-3',
+    'www.starbucks.com/-script-0-function-2-44-2-308',
+    'www.starbucks.com/-script-0-function-2-16374-2-16615'
+  ]
+}
+Pattern for current instrumentation: record
+Instrumenting a html file
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script www.starbucks.com/-script-17-function-11-3525-15-3
+[Static analyzer] Function matching reported a match
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script www.starbucks.com/-script-15-function-11-39-11-3057
+[Static analyzer] Function matching reported a match
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script www.starbucks.com/-script-1-function-5-9-8-9
+[Static analyzer] Function matching reported a match
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script www.starbucks.com/-script-0-function-2-18569-2-18905,www.starbucks.com/-script-0-function-2-18949-2-19011,www.starbucks.com/-script-0-function-2-44-2-308,www.starbucks.com/-script-0-function-2-16374-2-16615
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[Static analyzer] Function matching reported a match
+[Static Analyzer] Unhandled: setTimeout in source code
+[rtiDebugInfo]7 6

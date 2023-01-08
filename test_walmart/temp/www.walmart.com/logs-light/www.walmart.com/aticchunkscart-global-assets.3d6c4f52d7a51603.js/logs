@@ -1,0 +1,16 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"atic/chunks/cart-global-assets.3d6c4f52d7a51603.js","origPath":"/dfw/63fd9f59-d6bf/49c2ec22-3192-4487-b5a6-ea6a3f7eb24b/v2/en-US/_next/static/chunks/cart-global-assets.3d6c4f52d7a51603.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'atic/chunks/cart-global-assets.3d6c4f52d7a51603.js',
+  origPath: '/dfw/63fd9f59-d6bf/49c2ec22-3192-4487-b5a6-ea6a3f7eb24b/v2/en-US/_next/static/chunks/cart-global-assets.3d6c4f52d7a51603.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[88796],{404362:function(e,n,c){c.r(n),c.d(n,{cartReducerMain:function(){return u}});var r=c(405892);const u=["mainCartReducer",(e,n)=>(0,r.Y)(e,n)]}}]);
+[rtiDebugInfo]0 3

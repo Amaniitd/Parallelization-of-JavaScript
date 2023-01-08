@@ -1,0 +1,28 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"wRcwIamSIytqYNY2EuVRm4Xis1TvuoVJRns2vkL17mAe1VdVaV","origPath":"/XHDvTIW9xHlJ283b?aa5d418e511f8aad=2yXcu7oCZlImBaenUIzHY1q5ve2ftmiELS2n3Cfst3Y7xVB5U0bZ8skBLG54G_JD7rtJw3LXEnM2np2hD1IWLc81V4zkB29I5tYz-q_2N3kjuTFcfDUsNI0Rj6GDxZeEnYkUSdOWeweDhqpYIJjPfurf76xX07pQqgwRcwIamSIytqYNY2EuVRm4Xis1TvuoVJRns2vkL17mAe1VdVaV","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'wRcwIamSIytqYNY2EuVRm4Xis1TvuoVJRns2vkL17mAe1VdVaV',
+  origPath: '/XHDvTIW9xHlJ283b?aa5d418e511f8aad=2yXcu7oCZlImBaenUIzHY1q5ve2ftmiELS2n3Cfst3Y7xVB5U0bZ8skBLG54G_JD7rtJw3LXEnM2np2hD1IWLc81V4zkB29I5tYz-q_2N3kjuTFcfDUsNI0Rj6GDxZeEnYkUSdOWeweDhqpYIJjPfurf76xX07pQqgwRcwIamSIytqYNY2EuVRm4Xis1TvuoVJRns2vkL17mAe1VdVaV',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+function source is  function td_K(){return new Date().getTime();}
+function source is  function(){var td_G=Math.floor(Math.random()*62);if(td_G<10){return td_G;}if(td_G<36){return String.fromCharCode(td_G+55);}return String.fromCharCode(td_G+61);
+}
+function source is  function td_1a(td_P){var td_K="";var td_R=function(){ 
+ try {__tracer.cacheInit("wRcwIamSIytqYNY2EuVRm4Xis1TvuoVJRns2vkL17mAe1VdVaV-script-0-function-96-42-97-1",false);
+var td_G=Math.floor(Math.random()*62);if(td_G<10){return td_G;}if(td_G<36){return String.fromCharCode(td_G+55);}return String.fromCharCode(td_G+61);
+
+ 
+ } finally {__tracer.exitFunction("wRcwIamSIytqYNY2EuVRm4Xis1TvuoVJRns2vkL17mAe1VdVaV-script-0-function-96-42-97-1",true);
+ }};while(td_K.length<td_P){td_K+=td_R();}return((typeof(td_0X.tdz_9e6fc63d34444af781ba8302f8551b64)!=="undefined"&&typeof(td_0X.tdz_9e6fc63d34444af781ba8302f8551b64.td_f)!=="undefined")?(td_0X.tdz_9e6fc63d34444af781ba8302f8551b64.td_f(0,4)):null)+td_K;
+}
+[rtiDebugInfo]0 91

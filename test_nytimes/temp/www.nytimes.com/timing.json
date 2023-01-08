@@ -1,0 +1,925 @@
+{
+  "type": "object",
+  "value": {
+    "www.nytimes.com/-script-4-function-53-7-53-1918_count0": [
+      189.40000000596046,
+      191
+    ],
+    "www.nytimes.com/-script-4-function-53-1924-53-3085_count0": [
+      192.10000000149012,
+      192.20000000298023
+    ],
+    "www.nytimes.com/-script-4-function-53-3091-53-3439_count0": [
+      192.20000000298023,
+      192.30000000447035
+    ],
+    "www.nytimes.com/-script-4-function-54-1-89-73_count0": [
+      192.30000000447035,
+      192.30000000447035
+    ],
+    "www.nytimes.com/-script-4-function-91-3-119-1_count0": [
+      192.30000000447035,
+      192.30000000447035
+    ],
+    "www.nytimes.com/-script-4-function-120-2-120-3738_count0": [
+      192.30000000447035,
+      192.70000000298023
+    ],
+    "www.nytimes.com/-script-4-function-121-2-121-1911_count0": [
+      192.70000000298023,
+      209.40000000596046
+    ],
+    "www.nytimes.com/-script-4-function-121-1917-121-20645_count0": [
+      209.40000000596046,
+      224.30000000447035
+    ],
+    "www.nytimes.com/-script-4-function-121-20651-121-22564_count0": [
+      224.30000000447035,
+      225.80000000447035
+    ],
+    "www.nytimes.com/-script-4-function-121-22570-121-23011_count0": [
+      225.80000000447035,
+      225.90000000596046
+    ],
+    "www.nytimes.com/-script-4-function-121-23017-121-23153_count0": [
+      225.90000000596046,
+      225.90000000596046
+    ],
+    "www.nytimes.com/-script-5-function-123-13-123-1525_count0": [
+      227.20000000298023,
+      227.40000000596046
+    ],
+    "www.nytimes.com/-script-7-function-128-11-128-382_count0": [
+      230.5,
+      230.90000000596046
+    ],
+    "www.nytimes.com/-script-7-function-129-11-129-36_count0": [
+      230.90000000596046,
+      230.90000000596046
+    ],
+    "www.nytimes.com/-script-7-function-130-11-130-1806_count0": [
+      230.90000000596046,
+      231.5
+    ],
+    "www.nytimes.com/-script-8-function-131-54-131-5433_count0": [
+      232,
+      234.5
+    ],
+    "www.nytimes.com/-script-9-function-131-5489-135-11_count0": [
+      237,
+      246
+    ],
+    "www.nytimes.com/-script-7-function-130-1476-130-1532_count0": [
+      462.70000000298023,
+      469.30000000447035
+    ],
+    "www.nytimes.com/-script-8-function-131-2547-131-5387_count0": [
+      551.7000000029802,
+      551.7000000029802
+    ],
+    "www.nytimes.com/-script-8-function-131-2547-131-5387_count1": [
+      551.7000000029802,
+      551.7000000029802
+    ],
+    "www.nytimes.com/-script-8-function-131-2547-131-5387_count2": [
+      552.5,
+      552.7000000029802
+    ],
+    "ssets/static-assets/adslot-9349dd2c5537218e254e.js-function-1-1-1-22322_count0": [
+      562.8000000044703,
+      579.9000000059605
+    ],
+    "www.nytimes.com/-script-4-function-121-22794-121-22912_count0": [
+      583.9000000059605,
+      583.9000000059605
+    ],
+    "www.nytimes.com/-script-9-function-132-3652-132-3783_count0": [
+      740.3000000044703,
+      740.5
+    ],
+    "www.nytimes.com/-script-9-function-132-4062-132-4192_count0": [
+      740.6000000014901,
+      740.6000000014901
+    ],
+    "ssets/static-assets/adslot-9349dd2c5537218e254e.js-function-1-6832-1-6878_count0": [
+      861.8000000044703,
+      861.8000000044703
+    ],
+    "www.nytimes.com/-script-4-function-121-22794-121-22912_count1": [
+      863,
+      863
+    ],
+    "www.nytimes.com/-script-7-function-130-423-130-719_count0": [
+      950.6000000014901,
+      950.7000000029802
+    ],
+    "ssets/static-assets/adslot-9349dd2c5537218e254e.js-function-1-21211-1-21498_count0": [
+      950.7000000029802,
+      950.7000000029802
+    ],
+    "www.nytimes.com/-script-15-function-270-10-291-4_count0": [
+      1204.8000000044703,
+      1204.8000000044703
+    ],
+    "www.nytimes.com/-script-23-function-329-13-329-9636_count0": [
+      1335.8000000044703,
+      1336.3000000044703
+    ],
+    "www.nytimes.com/-script-27-function-334-13-334-488_count0": [
+      1453.6000000014901,
+      1455
+    ],
+    "www.nytimes.com/-script-27-function-334-493-334-2688_count0": [
+      1455.1000000014901,
+      1455.7000000029802
+    ],
+    "www.nytimes.com/-script-28-function-337-1-343-1_count0": [
+      1456.2000000029802,
+      1456.2000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-1-1-53-117446_count0": [
+      1715.2000000029802,
+      2036.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-82829-10-83007_count0": [
+      2047.8000000044703,
+      2048.3000000044703
+    ],
+    "ssets/static-assets/vendor-08c1b617cd319b136ad1.js-function-1-1-1-154633_count0": [
+      2049.10000000149,
+      2049.8000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count0": [
+      2050.10000000149,
+      2050.2000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-36868-10-37072_count0": [
+      2132.3000000044703,
+      2133.8000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count0": [
+      2134.4000000059605,
+      2136.7000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count1": [
+      2136.7000000029802,
+      2136.8000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count2": [
+      2136.9000000059605,
+      2137
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count3": [
+      2137.3000000044703,
+      2137.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count4": [
+      2137.3000000044703,
+      2137.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count5": [
+      2137.3000000044703,
+      2137.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count6": [
+      2137.3000000044703,
+      2137.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count7": [
+      2137.4000000059605,
+      2137.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count8": [
+      2137.4000000059605,
+      2137.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count0": [
+      2138.4000000059605,
+      2138.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count1": [
+      2138.9000000059605,
+      2139
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count1": [
+      2149.8000000044703,
+      2169.7000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count2": [
+      2169.8000000044703,
+      2170.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count9": [
+      2173.10000000149,
+      2173.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count2": [
+      2181.3000000044703,
+      2181.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count3": [
+      2181.3000000044703,
+      2181.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count0": [
+      2182.9000000059605,
+      2191.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count1": [
+      2191.5,
+      2192.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count2": [
+      2192.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-77148-10-77221_count0": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-77148-10-77221_count1": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-77148-10-77221_count2": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count3": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-77148-10-77221_count3": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-77148-10-77221_count4": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count4": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count5": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count6": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-77148-10-77221_count5": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count7": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-77148-10-77221_count6": [
+      2193.4000000059605,
+      2193.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count3": [
+      2265.10000000149,
+      2265.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count4": [
+      2265.10000000149,
+      2265.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count4": [
+      2276.10000000149,
+      2276.2000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count5": [
+      2276.2000000029802,
+      2276.2000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count0": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count1": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count2": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count3": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count4": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count5": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count6": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count7": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count8": [
+      2276.9000000059605,
+      2276.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count9": [
+      2277.2000000029802,
+      2277.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count10": [
+      2277.3000000044703,
+      2277.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count11": [
+      2277.4000000059605,
+      2277.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count12": [
+      2277.4000000059605,
+      2277.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-78990-10-79050_count13": [
+      2277.4000000059605,
+      2277.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count5": [
+      2277.9000000059605,
+      2277.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count6": [
+      2278,
+      2278
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count6": [
+      2291.3000000044703,
+      2291.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count0": [
+      2682.4000000059605,
+      2683
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count10": [
+      2935.2000000029802,
+      2935.60000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count11": [
+      2939.8000000044703,
+      2940.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count12": [
+      2974.3000000044703,
+      2974.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count13": [
+      2989,
+      2989.60000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count14": [
+      3006.10000000149,
+      3006.2000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count15": [
+      3021.9000000059605,
+      3022.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count16": [
+      3038.2000000029802,
+      3038.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count17": [
+      3054.4000000059605,
+      3054.8000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count18": [
+      3071.8000000044703,
+      3071.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count19": [
+      3087.8000000044703,
+      3088
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count20": [
+      3105,
+      3105.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count21": [
+      3121.5,
+      3121.8000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count22": [
+      3139.5,
+      3139.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count23": [
+      3154.5,
+      3154.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count24": [
+      3171.2000000029802,
+      3171.2000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count25": [
+      3188.10000000149,
+      3188.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count26": [
+      3204.2000000029802,
+      3204.3000000044703
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count27": [
+      3220.9000000059605,
+      3220.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count28": [
+      3255.7000000029802,
+      3255.8000000044703
+    ],
+    "-assets/static-assets/home-7bebf11c60ef3b65d658.js-function-1-1-1-130907_count0": [
+      3695.4000000059605,
+      3695.5
+    ],
+    "/ads/prebid7.28.0.js-function-4-1-19-34_count0": [
+      3697.9000000059605,
+      3717.5
+    ],
+    "www.nytimes.com/-script-9-function-132-10213-132-10281_count0": [
+      3717.60000000149,
+      3761
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count0": [
+      3736.60000000149,
+      3736.60000000149
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count1": [
+      3742.5,
+      3742.5
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count2": [
+      3743.8000000044703,
+      3743.8000000044703
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count3": [
+      3744.5,
+      3744.5
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count4": [
+      3745.60000000149,
+      3745.60000000149
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count5": [
+      3749.5,
+      3749.5
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count6": [
+      3752.60000000149,
+      3752.60000000149
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count7": [
+      3756.8000000044703,
+      3756.8000000044703
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count8": [
+      3760.2000000029802,
+      3760.2000000029802
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count1": [
+      3978.3000000044703,
+      4119.20000000298
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count9": [
+      4169.5,
+      4170.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count29": [
+      4172.70000000298,
+      4172.70000000298
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count10": [
+      4189.80000000447,
+      4189.80000000447
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count11": [
+      4189.80000000447,
+      4189.80000000447
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count12": [
+      4190.5,
+      4192.30000000447
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count13": [
+      4196.60000000149,
+      4196.80000000447
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count14": [
+      4197.70000000298,
+      4197.80000000447
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count15": [
+      4199.70000000298,
+      4200.30000000447
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count16": [
+      4200.60000000149,
+      4201.60000000149
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count17": [
+      4201.70000000298,
+      4202.9000000059605
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count18": [
+      4203.30000000447,
+      4206.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count30": [
+      4206.70000000298,
+      4206.80000000447
+    ],
+    "/ads/prebid7.28.0.js-function-5-27501-5-27658_count19": [
+      4207.30000000447,
+      4210.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count2": [
+      4721.30000000447,
+      4724.20000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count3": [
+      4743.20000000298,
+      4743.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count4": [
+      4744.80000000447,
+      4745.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count5": [
+      4745.80000000447,
+      4746.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count6": [
+      4747.10000000149,
+      4747.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count7": [
+      4750,
+      4750.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count8": [
+      4750.70000000298,
+      4750.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count9": [
+      4752.30000000447,
+      4752.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count10": [
+      4752.70000000298,
+      4752.70000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count11": [
+      4755,
+      4755.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count12": [
+      4793.4000000059605,
+      4793.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count13": [
+      4794.30000000447,
+      4794.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count14": [
+      4796.5,
+      4796.70000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count15": [
+      4801.10000000149,
+      4802.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count16": [
+      4802.5,
+      4802.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count17": [
+      4802.60000000149,
+      4803.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count18": [
+      4804.20000000298,
+      4804.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count19": [
+      4804.4000000059605,
+      4804.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count20": [
+      4804.9000000059605,
+      4804.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count21": [
+      4805,
+      4805.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count22": [
+      4805.10000000149,
+      4805.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count23": [
+      4806.20000000298,
+      4806.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count24": [
+      4806.80000000447,
+      4806.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count25": [
+      4807,
+      4807.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count26": [
+      5122.30000000447,
+      5124.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count27": [
+      5140.30000000447,
+      5140.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count28": [
+      5153.20000000298,
+      5156
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count29": [
+      5162.80000000447,
+      5164
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count30": [
+      5164.9000000059605,
+      5166.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count31": [
+      5184.60000000149,
+      5185.70000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count32": [
+      5186.30000000447,
+      5186.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count33": [
+      5190.30000000447,
+      5190.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count34": [
+      5194.10000000149,
+      5194.70000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count35": [
+      5264,
+      5264.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count36": [
+      5775.60000000149,
+      5776.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count37": [
+      5777.20000000298,
+      5777.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count38": [
+      5777.4000000059605,
+      5778.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count39": [
+      5778.20000000298,
+      5778.60000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count31": [
+      5808,
+      5808.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count40": [
+      5820.70000000298,
+      5821.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count41": [
+      5872.60000000149,
+      5875.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count42": [
+      5876.70000000298,
+      5878.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count43": [
+      5882.9000000059605,
+      5884.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count44": [
+      5886.4000000059605,
+      5887.70000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count45": [
+      6062.80000000447,
+      6064
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count32": [
+      6075,
+      6075.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count46": [
+      6087.10000000149,
+      6087.20000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count47": [
+      6088,
+      6088.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count48": [
+      6089.5,
+      6091.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count49": [
+      6092.60000000149,
+      6093.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count50": [
+      6093.4000000059605,
+      6093.60000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count51": [
+      6095.30000000447,
+      6095.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count52": [
+      6096.20000000298,
+      6096.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count53": [
+      6097.4000000059605,
+      6097.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-76705-10-76765_count8": [
+      6107.20000000298,
+      6109
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count54": [
+      6135.60000000149,
+      6135.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count33": [
+      6156.5,
+      6156.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count7": [
+      6156.80000000447,
+      6156.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-53-30627-53-30995_count34": [
+      6180.9000000059605,
+      6181.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count55": [
+      6183.9000000059605,
+      6184.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count56": [
+      6188.70000000298,
+      6189.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count57": [
+      6189.4000000059605,
+      6189.70000000298
+    ],
+    "www.nytimes.com/-script-9-function-132-12459-132-12481_count0": [
+      6189.70000000298,
+      6209.60000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count58": [
+      6191.9000000059605,
+      6192.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count59": [
+      6193.60000000149,
+      6194
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count60": [
+      6194.10000000149,
+      6194.20000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count61": [
+      6194.20000000298,
+      6194.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count62": [
+      6194.60000000149,
+      6194.70000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count63": [
+      6194.70000000298,
+      6195.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count64": [
+      6195.20000000298,
+      6195.20000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count65": [
+      6195.30000000447,
+      6195.60000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count66": [
+      6195.60000000149,
+      6195.70000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count67": [
+      6195.70000000298,
+      6196.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count68": [
+      6197.20000000298,
+      6197.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count69": [
+      6198.20000000298,
+      6198.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count70": [
+      6198.80000000447,
+      6199.20000000298
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count71": [
+      6199.80000000447,
+      6200.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count72": [
+      6201.4000000059605,
+      6201.9000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count73": [
+      6203.10000000149,
+      6203.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count74": [
+      6204.4000000059605,
+      6204.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count75": [
+      6205.4000000059605,
+      6206
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count76": [
+      6207.10000000149,
+      6207.5
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count77": [
+      6208.10000000149,
+      6208.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count78": [
+      6210.80000000447,
+      6211.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count8": [
+      6215.4000000059605,
+      6215.4000000059605
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count9": [
+      6225.70000000298,
+      6225.80000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-2488-10-2669_count7": [
+      6227.9000000059605,
+      6232
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-1319-10-1341_count10": [
+      6240.30000000447,
+      6240.30000000447
+    ],
+    "www.nytimes.com/-script-9-function-132-11455-132-11523_count0": [
+      6244.70000000298,
+      6245.10000000149
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count79": [
+      6244.70000000298,
+      6245.10000000149
+    ],
+    "www.nytimes.com/-script-9-function-132-12258-132-12349_count0": [
+      6245.30000000447,
+      6245.30000000447
+    ],
+    "www.nytimes.com/-script-9-function-132-12379-132-12400_count0": [
+      6245.30000000447,
+      6245.30000000447
+    ],
+    "/storylines/pilot/burst-1f674efbb753e0d51051.js-function-10-108952-10-109082_count80": [
+      6245.30000000447,
+      6245.70000000298
+    ]
+  }
+}

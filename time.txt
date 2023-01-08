@@ -1,6 +1,41 @@
+All tested on two worker threads
+
+given files were recorded on smartphones
+
+
+**Results**
+On virtual machine: (files already given)  
+__________________________________________
+
 Site        orignal load time (sec)  new load time (sec)
 
 www.netflix.com    7.345                1.421
 www.yelp.com       2.214                1.608
 www.starbucks.com  1.200                0.966
 www.wayfair.com    2.223                1.313
+__________________________________________
+
+
+
+On Real machine: (files already given)
+__________________________________________
+
+Site        orignal load time (sec)  new load time (sec)
+
+www.netflix.com      5.5                0.29
+www.yelp.com         0.52               0.29
+www.starbucks.com    0.22               0.19
+www.wayfair.com      0.39               0.28
+www.ny.gov           0.77               0.51
+www.apple.com        5.38               5.37
+www.cbsnews.com      - highly inconsistent goes from 0.2 seconds to 7.5 seconds for both original and new
+
+
+
+On real machine with new recorded files:
+__________________________________________
+
+Site        orignal load time (sec)  new load time (sec)
+
+www.netflix.com      0.51               
+www.apple.com        5.47

@@ -1,0 +1,167 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/js_86VDIuchoD8Hn4TV-nWBOpx76JeQNCRYpJ6q8YegHQQ.js","origPath":"/sites/default/files/js/js_86VDIuchoD8Hn4TV-nWBOpx76JeQNCRYpJ6q8YegHQQ.js","e2eTesting":false,"pageLoaded":"false;","invocation_limit":"5000;","pattern":"record","proxyName":"__tracerPROXY"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/js_86VDIuchoD8Hn4TV-nWBOpx76JeQNCRYpJ6q8YegHQQ.js',
+  origPath: '/sites/default/files/js/js_86VDIuchoD8Hn4TV-nWBOpx76JeQNCRYpJ6q8YegHQQ.js',
+  e2eTesting: false,
+  pageLoaded: 'false;',
+  invocation_limit: '5000;',
+  pattern: 'record',
+  proxyName: '__tracerPROXY',
+  cg: [
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-2-31778-2-31877',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-128875-875-128929',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-144606-875-144936',
+    'www.ny.gov/-script-0-function-6-14555-6-14732',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-148212-875-148412',
+    'www.ny.gov/-script-0-function-6-24077-6-24123',
+    'www.ny.gov/-script-0-function-6-25379-6-25440',
+    'ries/waypoints/lib/noframework.waypoints.js?rnblxh-function-7-1-758-3',
+    'aries/waypoints/lib/jquery.waypoints.min.js?rnblxh-function-7-1-7-8911',
+    'filter/assets/filter/build/filters.bundle.js?v=1.x-function-1-1-1-399006',
+    'www.ny.gov/-script-1-function-7-9-7-242',
+    'www.ny.gov/-script-0-function-6-24029-6-24071',
+    '/js_-41LqoGvSxzL5tBEcHmJmoWlES0_8G4nrcp9yJVnLS0.js-function-8-1-802-38',
+    'www.ny.gov/-script-0-function-6-30048-6-30138',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-2-30370-2-30518',
+    'dors/moment/moment-timezone-with-data.min.js?v=1.x-function-1-1-1-195343',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-2-1-1709-3',
+    'www.ny.gov/-script-0-function-6-25764-6-25824',
+    '/universal-navigation/js/dist/global-nav-bundle.js-function-1-1-1584-18',
+    '/universal-navigation/js/dist/global-nav-bundle.js-function-4-611-4-705',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-140720-875-141287',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-139434-875-140028',
+    '/js_86VDIuchoD8Hn4TV-nWBOpx76JeQNCRYpJ6q8YegHQQ.js-function-6-1-104-3',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-423-19-426-5',
+    '/universal-navigation/js/dist/global-nav-bundle.js-function-6-17918-6-18301',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-142928-875-142951',
+    'www.ny.gov/-script-0-function-6-32573-6-32596',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-140133-875-140319',
+    'www.ny.gov/-script-0-function-6-32394-6-32599',
+    'files/google_tag/nygov/google_tag.script.js?rnblxh-function-1-1-1-381',
+    'www.ny.gov/-script-0-function-6-23468-6-23505',
+    'www.ny.gov/-script-3-function-60-13-67-13',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-147302-875-147601',
+    'www.ny.gov/-script-0-function-6-1-6-188',
+    'r/assets/filter/vendors/moment/moment.min.js?v=1.x-function-1-1-1-59228',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-183467-875-183578',
+    'www.ny.gov/-script-0-function-6-25561-6-25621',
+    '/js_NS0wHIiRnwxg1KOAUeERsyXy2yXa1lessISM4kbvzyc.js-function-875-131018-875-131119',
+    'ries/waypoints/lib/noframework.waypoints.js?rnblxh-function-463-18-468-3',
+    'www.ny.gov/-script-1-function-7-73-7-120',
+    'ov/modules/custom/nygov_core/js/exitModal.js?v=1.x-function-6-1-64-58'
+  ]
+}
+/**
+ * @file
+ * webny_unav smartling javascript file
+ */
+
+(function ($, Drupal, window, document) {
+
+  'use strict';
+
+  Drupal.behaviors.unavsmartling = {
+    attach: function (context, settings) {
+
+      // hide menu if javascript is enabled
+      // $('#translate-wrap .smt-trigger ul').css('display', 'none');
+      $(".footer-translate .inside-wrap .translation-menu ul.smt-menu ul").css("display", "none");
+
+      // bind click event to trigger menu display
+      /* $('.smt-trigger', context).once().bind('click', function(e) {
+          e.stopPropagation();
+          $(this).find('ul').toggle();
+          $('#translate-wrap a.smt-trigger-link').toggleClass("open");
+      }); */
+
+      // build object full of key presses
+      /* var keys = {};
+      onkeydown = onkeyup = function(e){
+          keys[e.keyCode] = e.type == 'keydown';
+      }; */
+
+      // on focusout of last item in menu, check if key press is tab and close menu if so
+      /* $('#translate-wrap .language-links li:last-child').focusout(function() {
+          if (keys[9] && !keys[16]) {
+              $('#translate-wrap .smt-trigger').find('ul').hide();
+              $('#translate-wrap a.smt-trigger-link').removeClass("open");
+          } 
+      }); */
+
+      // on focusout of first item in menu, check if key press is shift+tab and close menu if so
+      /* $('#translate-wrap .language-links li:first-child').focusout(function() {
+          if (keys[9] && keys[16]) {
+              $('#translate-wrap .smt-trigger').find('ul').hide();
+              $('#translate-wrap a.smt-trigger-link').removeClass("open");
+          } 
+      }); */
+
+      // close menu on click outside
+      /* $('body', context).once().bind('click', function(e) {
+          $('#translate-wrap .smt-trigger').find('ul').hide();
+          $('#translate-wrap a.smt-trigger-link').removeClass("open");
+      }); */
+
+      // bind enter key to trigger
+      /* $('.smt-trigger', context).keyup(function(e) {
+          if (e.keyCode === 13) {
+              $(this).find('ul').toggle();
+              $('#translate-wrap a.smt-trigger-link').toggleClass("open");
+          }
+      }); */
+
+      // Hide the vertical list of links in the footer translate menu in mobile (looks for window < 768px for NYGOV).
+      var expandCollapse = function () {
+        if ($(window).width() < 768) {
+          $(function () {
+            $(".footer-translate .inside-wrap .translation-menu ul.smt-menu ul").css("display", "none");
+          });
+        } else {
+          $(function () {
+            $(".footer-translate .inside-wrap .translation-menu ul.smt-menu ul").css("display", "flex");
+          });
+        }
+      };
+      $(window).resize(expandCollapse);
+
+      // change footer translate menu links into <select> menu (to display on mobile devices)
+      // append <select> to footer translate nav
+      var buildSelectMenu = function () {
+        var label = $('<label for="footertranslate">Translate</label>');
+        var select = $('<select id="footertranslate" name="footertranslate"></select>');
+        select.append(new Option('Translate', ''));
+        $(".footer-translate .smt-menu ul.language-links li a").each(function () {
+          select.append(new Option($(this).text(), $(this).attr('href')));
+        });
+        $('.footer-translate .smt-menu').once().append(label).append(select);
+      };
+      buildSelectMenu();
+      $("#footertranslate option:first-child").prop({
+        "disabled": "disabled",
+        "hidden": "hidden"
+      });
+
+      // Ensure links open in the same browser tab
+      $(".smt-menu select").change(function () {
+        window.location = $(this).find("option:selected").val();
+      });
+
+      //For local development: force page to load in rtl for local development & adds class "right-to-left" to <dody>
+
+      // $(document).ready(function(){
+      //   $("html[lang=en]").attr("dir", "rtl").find("body").addClass("right-to-left");
+      // });
+    }
+  }
+})(jQuery, Drupal, this);
+;
+
+[Static analyzer] Function matching reported a match
+List of functions to be instrumented: 41
+Only instrumenting the following functions from the current script /js_86VDIuchoD8Hn4TV-nWBOpx76JeQNCRYpJ6q8YegHQQ.js-function-6-1-104-3
+[Static analyzer] Function matching reported a match
+[rtiDebugInfo]1 1

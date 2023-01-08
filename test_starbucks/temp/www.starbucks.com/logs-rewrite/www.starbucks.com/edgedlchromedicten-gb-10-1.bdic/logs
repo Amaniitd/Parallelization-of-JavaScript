@@ -1,0 +1,309 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/edgedl/chrome/dict/en-gb-10-1.bdic","origPath":"/edgedl/chrome/dict/en-gb-10-1.bdic","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"rewrite","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/edgedl/chrome/dict/en-gb-10-1.bdic',
+  origPath: '/edgedl/chrome/dict/en-gb-10-1.bdic',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'rewrite',
+  proxyName: 'window',
+  cg: [
+    'www.starbucks.com/-script-0-function-2-18569-2-18905',
+    'www.starbucks.com/-script-1-function-5-9-8-9',
+    'www.starbucks.com/-script-15-function-11-39-11-3057',
+    'www.starbucks.com/-script-0-function-2-18949-2-19011',
+    'www.starbucks.com/-script-17-function-11-3525-15-3',
+    'www.starbucks.com/-script-0-function-2-44-2-308',
+    'www.starbucks.com/-script-0-function-2-16374-2-16615'
+  ],
+  signature: {
+    'www.starbucks.com/-script-1-function-5-9-8-9': { sig: [Array], time: 0, dependencies: 1 },
+    'www.starbucks.com/-script-15-function-11-39-11-3057': { sig: [Array], time: 18.799999997019768, dependencies: 1 },
+    'www.starbucks.com/-script-0-function-2-18949-2-19011': { sig: [Array], time: 0.10000000149011612, dependencies: 3 },
+    'www.starbucks.com/-script-17-function-11-3525-15-3': { sig: [Array], time: 1.8000000044703484, dependencies: 0 },
+    'www.starbucks.com/-script-0-function-2-44-2-308': { sig: [Array], time: 13.100000001490116, dependencies: 3 },
+    'www.starbucks.com/-script-0-function-2-16374-2-16615': { sig: [Array], time: 10.400000005960464, dependencies: 3 }
+  },
+  callGraph: {
+    'www.starbucks.com/-script-0-function-2-44-2-308': [ 'www.starbucks.com/-script-0-function-2-60-2-209' ],
+    'www.starbucks.com/-script-0-function-2-60-2-209': [
+      'www.starbucks.com/-script-0-function-2-15162-2-15548',
+      'www.starbucks.com/-script-0-function-2-9146-2-9552',
+      'www.starbucks.com/-script-0-function-2-16173-2-17259',
+      'www.starbucks.com/-script-0-function-2-18247-2-18360',
+      'www.starbucks.com/-script-0-function-2-13489-2-14044',
+      'www.starbucks.com/-script-0-function-2-8936-2-9137',
+      'www.starbucks.com/-script-0-function-2-4335-2-5079',
+      'www.starbucks.com/-script-0-function-2-15557-2-15656',
+      'www.starbucks.com/-script-0-function-2-814-2-1698',
+      'www.starbucks.com/-script-0-function-2-313-2-806',
+      'www.starbucks.com/-script-0-function-2-18553-2-19813',
+      'www.starbucks.com/-script-0-function-2-5758-2-5885',
+      'www.starbucks.com/-script-0-function-2-10695-2-13480',
+      'www.starbucks.com/-script-0-function-2-18369-2-18540',
+      'www.starbucks.com/-script-0-function-2-15829-2-15991',
+      'www.starbucks.com/-script-0-function-2-15665-2-15820',
+      'www.starbucks.com/-script-0-function-2-5087-2-5750',
+      'www.starbucks.com/-script-0-function-2-1706-2-1750',
+      'www.starbucks.com/-script-0-function-2-1758-2-2951',
+      'www.starbucks.com/-script-0-function-2-16000-2-16164',
+      'www.starbucks.com/-script-0-function-2-7395-2-8927',
+      'www.starbucks.com/-script-0-function-2-2959-2-4327',
+      'www.starbucks.com/-script-0-function-2-14053-2-15153',
+      'www.starbucks.com/-script-0-function-2-17973-2-18234',
+      'www.starbucks.com/-script-0-function-2-5893-2-7147',
+      'www.starbucks.com/-script-0-function-2-7156-2-7386',
+      'www.starbucks.com/-script-0-function-2-17268-2-17963',
+      'www.starbucks.com/-script-0-function-2-9561-2-10686'
+    ],
+    'www.starbucks.com/-script-0-function-2-18553-2-19813': [
+      'www.starbucks.com/-script-0-function-2-131-2-175',
+      'www.starbucks.com/-script-0-function-2-18263-2-18313'
+    ],
+    'www.starbucks.com/-script-0-function-2-131-2-175': [ 'www.starbucks.com/-script-0-function-2-60-2-209' ],
+    'www.starbucks.com/-script-0-function-2-18247-2-18360': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-17268-2-17963': [
+      'www.starbucks.com/-script-0-function-2-17298-2-17798',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-17973-2-18234': [],
+    'www.starbucks.com/-script-0-function-2-15665-2-15820': [],
+    'www.starbucks.com/-script-0-function-2-17298-2-17798': [],
+    'www.starbucks.com/-script-0-function-2-17590-2-17627': [ 'www.starbucks.com/-script-0-function-2-17298-2-17798' ],
+    'www.starbucks.com/-script-0-function-2-14053-2-15153': [
+      'www.starbucks.com/-script-0-function-2-15681-2-15770',
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-131-2-175',
+      'www.starbucks.com/-script-0-function-2-14083-2-14191'
+    ],
+    'www.starbucks.com/-script-0-function-2-15829-2-15991': [],
+    'www.starbucks.com/-script-0-function-2-15681-2-15770': [
+      'www.starbucks.com/-script-0-function-2-15033-2-15059',
+      'www.starbucks.com/-script-0-function-2-14459-2-14494',
+      'www.starbucks.com/-script-0-function-2-5536-2-5574',
+      'www.starbucks.com/-script-0-function-2-17647-2-17701',
+      'www.starbucks.com/-script-0-function-2-18740-2-18769',
+      'www.starbucks.com/-script-0-function-2-8239-2-8278'
+    ],
+    'www.starbucks.com/-script-0-function-2-14459-2-14494': [ 'www.starbucks.com/-script-0-function-2-14083-2-14191' ],
+    'www.starbucks.com/-script-0-function-2-14083-2-14191': [],
+    'www.starbucks.com/-script-0-function-2-15033-2-15059': [ 'www.starbucks.com/-script-0-function-2-14083-2-14191' ],
+    'www.starbucks.com/-script-0-function-2-18263-2-18313': [
+      'www.starbucks.com/-script-0-function-2-17627-2-17703',
+      'www.starbucks.com/-script-0-function-2-17368-2-17524'
+    ],
+    'www.starbucks.com/-script-0-function-2-17627-2-17703': [ 'www.starbucks.com/-script-0-function-2-15681-2-15770' ],
+    'www.starbucks.com/-script-0-function-2-17647-2-17701': [],
+    'www.starbucks.com/-script-0-function-2-17368-2-17524': [
+      'www.starbucks.com/-script-0-function-2-17560-2-17590',
+      'www.starbucks.com/-script-0-function-2-13011-2-13095',
+      'www.starbucks.com/-script-0-function-2-4770-2-5023',
+      'www.starbucks.com/-script-0-function-2-17368-2-17524',
+      'www.starbucks.com/-script-0-function-2-9162-2-9206',
+      'www.starbucks.com/-script-0-function-2-17312-2-17368',
+      'www.starbucks.com/-script-0-function-2-1461-2-1487',
+      'www.starbucks.com/-script-0-function-2-1595-2-1635',
+      'www.starbucks.com/-script-0-function-2-3350-2-3415',
+      'www.starbucks.com/-script-0-function-2-3424-2-3502',
+      'www.starbucks.com/-script-0-function-2-1816-2-1905',
+      'www.starbucks.com/-script-0-function-2-1774-2-1816',
+      'www.starbucks.com/-script-0-function-2-7124-2-7144',
+      'www.starbucks.com/-script-0-function-2-13232-2-13366',
+      'www.starbucks.com/-script-0-function-2-13382-2-13477',
+      'www.starbucks.com/-script-0-function-2-9206-2-9303'
+    ],
+    'www.starbucks.com/-script-0-function-2-17312-2-17368': [
+      'www.starbucks.com/-script-0-function-2-17989-2-18184',
+      'www.starbucks.com/-script-0-function-2-17798-2-17824'
+    ],
+    'www.starbucks.com/-script-0-function-2-17798-2-17824': [ 'www.starbucks.com/-script-0-function-2-17284-2-17298' ],
+    'www.starbucks.com/-script-0-function-2-17284-2-17298': [],
+    'www.starbucks.com/-script-0-function-2-17560-2-17590': [],
+    'www.starbucks.com/-script-0-function-2-16000-2-16164': [],
+    'www.starbucks.com/-script-0-function-2-814-2-1698': [
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-313-2-806': [ 'www.starbucks.com/-script-0-function-2-131-2-175' ],
+    'www.starbucks.com/-script-0-function-2-9146-2-9552': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258',
+      'www.starbucks.com/-script-0-function-2-16681-2-16808',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-16173-2-17259': [ 'www.starbucks.com/-script-0-function-2-131-2-175' ],
+    'www.starbucks.com/-script-0-function-2-16340-2-17258': [],
+    'www.starbucks.com/-script-0-function-2-16681-2-16808': [
+      'www.starbucks.com/-script-0-function-2-16354-2-16681',
+      'www.starbucks.com/-script-0-function-2-16189-2-16253'
+    ],
+    'www.starbucks.com/-script-0-function-2-16189-2-16253': [],
+    'www.starbucks.com/-script-0-function-2-16354-2-16681': [
+      'www.starbucks.com/-script-0-function-2-16896-2-17163',
+      'www.starbucks.com/-script-0-function-2-16189-2-16253'
+    ],
+    'www.starbucks.com/-script-0-function-2-16896-2-17163': [],
+    'www.starbucks.com/-script-0-function-2-17524-2-17560': [ 'www.starbucks.com/-script-0-function-2-17560-2-17590' ],
+    'www.starbucks.com/-script-0-function-2-8936-2-9137': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258',
+      'www.starbucks.com/-script-0-function-2-16681-2-16808',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-4335-2-5079': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-4351-2-4437',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-4351-2-4437': [ 'www.starbucks.com/-script-0-function-2-4437-2-4476' ],
+    'www.starbucks.com/-script-0-function-2-4437-2-4476': [ 'www.starbucks.com/-script-0-function-2-16681-2-16808' ],
+    'www.starbucks.com/-script-0-function-2-9561-2-10686': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258',
+      'www.starbucks.com/-script-0-function-2-16681-2-16808',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-9929-2-9979',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-9929-2-9979': [],
+    'www.starbucks.com/-script-0-function-2-10695-2-13480': [
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-13489-2-14044': [],
+    'www.starbucks.com/-script-0-function-2-18369-2-18540': [ 'www.starbucks.com/-script-0-function-2-131-2-175' ],
+    'www.starbucks.com/-script-0-function-2-15557-2-15656': [],
+    'www.starbucks.com/-script-0-function-2-15162-2-15548': [],
+    'www.starbucks.com/-script-0-function-2-2959-2-4327': [
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-131-2-175',
+      'www.starbucks.com/-script-0-function-2-16374-2-16615'
+    ],
+    'www.starbucks.com/-script-0-function-2-5758-2-5885': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-131-2-175',
+      'www.starbucks.com/-script-0-function-2-16681-2-16808',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258'
+    ],
+    'www.starbucks.com/-script-0-function-2-16374-2-16615': [
+      'www.starbucks.com/-script-0-function-2-15845-2-15979',
+      'www.starbucks.com/-script-15-function-11-364-11-430',
+      'www.starbucks.com/-script-0-function-2-1905-2-1947',
+      'www.starbucks.com/-script-0-function-2-16808-2-16896',
+      'www.starbucks.com/-script-0-function-2-4476-2-4504'
+    ],
+    'www.starbucks.com/-script-0-function-2-15845-2-15979': [],
+    'www.starbucks.com/-script-0-function-2-4476-2-4504': [],
+    'www.starbucks.com/-script-0-function-2-16808-2-16896': [ 'www.starbucks.com/-script-0-function-2-17368-2-17524' ],
+    'www.starbucks.com/-script-0-function-2-17989-2-18184': [
+      'www.starbucks.com/-script-0-function-2-17798-2-17824',
+      'www.starbucks.com/-script-0-function-2-4814-2-5001'
+    ],
+    'www.starbucks.com/-script-0-function-2-4770-2-5023': [ 'www.starbucks.com/-script-0-function-2-17989-2-18184' ],
+    'www.starbucks.com/-script-0-function-2-4814-2-5001': [ 'www.starbucks.com/-script-0-function-2-16354-2-16681' ],
+    'www.starbucks.com/-script-0-function-2-13011-2-13095': [],
+    'www.starbucks.com/-script-0-function-2-1706-2-1750': [ 'www.starbucks.com/-script-0-function-2-131-2-175' ],
+    'www.starbucks.com/-script-0-function-2-1758-2-2951': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-1947-2-1999',
+      'www.starbucks.com/-script-0-function-2-17627-2-17703',
+      'www.starbucks.com/-script-0-function-2-131-2-175',
+      'www.starbucks.com/-script-0-function-2-16374-2-16615'
+    ],
+    'www.starbucks.com/-script-0-function-2-7156-2-7386': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-131-2-175',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258'
+    ],
+    'www.starbucks.com/-script-0-function-2-7395-2-8927': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258',
+      'www.starbucks.com/-script-0-function-2-16681-2-16808',
+      'www.starbucks.com/-script-0-function-2-7970-2-8083',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-7701-2-7939',
+      'www.starbucks.com/-script-0-function-2-15681-2-15770',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-7701-2-7939': [],
+    'www.starbucks.com/-script-0-function-2-7970-2-8083': [],
+    'www.starbucks.com/-script-0-function-2-8239-2-8278': [],
+    'www.starbucks.com/-script-0-function-2-5087-2-5750': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-5103-2-5340',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-15681-2-15770',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-5536-2-5574': [ 'www.starbucks.com/-script-0-function-2-5103-2-5340' ],
+    'www.starbucks.com/-script-0-function-2-5103-2-5340': [],
+    'www.starbucks.com/-script-0-function-2-5893-2-7147': [
+      'www.starbucks.com/-script-0-function-2-17590-2-17627',
+      'www.starbucks.com/-script-0-function-2-16340-2-17258',
+      'www.starbucks.com/-script-0-function-2-16681-2-16808',
+      'www.starbucks.com/-script-0-function-2-17524-2-17560',
+      'www.starbucks.com/-script-0-function-2-6517-2-6564',
+      'www.starbucks.com/-script-0-function-2-131-2-175'
+    ],
+    'www.starbucks.com/-script-0-function-2-6517-2-6564': [],
+    'www.starbucks.com/-script-0-function-2-1947-2-1999': [ 'www.starbucks.com/-script-0-function-2-17524-2-17560' ],
+    'www.starbucks.com/-script-1-function-5-9-8-9': [],
+    'www.starbucks.com/-script-15-function-11-39-11-3057': [
+      'www.starbucks.com/-script-15-function-11-353-11-1269',
+      'www.starbucks.com/-script-15-function-11-1430-11-3054'
+    ],
+    'www.starbucks.com/-script-15-function-11-353-11-1269': [
+      'www.starbucks.com/-script-15-function-11-1029-11-1212',
+      'www.starbucks.com/-script-0-function-2-16374-2-16615'
+    ],
+    'www.starbucks.com/-script-0-function-2-7124-2-7144': [ 'www.starbucks.com/-script-0-function-2-5909-2-6517' ],
+    'www.starbucks.com/-script-0-function-2-5909-2-6517': [ 'www.starbucks.com/-script-0-function-2-6564-2-6614' ],
+    'www.starbucks.com/-script-15-function-11-1029-11-1212': [],
+    'www.starbucks.com/-script-15-function-11-1430-11-3054': [],
+    'www.starbucks.com/-script-17-function-11-3525-15-3': [ 'www.starbucks.com/-script-0-function-2-16374-2-16615' ],
+    'www.starbucks.com/-script-0-function-2-6564-2-6614': [],
+    'www.starbucks.com/-script-0-function-2-9162-2-9206': [ 'www.starbucks.com/-script-0-function-2-16354-2-16681' ],
+    'www.starbucks.com/-script-0-function-2-18949-2-19011': [
+      'www.starbucks.com/-script-0-function-2-18263-2-18313',
+      'www.starbucks.com/-script-0-function-2-19011-2-19133'
+    ],
+    'www.starbucks.com/-script-0-function-2-19011-2-19133': [],
+    'www.starbucks.com/-script-0-function-2-18569-2-18905': [
+      'www.starbucks.com/-script-0-function-2-15681-2-15770',
+      'www.starbucks.com/-script-0-function-2-18263-2-18313',
+      'www.starbucks.com/-script-0-function-2-19011-2-19133',
+      'www.starbucks.com/-script-0-function-2-16374-2-16615'
+    ],
+    'www.starbucks.com/-script-0-function-2-9206-2-9303': [ 'www.starbucks.com/-script-0-function-2-16354-2-16681' ],
+    'www.starbucks.com/-script-0-function-2-18740-2-18769': [],
+    'www.starbucks.com/-script-0-function-2-1461-2-1487': [],
+    'www.starbucks.com/-script-0-function-2-13232-2-13366': [],
+    'www.starbucks.com/-script-0-function-2-3350-2-3415': [ 'www.starbucks.com/-script-0-function-2-19011-2-19133' ],
+    'www.starbucks.com/-script-0-function-2-1774-2-1816': [ 'www.starbucks.com/-script-0-function-2-19011-2-19133' ],
+    'www.starbucks.com/-script-0-function-2-1905-2-1947': [ 'www.starbucks.com/-script-0-function-2-17368-2-17524' ],
+    'www.starbucks.com/-script-0-function-2-1595-2-1635': [],
+    'www.starbucks.com/-script-0-function-2-13382-2-13477': [],
+    'www.starbucks.com/-script-0-function-2-3424-2-3502': [
+      'www.starbucks.com/-script-0-function-2-18263-2-18313',
+      'www.starbucks.com/-script-0-function-2-19011-2-19133'
+    ],
+    'www.starbucks.com/-script-0-function-2-1816-2-1905': [ 'www.starbucks.com/-script-0-function-2-19011-2-19133' ],
+    'www.starbucks.com/-script-15-function-11-364-11-430': []
+  }
+}
+Pattern for current instrumentation: rewrite
+Instrumenting a html file
+Wrote to wrappedSrc: /home/aman/Desktop/Parallelization-of-JavaScript/test_starbucks/temp/www.starbucks.com/logs-rewrite/www.starbucks.com/edgedlchromedicten-gb-10-1.bdic/wrapped.html
+[rtiDebugInfo]0 0

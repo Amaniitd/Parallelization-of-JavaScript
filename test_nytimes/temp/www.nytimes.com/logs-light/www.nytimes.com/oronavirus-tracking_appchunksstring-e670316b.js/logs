@@ -1,0 +1,31 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"oronavirus-tracking/_app/chunks/string-e670316b.js","origPath":"/newsgraphics/2021/coronavirus-tracking/_app/chunks/string-e670316b.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'oronavirus-tracking/_app/chunks/string-e670316b.js',
+  origPath: '/newsgraphics/2021/coronavirus-tracking/_app/chunks/string-e670316b.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+error evalmachine.<anonymous>:1
+import{c as o}from"./yootils.es-5f329d3a.js";function l(r){return r<10?`0${r}`:r}function u(r){const e=String(r).split(".");return e[0]=e[0].replace(/\B(?=(\d{3})+(?!\d))/g,","),e.join(".")}function p(r,e){const t=typeof r=="number"?Math.round(r):parseInt(r);return isNaN(t)?"\u2014":t>0?`${t}%`:e?`${t.toString()}%`:`${t.toString().replace("-","\u2013")}%`}function m(r,e,t){const n=typeof r=="number"?Math.round(r):parseInt(r);return n===0?e===0?"\u2014":"Flat":isNaN(n)||n===1/0?"\u2014":n>0?`+${o(n)}%`:t?`${o(n)}%`:`${o(n).replace("-","\u2013")}%`}const f=" Jan. Feb. Mar. Apr. May Jun. Jul. Aug. Sept. Oct. Nov. Dec.".split(" ");function d(r){if(!r)return;const[,e,t]=r.split("-");return`${f[+e]} ${+t}`}function a(r,e=0){const t=String(r).split(".");return t[0]=t[0].replace(/\B(?=(\d{3})+(?!\d))/g,","),(t.length<2?!0:!!t[1].match(/^0+$/))&&e<1?t[0]:t.join(".")}function $(r){return r<1e6?a(r,0):r<1e9?`${a((.1*Math.floor(r/1e5)).toFixed(1))} million`:r<1e12?`${a(.1*Math.floor(r/1e8))} billion`:void 0}function i(r,e,t,n=!1){if(r!==0&&!r)return"\u2014";if(r===0&&!n)return 0;if(r===0&&n)return"\u2014";if(r<Math.pow(10,-1*t))return`<${Math.pow(10,-1*t)}`;if(e)return o(Math.round(r));if(t)return u(r.toFixed(t))}const s=/(NaN|\[object Object\]|undefined|null|Infinity)/;function g(r){if(!r)return r;if(r===".")return"";const e=`${r.trim()}.`.replace(/(\.<\/\w+>)\./g,"$1").replace(/\.\./g,".").replace(/\. {2,}/g,". ");if(s.test(e))throw new Error(`Sentence included a Bad String: "${e}"`);return e}function b(r){return r<9.5?`${i(r,!1,1)}%`:`${i(r,!0,0)}%`}export{p as a,i as b,b as c,g as d,$ as e,m as f,d as g,l as p};
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at new Script (vm.js:88:7)
+    at main (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:547:13)
+    at Object.<anonymous> (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:575:20)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+import{c as o}from"./yootils.es-5f329d3a.js";function l(r){return r<10?`0${r}`:r}function u(r){const e=String(r).split(".");return e[0]=e[0].replace(/\B(?=(\d{3})+(?!\d))/g,","),e.join(".")}function p(r,e){const t=typeof r=="number"?Math.round(r):parseInt(r);return isNaN(t)?"\u2014":t>0?`${t}%`:e?`${t.toString()}%`:`${t.toString().replace("-","\u2013")}%`}function m(r,e,t){const n=typeof r=="number"?Math.round(r):parseInt(r);return n===0?e===0?"\u2014":"Flat":isNaN(n)||n===1/0?"\u2014":n>0?`+${o(n)}%`:t?`${o(n)}%`:`${o(n).replace("-","\u2013")}%`}const f=" Jan. Feb. Mar. Apr. May Jun. Jul. Aug. Sept. Oct. Nov. Dec.".split(" ");function d(r){if(!r)return;const[,e,t]=r.split("-");return`${f[+e]} ${+t}`}function a(r,e=0){const t=String(r).split(".");return t[0]=t[0].replace(/\B(?=(\d{3})+(?!\d))/g,","),(t.length<2?!0:!!t[1].match(/^0+$/))&&e<1?t[0]:t.join(".")}function $(r){return r<1e6?a(r,0):r<1e9?`${a((.1*Math.floor(r/1e5)).toFixed(1))} million`:r<1e12?`${a(.1*Math.floor(r/1e8))} billion`:void 0}function i(r,e,t,n=!1){if(r!==0&&!r)return"\u2014";if(r===0&&!n)return 0;if(r===0&&n)return"\u2014";if(r<Math.pow(10,-1*t))return`<${Math.pow(10,-1*t)}`;if(e)return o(Math.round(r));if(t)return u(r.toFixed(t))}const s=/(NaN|\[object Object\]|undefined|null|Infinity)/;function g(r){if(!r)return r;if(r===".")return"";const e=`${r.trim()}.`.replace(/(\.<\/\w+>)\./g,"$1").replace(/\.\./g,".").replace(/\. {2,}/g,". ");if(s.test(e))throw new Error(`Sentence included a Bad String: "${e}"`);return e}function b(r){return r<9.5?`${i(r,!1,1)}%`:`${i(r,!0,0)}%`}export{p as a,i as b,b as c,g as d,$ as e,m as f,d as g,l as p};
+
+[rtiDebugInfo]0 0

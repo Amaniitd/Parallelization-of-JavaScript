@@ -1,0 +1,31 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"ronavirus-tracking/_app/chunks/godzown-9010971d.js","origPath":"/newsgraphics/2021/coronavirus-tracking/_app/chunks/godzown-9010971d.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'ronavirus-tracking/_app/chunks/godzown-9010971d.js',
+  origPath: '/newsgraphics/2021/coronavirus-tracking/_app/chunks/godzown-9010971d.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+error evalmachine.<anonymous>:1
+const s="https://www.nytimes.com",r="https://www.stg.nytimes.com";let n=s;function c(e){return"godzown:"+e}function l(){typeof location!="undefined"&&(/localhost/.test(location.hostname)||/preview/.test(location.hostname))&&(n=r)}async function d(e){try{const o=await fetch(`${n}/svc/int/godzown/u/${e}`,{headers:{Accept:"application/json"},credentials:"include"}),{contents:t}=await o.json();return t}catch{try{let t=JSON.parse(localStorage[c(e)]);return i(e,t),t}catch(t){return console.error("localStorage read failed",t),null}}}async function i(e,o={}){const t=JSON.stringify(o);try{localStorage[c(e)]=t}catch(a){console.error("localStorage set failed",a)}await fetch(n+"/svc/int/godzown/u/"+e,{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},credentials:"include",body:t})}export{l as a,d as g,i as s};
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at new Script (vm.js:88:7)
+    at main (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:547:13)
+    at Object.<anonymous> (/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/instrumentation/record.js:575:20)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+const s="https://www.nytimes.com",r="https://www.stg.nytimes.com";let n=s;function c(e){return"godzown:"+e}function l(){typeof location!="undefined"&&(/localhost/.test(location.hostname)||/preview/.test(location.hostname))&&(n=r)}async function d(e){try{const o=await fetch(`${n}/svc/int/godzown/u/${e}`,{headers:{Accept:"application/json"},credentials:"include"}),{contents:t}=await o.json();return t}catch{try{let t=JSON.parse(localStorage[c(e)]);return i(e,t),t}catch(t){return console.error("localStorage read failed",t),null}}}async function i(e,o={}){const t=JSON.stringify(o);try{localStorage[c(e)]=t}catch(a){console.error("localStorage set failed",a)}await fetch(n+"/svc/int/godzown/u/"+e,{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},credentials:"include",body:t})}export{l as a,d as g,i as s};
+
+[rtiDebugInfo]0 0

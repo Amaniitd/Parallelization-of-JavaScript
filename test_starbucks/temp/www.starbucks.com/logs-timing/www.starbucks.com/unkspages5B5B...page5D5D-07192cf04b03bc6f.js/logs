@@ -1,0 +1,28 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"unks/pages/%5B%5B...page%5D%5D-07192cf04b03bc6f.js","origPath":"/_next/static/chunks/pages/%5B%5B...page%5D%5D-07192cf04b03bc6f.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'unks/pages/%5B%5B...page%5D%5D-07192cf04b03bc6f.js',
+  origPath: '/_next/static/chunks/pages/%5B%5B...page%5D%5D-07192cf04b03bc6f.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: [
+    'www.starbucks.com/-script-0-function-2-18569-2-18905',
+    'www.starbucks.com/-script-1-function-5-9-8-9',
+    'www.starbucks.com/-script-15-function-11-39-11-3057',
+    'www.starbucks.com/-script-0-function-2-18949-2-19011',
+    'www.starbucks.com/-script-17-function-11-3525-15-3',
+    'www.starbucks.com/-script-0-function-2-44-2-308',
+    'www.starbucks.com/-script-0-function-2-16374-2-16615'
+  ]
+}
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[186],{9465:function(a,b,c){(window.__NEXT_P=window.__NEXT_P||[]).push(["/[[...page]]",function(){return c(9264)}])},9264:function(c,b,a){"use strict";a.r(b),a.d(b,{"__N_SSG":function(){return g}});var d=a(5893);a(7294);var e=a(9060);function f(a,b,c){return b in a?Object.defineProperty(a,b,{value:c,enumerable:!0,configurable:!0,writable:!0}):a[b]=c,a}var g=!0;b.default=function(a){return(0,d.jsx)(e.Z,function(d){for(var a=1;a<arguments.length;a++){var c=null!=arguments[a]?arguments[a]:{},b=Object.keys(c);"function"==typeof Object.getOwnPropertySymbols&&(b=b.concat(Object.getOwnPropertySymbols(c).filter(function(a){return Object.getOwnPropertyDescriptor(c,a).enumerable}))),b.forEach(function(a){f(d,a,c[a])})}return d}({},a))}}},function(a){a.O(0,[774,662,619,60,888,179],function(){return a(a.s=9465)}),_N_E=a.O()}])
+//# sourceMappingURL=[[...page]]-07192cf04b03bc6f.js.map
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 0
+[rtiDebugInfo]0 0

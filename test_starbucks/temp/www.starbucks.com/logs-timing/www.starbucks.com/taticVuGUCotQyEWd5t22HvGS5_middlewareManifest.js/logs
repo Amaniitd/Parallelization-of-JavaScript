@@ -1,0 +1,27 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"tatic/VuGUCotQyEWd5t22HvGS5/_middlewareManifest.js","origPath":"/_next/static/VuGUCotQyEWd5t22HvGS5/_middlewareManifest.js","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: 'tatic/VuGUCotQyEWd5t22HvGS5/_middlewareManifest.js',
+  origPath: '/_next/static/VuGUCotQyEWd5t22HvGS5/_middlewareManifest.js',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window',
+  cg: [
+    'www.starbucks.com/-script-0-function-2-18569-2-18905',
+    'www.starbucks.com/-script-1-function-5-9-8-9',
+    'www.starbucks.com/-script-15-function-11-39-11-3057',
+    'www.starbucks.com/-script-0-function-2-18949-2-19011',
+    'www.starbucks.com/-script-17-function-11-3525-15-3',
+    'www.starbucks.com/-script-0-function-2-44-2-308',
+    'www.starbucks.com/-script-0-function-2-16374-2-16615'
+  ]
+}
+self.__MIDDLEWARE_MANIFEST=[];self.__MIDDLEWARE_MANIFEST_CB&&self.__MIDDLEWARE_MANIFEST_CB()
+List of functions to be instrumented: 7
+Only instrumenting the following functions from the current script 0
+[rtiDebugInfo]0 0

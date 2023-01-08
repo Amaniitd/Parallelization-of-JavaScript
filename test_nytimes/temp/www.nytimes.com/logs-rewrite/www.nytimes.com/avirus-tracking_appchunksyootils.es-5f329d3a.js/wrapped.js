@@ -1,0 +1,1 @@
+function i(t,r,n){return t<r?r:t>n?n:t}function s(t,r){var n=t[0],c=r[0],e=(r[1]-c)/(t[1]-n);return Object.assign(function(a){return c+(a-n)*e},{inverse:function(){return s(r,t)}})}function u(t){var r=String(t).split(".");return r[0]=r[0].replace(/\B(?=(\d{3})+(?!\d))/g,","),r.join(".")}export{i as a,u as c,s as l};

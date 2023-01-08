@@ -1,0 +1,17 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"253b4327354a2f3a3a7e677027323025334339273d462d3f4c","origPath":"/qrHqf2v_XueOhngk?5c15c745c009621d=fKyUVqO9-dzsxewA-Az2ApXgMNkbtX69e9TYI3M0JBEEyDUy4IKZtl10nVKzoXYHI_YQ2m-OKiz3xTrbfI0-nkwo8wRNI2PEa9TCkH_FstYZAfZEn5sQFlzXx8lILwgccqMGBIDyYZZLxpuocz03C0CFbKUbYx7gPcqeb6tpk429D56RePzyt7pyY_kp2ItjYBy9mDibfSyibmRJC5s&jac=1&je=3635262470676755777a66697c6d35253f422738303a25383a253b4327354a2f3a3a7e677027323025334339273d462d3f4c","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '253b4327354a2f3a3a7e677027323025334339273d462d3f4c',
+  origPath: '/qrHqf2v_XueOhngk?5c15c745c009621d=fKyUVqO9-dzsxewA-Az2ApXgMNkbtX69e9TYI3M0JBEEyDUy4IKZtl10nVKzoXYHI_YQ2m-OKiz3xTrbfI0-nkwo8wRNI2PEa9TCkH_FstYZAfZEn5sQFlzXx8lILwgccqMGBIDyYZZLxpuocz03C0CFbKUbYx7gPcqeb6tpk429D56RePzyt7pyY_kp2ItjYBy9mDibfSyibmRJC5s&jac=1&je=3635262470676755777a66697c6d35253f422738303a25383a253b4327354a2f3a3a7e677027323025334339273d462d3f4c',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+
+[rtiDebugInfo]0 0
+Error: Empty source

@@ -1,0 +1,24 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"/ads/tpc-check.html","origPath":"/ads/tpc-check.html","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '/ads/tpc-check.html',
+  origPath: '/ads/tpc-check.html',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+Pattern for current instrumentation: cg
+Instrumenting a html file
+function source is  function setCookie(name,value) {
+        var expires = "";
+        var date = new Date();
+        date.setTime(date.getTime() + 300000);
+        expires = "; expires=" + date.toUTCString();
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+      }
+[rtiDebugInfo]0 2

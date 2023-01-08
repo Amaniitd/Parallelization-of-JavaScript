@@ -1,0 +1,17 @@
+/home/aman/Desktop/Parallelization-of-JavaScript/horcrux-instrumentation-rewriter/node_modules/falafel/index.js
+Options are {"useProxy":true,"caching":false,"include_prefix":false,"path":"312435312e34332e3f39243d392434322c303d243d312c3137","origPath":"/qrHqf2v_XueOhngk?5c15c745c009621d=fKyUVqO9-dzsxewA-Az2ApXgMNkbtX69e9TYI3M0JBEEyDUy4IKZtl10nVKzoXYHI_YQ2m-OKiz3xTrbfI0-nkwo8wRNI2PEa9TCkH_FstYZAfZEn5sQFlzXx8lILwgccqMGBIDyYZZLxpuocz03C0CFbKUbYx7gPcqeb6tpk429D56RePzyt7pyY_kp2ItjYBy9mDibfSyibmRJC5s&jac=1&je=333632242672677c3f3f372630312435312e3b3c2e3f39243d3224373b2c3038243d302c31302c34302e3a382e3f3b263b302436382e33392e3f39243f362434322c3933243d312c35352c37382e3b3e2e3c3226393c2436382e33332e3c30243d3724373b2c3f39243d312c35332c34312e323a2e3f3b263c312435312e34332e3f39243d392434322c303d243d312c3137","e2eTesting":false,"pageLoaded":"true;","invocation_limit":"5000000;","pattern":"cg","proxyName":"window"}
+{
+  useProxy: true,
+  caching: false,
+  include_prefix: false,
+  path: '312435312e34332e3f39243d392434322c303d243d312c3137',
+  origPath: '/qrHqf2v_XueOhngk?5c15c745c009621d=fKyUVqO9-dzsxewA-Az2ApXgMNkbtX69e9TYI3M0JBEEyDUy4IKZtl10nVKzoXYHI_YQ2m-OKiz3xTrbfI0-nkwo8wRNI2PEa9TCkH_FstYZAfZEn5sQFlzXx8lILwgccqMGBIDyYZZLxpuocz03C0CFbKUbYx7gPcqeb6tpk429D56RePzyt7pyY_kp2ItjYBy9mDibfSyibmRJC5s&jac=1&je=333632242672677c3f3f372630312435312e3b3c2e3f39243d3224373b2c3038243d302c31302c34302e3a382e3f3b263b302436382e33392e3f39243f362434322c3933243d312c35352c37382e3b3e2e3c3226393c2436382e33332e3c30243d3724373b2c3f39243d312c35332c34312e323a2e3f3b263c312435312e34332e3f39243d392434322c303d243d312c3137',
+  e2eTesting: false,
+  pageLoaded: 'true;',
+  invocation_limit: '5000000;',
+  pattern: 'cg',
+  proxyName: 'window'
+}
+
+[rtiDebugInfo]0 0
+Error: Empty source

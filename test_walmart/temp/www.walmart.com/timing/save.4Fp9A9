@@ -1,34 +1,0 @@
-
-35.190.10.96�"�
-POST /api/v2/collector HTTP/1.1)
-Host!collector-pxu6b0qd2s.px-cloud.net
-
-Connection
-keep-alive
-Content-Length11184
-	sec-ch-ua'"Not?A_Brand";v="8", "Chromium";v="108"
-sec-ch-ua-platform"Linux"
-sec-ch-ua-mobile?0s
-
-User-AgenteMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.361
-Content-type!application/x-www-form-urlencoded
-Accept*/*!
-Originhttps://www.walmart.com
-Sec-Fetch-Site
-cross-site
-Sec-Fetch-Modecors
-Sec-Fetch-Destempty#
-Refererhttps://www.walmart.com/$
-Accept-Encodinggzip, deflate, br-
-Accept-Languageen-GB,en-US;q=0.9,en;q=0.8�payload=aUkQRhAIEGJqAwIKBgcQHhBWEAhJEGJqAwIKAQIQCAMCAQceEGJqAwMDBgMQCAYGBx4QYmoDAgUCBxAIEHdAQF1AblwSEhISU0YSRVcSGlpGRkJBCB0dRUVFHEVTXl9TQEYcUV1fHUJKHWJqRwRQAkNWAGEdW1xbRhxYQQgACAMBAAAAG25cEhISElNGEnpmf35wXVZLd15XX1dcRhx6QBIaWkZGQkEIHR1FRUUcRVNeX1NARhxRXV8dQkodYmpHBFACQ1YAYR1bXFtGHFhGBCAEIAwsC^AAAbEB4QYmoDAwIABRAIEF9dSR0FXXURXQBAeEGJqAwIGAwQQ9GCAMpEBwYLHhBiKagMCBQIK9EAgQRkBHVExAeEGJqAwNMDCgsQCEZAR1ceEGJqAwIBBAUQCBAO>RX1NbXFFdXEZXXEYQHhBiagMCBAAAEAgAHhBiagMCAAUAEAgDBQEKBB4QDYmoDNAwICBhAIAwQFAQIFCgACAwABAR4QYmoDAgACBBAIEFEKAwQECwUCHwpXBAIfAwN_XVh9QBQZXH1EDV;DgABAQZTCK7gZTAxAeEGJqAwICCgoQCEZAR1ceEGJqAwIBBAIQCBBaRkZCQQgdHUVFRRx7FU15fU0BGHFFdXx0QT09v&appId=PXu6b0qd2S&tag=v7.2.4&uuid=c8166970-8e60-11ed-b74e-c1d2334a84a1&ft=245&seq=3&en=NTA&cs=4de529e89ef110e88f36a2d406ad9769e7517d8cbeb12e59b48a3424aa56d942&pc=0709996646398171&sid=c6eceba3-8e60-11ed-b7ec-44564c757a50󠄱󠄶󠄷󠄳󠄰󠄷󠄸󠄱󠄸󠄴󠄵󠄵󠄴&vid=c6ece327-8e60-11ed-b7ec-44564c757a50&pxhd=954554ed451a63b0a286887351ab1dabe6d2fcc3f91c32a740af8f97bcdddd8b:c6ece327-8e60-11ed-b7ec-44564c757a50&cts=c6ecef3e-8e60-11ed-b7ec-44564c757a50&rsc=3*�
-HTTP/1.1 200 OK%
-DateSat, 07 Jan 2023 07:56:40 GMT/
-Content-Typeapplication/json; charset=utf-8
-Content-Length18>
-Access-Control-Allow-MethodsGET,HEAD,PUT,PATCH,POST,DELETE6
-Access-Control-Allow-Originhttps://www.walmart.com(
- Access-Control-Allow-Credentialstrue
-Timing-Allow-Origin*
-Via
-1.1 google9
-Alt-Svc.h3=":443"; ma=2592000,h3-29=":443"; ma=2592000{"do":["pnf|cu"]}

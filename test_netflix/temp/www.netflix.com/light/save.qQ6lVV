@@ -1,51 +1,0 @@
-
-54.170.196.176»"½@
-"POST /personalization/cl2 HTTP/1.1
-Hostwww.netflix.com
-
-Connection
-keep-alive
-Content-Length64704
-	sec-ch-ua'"Not?A_Brand";v="8", "Chromium";v="108" 
-Content-Typeapplication/json
-sec-ch-ua-mobile?0s
-
-User-AgenteMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36&
-X-Netflix.Client.Request.Nameui/cl
-sec-ch-ua-platform"Linux"
-Accept*/*!
-Originhttps://www.netflix.com
-Sec-Fetch-Sitesame-origin
-Sec-Fetch-Modecors
-Sec-Fetch-Destempty&
-Refererhttps://www.netflix.com/in/$
-Accept-Encodinggzip, deflate, br-
-Accept-Languageen-GB,en-US;q=0.9,en;q=0.8×
-CookieÌnfvdid=BQFmAAEBEEfTEeFanBDFX5G-N0O-5YVAgjYvbtaVT2boAPMJTOY1-26VF95U5ZFN1TELLWsPk2F2HWsjlsulksGFQCPbqCLGGsLBsXe0z-jddiGAqkCA8A%3D%3D; memclid=eb0b1990-6f0c-4fe0-85b6-70a12325c08e; flwssn=6e88c2d3-51d7-432c-a6a7-579f533b6e39; SecureNetflixId=v%3D2%26mac%3DAQEAEQABABStbeLiE6v6Qh8cfzg0w6pedHx6i0f_HSg.%26dt%3D1673001363879; NetflixId=v%3D2%26ct%3DBQAOAAEBEPilsHlABnnPo74WWX9efmOBAGGtqwp3YR4recP0Bmh_0U0s-HQJcnh9FWINWId4r2bgC_TRBvpGuFhCEObv0J5K0SSkDOwkpv2gI1h1nyAqjEsvIE8zkCjo_ROFavjKqnSob1_iT3VflV5l1WMjE54UuqsKi44HefDMRgFOSTTmoc6_yQO0NZDgaVbL5WLemEar98wnl8ODEWq0R1e4HoEtx79cdkJb4Jv2k_FbgCcqpFVDf__Q33Yls4Dd6d1pdsqFlPknWoNt3LvG46kWLYxsUIfg_QTpm3KyE7iitzkMaIo3oby_NyGdVQAwktnJqCx9j2GNO-RbgWfNpX3568aOOp0Hq3GiRwSoDLVAE5LVnYc.%26bt%3Ddev%26mac%3DAQEAEAABABSi0wb6yZTILGl6cqkCyCALHk3UOtyYWd8.; OptanonConsent=isGpcEnabled=0&datestamp=Fri+Jan+06+2023+16%3A06%3A09+GMT%2B0530+(India+Standard+Time)&version=202211.2.0&isIABGlobal=false&hosts=&consentId=7abdf346-2907-4e75-b2a8-69c8a3e3a17b&interactionCount=0&landingPath=https%3A%2F%2Fwww.netflix.com%2Fin%2F&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1Æ2{"currentState":{"2093415078508750":{"source":"www","schema":{"name":"netflixApp","version":"1.393.0"},"type":["Log","Session"],"id":2093415078508750,"sequence":1,"time":1673001367987},"2093415409668259":{"nfvdid":"BQFmAAEBEEfTEeFanBDFX5G-N0O-5YVAgjYvbtaVT2boAPMJTOY1-26VF95U5ZFN1TELLWsPk2F2HWsjlsulksGFQCPbqCLGGsLBsXe0z-jddiGAqkCA8A%3D%3D","type":["VisitorDeviceId","AccountIdentity","Session"],"id":2093415409668259,"sequence":3,"time":1673001367988},"2093415151120061":{"uiLocale":"en-IN","type":["UiLocale"],"id":2093415151120061},"2093415182272629":{"utcOffset":19800000,"type":["TimeZone"],"id":2093415182272629},"2093415220196045":{"esn":"NFCDCH-LX-JVGYDLM21FQHM7GLWA1FNLWKNNCQ2H","type":["Esn"],"id":2093415220196045},"2093415252648272":{"cells":{},"type":["TestAllocations"],"id":2093415252648272},"2093415281663352":{"cluster":"nq_website_nonmember-prod-release","type":["www.Cluster"],"id":2093415281663352},"2093415337966310":{"appVersion":"shakti-v9c47970f","type":["AppVersion"],"id":2093415337966310},"2093415373115604":{"uiVersion":"shakti-v9c47970f","type":["UiVersion"],"id":2093415373115604},"2093415424417789":{"playerVersion":"unknown","type":["www.PlayerVersion"],"id":2093415424417789},"2093415470501776":{"url":"/in/","referrerUrl":"","type":["Webpage"],"id":2093415470501776},"2093415493889398":{"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","type":["UserAgent"],"id":2093415493889398},"2093415575827322":{"time":1673001362248,"view":"nmLanding","type":["NavigationLevel","Session"],"id":2093415575827322,"sequence":5},"2093415709760993":{"deviceLocale":"en","type":["DeviceLocale"],"id":2093415709760993},"2093416853089889":{"inputTime":1673001372055,"type":["UserInputTime"],"id":2093416853089889},"2093417089324507":{"view":"nmLanding","trackingInfo":{"ourStoryCardName":"card_watchOnDevice"},"type":["Presentation","Session"],"id":2093417089324507,"sequence":41,"time":1673001372876}},"reverseDeltas":[[{"type":["SessionEnded"],"id":2093416273873916,"sequence":23,"time":1673001370532,"duration":456,"sessionId":2093416101726187},{"view":"nmLanding","trackingInfo":{"ourStoryCardName":"card_watchOnDevice"},"type":["Presentation","Session"],"id":2093416101726187,"sequence":19,"time":1673001370076},1],[1],[{"debugEventName":"cardNameDebug","debugEventData":{"pageName":"ourStory","cardName":"card_faq","optionalParams":{"presented":true}},"type":["DebugEvent","DiscreteEvent"],"id":2093416350946915,"sequence":25,"time":1673001370532},2],[{"gesture":"swipe","confidence":1,"direction":"down","type":["DirectedGestureInput","GestureInput","UserInput"],"id":2093416376161531},1],[{"type":["SessionEnded"],"id":2093416429723461,"sequence":27,"time":1673001370532,"duration":0,"sessionId":2093416404166927},{"type":["BackCommand","Command","Session"],"id":2093416404166927,"sequence":26,"time":1673001370532},{"inputTime":1673001369769,"type":["UserInputTime"],"id":2093416032414878},2],[{"debugEventName":"cardNameDebug","debugEventData":{"pageName":"ourStory","cardName":"card_faq","optionalParams":{"presented":true}},"type":["DebugEvent","DiscreteEvent"],"id":2093416491316274,"sequence":28,"time":1673001370932},2],[{"gesture":"swipe","confidence":1,"direction":"down","type":["DirectedGestureInput","GestureInput","UserInput"],"id":2093416545103952},1],[{"type":["SessionEnded"],"id":2093416604272283,"sequence":30,"time":1673001370932,"duration":0,"sessionId":2093416571235661},{"type":["BackCommand","Command","Session"],"id":2093416571235661,"sequence":29,"time":1673001370932},1],[1],[{"debugEventName":"cardNameDebug","debugEventData":{"pageName":"ourStory","cardName":"card_watchOnDevice","optionalParams":{"presented":true}},"type":["DebugEvent","DiscreteEvent"],"id":2093416662942391,"sequence":32,"time":1673001371492},1],[{"type":["SessionEnded"],"id":2093416707213415,"sequence":33,"time":1673001371492,"duration":960,"sessionId":2093416303403666},{"view":"nmLanding","trackingInfo":{"ourStoryCardName":"card_faq"},"type":["Presentation","Session"],"id":2093416303403666,"sequence":24,"time":1673001370532},2],[{"gesture":"swipe","confidence":1,"direction":"up","type":["DirectedGestureInput","GestureInput","UserInput"],"id":2093416730157858},1],[{"type":["SessionEnded"],"id":2093416811237699,"sequence":35,"time":1673001371492,"duration":0,"sessionId":2093416756555759},{"type":["ForwardCommand","Command","Session"],"id":2093416756555759,"sequence":34,"time":1673001371492},{"inputTime":1673001370774,"type":["UserInputTime"],"id":2093416481575368},2],[{"type":["SessionEnded"],"id":2093416865520708,"sequence":36,"time":1673001372364,"duration":872,"sessionId":2093416624776736},{"view":"nmLanding","trackingInfo":{"ourStoryCardName":"card_watchOnDevice"},"type":["Presentation","Session"],"id":2093416624776736,"sequence":31,"time":1673001371492},1],[1],[{"debugEventName":"cardNameDebug","debugEventData":{"pageName":"ourStory","cardName":"card_faq","optionalParams":{"presented":true}},"type":["DebugEvent","DiscreteEvent"],"id":2093416943977723,"sequence":38,"time":1673001372365},2],[{"gesture":"swipe","confidence":1,"direction":"down","type":["DirectedGestureInput","GestureInput","UserInput"],"id":2093416987671937},1],[{"type":["SessionEnded"],"id":2093417051795615,"sequence":40,"time":1673001372365,"duration":0,"sessionId":2093417017787206},{"type":["BackCommand","Command","Session"],"id":2093417017787206,"sequence":39,"time":1673001372365},1],[1],[{"debugEventName":"cardNameDebug","debugEventData":{"pageName":"ourStory","cardName":"card_watchOnDevice","optionalParams":{"presented":true}},"type":["DebugEvent","DiscreteEvent"],"id":2093417108576166,"sequence":42,"time":1673001372876},1],[{"type":["SessionEnded"],"id":2093417131957424,"sequence":43,"time":1673001372876,"duration":511,"sessionId":2093416890024434},{"view":"nmLanding","trackingInfo":{"ourStoryCardName":"card_faq"},"type":["Presentation","Session"],"id":2093416890024434,"sequence":37,"time":1673001372365},2],[{"gesture":"swipe","confidence":1,"direction":"up","type":["DirectedGestureInput","GestureInput","UserInput"],"id":2093417169296094},1],[{"type":["SessionEnded"],"id":2093417241116392,"sequence":45,"time":1673001372876,"duration":0,"sessionId":2093417223755635},{"type":["ForwardCommand","Command","Session"],"id":2093417223755635,"sequence":44,"time":1673001372876}]],"type":"CompactConsolidatedLoggingEnvelope","version":2,"clientSendTime":1673001372880}*¹
-HTTP/1.1 200 OK6
-access-control-allow-originhttps://www.netflix.com(
- access-control-allow-credentialstrueü
-access-control-allow-headersÛAccept,Accept-Language,Authorization,Content-Type,Cookie,debugRequest,X-Netflix.application.name,X-Netflix.application.version,X-Netflix.certification.version,X-Netflix.Client.Request.Name,X-Netflix.device.type,X-Netflix.esn,X-Netflix.ichnaea.request.type,X-Netflix.oauth.consumer.key,X-Netflix.oauth.token,X-Netflix.request.uuid,X-Netflix.user.id2
-access-control-allow-methodsGET, POST, OPTIONS
-allowGET, POST, OPTIONS
-	x-ichnaea~0=true~RL=0!
-x-content-type-optionsnosniff!
-x-xss-protection1; mode=block?
-cache-control.no-cache, no-store, max-age=0, must-revalidate
-pragmano-cache
-expires0
-x-frame-optionsDENY
-content-length0%
-dateFri, 06 Jan 2023 10:36:12 GMT"
-x-envoy-upstream-service-time3 
-x-b3-traceidb66bd636451bb4014
-x-request-id$8a8225fe-51f3-42b5-bf53-83e9f8eae5ad-
-Server#clingest-secure i-0bc282fe3a4e8ba10*
-x-envoy-decorator-operationlo_svc_http*
-Via#1.1 i-096b623f56aabf463 (eu-west-1)@
-Strict-Transport-Security#max-age=31536000; includeSubDomains?
-X-Originating-URL*http://www.netflix.com/personalization/cl2
-X-Netflix.nfstatus1_1‘
-
-Set-Cookie‚memclid=eb0b1990-6f0c-4fe0-85b6-70a12325c08e; Max-Age=31536000; Expires=Sat, 06 Jan 2024 10:36:13 GMT; Path=/; Domain=.netflix.com$
-X-Netflix.proxy.execution-time17 

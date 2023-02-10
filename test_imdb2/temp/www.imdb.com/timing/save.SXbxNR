@@ -1,42 +1,0 @@
-
-13.35.185.66»"‹
-%POST /api/_ajax/metrics/ops/ HTTP/1.1
-Hostwww.imdb.com
-
-Connection
-keep-alive
-Content-Length13724
-	sec-ch-ua'"Not?A_Brand";v="8", "Chromium";v="108"
-Acceptapplication/json 
-Content-Typeapplication/json
-sec-ch-ua-mobile?0s
-
-User-AgenteMozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-sec-ch-ua-platform"Linux"
-Originhttps://www.imdb.com
-Sec-Fetch-Sitesame-origin
-Sec-Fetch-Modecors
-Sec-Fetch-Destempty 
-Refererhttps://www.imdb.com/$
-Accept-Encodinggzip, deflate, br-
-Accept-Languageen-GB,en-US;q=0.9,en;q=0.8³
-Cookie¨session-id=140-3834298-8396366; session-id-time=2082787201l; csm-hit=tb:s-VNXBP9C39591Y5FF4VYR|1673008538931&t:1673008541403&adb:adblk_no; ubid-main=135-5790080-4442801Ü
-[{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.Fetching.Count","value":1,"unit":"Count","time":1673008586243},{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.WithoutFetch.Complete.Time","value":10,"unit":"Milliseconds","time":1673008586244},{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.Fetching.Count","value":1,"unit":"Count","time":1673008586244},{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.WithFetch.Dropped.Time","value":216,"unit":"Milliseconds","time":1673008586445},{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.WithFetch.Dropped.Time","value":506,"unit":"Milliseconds","time":1673008586747},{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.Fetching.Count","value":1,"unit":"Count","time":1673008586835},{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.WithoutFetch.Complete.Time","value":21,"unit":"Milliseconds","time":1673008586836},{"pageType":"home","subPageType":"main","requestId":"VNXBP9C39591Y5FF4VYR","metricName":"Feature.WithFetch.Dropped.Time","value":768,"unit":"Milliseconds","time":1673008587581}]*¢
-HTTP/1.1 200 OK/
-Content-Typeapplication/json; charset=utf-8
-Content-Length15
-
-Connection
-keep-alive
-ServerServer%
-DateFri, 06 Jan 2023 12:36:29 GMT!
-	x-amz-rid5P5NFWHX0NKWSCRJRG0H¯
-content-security-policy“frame-ancestors 'self' imdb.com *.imdb.com *.media-imdb.com withoutabox.com *.withoutabox.com amazon.com *.amazon.com amazon.co.uk *.amazon.co.uk amazon.de *.amazon.de translate.google.com images.google.com www.google.com www.google.co.uk search.aol.com bing.com www.bing.com
-ETag"136lfa0r4opf"?
-Vary7Accept-Encoding,Content-Type,Accept-Encoding,User-AgentI
-Strict-Transport-Security,max-age=47474747; includeSubDomains; preload
-X-CacheMiss from cloudfrontG
-Via@1.1 941ebee04a90931a7a888e1adfca2330.cloudfront.net (CloudFront)
-X-Amz-Cf-PopDEL54-C2
-Alt-Svch3=":443"; ma=86400G
-X-Amz-Cf-Id8njDGw1XcT23_L1jKDQlZ00bRRAVB8IGr7h8kuxszWYmdJeKocEJzvQ=={"status":"ok"}

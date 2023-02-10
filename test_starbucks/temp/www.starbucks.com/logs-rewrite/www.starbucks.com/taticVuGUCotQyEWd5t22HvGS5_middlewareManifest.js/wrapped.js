@@ -1,1 +1,0 @@
-(function __HORCRUX__(){ window.self.__MIDDLEWARE_MANIFEST=[];window.self.__MIDDLEWARE_MANIFEST_CB&&window.self.__MIDDLEWARE_MANIFEST_CB() })();
